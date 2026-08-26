@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787727712.7101123,
-    "seen": 1787727722.251501,
-    "ast_hash": "7afa5fa3b2ffdfcace4bee6997b6507f",
+    "mtime": 1787727842.5984938,
+    "seen": 1787727849.281769,
+    "ast_hash": "8431f2426a6b30767399748739b6cff0",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -324,21 +324,33 @@
     "semantic_hash": ""
   },
   "logs/V1_1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787727712.7117515,
-    "seen": 1787727722.251541,
-    "ast_hash": "fe81557d15ab75d5a4bb4b471d83ecad",
+    "mtime": 1787727842.5991812,
+    "seen": 1787727849.281814,
+    "ast_hash": "3b59bc53493d06487cd2dbacdee26c16",
     "semantic_hash": ""
   },
   "logs/V1_1_METRICS.md": {
-    "mtime": 1787727712.7119083,
-    "seen": 1787727722.251542,
-    "ast_hash": "87b97ef3455aded64ab5244eb58f2849",
+    "mtime": 1787727786.4256458,
+    "seen": 1787727849.281815,
+    "ast_hash": "2811f0dd14a83b03bde060a223918133",
     "semantic_hash": ""
   },
   "logs/V1_IMPLEMENTATION_LOG.md": {
     "mtime": 1787707234.152994,
     "seen": 1787727722.251543,
     "ast_hash": "40b02e0807ac77605a65665b98aeff91",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/exporters/agent_json.py": {
+    "mtime": 1787727842.5958867,
+    "seen": 1787727849.28178,
+    "ast_hash": "8ffcf73b34a6e4566a600fb6ced8e375",
+    "semantic_hash": ""
+  },
+  "tests/test_agent_cli.py": {
+    "mtime": 1787727842.5987794,
+    "seen": 1787727849.2817972,
+    "ast_hash": "962490d3c59d107752d0edddc4e23c92",
     "semantic_hash": ""
   }
 }

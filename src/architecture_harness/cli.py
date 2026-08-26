@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -18,6 +19,7 @@ from architecture_harness.exporters.llm_context import render_llm_context
 from architecture_harness.metrics.benchmark import render_benchmark, run_benchmark
 from architecture_harness.doctor import diagnose
 from architecture_harness.graph_freshness import check_graph_freshness
+from architecture_harness.exporters.agent_json import capabilities_payload, render_agent_context
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -41,6 +43,16 @@ def build_parser() -> argparse.ArgumentParser:
     benchmark.add_argument("--tasks", type=Path)
     sub.add_parser("doctor", help="validate all inputs and local cache")
     sub.add_parser("stale", help="fail when Graphify output does not match source hashes")
+    agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
+    agent_sub = agent.add_subparsers(dest="agent_action", required=True)
+    agent_context = agent_sub.add_parser("context")
+    agent_context.add_argument("--focus", action="append", required=True)
+    agent_context.add_argument("--radius", type=int, default=1)
+    agent_context.add_argument("--max-items", type=int, default=50)
+    agent_context.add_argument("--format", choices=("json",), default="json")
+    for action in ("validate", "doctor", "capabilities"):
+        command = agent_sub.add_parser(action)
+        command.add_argument("--format", choices=("json",), default="json")
     return parser
 
 
@@ -106,6 +118,33 @@ def main(argv: list[str] | None = None) -> int:
             for path in freshness.missing_files:
                 print(f"missing: {path}")
             return 0 if freshness.fresh else 1
+        if args.command == "agent":
+            if args.agent_action == "capabilities":
+                print(json.dumps(capabilities_payload(), indent=2, sort_keys=True))
+                return 0
+            if args.agent_action == "doctor":
+                checks = diagnose(paths)
+                passed = all(ok for _, ok, _ in checks)
+                print(json.dumps({
+                    "status": "PASS" if passed else "FAIL",
+                    "checks": [{"name": name, "status": "PASS" if ok else "FAIL", "detail": detail} for name, ok, detail in checks],
+                }, indent=2, sort_keys=True))
+                return 0 if passed else 2
+            freshness = check_graph_freshness(paths.root)
+            if not freshness.fresh:
+                print(json.dumps({"status": "ERROR", "error": "STALE_GRAPH", "files": list(freshness.stale_files + freshness.missing_files)}, indent=2, sort_keys=True))
+                return 2
+            observed = load_graphify(paths.observed)
+            target = load_mermaid_directory(paths.target_dir)
+            rules = load_rules(paths.rules)
+            if args.agent_action == "validate":
+                result = evaluate(observed, target, rules)
+                print(render_json(result))
+                return 1 if result.violations else 0
+            context = load_context_directory(paths.context_dir)
+            compact = select_context(args.focus, observed, context, target, rules, args.radius, args.max_items)
+            print(render_agent_context(compact))
+            return 0
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2

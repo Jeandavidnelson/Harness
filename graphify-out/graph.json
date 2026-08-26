@@ -431,7 +431,7 @@
       "label": "build_parser()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L23",
+      "source_location": "L25",
       "_callable": true,
       "_origin": "ast"
     },
@@ -448,7 +448,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L47",
+      "source_location": "L59",
       "_callable": true,
       "_origin": "ast"
     },
@@ -720,6 +720,41 @@
       "file_type": "rationale",
       "source_file": "src/architecture_harness/exporters/__init__.py",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_exporters_agent_json",
+      "label": "agent_json.py",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_exporters_agent_json_context_payload",
+      "label": "context_payload()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "label": "render_agent_context()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L40",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_exporters_agent_json_capabilities_payload",
+      "label": "capabilities_payload()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L44",
+      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -1083,6 +1118,41 @@
       "file_type": "rationale",
       "source_file": "src/architecture_harness/metrics/tokens.py",
       "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_agent_cli",
+      "label": "test_agent_cli.py",
+      "file_type": "code",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_agent_cli_test_agent_capabilities_json",
+      "label": "test_agent_capabilities_json()",
+      "file_type": "code",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_agent_cli_test_agent_context_is_bounded_json",
+      "label": "test_agent_context_is_bounded_json()",
+      "file_type": "code",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_agent_cli_test_agent_validate_and_doctor_json",
+      "label": "test_agent_validate_and_doctor_json()",
+      "file_type": "code",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L25",
+      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -1602,7 +1672,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L28",
+      "source_location": "L32",
       "_origin": "ast"
     },
     {
@@ -1611,7 +1681,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L31",
+      "source_location": "L35",
       "_origin": "ast"
     },
     {
@@ -1620,61 +1690,61 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L34",
+      "source_location": "L38",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_objectif_36",
+      "id": "logs_v1_1_implementation_log_objectif_40",
       "label": "Objectif",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L36",
+      "source_location": "L40",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_hypothèse_39",
+      "id": "logs_v1_1_implementation_log_hypothèse_43",
       "label": "Hypothèse",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L39",
+      "source_location": "L43",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commit_42",
+      "id": "logs_v1_1_implementation_log_commit_46",
       "label": "Commit",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L42",
+      "source_location": "L46",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_configuration_45",
+      "id": "logs_v1_1_implementation_log_configuration_49",
       "label": "Configuration",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L45",
+      "source_location": "L49",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commandes_48",
+      "id": "logs_v1_1_implementation_log_commandes_52",
       "label": "Commandes",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L48",
+      "source_location": "L52",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_tests_et_métriques_51",
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_55",
       "label": "Tests et métriques",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L51",
+      "source_location": "L55",
       "_origin": "ast"
     },
     {
@@ -1683,7 +1753,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L59",
+      "source_location": "L63",
       "_origin": "ast"
     },
     {
@@ -1692,16 +1762,106 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L62",
+      "source_location": "L66",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_65",
+      "id": "logs_v1_1_implementation_log_statut_69",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L65",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "label": "Gate 2 — Universal agent JSON contract — 2026-08-26",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L72",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_objectif_74",
+      "label": "Objectif",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_hypothèse_77",
+      "label": "Hypothèse",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L77",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commit_80",
+      "label": "Commit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L80",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_configuration_83",
+      "label": "Configuration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commandes_86",
+      "label": "Commandes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_89",
+      "label": "Tests et métriques",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_résultat_92",
+      "label": "Résultat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L92",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections",
+      "label": "Problèmes et corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L95",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_statut_98",
+      "label": "Statut",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L98",
       "_origin": "ast"
     },
     {
@@ -1729,6 +1889,15 @@
       "node_kind": "heading",
       "source_file": "logs/V1_1_METRICS.md",
       "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_metrics_gate_1_final_refresh",
+      "label": "Gate 1 final refresh",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_METRICS.md",
+      "source_location": "L19",
       "_origin": "ast"
     },
     {
@@ -3558,7 +3727,7 @@
     },
     {
       "source": "src_architecture_harness_cli",
-      "target": "sys",
+      "target": "json",
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3569,12 +3738,23 @@
     },
     {
       "source": "src_architecture_harness_cli",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
       "target": "pathlib",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3585,7 +3765,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3596,7 +3776,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3607,7 +3787,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3618,7 +3798,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3629,7 +3809,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3640,7 +3820,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3651,7 +3831,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3662,7 +3842,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3673,7 +3853,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3684,7 +3864,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3695,7 +3875,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3706,7 +3886,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3717,7 +3897,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3728,7 +3908,18 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L20",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_exporters_agent_json",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3738,7 +3929,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3749,7 +3940,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3759,7 +3950,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L47",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3770,7 +3961,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L48",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4623,6 +4814,102 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_ir_context",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_metrics_tokens",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_exporters_agent_json_context_payload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json_context_payload",
+      "target": "src_architecture_harness_ir_context_compacttaskcontext",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "target": "src_architecture_harness_ir_context_compacttaskcontext",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_exporters_agent_json_capabilities_payload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "target": "src_architecture_harness_exporters_agent_json_context_payload",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_exporters_json",
       "target": "json",
       "relation": "imports",
@@ -5363,6 +5650,69 @@
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/metrics/tokens.py",
       "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli",
+      "target": "src_architecture_harness_cli",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli",
+      "target": "tests_test_agent_cli_test_agent_capabilities_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli",
+      "target": "tests_test_agent_cli_test_agent_context_is_bounded_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli",
+      "target": "tests_test_agent_cli_test_agent_validate_and_doctor_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6262,7 +6612,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L28",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6272,7 +6622,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L31",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6282,67 +6632,67 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L34",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_objectif_36",
+      "target": "logs_v1_1_implementation_log_objectif_40",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L36",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_hypothèse_39",
+      "target": "logs_v1_1_implementation_log_hypothèse_43",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L39",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commit_42",
+      "target": "logs_v1_1_implementation_log_commit_46",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L42",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_configuration_45",
+      "target": "logs_v1_1_implementation_log_configuration_49",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L45",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commandes_48",
+      "target": "logs_v1_1_implementation_log_commandes_52",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L48",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_tests_et_métriques_51",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_55",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L51",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6352,7 +6702,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L59",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6362,17 +6712,117 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L62",
+      "source_location": "L66",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_1_production_graphify_integration_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_65",
+      "target": "logs_v1_1_implementation_log_statut_69",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L65",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_objectif_74",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_hypothèse_77",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_80",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_83",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_86",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_89",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_92",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_98",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L98",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6393,6 +6843,16 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_METRICS.md",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_metrics_v1_1_metrics",
+      "target": "logs_v1_1_metrics_gate_1_final_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_METRICS.md",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7565,7 +8025,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7576,7 +8036,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7587,7 +8047,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7598,7 +8058,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7609,7 +8069,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7620,7 +8080,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7631,7 +8091,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7642,7 +8102,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7653,7 +8113,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7664,7 +8124,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7675,7 +8135,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7686,7 +8146,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7697,7 +8157,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7708,7 +8168,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7719,7 +8179,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7730,7 +8190,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7741,7 +8201,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7752,7 +8212,29 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L20",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_exporters_agent_json_capabilities_payload",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8054,6 +8536,28 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_ir_context_compacttaskcontext",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json",
+      "target": "src_architecture_harness_metrics_tokens_measure_tokens",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_exporters_json",
       "target": "src_architecture_harness_engine_harness_harnessresult",
       "relation": "imports",
@@ -8302,7 +8806,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L49",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8313,7 +8817,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L52",
+      "source_location": "L64",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8324,7 +8828,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L56",
+      "source_location": "L68",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8335,7 +8839,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L66",
+      "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8346,7 +8850,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L74",
+      "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8357,7 +8861,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L79",
+      "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8368,7 +8872,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L85",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8379,7 +8883,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L90",
+      "source_location": "L102",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8390,7 +8894,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L94",
+      "source_location": "L106",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8401,7 +8905,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L94",
+      "source_location": "L106",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8412,7 +8916,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L97",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8423,7 +8927,40 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L102",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_exporters_agent_json_capabilities_payload",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_exporters_json_render_json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8545,6 +9082,17 @@
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/engine/harness.py",
       "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json_context_payload",
+      "target": "src_architecture_harness_metrics_tokens_measure_tokens",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8742,7 +9290,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L109",
+      "source_location": "L148",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -8753,7 +9301,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L109",
+      "source_location": "L148",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -8764,7 +9312,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L109",
+      "source_location": "L148",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -8775,7 +9323,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L49",
+      "source_location": "L61",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -8974,6 +9522,28 @@
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/engine/paths.py",
       "source_location": "L30",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json_context_payload",
+      "target": "src_architecture_harness_ir_context_compacttaskcontext",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_exporters_agent_json_render_agent_context",
+      "target": "src_architecture_harness_ir_context_compacttaskcontext",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/exporters/agent_json.py",
+      "source_location": "L40",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -9326,19 +9896,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L75",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_cli_main",
-      "target": "src_architecture_harness_exporters_json_render_json",
-      "relation": "indirect_call",
-      "context": "collection",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L75",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9350,7 +9908,43 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L75",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli_test_agent_capabilities_json",
+      "target": "src_architecture_harness_cli_main",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli_test_agent_context_is_bounded_json",
+      "target": "src_architecture_harness_cli_main",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_cli_test_agent_validate_and_doctor_json",
+      "target": "src_architecture_harness_cli_main",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_agent_cli.py",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },

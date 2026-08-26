@@ -68,3 +68,36 @@ Rebuilt from an empty output directory, added official schema aliases, real refr
 
 ### Statut
 PASS
+
+## Gate 2 — Universal agent JSON contract — 2026-08-26
+
+### Objectif
+Expose stable bounded JSON commands for context, validation, diagnostics and capability discovery.
+
+### Hypothèse
+All agents can integrate through process execution and JSON without harness-specific business logic.
+
+### Commit
+Pending after validation.
+
+### Configuration
+API version 1.1; JSON only; exit codes 0/1/2; stale graph rejected before context or validation.
+
+### Commandes
+`arch-harness agent context|validate|doctor|capabilities --format json`.
+
+### Tests et métriques
+- pytest: 22 passed
+- commands: 4/4 return parseable JSON
+- sample context: 44 observed edges, 7 files, 1629 lexical-estimate tokens
+- full graph dump in agent context: absent
+- stale graph rejection: implemented before context/validate
+
+### Résultat
+All four universal commands satisfy the bounded JSON contract.
+
+### Problèmes et corrections
+The focus currently has no connected declared Mermaid nodes; the empty declared-context array is explicit rather than fabricated.
+
+### Statut
+PASS
