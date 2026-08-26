@@ -38,6 +38,59 @@ Created a standard `src` package; dependency installation is isolated to develop
 ### Statut
 PASS
 
+## Étapes 13–14 — 2026-08-26
+
+### Objectif
+Publish the final evidence report and minimal agent integration instructions.
+
+### Commit
+Recorded as separate cache, agent-integration and documentation commits in Git history.
+
+### Fichiers créés / modifiés
+README, final report, AGENTS.md, benchmark cache integration.
+
+### Commandes exécutées
+`scripts/validate_v1.sh`, `git status`, `git log`, remote inspection.
+
+### Tests
+Full V1 suite and automation gate.
+
+### Résultat fonctionnel
+GO, subject to wiring the exact production Graphify invocation and rerunning on a production fixture.
+
+### Problèmes rencontrés
+Tool calls, output tokens and elapsed agent time for manual A/B alternatives were not instrumented.
+
+### Corrections effectuées
+Final report marks unavailable values as not measured instead of inventing comparisons.
+
+### Métriques
+- tests passés: 15
+- erreurs: 0 known
+- token benchmark: 44.0% mean reduction
+- contexte brut: 493
+- contexte optimisé: 258–312
+
+### Statut
+PASS — full validation completed; documentation is the only remaining commit-time change.
+
+## Index des commits fonctionnels
+
+- `6bd60c1` — Graphify adapter
+- `53f5082` — Mermaid target parser
+- `77ece65` — rules engine
+- `0339d97` — deterministic harness
+- `9475734` — compact reports
+- `83fa1c3` — context Mermaid
+- `9f6546d` — context selector
+- `5f09980` — token metrics
+- `f8cef70` — CLI doctor
+- `27cb0ea` — cache manager
+- `037e349` — agent correction loop
+- `a26a1d1` — automation scripts
+
+No remote was configured, so all commits remain local as required by the fallback in the plan.
+
 ## Étapes 9 et 11 — 2026-08-26
 
 ### Objectif
@@ -292,6 +345,22 @@ N/A.
 PASS
 
 ## Validation automatisée — 2026-08-26T03:18:50+0200
+
+- refresh Graphify: PASS (trusted existing output when executable unavailable)
+- Mermaid/rules/tests/harness: PASS
+
+| Task | Focus | Raw | Graph query | V1 | Reduction |
+|---|---|---:|---:|---:|---:|
+| modify-payment-service | PaymentService | 493 | 327 | 312 | 36.7% |
+| repository-change-impact | PaymentRepository | 493 | 327 | 270 | 45.2% |
+| add-external-service | StripeClient | 493 | 327 | 258 | 47.7% |
+| refactor-controller | PaymentController | 493 | 327 | 270 | 45.2% |
+| simple-architecture-violation | PaymentController | 493 | 327 | 270 | 45.2% |
+
+Average reduction: 44.0%
+Token method: lexical-estimate
+
+## Validation automatisée — 2026-08-26T03:20:11+0200
 
 - refresh Graphify: PASS (trusted existing output when executable unavailable)
 - Mermaid/rules/tests/harness: PASS
