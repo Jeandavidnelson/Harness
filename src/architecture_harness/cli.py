@@ -16,6 +16,7 @@ from architecture_harness.exporters.text import render_text
 from architecture_harness.engine.context_selector import select_context
 from architecture_harness.exporters.llm_context import render_llm_context
 from architecture_harness.metrics.benchmark import render_benchmark, run_benchmark
+from architecture_harness.doctor import diagnose
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -37,6 +38,7 @@ def build_parser() -> argparse.ArgumentParser:
     build.add_argument("--max-items", type=int, default=50)
     benchmark = sub.add_parser("benchmark", help="measure compact context token reduction")
     benchmark.add_argument("--tasks", type=Path)
+    sub.add_parser("doctor", help="validate all inputs and local cache")
     return parser
 
 
@@ -89,6 +91,11 @@ def main(argv: list[str] | None = None) -> int:
             tasks = args.tasks or paths.root / "experiments" / "tasks.yaml"
             print(render_benchmark(run_benchmark(paths, tasks)))
             return 0
+        if args.command == "doctor":
+            checks = diagnose(paths)
+            for name, passed, detail in checks:
+                print(f"{'PASS' if passed else 'FAIL'} {name}: {detail}")
+            return 0 if all(passed for _, passed, _ in checks) else 2
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2

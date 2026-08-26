@@ -38,6 +38,42 @@ Created a standard `src` package; dependency installation is isolated to develop
 ### Statut
 PASS
 
+## Étapes 10 et 12 — 2026-08-26
+
+### Objectif
+Complete CLI diagnostics and provide input-scoped content-addressed caching.
+
+### Commit
+Pending at test time; recorded in Git history after validation.
+
+### Fichiers créés / modifiés
+Doctor, cache manager, CLI and invalidation tests.
+
+### Commandes exécutées
+`arch-harness doctor`, `pytest`.
+
+### Tests
+Independent cache invalidation by content hash.
+
+### Résultat fonctionnel
+Doctor validates Graphify, target/context Mermaid, rules/mappings and cache writability.
+
+### Problèmes rencontrés
+None.
+
+### Corrections effectuées
+N/A.
+
+### Métriques
+- tests passés: 14
+- erreurs: 0 known
+- token benchmark: unchanged
+- contexte brut: 493
+- contexte optimisé: 258–312
+
+### Statut
+PASS
+
 ## Étape 8 — 2026-08-26
 
 ### Objectif
