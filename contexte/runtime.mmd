@@ -1,5 +1,5 @@
 flowchart LR
-    PaymentService --> EgressGateway
-    EgressGateway --> Stripe
-    Vault --> PaymentService
-
+    Agent --> src_architecture_harness_cli_main[Universal CLI]
+    src_architecture_harness_cli_main --> GraphifyProcess[Graphify CLI process]
+    GraphifyProcess --> GraphifyOutput[graphify-out/graph.json]
+    GraphifyOutput --> src_architecture_harness_adapters_graphify_load_graphify[Graphify adapter]

@@ -1,37 +1,62 @@
 roles:
-  Controller:
+  CliMain:
     match:
-      suffix: Controller
-  Service:
+      exact: src_architecture_harness_cli_main
+  GraphifyLoad:
     match:
-      suffix: Service
-  Repository:
+      exact: src_architecture_harness_adapters_graphify_load_graphify
+  HarnessEvaluate:
     match:
-      suffix: Repository
-  ExternalClient:
+      exact: src_architecture_harness_engine_harness_evaluate
+  RoleResolve:
     match:
-      suffix: Client
-  Domain:
+      exact: src_architecture_harness_engine_matcher_resolve
+  ShortestPath:
     match:
-      suffix: Domain
-  Infrastructure:
+      exact: src_architecture_harness_engine_paths_shortest_path
+  DoctorDiagnose:
     match:
-      suffix: Infrastructure
+      exact: src_architecture_harness_doctor_diagnose
+  RulesLoad:
+    match:
+      exact: src_architecture_harness_adapters_rules_load_rules
+  MeasureTokens:
+    match:
+      exact: src_architecture_harness_metrics_tokens_measure_tokens
+  CachePut:
+    match:
+      exact: src_architecture_harness_cache_manager_cachemanager_put
 
 rules:
-  - id: controller-no-repository
-    type: forbidden_edge
-    source: Controller
-    target: Repository
-  - id: service-must-repository
-    type: required_path
-    source: Service
-    target: Repository
-  - id: domain-no-infrastructure
-    type: forbidden_path
-    source: Domain
-    target: Infrastructure
-  - id: controller-must-service
+  - id: cli-must-load-observed-graph
     type: required_edge
-    source: Controller
-    target: Service
+    source: CliMain
+    target: GraphifyLoad
+  - id: cli-must-run-harness
+    type: required_edge
+    source: CliMain
+    target: HarnessEvaluate
+  - id: harness-must-resolve-explicit-roles
+    type: required_edge
+    source: HarnessEvaluate
+    target: RoleResolve
+  - id: harness-must-support-path-evidence
+    type: required_path
+    source: HarnessEvaluate
+    target: ShortestPath
+  - id: doctor-must-validate-rules
+    type: required_edge
+    source: DoctorDiagnose
+    target: RulesLoad
+  - id: graphify-adapter-must-not-depend-on-cli
+    type: forbidden_path
+    source: GraphifyLoad
+    target: CliMain
+  - id: token-metrics-must-not-depend-on-cli
+    type: forbidden_path
+    source: MeasureTokens
+    target: CliMain
+  - id: cache-must-not-call-cli
+    type: forbidden_edge
+    source: CachePut
+    target: CliMain

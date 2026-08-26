@@ -1478,6 +1478,49 @@
       "_origin": "ast"
     },
     {
+      "id": "tests_test_production_rules",
+      "label": "test_production_rules.py",
+      "file_type": "code",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_production_rules_production_inputs",
+      "label": "production_inputs()",
+      "file_type": "code",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_production_rules_test_real_repository_rules_pass",
+      "label": "test_real_repository_rules_pass()",
+      "file_type": "code",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "parametrize",
+      "label": "parametrize",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "label": "test_each_real_rule_detects_its_regression()",
+      "file_type": "code",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_rules",
       "label": "test_rules.py",
       "file_type": "code",
@@ -1934,8 +1977,8 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "label": "Gate 4 — Real A/B/C context benchmark — 2026-08-26",
+      "id": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "label": "Gate 5 — Real repository architecture rules — 2026-08-26",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -2024,8 +2067,8 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "label": "Gate 3 — Agent adapters — 2026-08-26",
+      "id": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "label": "Gate 4 — Real A/B/C context benchmark — 2026-08-26",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -2087,30 +2130,120 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_123",
+      "id": "logs_v1_1_implementation_log_résultat_129",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L123",
+      "source_location": "L129",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_126",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_132",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L126",
+      "source_location": "L132",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_129",
+      "id": "logs_v1_1_implementation_log_statut_135",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L129",
+      "source_location": "L135",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "label": "Gate 3 — Agent adapters — 2026-08-26",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L138",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_objectif_140",
+      "label": "Objectif",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L140",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_hypothèse_143",
+      "label": "Hypothèse",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L143",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commit_146",
+      "label": "Commit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L146",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_configuration_149",
+      "label": "Configuration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L149",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commandes_152",
+      "label": "Commandes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L152",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_155",
+      "label": "Tests et métriques",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L155",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_résultat_160",
+      "label": "Résultat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L160",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_163",
+      "label": "Problèmes et corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L163",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_statut_166",
+      "label": "Statut",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L166",
       "_origin": "ast"
     },
     {
@@ -2119,88 +2252,88 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L132",
+      "source_location": "L169",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_objectif_134",
+      "id": "logs_v1_1_implementation_log_objectif_171",
       "label": "Objectif",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L134",
+      "source_location": "L171",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_hypothèse_137",
+      "id": "logs_v1_1_implementation_log_hypothèse_174",
       "label": "Hypothèse",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L137",
+      "source_location": "L174",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commit_140",
+      "id": "logs_v1_1_implementation_log_commit_177",
       "label": "Commit",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L140",
+      "source_location": "L177",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_configuration_143",
+      "id": "logs_v1_1_implementation_log_configuration_180",
       "label": "Configuration",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L143",
+      "source_location": "L180",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commandes_146",
+      "id": "logs_v1_1_implementation_log_commandes_183",
       "label": "Commandes",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L146",
+      "source_location": "L183",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_tests_et_métriques_149",
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_186",
       "label": "Tests et métriques",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L149",
+      "source_location": "L186",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_156",
+      "id": "logs_v1_1_implementation_log_résultat_193",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L156",
+      "source_location": "L193",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_159",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_196",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L159",
+      "source_location": "L196",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_162",
+      "id": "logs_v1_1_implementation_log_statut_199",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L162",
+      "source_location": "L199",
       "_origin": "ast"
     },
     {
@@ -2237,6 +2370,15 @@
       "node_kind": "heading",
       "source_file": "logs/V1_1_METRICS.md",
       "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_metrics_real_a_b_c_context_benchmark",
+      "label": "Real A/B/C context benchmark",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_METRICS.md",
+      "source_location": "L32",
       "_origin": "ast"
     },
     {
@@ -6955,6 +7097,168 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_production_rules",
+      "target": "copy",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "pytest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "src_architecture_harness_adapters_graphify",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "src_architecture_harness_adapters_mermaid",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "src_architecture_harness_adapters_rules",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "src_architecture_harness_engine_harness",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "src_architecture_harness_engine_matcher",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "src_architecture_harness_ir_graph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "tests_test_production_rules_production_inputs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "tests_test_production_rules_test_real_repository_rules_pass",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "target": "parametrize",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules",
+      "target": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_test_real_repository_rules_pass",
+      "target": "tests_test_production_rules_production_inputs",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "target": "tests_test_production_rules_production_inputs",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_rules",
       "target": "src_architecture_harness_adapters_rules",
       "relation": "imports_from",
@@ -7484,7 +7788,7 @@
     },
     {
       "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
-      "target": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -7493,7 +7797,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_objectif_74",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7503,7 +7807,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_hypothèse_77",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7513,7 +7817,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_commit_80",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7523,7 +7827,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_configuration_83",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7533,7 +7837,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_commandes_86",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7543,7 +7847,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_tests_et_métriques_89",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7553,7 +7857,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_résultat_92",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7563,7 +7867,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_problèmes_et_corrections",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7573,7 +7877,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
       "target": "logs_v1_1_implementation_log_statut_98",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7584,7 +7888,7 @@
     },
     {
       "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
-      "target": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -7593,7 +7897,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_objectif_103",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7603,7 +7907,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_hypothèse_106",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7613,7 +7917,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_commit_109",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7623,7 +7927,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_configuration_112",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7633,7 +7937,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_commandes_115",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7643,7 +7947,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_tests_et_métriques_118",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7653,32 +7957,132 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_123",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L123",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_126",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L126",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_129",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_129",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_132",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_135",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_objectif_140",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_hypothèse_143",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_146",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_149",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_152",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_155",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_160",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_163",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_166",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L166",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7688,97 +8092,97 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L132",
+      "source_location": "L169",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_objectif_134",
+      "target": "logs_v1_1_implementation_log_objectif_171",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L134",
+      "source_location": "L171",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_hypothèse_137",
+      "target": "logs_v1_1_implementation_log_hypothèse_174",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L137",
+      "source_location": "L174",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commit_140",
+      "target": "logs_v1_1_implementation_log_commit_177",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L140",
+      "source_location": "L177",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_configuration_143",
+      "target": "logs_v1_1_implementation_log_configuration_180",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L143",
+      "source_location": "L180",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commandes_146",
+      "target": "logs_v1_1_implementation_log_commandes_183",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L146",
+      "source_location": "L183",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_tests_et_métriques_149",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_186",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L149",
+      "source_location": "L186",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_156",
+      "target": "logs_v1_1_implementation_log_résultat_193",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L156",
+      "source_location": "L193",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_159",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_196",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L159",
+      "source_location": "L196",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_162",
+      "target": "logs_v1_1_implementation_log_statut_199",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L162",
+      "source_location": "L199",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7809,6 +8213,16 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_METRICS.md",
       "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_metrics_v1_1_metrics",
+      "target": "logs_v1_1_metrics_real_a_b_c_context_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_METRICS.md",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11054,6 +11468,17 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "target": "src_architecture_harness_ir_graph_edge",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L52",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_rules_test_rules_and_explicit_role_mapping",
       "target": "src_architecture_harness_ir_architecture_targetarchitectureir",
       "relation": "uses",
@@ -11550,6 +11975,78 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_mermaid_adapter.py",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_production_inputs",
+      "target": "src_architecture_harness_adapters_graphify_load_graphify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_production_inputs",
+      "target": "src_architecture_harness_adapters_mermaid_load_mermaid_directory",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_production_inputs",
+      "target": "src_architecture_harness_adapters_rules_load_rules",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_test_real_repository_rules_pass",
+      "target": "src_architecture_harness_engine_harness_evaluate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "target": "src_architecture_harness_engine_matcher_resolve",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_production_rules_test_each_real_rule_detects_its_regression",
+      "target": "src_architecture_harness_engine_harness_evaluate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_production_rules.py",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast"
     },

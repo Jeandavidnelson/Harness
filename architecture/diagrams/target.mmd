@@ -1,5 +1,7 @@
 flowchart LR
-    Controller --> Service
-    Service --> Repository
-    Service --> ExternalClient
-
+    CliMain[Universal CLI] --> GraphifyLoad[Graphify adapter]
+    CliMain --> HarnessEvaluate[Deterministic harness]
+    HarnessEvaluate --> RoleResolve[Explicit role matcher]
+    HarnessEvaluate --> ShortestPath[Path evidence]
+    DoctorDiagnose[Doctor] --> RulesLoad[Rules adapter]
+    Metrics[Token metrics] --> ContextSelector[Context selector]

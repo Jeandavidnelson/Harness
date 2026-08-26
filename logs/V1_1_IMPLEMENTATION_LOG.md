@@ -69,6 +69,42 @@ Rebuilt from an empty output directory, added official schema aliases, real refr
 ### Statut
 PASS
 
+## Gate 5 — Real repository architecture rules — 2026-08-26
+
+### Objectif
+Replace illustrative payment roles with 5–10 explicit policies over actual Graphify node IDs.
+
+### Hypothèse
+Exact mappings and eight dependency policies can describe stable harness invariants without false positives.
+
+### Commit
+Pending after validation.
+
+### Configuration
+Eight rules over CLI, adapters, engine, doctor, metrics and cache; exact role mappings only.
+
+### Commandes
+Production graph check, per-rule regression mutations, pytest, Graphify refresh.
+
+### Tests et métriques
+- pytest: 33 passed
+- production rules: 8
+- baseline harness: PASS
+- injected regressions detected: 8/8
+- false positives in baseline: 0
+- false negatives in defined mutations: 0
+- detection duration: NOT_MEASURED
+- evidence: shortest path, files and provenance when an observed edge exists
+
+### Résultat
+Every explicit real-project invariant resolves to actual Graphify nodes and detects its targeted regression.
+
+### Problèmes et corrections
+The V1 payment rules matched no real nodes and therefore passed vacuously; they were replaced rather than reported as real validation.
+
+### Statut
+PASS — P0 harness gate satisfied for the defined rule corpus.
+
 ## Gate 4 — Real A/B/C context benchmark — 2026-08-26
 
 ### Objectif

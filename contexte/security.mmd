@@ -1,4 +1,5 @@
 flowchart LR
-    TrustBoundary --> EgressGateway
-    Vault --> PaymentService
-
+    ObservedCode[OBSERVED CODE] --> PolicyEngine[Deterministic policy engine]
+    DeclaredContext[DECLARED CONTEXT] --> ContextSelector
+    PolicyEngine --> PassFail[PASS or FAIL]
+    ContextSelector --> Agent

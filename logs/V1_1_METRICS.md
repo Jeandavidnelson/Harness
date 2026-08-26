@@ -44,3 +44,16 @@ Unknown metrics are recorded as `NOT_MEASURED`.
 - Tokenizer: `tiktoken:o200k_base`.
 - Model task success, input/output/total model tokens: `NOT_MEASURED`.
 - Each A/B row executes one real Graphify query. C uses the refreshed graph and deterministic selector.
+
+## Real policy corpus
+
+| Metric | Value |
+|---|---:|
+| Rules | 8 |
+| Exact role mappings | 9 |
+| Baseline violations | 0 |
+| Injected regressions | 8 |
+| Detected regressions | 8 |
+| False positives | 0 |
+| False negatives | 0 |
+| Detection duration | NOT_MEASURED |

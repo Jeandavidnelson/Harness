@@ -1,10 +1,18 @@
 flowchart LR
-    subgraph Application
-        Controller
-        Service
+    subgraph Interface
+        CliMain
+        DoctorDiagnose
     end
-    subgraph Infrastructure
-        Repository
-        ExternalClient
+    subgraph Adapters
+        GraphifyLoad
+        RulesLoad
     end
-
+    subgraph Engine
+        HarnessEvaluate
+        RoleResolve
+        ShortestPath
+        ContextSelector
+    end
+    subgraph Supporting
+        Metrics
+    end
