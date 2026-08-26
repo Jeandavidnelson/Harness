@@ -69,6 +69,43 @@ Rebuilt from an empty output directory, added official schema aliases, real refr
 ### Statut
 PASS
 
+## Gate 4 — Real A/B/C context benchmark — 2026-08-26
+
+### Objectif
+Compare real Graphify query output, Graphify plus full architecture, and universal agent context on five repository tasks.
+
+### Hypothèse
+Condition C reduces context versus B without removing harness validation.
+
+### Commit
+Pending after validation.
+
+### Configuration
+Graphify CLI queries, `tiktoken:o200k_base`, identical repository and task focuses.
+
+### Commandes
+`arch-harness benchmark --mode v1.1`, pytest.
+
+### Tests et métriques
+- pytest: 24 passed
+- tasks: 5 real repository focuses
+- A mean context: 3855.4 tokens
+- B mean context: 4140.4 tokens
+- C mean context: 2328.8 tokens
+- C vs B reduction: 43.8%
+- C vs A reduction: 39.6%
+- tokenizer: `tiktoken:o200k_base`
+- task success/output tokens/total tokens: NOT_MEASURED
+
+### Résultat
+Condition C reduces context on every task versus B and retains a deterministic PASS result.
+
+### Problèmes et corrections
+Model output/total tokens and task success are not available without a model task runner; they remain `NOT_MEASURED`.
+
+### Statut
+PASS for context reduction; task-success non-degradation remains NOT_MEASURED.
+
 ## Gate 3 — Agent adapters — 2026-08-26
 
 ### Objectif

@@ -431,7 +431,7 @@
       "label": "build_parser()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "_callable": true,
       "_origin": "ast"
     },
@@ -448,7 +448,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L59",
+      "source_location": "L61",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1121,6 +1121,68 @@
       "_origin": "ast"
     },
     {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark",
+      "label": "v1_1_benchmark.py",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark_conditionmetric",
+      "label": "ConditionMetric",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L21",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark_query",
+      "label": "_query()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "label": "run_v1_1_benchmark()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark_render_v1_1_benchmark",
+      "label": "render_v1_1_benchmark()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L77",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_metrics_v1_1_benchmark_rows_as_json",
+      "label": "rows_as_json()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L88",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_agent_adapters",
       "label": "test_agent_adapters.py",
       "file_type": "code",
@@ -1446,6 +1508,23 @@
       "file_type": "code",
       "source_file": "tests/test_tokens.py",
       "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_v1_1_benchmark",
+      "label": "test_v1_1_benchmark.py",
+      "file_type": "code",
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_v1_1_benchmark_test_real_graphify_vs_agent_context_benchmark",
+      "label": "test_real_graphify_vs_agent_context_benchmark()",
+      "file_type": "code",
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L7",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1855,8 +1934,8 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "label": "Gate 3 — Agent adapters — 2026-08-26",
+      "id": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "label": "Gate 4 — Real A/B/C context benchmark — 2026-08-26",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -1945,8 +2024,8 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "label": "Gate 2 — Universal agent JSON contract — 2026-08-26",
+      "id": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "label": "Gate 3 — Agent adapters — 2026-08-26",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -2008,30 +2087,120 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_125",
+      "id": "logs_v1_1_implementation_log_résultat_123",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L125",
+      "source_location": "L123",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_128",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_126",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L128",
+      "source_location": "L126",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_131",
+      "id": "logs_v1_1_implementation_log_statut_129",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L131",
+      "source_location": "L129",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "label": "Gate 2 — Universal agent JSON contract — 2026-08-26",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L132",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_objectif_134",
+      "label": "Objectif",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L134",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_hypothèse_137",
+      "label": "Hypothèse",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L137",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commit_140",
+      "label": "Commit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L140",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_configuration_143",
+      "label": "Configuration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L143",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commandes_146",
+      "label": "Commandes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L146",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_149",
+      "label": "Tests et métriques",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L149",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_résultat_156",
+      "label": "Résultat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L156",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_159",
+      "label": "Problèmes et corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L159",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_statut_162",
+      "label": "Statut",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L162",
       "_origin": "ast"
     },
     {
@@ -4095,11 +4264,22 @@
     },
     {
       "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
       "target": "src_architecture_harness_cli_build_parser",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4110,7 +4290,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4120,7 +4300,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L59",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4131,7 +4311,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L60",
+      "source_location": "L62",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5824,6 +6004,298 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_context_mermaid",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_graphify",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_mermaid",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_rules",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_engine_context_selector",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_exporters_agent_json",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_benchmark",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_tokens",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_conditionmetric",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_query",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_query",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_config_projectpaths",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_conditionmetric",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_render_v1_1_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_render_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_conditionmetric",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_rows_as_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_rows_as_json",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_conditionmetric",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_query",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_conditionmetric",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_agent_adapters",
       "target": "pathlib",
       "relation": "imports_from",
@@ -6558,6 +7030,49 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_v1_1_benchmark",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v1_1_benchmark",
+      "target": "src_architecture_harness_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v1_1_benchmark",
+      "target": "tests_test_v1_1_benchmark_test_real_graphify_vs_agent_context_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "agents",
       "target": "agents_architecture_harness_agent_instructions",
       "relation": "contains",
@@ -6969,7 +7484,7 @@
     },
     {
       "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
-      "target": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -6978,7 +7493,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_objectif_74",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6988,7 +7503,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_hypothèse_77",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6998,7 +7513,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_commit_80",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7008,7 +7523,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_configuration_83",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7018,7 +7533,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_commandes_86",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7028,7 +7543,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_tests_et_métriques_89",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7038,7 +7553,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_résultat_92",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7048,7 +7563,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_problèmes_et_corrections",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7058,7 +7573,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
       "target": "logs_v1_1_implementation_log_statut_98",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7069,7 +7584,7 @@
     },
     {
       "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
-      "target": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -7078,7 +7593,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_objectif_103",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7088,7 +7603,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_hypothèse_106",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7098,7 +7613,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_commit_109",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7108,7 +7623,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_configuration_112",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7118,7 +7633,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_commandes_115",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7128,7 +7643,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_tests_et_métriques_118",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -7138,32 +7653,132 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_125",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_123",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L125",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_126",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_129",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_128",
+      "target": "logs_v1_1_implementation_log_objectif_134",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L128",
+      "source_location": "L134",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_131",
+      "target": "logs_v1_1_implementation_log_hypothèse_137",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L131",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_140",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_143",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_146",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_149",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_156",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_159",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_162",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8580,6 +9195,28 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_render_v1_1_benchmark",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_doctor",
       "target": "src_architecture_harness_adapters_context_mermaid_load_context_directory",
       "relation": "imports",
@@ -9064,6 +9701,105 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_context_mermaid_load_context_directory",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_graphify_load_graphify",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_mermaid_load_mermaid_directory",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_rules_load_rules",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_config_projectpaths",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_engine_context_selector_select_context",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_exporters_agent_json_context_payload",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_benchmark_load_tasks",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_tokens_measure_tokens",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_adapters_context_mermaid_load_context_directory",
       "target": "src_architecture_harness_adapters_mermaid_mermaiderror",
       "relation": "calls",
@@ -9147,7 +9883,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L61",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9158,7 +9894,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L64",
+      "source_location": "L66",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9169,7 +9905,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L68",
+      "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9180,7 +9916,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L78",
+      "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9191,7 +9927,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L86",
+      "source_location": "L88",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9202,7 +9938,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L91",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9213,7 +9949,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L97",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9224,35 +9960,13 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L102",
+      "source_location": "L104",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "src_architecture_harness_cli_main",
-      "target": "src_architecture_harness_metrics_benchmark_render_benchmark",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L106",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_cli_main",
-      "target": "src_architecture_harness_metrics_benchmark_run_benchmark",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L106",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_cli_main",
-      "target": "src_architecture_harness_doctor_diagnose",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_render_v1_1_benchmark",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -9263,7 +9977,40 @@
     },
     {
       "source": "src_architecture_harness_cli_main",
-      "target": "src_architecture_harness_graph_freshness_check_graph_freshness",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_metrics_benchmark_render_benchmark",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_metrics_benchmark_run_benchmark",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_doctor_diagnose",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -9274,12 +10021,23 @@
     },
     {
       "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_graph_freshness_check_graph_freshness",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
       "target": "src_architecture_harness_exporters_agent_json_capabilities_payload",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L123",
+      "source_location": "L128",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9290,7 +10048,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L142",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9301,7 +10059,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L146",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9526,6 +10284,94 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_graphify_load_graphify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_mermaid_load_mermaid_directory",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_context_mermaid_load_context_directory",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_adapters_rules_load_rules",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_benchmark_load_tasks",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_metrics_tokens_measure_tokens",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_engine_context_selector_select_context",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_exporters_agent_json_context_payload",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_adapters_context_mermaid_load_context_directory",
       "target": "src_architecture_harness_adapters_mermaid_mermaiderror",
       "relation": "uses",
@@ -9631,7 +10477,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L148",
+      "source_location": "L153",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -9642,7 +10488,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L148",
+      "source_location": "L153",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -9653,7 +10499,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L148",
+      "source_location": "L153",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -9664,7 +10510,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L61",
+      "source_location": "L63",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -9988,6 +10834,17 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "target": "src_architecture_harness_config_projectpaths",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/metrics/v1_1_benchmark.py",
+      "source_location": "L46",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_agent_loop_test_compact_report_enables_one_iteration_fix",
       "target": "src_architecture_harness_ir_architecture_targetarchitectureir",
       "relation": "uses",
@@ -10230,6 +11087,17 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_v1_1_benchmark_test_real_graphify_vs_agent_context_benchmark",
+      "target": "src_architecture_harness_config_projectpaths",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_cli_main",
       "target": "src_architecture_harness_exporters_text_render_text",
       "relation": "indirect_call",
@@ -10237,7 +11105,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L87",
+      "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10249,7 +11117,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L87",
+      "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10718,6 +11586,18 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_tokens.py",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v1_1_benchmark_test_real_graphify_vs_agent_context_benchmark",
+      "target": "src_architecture_harness_metrics_v1_1_benchmark_run_v1_1_benchmark",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_v1_1_benchmark.py",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     }

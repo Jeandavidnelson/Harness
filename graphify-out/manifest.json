@@ -1,8 +1,8 @@
 {
   "pyproject.toml": {
-    "mtime": 1787727712.7078836,
-    "seen": 1787727722.251482,
-    "ast_hash": "7071d7cc0fc1187032980355f301bc56",
+    "mtime": 1787727969.479072,
+    "seen": 1787727974.3362198,
+    "ast_hash": "99c54cb62aa56de4d33787ade77938dc",
     "semantic_hash": ""
   },
   "scripts/benchmark_tokens.sh": {
@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787727842.5984938,
-    "seen": 1787727849.281769,
-    "ast_hash": "8431f2426a6b30767399748739b6cff0",
+    "mtime": 1787727969.4803696,
+    "seen": 1787727974.3362381,
+    "ast_hash": "994e87b9f6cdb1bb81197a62353ee1b2",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "logs/V1_1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787727882.120856,
-    "seen": 1787727888.531807,
-    "ast_hash": "868372bfeaed96133765573f6853288f",
+    "mtime": 1787727969.481151,
+    "seen": 1787727974.3362901,
+    "ast_hash": "a4a1c76b8787a07bdc7fb6522aa3041a",
     "semantic_hash": ""
   },
   "logs/V1_1_METRICS.md": {
@@ -375,6 +375,18 @@
     "mtime": 1787727882.1181054,
     "seen": 1787727888.531806,
     "ast_hash": "c0bf6fc576801fb618d35fc39f4446c6",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/metrics/v1_1_benchmark.py": {
+    "mtime": 1787727969.4794674,
+    "seen": 1787727974.336263,
+    "ast_hash": "a3eb6d002706f8bcffe7b8d0d9176992",
+    "semantic_hash": ""
+  },
+  "tests/test_v1_1_benchmark.py": {
+    "mtime": 1787727969.4806616,
+    "seen": 1787727974.33628,
+    "ast_hash": "d303d5d5831bf57ae7764a6d542c6de3",
     "semantic_hash": ""
   }
 }

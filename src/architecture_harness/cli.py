@@ -20,6 +20,7 @@ from architecture_harness.metrics.benchmark import render_benchmark, run_benchma
 from architecture_harness.doctor import diagnose
 from architecture_harness.graph_freshness import check_graph_freshness
 from architecture_harness.exporters.agent_json import capabilities_payload, render_agent_context
+from architecture_harness.metrics.v1_1_benchmark import render_v1_1_benchmark, run_v1_1_benchmark
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -41,6 +42,7 @@ def build_parser() -> argparse.ArgumentParser:
     build.add_argument("--max-items", type=int, default=50)
     benchmark = sub.add_parser("benchmark", help="measure compact context token reduction")
     benchmark.add_argument("--tasks", type=Path)
+    benchmark.add_argument("--mode", choices=("v1", "v1.1"), default="v1")
     sub.add_parser("doctor", help="validate all inputs and local cache")
     sub.add_parser("stale", help="fail when Graphify output does not match source hashes")
     agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
@@ -103,7 +105,10 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         if args.command == "benchmark":
             tasks = args.tasks or paths.root / "experiments" / "tasks.yaml"
-            print(render_benchmark(run_benchmark(paths, tasks)))
+            if args.mode == "v1.1":
+                print(render_v1_1_benchmark(run_v1_1_benchmark(paths, tasks)))
+            else:
+                print(render_benchmark(run_benchmark(paths, tasks)))
             return 0
         if args.command == "doctor":
             checks = diagnose(paths)
