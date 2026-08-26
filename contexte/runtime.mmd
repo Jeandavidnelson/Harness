@@ -1,0 +1,5 @@
+flowchart LR
+    PaymentService --> EgressGateway
+    EgressGateway --> Stripe
+    Vault --> PaymentService
+
