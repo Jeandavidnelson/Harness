@@ -38,6 +38,42 @@ Created a standard `src` package; dependency installation is isolated to develop
 ### Statut
 PASS
 
+## Étapes 6–7 — 2026-08-26
+
+### Objectif
+Keep declared runtime context distinct and select bounded task context deterministically.
+
+### Commit
+Pending at test time; recorded in Git history after validation.
+
+### Fichiers créés / modifiés
+Context Mermaid, IR/adapter, selector, LLM exporter, CLI and tests.
+
+### Commandes exécutées
+`arch-harness context overview`, `arch-harness context build --focus PaymentService --radius 2 --max-items 50`, `pytest`.
+
+### Tests
+Connected selection, unrelated-node exclusion, applicable policy and provenance preservation.
+
+### Résultat fonctionnel
+Observed and declared edges remain separate and carry explicit provenance.
+
+### Problèmes rencontrés
+None.
+
+### Corrections effectuées
+N/A.
+
+### Métriques
+- tests passés: 11
+- erreurs: 0 known
+- token benchmark: scheduled for step 8
+- contexte brut: pending
+- contexte optimisé: pending
+
+### Statut
+PASS
+
 ## Étapes 4–5 — 2026-08-26
 
 ### Objectif

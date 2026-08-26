@@ -7,11 +7,14 @@ from pathlib import Path
 from architecture_harness.adapters.graphify import GraphifyError, load_graphify
 from architecture_harness.adapters.mermaid import MermaidError, load_mermaid_directory
 from architecture_harness.adapters.rules import RulesError, load_rules
+from architecture_harness.adapters.context_mermaid import load_context_directory
 from architecture_harness.config import ProjectPaths
 from architecture_harness.engine.harness import evaluate
 from architecture_harness.exporters.json import render_json
 from architecture_harness.exporters.markdown import render_markdown
 from architecture_harness.exporters.text import render_text
+from architecture_harness.engine.context_selector import select_context
+from architecture_harness.exporters.llm_context import render_llm_context
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -24,6 +27,13 @@ def build_parser() -> argparse.ArgumentParser:
     rules_parser.add_argument("action", choices=("validate", "list"))
     check = sub.add_parser("check", help="evaluate architecture policies")
     check.add_argument("--format", choices=("text", "json", "markdown"), default="text")
+    context_parser = sub.add_parser("context", help="inspect or build declared context")
+    context_sub = context_parser.add_subparsers(dest="context_action", required=True)
+    context_sub.add_parser("overview")
+    build = context_sub.add_parser("build")
+    build.add_argument("--focus", action="append", required=True)
+    build.add_argument("--radius", type=int, default=1)
+    build.add_argument("--max-items", type=int, default=50)
     return parser
 
 
@@ -58,6 +68,20 @@ def main(argv: list[str] | None = None) -> int:
             renderer = {"text": render_text, "json": render_json, "markdown": render_markdown}[args.format]
             print(renderer(result))
             return 1 if result.violations else 0
+        if args.command == "context":
+            context = load_context_directory(paths.context_dir)
+            if args.context_action == "overview":
+                print(f"nodes: {len(context.nodes)}")
+                print(f"edges: {len(context.edges)}")
+                print("provenance: DECLARED_CONTEXT")
+            else:
+                compact = select_context(
+                    args.focus, load_graphify(paths.observed), context,
+                    load_mermaid_directory(paths.target_dir), load_rules(paths.rules),
+                    args.radius, args.max_items,
+                )
+                print(render_llm_context(compact))
+            return 0
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2
