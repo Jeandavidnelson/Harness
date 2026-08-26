@@ -12,6 +12,7 @@ from architecture_harness.config import ProjectPaths
 from architecture_harness.engine.context_selector import select_context
 from architecture_harness.exporters.llm_context import render_llm_context
 from architecture_harness.metrics.tokens import measure_tokens
+from architecture_harness.cache.manager import CacheManager
 
 
 @dataclass(frozen=True)
@@ -41,6 +42,11 @@ def load_tasks(path: Path) -> list[tuple[str, str]]:
 
 
 def run_benchmark(paths: ProjectPaths, tasks_path: Path, radius: int = 1, max_items: int = 30) -> list[BenchmarkRow]:
+    input_paths = [paths.observed, *sorted(paths.target_dir.glob("*.mmd")), *sorted(paths.context_dir.glob("*.mmd")), paths.rules, tasks_path]
+    cache = CacheManager(paths.root / ".cache" / "architecture-harness")
+    cached = cache.get("benchmark", input_paths)
+    if cached is not None:
+        return [BenchmarkRow(**row) for row in cached]
     observed = load_graphify(paths.observed)
     target = load_mermaid_directory(paths.target_dir)
     context = load_context_directory(paths.context_dir)
@@ -61,6 +67,7 @@ def run_benchmark(paths: ProjectPaths, tasks_path: Path, radius: int = 1, max_it
         compact_measure = measure_tokens(compact)
         reduction = 100 * (1 - compact_measure.count / raw_measure.count) if raw_measure.count else 0.0
         rows.append(BenchmarkRow(task, focus, raw_measure.count, query_measure.count, compact_measure.count, round(reduction, 1), compact_measure.method))
+    cache.put("benchmark", input_paths, [row.__dict__ for row in rows])
     return rows
 
 
@@ -71,4 +78,3 @@ def render_benchmark(rows: list[BenchmarkRow]) -> str:
     average = sum(row.reduction_percent for row in rows) / len(rows)
     lines.extend(["", f"Average reduction: {average:.1f}%", f"Token method: {rows[0].method}"])
     return "\n".join(lines)
-
