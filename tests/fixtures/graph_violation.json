@@ -1,0 +1,10 @@
+{
+  "nodes": [
+    {"id": "OrderController", "kind": "class", "file": "src/order/controller.py"},
+    {"id": "OrderRepository", "kind": "class", "file": "src/order/repository.py"}
+  ],
+  "edges": [
+    {"source": "OrderController", "target": "OrderRepository", "relation": "calls", "provenance": "EXTRACTED"}
+  ]
+}
+
