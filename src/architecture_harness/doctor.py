@@ -7,6 +7,7 @@ from architecture_harness.adapters.graphify import load_graphify
 from architecture_harness.adapters.mermaid import load_mermaid_directory
 from architecture_harness.adapters.rules import load_rules
 from architecture_harness.config import ProjectPaths
+from architecture_harness.graph_freshness import check_graph_freshness
 
 
 def diagnose(paths: ProjectPaths) -> list[tuple[str, bool, str]]:
@@ -31,6 +32,14 @@ def diagnose(paths: ProjectPaths) -> list[tuple[str, bool, str]]:
         except Exception as exc:
             checks.append((name, False, str(exc)))
     try:
+        freshness = check_graph_freshness(paths.root)
+        if not freshness.fresh:
+            changed = freshness.stale_files + freshness.missing_files
+            raise ValueError("stale graph inputs: " + ", ".join(changed))
+        checks.append(("Graphify freshness", True, "manifest hashes match source files"))
+    except Exception as exc:
+        checks.append(("Graphify freshness", False, str(exc)))
+    try:
         cache = paths.root / ".cache" / "architecture-harness"
         cache.mkdir(parents=True, exist_ok=True)
         probe = cache / ".doctor"
@@ -40,4 +49,3 @@ def diagnose(paths: ProjectPaths) -> list[tuple[str, bool, str]]:
     except OSError as exc:
         checks.append(("cache", False, str(exc)))
     return checks
-

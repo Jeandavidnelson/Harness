@@ -17,6 +17,7 @@ from architecture_harness.engine.context_selector import select_context
 from architecture_harness.exporters.llm_context import render_llm_context
 from architecture_harness.metrics.benchmark import render_benchmark, run_benchmark
 from architecture_harness.doctor import diagnose
+from architecture_harness.graph_freshness import check_graph_freshness
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -39,6 +40,7 @@ def build_parser() -> argparse.ArgumentParser:
     benchmark = sub.add_parser("benchmark", help="measure compact context token reduction")
     benchmark.add_argument("--tasks", type=Path)
     sub.add_parser("doctor", help="validate all inputs and local cache")
+    sub.add_parser("stale", help="fail when Graphify output does not match source hashes")
     return parser
 
 
@@ -96,6 +98,14 @@ def main(argv: list[str] | None = None) -> int:
             for name, passed, detail in checks:
                 print(f"{'PASS' if passed else 'FAIL'} {name}: {detail}")
             return 0 if all(passed for _, passed, _ in checks) else 2
+        if args.command == "stale":
+            freshness = check_graph_freshness(paths.root)
+            print("fresh: " + ("true" if freshness.fresh else "false"))
+            for path in freshness.stale_files:
+                print(f"stale: {path}")
+            for path in freshness.missing_files:
+                print(f"missing: {path}")
+            return 0 if freshness.fresh else 1
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2

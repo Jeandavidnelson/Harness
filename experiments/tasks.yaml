@@ -1,12 +1,11 @@
 tasks:
-  - id: modify-payment-service
-    focus: PaymentService
-  - id: repository-change-impact
-    focus: PaymentRepository
-  - id: add-external-service
-    focus: StripeClient
-  - id: refactor-controller
-    focus: PaymentController
-  - id: simple-architecture-violation
-    focus: PaymentController
-
+  - id: adapt-graphify-schema
+    focus: load_graphify
+  - id: change-rule-evaluation
+    focus: evaluate
+  - id: change-context-selection
+    focus: select_context
+  - id: extend-doctor
+    focus: diagnose
+  - id: extend-agent-cli
+    focus: cli_main
