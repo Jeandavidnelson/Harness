@@ -6,6 +6,7 @@ from pathlib import Path
 
 from architecture_harness.adapters.graphify import GraphifyError, load_graphify
 from architecture_harness.adapters.mermaid import MermaidError, load_mermaid_directory
+from architecture_harness.adapters.rules import RulesError, load_rules
 from architecture_harness.config import ProjectPaths
 
 
@@ -15,6 +16,8 @@ def build_parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("observed", help="summarize Graphify output")
     sub.add_parser("target", help="print normalized target architecture")
+    rules_parser = sub.add_parser("rules", help="validate or list rules")
+    rules_parser.add_argument("action", choices=("validate", "list"))
     return parser
 
 
@@ -36,7 +39,15 @@ def main(argv: list[str] | None = None) -> int:
             for name, members in sorted(target.subgraphs.items()):
                 print(f"  {name}: {', '.join(sorted(members))}")
             return 0
-    except (GraphifyError, MermaidError, ValueError, OSError) as exc:
+        if args.command == "rules":
+            rules = load_rules(paths.rules)
+            if args.action == "validate":
+                print(f"valid: {len(rules.rules)} rules, {len(rules.roles)} roles")
+            else:
+                for rule in rules.rules:
+                    print(f"{rule.id}: {rule.type} {rule.source} -> {rule.target}")
+            return 0
+    except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2
     return 2

@@ -1,0 +1,32 @@
+roles:
+  Controller:
+    match:
+      suffix: Controller
+  Service:
+    match:
+      suffix: Service
+  Repository:
+    match:
+      suffix: Repository
+  ExternalClient:
+    match:
+      suffix: Client
+
+rules:
+  - id: controller-no-repository
+    type: forbidden_edge
+    source: Controller
+    target: Repository
+  - id: service-must-repository
+    type: required_path
+    source: Service
+    target: Repository
+  - id: application-no-infrastructure-path
+    type: forbidden_path
+    source: Controller
+    target: ExternalClient
+  - id: controller-must-service
+    type: required_edge
+    source: Controller
+    target: Service
+
