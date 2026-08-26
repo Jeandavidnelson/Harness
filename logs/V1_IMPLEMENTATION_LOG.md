@@ -38,6 +38,42 @@ Created a standard `src` package; dependency installation is isolated to develop
 ### Statut
 PASS
 
+## Étapes 4–5 — 2026-08-26
+
+### Objectif
+Evaluate architecture deterministically and emit compact agent-friendly reports.
+
+### Commit
+Pending at test time; recorded in Git history after validation.
+
+### Fichiers créés / modifiés
+Path search, harness, violation model, exporters, CLI and regression scenarios.
+
+### Commandes exécutées
+`arch-harness check` in text/JSON/Markdown, `pytest`.
+
+### Tests
+PASS, direct and indirect violation, missing dependency, allowed extra edge, ambiguous provenance.
+
+### Résultat fonctionnel
+Exit 0 means PASS, 1 means policy violation and 2 means technical/configuration failure.
+
+### Problèmes rencontrés
+Default example initially conflicted with its intended external-client dependency.
+
+### Corrections effectuées
+Changed the forbidden-path example to Domain/Infrastructure roles and retained external-client flow as intended architecture.
+
+### Métriques
+- tests passés: 10
+- erreurs: 0 known
+- token benchmark: N/A
+- contexte brut: N/A
+- contexte optimisé: N/A
+
+### Statut
+PASS
+
 ## Étape 3 — 2026-08-26
 
 ### Objectif

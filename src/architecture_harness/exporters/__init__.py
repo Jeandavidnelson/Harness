@@ -1,0 +1,2 @@
+"""Compact deterministic output formats."""
+

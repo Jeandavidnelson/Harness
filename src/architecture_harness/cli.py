@@ -8,6 +8,10 @@ from architecture_harness.adapters.graphify import GraphifyError, load_graphify
 from architecture_harness.adapters.mermaid import MermaidError, load_mermaid_directory
 from architecture_harness.adapters.rules import RulesError, load_rules
 from architecture_harness.config import ProjectPaths
+from architecture_harness.engine.harness import evaluate
+from architecture_harness.exporters.json import render_json
+from architecture_harness.exporters.markdown import render_markdown
+from architecture_harness.exporters.text import render_text
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -18,6 +22,8 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("target", help="print normalized target architecture")
     rules_parser = sub.add_parser("rules", help="validate or list rules")
     rules_parser.add_argument("action", choices=("validate", "list"))
+    check = sub.add_parser("check", help="evaluate architecture policies")
+    check.add_argument("--format", choices=("text", "json", "markdown"), default="text")
     return parser
 
 
@@ -47,6 +53,11 @@ def main(argv: list[str] | None = None) -> int:
                 for rule in rules.rules:
                     print(f"{rule.id}: {rule.type} {rule.source} -> {rule.target}")
             return 0
+        if args.command == "check":
+            result = evaluate(load_graphify(paths.observed), load_mermaid_directory(paths.target_dir), load_rules(paths.rules))
+            renderer = {"text": render_text, "json": render_json, "markdown": render_markdown}[args.format]
+            print(renderer(result))
+            return 1 if result.violations else 0
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2
