@@ -38,6 +38,42 @@ Created a standard `src` package; dependency installation is isolated to develop
 ### Statut
 PASS
 
+## Étape 8 — 2026-08-26
+
+### Objectif
+Measure raw, full graph-query and compact task contexts on five fixed tasks.
+
+### Commit
+Pending at test time; recorded in Git history after validation.
+
+### Fichiers créés / modifiés
+Token measurement, benchmark runner, task suite, CLI and tests.
+
+### Commandes exécutées
+`arch-harness benchmark`, `pytest`.
+
+### Tests
+Deterministic counting, five tasks, compact context smaller than raw baseline.
+
+### Résultat fonctionnel
+All five compact contexts are smaller than the identical raw baseline; mean reduction is 44.0%.
+
+### Problèmes rencontrés
+The target tokenizer is not installed by default.
+
+### Corrections effectuées
+Use `o200k_base` when tiktoken exists; otherwise report a deterministic lexical estimate explicitly.
+
+### Métriques
+- tests passés: 13
+- erreurs: 0 known
+- token benchmark: lexical-estimate (tiktoken unavailable)
+- contexte brut: 493 tokens per task
+- contexte optimisé: 258–312 tokens; 44.0% mean reduction
+
+### Statut
+PASS — above the required 30% mean-reduction threshold.
+
 ## Étapes 6–7 — 2026-08-26
 
 ### Objectif

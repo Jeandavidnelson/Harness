@@ -1,0 +1,12 @@
+tasks:
+  - id: modify-payment-service
+    focus: PaymentService
+  - id: repository-change-impact
+    focus: PaymentRepository
+  - id: add-external-service
+    focus: StripeClient
+  - id: refactor-controller
+    focus: PaymentController
+  - id: simple-architecture-violation
+    focus: PaymentController
+

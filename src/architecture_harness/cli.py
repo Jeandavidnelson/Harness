@@ -15,6 +15,7 @@ from architecture_harness.exporters.markdown import render_markdown
 from architecture_harness.exporters.text import render_text
 from architecture_harness.engine.context_selector import select_context
 from architecture_harness.exporters.llm_context import render_llm_context
+from architecture_harness.metrics.benchmark import render_benchmark, run_benchmark
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -34,6 +35,8 @@ def build_parser() -> argparse.ArgumentParser:
     build.add_argument("--focus", action="append", required=True)
     build.add_argument("--radius", type=int, default=1)
     build.add_argument("--max-items", type=int, default=50)
+    benchmark = sub.add_parser("benchmark", help="measure compact context token reduction")
+    benchmark.add_argument("--tasks", type=Path)
     return parser
 
 
@@ -81,6 +84,10 @@ def main(argv: list[str] | None = None) -> int:
                     args.radius, args.max_items,
                 )
                 print(render_llm_context(compact))
+            return 0
+        if args.command == "benchmark":
+            tasks = args.tasks or paths.root / "experiments" / "tasks.yaml"
+            print(render_benchmark(run_benchmark(paths, tasks)))
             return 0
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
