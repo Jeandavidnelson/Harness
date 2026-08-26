@@ -105,6 +105,40 @@ The V1 payment rules matched no real nodes and therefore passed vacuously; they 
 ### Statut
 PASS — P0 harness gate satisfied for the defined rule corpus.
 
+## Gate 6 — Production agent correction loops — 2026-08-26
+
+### Objectif
+Verify that compact reports support correction without reloading the full graph.
+
+### Hypothèse
+Rule ID, observed path, files and provenance are sufficient for one-iteration fixes.
+
+### Commit
+Pending after validation.
+
+### Configuration
+Three production-graph scenarios: removed required edge, direct forbidden edge, indirect forbidden path.
+
+### Commandes
+Parameterized integration tests, token measurement, pytest.
+
+### Tests et métriques
+- pytest: 36 passed
+- scenarios: 3/3 corrected in one deterministic iteration
+- initial context tokens: 3143 / 3024 / 1216
+- compact feedback tokens: 107 / 167 / 163
+- full graph tokens: 114604
+- model tool calls and model files read: NOT_MEASURED
+
+### Résultat
+Each compact report identifies the targeted production rule and supports a PASS after one correction without graph reload.
+
+### Problèmes et corrections
+The scenarios mutate the real extracted graph in memory to remain deterministic; source editing and Graphify refresh were already proven in Gate 1 but are not repeated inside pytest.
+
+### Statut
+PASS
+
 ## Gate 4 — Real A/B/C context benchmark — 2026-08-26
 
 ### Objectif

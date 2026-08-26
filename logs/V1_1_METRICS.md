@@ -57,3 +57,13 @@ Unknown metrics are recorded as `NOT_MEASURED`.
 | False positives | 0 |
 | False negatives | 0 |
 | Detection duration | NOT_MEASURED |
+
+## Agent correction loops
+
+| Scenario | Initial context tokens | Feedback tokens | Iterations | Final result |
+|---|---:|---:|---:|---|
+| Missing CLI -> harness edge | 3143 | 107 | 1 | PASS |
+| Graphify adapter -> CLI forbidden edge | 3024 | 167 | 1 | PASS |
+| Token metrics -> bridge -> CLI forbidden path | 1216 | 163 | 1 | PASS |
+
+Full graph baseline: 114604 `o200k_base` tokens. Model tool calls and model file reads are `NOT_MEASURED`.
