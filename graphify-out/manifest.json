@@ -294,9 +294,9 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1787707203.6870198,
-    "seen": 1787727722.2515368,
-    "ast_hash": "4b3f6857b270fa56b319a69889a1b3b1",
+    "mtime": 1787727882.1187804,
+    "seen": 1787727888.531799,
+    "ast_hash": "56cdf564b430e129768231b546387944",
     "semantic_hash": ""
   },
   "README.md": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "logs/V1_1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787727842.5991812,
-    "seen": 1787727849.281814,
-    "ast_hash": "3b59bc53493d06487cd2dbacdee26c16",
+    "mtime": 1787727882.120856,
+    "seen": 1787727888.531807,
+    "ast_hash": "868372bfeaed96133765573f6853288f",
     "semantic_hash": ""
   },
   "logs/V1_1_METRICS.md": {
@@ -351,6 +351,30 @@
     "mtime": 1787727842.5987794,
     "seen": 1787727849.2817972,
     "ast_hash": "962490d3c59d107752d0edddc4e23c92",
+    "semantic_hash": ""
+  },
+  "tests/test_agent_adapters.py": {
+    "mtime": 1787727882.1197417,
+    "seen": 1787727888.531785,
+    "ast_hash": "762f1953d14c019ea4b66c470098407d",
+    "semantic_hash": ""
+  },
+  "integrations/bmad/README.md": {
+    "mtime": 1787727882.1192856,
+    "seen": 1787727888.5318038,
+    "ast_hash": "56d6aae77e7a6b7c865325c79d1d3a86",
+    "semantic_hash": ""
+  },
+  "integrations/bmad/workflow-snippet.md": {
+    "mtime": 1787727882.1194994,
+    "seen": 1787727888.531805,
+    "ast_hash": "17e455bbfb866ea6ede52a6225da29ec",
+    "semantic_hash": ""
+  },
+  "integrations/claude/architecture-harness/SKILL.md": {
+    "mtime": 1787727882.1181054,
+    "seen": 1787727888.531806,
+    "ast_hash": "c0bf6fc576801fb618d35fc39f4446c6",
     "semantic_hash": ""
   }
 }

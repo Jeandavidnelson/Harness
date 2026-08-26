@@ -69,6 +69,37 @@ Rebuilt from an empty output directory, added official schema aliases, real refr
 ### Statut
 PASS
 
+## Gate 3 — Agent adapters — 2026-08-26
+
+### Objectif
+Provide thin Claude, Codex and BMAD instructions over the same JSON contract.
+
+### Hypothèse
+Documentation-only adapters are sufficient when the engine API is stable.
+
+### Commit
+Pending after validation.
+
+### Configuration
+Workflow: context -> dev -> refresh -> validate -> correct.
+
+### Commandes
+Adapter consistency tests and full pytest.
+
+### Tests et métriques
+- pytest: 23 passed
+- adapters: 3 (Claude, Codex, BMAD)
+- engine policy code added by adapters: 0
+
+### Résultat
+All adapters call the same context and validate commands and preserve provenance guidance.
+
+### Problèmes et corrections
+None known.
+
+### Statut
+PASS
+
 ## Gate 2 — Universal agent JSON contract — 2026-08-26
 
 ### Objectif

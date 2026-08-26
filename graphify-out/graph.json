@@ -1121,6 +1121,23 @@
       "_origin": "ast"
     },
     {
+      "id": "tests_test_agent_adapters",
+      "label": "test_agent_adapters.py",
+      "file_type": "code",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_agent_adapters_test_agent_adapters_use_universal_contract_without_policy_logic",
+      "label": "test_agent_adapters_use_universal_contract_without_policy_logic()",
+      "file_type": "code",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_agent_cli",
       "label": "test_agent_cli.py",
       "file_type": "code",
@@ -1586,6 +1603,69 @@
       "_origin": "ast"
     },
     {
+      "id": "integrations_bmad_readme",
+      "label": "README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/bmad/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_readme_bmad_adapter",
+      "label": "BMAD adapter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/bmad/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_workflow_snippet",
+      "label": "workflow-snippet.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/bmad/workflow-snippet.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_workflow_snippet_architecture_aware_development_workflow",
+      "label": "Architecture-aware development workflow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/bmad/workflow-snippet.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_claude_architecture_harness_skill",
+      "label": "SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/claude/architecture-harness/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_claude_architecture_harness_skill_architecture_harness",
+      "label": "Architecture Harness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/claude/architecture-harness/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_claude_architecture_harness_skill_workflow",
+      "label": "Workflow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/claude/architecture-harness/SKILL.md",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v1_1_implementation_log",
       "label": "V1_1_IMPLEMENTATION_LOG.md",
       "file_type": "document",
@@ -1775,8 +1855,8 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "label": "Gate 2 — Universal agent JSON contract — 2026-08-26",
+      "id": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
+      "label": "Gate 3 — Agent adapters — 2026-08-26",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -1862,6 +1942,96 @@
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L98",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "label": "Gate 2 — Universal agent JSON contract — 2026-08-26",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_objectif_103",
+      "label": "Objectif",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L103",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_hypothèse_106",
+      "label": "Hypothèse",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L106",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commit_109",
+      "label": "Commit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L109",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_configuration_112",
+      "label": "Configuration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L112",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commandes_115",
+      "label": "Commandes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L115",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_118",
+      "label": "Tests et métriques",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L118",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_résultat_125",
+      "label": "Résultat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L125",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_128",
+      "label": "Problèmes et corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L128",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_statut_131",
+      "label": "Statut",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L131",
       "_origin": "ast"
     },
     {
@@ -5654,6 +5824,27 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_agent_adapters",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_adapters",
+      "target": "tests_test_agent_adapters_test_agent_adapters_use_universal_contract_without_policy_logic",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_agent_cli",
       "target": "json",
       "relation": "imports",
@@ -6527,6 +6718,56 @@
       "_origin": "ast"
     },
     {
+      "source": "integrations_bmad_readme",
+      "target": "integrations_bmad_readme_bmad_adapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_readme",
+      "target": "integrations_bmad_workflow_snippet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_workflow_snippet",
+      "target": "integrations_bmad_workflow_snippet_architecture_aware_development_workflow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/workflow-snippet.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_claude_architecture_harness_skill",
+      "target": "integrations_claude_architecture_harness_skill_architecture_harness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/claude/architecture-harness/SKILL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_claude_architecture_harness_skill_architecture_harness",
+      "target": "integrations_claude_architecture_harness_skill_workflow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/claude/architecture-harness/SKILL.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v1_1_implementation_log",
       "target": "logs_v1_1_implementation_log_v1_1_implementation_log",
       "relation": "contains",
@@ -6728,7 +6969,7 @@
     },
     {
       "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
-      "target": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -6737,7 +6978,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_objectif_74",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6747,7 +6988,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_hypothèse_77",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6757,7 +6998,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_commit_80",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6767,7 +7008,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_configuration_83",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6777,7 +7018,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_commandes_86",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6787,7 +7028,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_tests_et_métriques_89",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6797,7 +7038,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_résultat_92",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6807,7 +7048,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_problèmes_et_corrections",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6817,12 +7058,112 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
       "target": "logs_v1_1_implementation_log_statut_98",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_objectif_103",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_hypothèse_106",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_109",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_112",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_115",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_118",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_125",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_128",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_131",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L131",
       "weight": 1.0,
       "_origin": "ast"
     },
