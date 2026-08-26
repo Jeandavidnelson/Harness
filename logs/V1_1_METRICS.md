@@ -67,3 +67,15 @@ Unknown metrics are recorded as `NOT_MEASURED`.
 | Token metrics -> bridge -> CLI forbidden path | 1216 | 163 | 1 | PASS |
 
 Full graph baseline: 114604 `o200k_base` tokens. Model tool calls and model file reads are `NOT_MEASURED`.
+
+## ACE/CNL experiment
+
+| Metric | Value |
+|---|---:|
+| Corpus cases | 7 |
+| Exact cases stable | 4/4 |
+| Ambiguous cases requiring clarification | 3/3 |
+| Ambiguous cases hardened | 0 |
+| Unsupported cases in corpus | 0 |
+| Skill validator | PASS on iteration 2 |
+| APE | UNAVAILABLE / NOT_RUN |

@@ -69,6 +69,40 @@ Rebuilt from an empty output directory, added official schema aliases, real refr
 ### Statut
 PASS
 
+## Gates 7–9 — ACE authoring skill and optional APE — 2026-08-26
+
+### Objectif
+Create a reusable ACE/CNL authoring skill without replacing the deterministic harness.
+
+### Hypothèse
+A constrained corpus can formalize exact rules and reject advisory ambiguity reliably.
+
+### Commit
+Pending after validation.
+
+### Configuration
+Skill `ace-rule-author`, deterministic compiler corpus, optional `ape` executable adapter.
+
+### Commandes
+Skill initializer/validator, `arch-harness ace compile`, `arch-harness ace validate`, pytest.
+
+### Tests et métriques
+- pytest: 39 passed
+- ACE corpus: 7 cases (4 exact including French, 3 ambiguous)
+- ambiguous rules hardened: 0
+- exact rule stability: 4/4
+- skill validation: FAIL iteration 1 (missing PyYAML), PASS iteration 2
+- APE: UNAVAILABLE / NOT_RUN
+
+### Résultat
+Exact rules compile reproducibly; every advisory case requires clarification; the skill structure is valid.
+
+### Problèmes et corrections
+APE is not installed; status is reported as UNAVAILABLE and never treated as parse PASS. Skill validation iteration 1 failed because PyYAML was missing from the validator runtime; PyYAML was added to development dependencies before retrying.
+
+### Statut
+PASS for ACE authoring experiment; APE remains optional and unavailable.
+
 ## Gate 5 — Real repository architecture rules — 2026-08-26
 
 ### Objectif

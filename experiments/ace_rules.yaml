@@ -1,0 +1,10 @@
+[
+  {"human_input": "No controller may directly call a repository.", "expected_status": "EXACT", "expected_intent": "FORBID", "expected_ace": "No controller may directly call a repository."},
+  {"human_input": "Every repository may access a database.", "expected_status": "EXACT", "expected_intent": "ALLOW", "expected_ace": "Every repository may access a database."},
+  {"human_input": "No domain component may depend on infrastructure.", "expected_status": "EXACT", "expected_intent": "FORBID", "expected_ace": "No domain component may depend on an infrastructure component."},
+  {"human_input": "Les controllers ne doivent jamais appeler directement les repositories.", "expected_status": "EXACT", "expected_intent": "FORBID", "expected_ace": "No controller may directly call a repository."},
+  {"human_input": "Services should use caching when useful.", "expected_status": "NEEDS_CLARIFICATION", "expected_intent": "UNKNOWN", "expected_ace": null},
+  {"human_input": "Controllers normally go through services.", "expected_status": "NEEDS_CLARIFICATION", "expected_intent": "UNKNOWN", "expected_ace": null},
+  {"human_input": "External calls should preferably use a gateway.", "expected_status": "NEEDS_CLARIFICATION", "expected_intent": "UNKNOWN", "expected_ace": null}
+]
+
