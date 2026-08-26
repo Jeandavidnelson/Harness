@@ -11,6 +11,12 @@ roles:
   ExternalClient:
     match:
       suffix: Client
+  Domain:
+    match:
+      suffix: Domain
+  Infrastructure:
+    match:
+      suffix: Infrastructure
 
 rules:
   - id: controller-no-repository
@@ -21,12 +27,11 @@ rules:
     type: required_path
     source: Service
     target: Repository
-  - id: application-no-infrastructure-path
+  - id: domain-no-infrastructure
     type: forbidden_path
-    source: Controller
-    target: ExternalClient
+    source: Domain
+    target: Infrastructure
   - id: controller-must-service
     type: required_edge
     source: Controller
     target: Service
-
