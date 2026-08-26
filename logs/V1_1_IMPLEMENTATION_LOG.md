@@ -69,6 +69,42 @@ Rebuilt from an empty output directory, added official schema aliases, real refr
 ### Statut
 PASS
 
+## Gate 11 — Final report and detailed README — 2026-08-26
+
+### Objectif
+Deliver complete user-facing workflow documentation and an evidence-based V1.1 decision.
+
+### Hypothèse
+The software can be operated and extended from the README without reading implementation logs.
+
+### Commit
+Pending final validation.
+
+### Configuration
+Package version 1.1.0; decision `GO HARNESS + CONTEXT + ACE EXPERIMENT`.
+
+### Commandes
+Final refresh, full validation, Git status/log/tag/remote inspection.
+
+### Tests et métriques
+- normalized Graphify graph: 522 nodes / 992 edges
+- pytest: 40 passed
+- harness: PASS
+- doctor and freshness: PASS
+- C vs B reduction: 46.2%
+- ACE focused tests: 3 passed
+- skill validator: PASS
+- tag `v1.0.0`: resolves exactly to `d4840d1`
+
+### Résultat
+Detailed French documentation covers principles, internals, human/agent/CI/ACE workflows, rules, benchmarks, limits and troubleshooting.
+
+### Problèmes et corrections
+Remote pushes remain unavailable because GitHub credentials are not configured.
+
+### Statut
+PASS — final commit and clean-tree inspection remain.
+
 ## Gates 7–9 — ACE authoring skill and optional APE — 2026-08-26
 
 ### Objectif
@@ -332,6 +368,34 @@ PASS
 | extend-agent-cli | A_GRAPHIFY | 6444 | 1 | 1 | 1 | 0.2215 | NOT_RUN |
 | extend-agent-cli | B_GRAPHIFY_FULL_ARCH | 7214 | 1 | 1 | 7 | 0.2204 | NOT_RUN |
 | extend-agent-cli | C_AGENT_CONTEXT | 3215 | 1 | 0 | 21 | 0.0032 | PASS |
+
+C vs B context reduction: 46.2%
+Tokenizer: tiktoken:o200k_base
+Task success/output/total tokens: NOT_MEASURED (no model task runner available)
+
+## Validation automatisée V1.1 — 2026-08-26T09:14:52+0200
+
+- Graphify refresh and stale check: PASS
+- doctor / pytest / harness: PASS
+- ACE tests and skill validation: PASS
+
+| Task | Condition | Context tokens | Tool calls | Graphify calls | Files read | Duration (s) | Harness |
+|---|---|---:|---:|---:|---:|---:|---|
+| adapt-graphify-schema | A_GRAPHIFY | 4289 | 1 | 1 | 1 | 0.2003 | NOT_RUN |
+| adapt-graphify-schema | B_GRAPHIFY_FULL_ARCH | 5059 | 1 | 1 | 7 | 0.1990 | NOT_RUN |
+| adapt-graphify-schema | C_AGENT_CONTEXT | 3076 | 1 | 0 | 10 | 0.0034 | PASS |
+| change-rule-evaluation | A_GRAPHIFY | 4425 | 1 | 1 | 1 | 0.1969 | NOT_RUN |
+| change-rule-evaluation | B_GRAPHIFY_FULL_ARCH | 5195 | 1 | 1 | 7 | 0.2036 | NOT_RUN |
+| change-rule-evaluation | C_AGENT_CONTEXT | 3051 | 1 | 0 | 12 | 0.0033 | PASS |
+| change-context-selection | A_GRAPHIFY | 3776 | 1 | 1 | 1 | 0.1984 | NOT_RUN |
+| change-context-selection | B_GRAPHIFY_FULL_ARCH | 4546 | 1 | 1 | 7 | 0.1995 | NOT_RUN |
+| change-context-selection | C_AGENT_CONTEXT | 2999 | 1 | 0 | 10 | 0.0035 | PASS |
+| extend-doctor | A_GRAPHIFY | 4108 | 1 | 1 | 1 | 0.1996 | NOT_RUN |
+| extend-doctor | B_GRAPHIFY_FULL_ARCH | 4878 | 1 | 1 | 7 | 0.1980 | NOT_RUN |
+| extend-doctor | C_AGENT_CONTEXT | 2138 | 1 | 0 | 8 | 0.0033 | PASS |
+| extend-agent-cli | A_GRAPHIFY | 6444 | 1 | 1 | 1 | 0.2004 | NOT_RUN |
+| extend-agent-cli | B_GRAPHIFY_FULL_ARCH | 7214 | 1 | 1 | 7 | 0.1970 | NOT_RUN |
+| extend-agent-cli | C_AGENT_CONTEXT | 3215 | 1 | 0 | 21 | 0.0034 | PASS |
 
 C vs B context reduction: 46.2%
 Tokenizer: tiktoken:o200k_base

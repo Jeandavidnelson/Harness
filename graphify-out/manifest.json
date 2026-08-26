@@ -1,8 +1,8 @@
 {
   "pyproject.toml": {
-    "mtime": 1787728262.5008101,
-    "seen": 1787728281.433907,
-    "ast_hash": "efdb56505af263bf6362cfb89ff97789",
+    "mtime": 1787728471.67292,
+    "seen": 1787728487.8391411,
+    "ast_hash": "dcb10e92aad2f5779b3029d872f4cf1f",
     "semantic_hash": ""
   },
   "scripts/benchmark_tokens.sh": {
@@ -30,10 +30,10 @@
     "semantic_hash": "8f75bd7ba890938b43dd0dcd9fed603b"
   },
   "src/architecture_harness/__init__.py": {
-    "mtime": 1787706539.1722653,
-    "seen": 1787727622.9815092,
-    "ast_hash": "ca5c6b93d466b88cb2b09ee5039d9e5e",
-    "semantic_hash": "ca5c6b93d466b88cb2b09ee5039d9e5e"
+    "mtime": 1787728471.6737988,
+    "seen": 1787728487.8391528,
+    "ast_hash": "b4a38aff48ea36121fef4114010a662b",
+    "semantic_hash": ""
   },
   "src/architecture_harness/adapters/__init__.py": {
     "mtime": 1787706539.7234402,
@@ -300,9 +300,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787707203.3482766,
-    "seen": 1787727722.251538,
-    "ast_hash": "dc42a577d09e9fc89542af6b529e8544",
+    "mtime": 1787728471.675575,
+    "seen": 1787728487.839218,
+    "ast_hash": "f5bb135b3f9ed33a7cd9517c831d99c4",
     "semantic_hash": ""
   },
   "architecture/rules/rules.yaml": {
@@ -324,15 +324,15 @@
     "semantic_hash": ""
   },
   "logs/V1_1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787728332.131223,
-    "seen": 1787728332.913894,
-    "ast_hash": "f7314e6324b794ede1fb42c4784a27a6",
+    "mtime": 1787728471.676884,
+    "seen": 1787728487.839232,
+    "ast_hash": "776f0c1e61e57efe6be12dc612e0fb0f",
     "semantic_hash": ""
   },
   "logs/V1_1_METRICS.md": {
-    "mtime": 1787728280.6728728,
-    "seen": 1787728281.433994,
-    "ast_hash": "6866ee28dd0f846e2c32ababf6a49dd3",
+    "mtime": 1787728352.3029509,
+    "seen": 1787728487.839233,
+    "ast_hash": "2a76cb36c04bbcd310f2468d0e0ca3c6",
     "semantic_hash": ""
   },
   "logs/V1_IMPLEMENTATION_LOG.md": {
@@ -459,6 +459,12 @@
     "mtime": 1787728332.130519,
     "seen": 1787728332.91388,
     "ast_hash": "3fc74792c8a374d6b9718da9897f6e97",
+    "semantic_hash": ""
+  },
+  "experiments/results/V1_1_FINAL_REPORT.md": {
+    "mtime": 1787728471.6758668,
+    "seen": 1787728487.839221,
+    "ast_hash": "fb9eec8b16d5339c255ae57ce4802fdc",
     "semantic_hash": ""
   }
 }
