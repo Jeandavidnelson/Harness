@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Rule Author"
+  short_description: "Formalize architecture rules safely"
+  default_prompt: "Use $ace-rule-author to turn this human architecture constraint into an auditable ACE candidate and deterministic harness mapping."

@@ -1,8 +1,8 @@
 {
   "pyproject.toml": {
-    "mtime": 1787727969.479072,
-    "seen": 1787727974.3362198,
-    "ast_hash": "99c54cb62aa56de4d33787ade77938dc",
+    "mtime": 1787728262.5008101,
+    "seen": 1787728281.433907,
+    "ast_hash": "efdb56505af263bf6362cfb89ff97789",
     "semantic_hash": ""
   },
   "scripts/benchmark_tokens.sh": {
@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787727969.4803696,
-    "seen": 1787727974.3362381,
-    "ast_hash": "994e87b9f6cdb1bb81197a62353ee1b2",
+    "mtime": 1787728237.380132,
+    "seen": 1787728248.580221,
+    "ast_hash": "d218d301f27953d5dcbbaa244a5d758b",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -324,15 +324,15 @@
     "semantic_hash": ""
   },
   "logs/V1_1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787728105.5224373,
-    "seen": 1787728118.8152618,
-    "ast_hash": "df68d3b1833d033249d49f4474a13649",
+    "mtime": 1787728280.672141,
+    "seen": 1787728281.4339929,
+    "ast_hash": "e30c44e42998a073ffc3cc2bbc7ba6c2",
     "semantic_hash": ""
   },
   "logs/V1_1_METRICS.md": {
-    "mtime": 1787728074.027812,
-    "seen": 1787728118.815263,
-    "ast_hash": "e0a1ea1bcbe730a45a34db1b45f1c433",
+    "mtime": 1787728280.6728728,
+    "seen": 1787728281.433994,
+    "ast_hash": "6866ee28dd0f846e2c32ababf6a49dd3",
     "semantic_hash": ""
   },
   "logs/V1_IMPLEMENTATION_LOG.md": {
@@ -399,6 +399,54 @@
     "mtime": 1787728105.5217988,
     "seen": 1787728118.815247,
     "ast_hash": "a9be74abebe2bd9507dd6f3e73545ec2",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/ace/__init__.py": {
+    "mtime": 1787728237.3788936,
+    "seen": 1787728248.580211,
+    "ast_hash": "faaa38d1ca4489f13b0593d3f1fe57df",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/ace/ape_adapter.py": {
+    "mtime": 1787728237.3793159,
+    "seen": 1787728248.5802119,
+    "ast_hash": "a3857f4bf04e201f1eb87162aecfc238",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/ace/author.py": {
+    "mtime": 1787728237.3791363,
+    "seen": 1787728248.580213,
+    "ast_hash": "0e99968292a3ab068a486969dc7d9d81",
+    "semantic_hash": ""
+  },
+  "tests/test_ace_author.py": {
+    "mtime": 1787728237.3806157,
+    "seen": 1787728248.580249,
+    "ast_hash": "aa622960672269c289d65db1ef401b77",
+    "semantic_hash": ""
+  },
+  "experiments/ace_rules.yaml": {
+    "mtime": 1787728237.3804088,
+    "seen": 1787728248.58027,
+    "ast_hash": "b69c46d2ee0a964a9b0709264533634a",
+    "semantic_hash": ""
+  },
+  "integrations/ace-rule-author/SKILL.md": {
+    "mtime": 1787728237.3785331,
+    "seen": 1787728248.580273,
+    "ast_hash": "4adb5993d5697dbf8c88c904d78ff239",
+    "semantic_hash": ""
+  },
+  "integrations/ace-rule-author/agents/openai.yaml": {
+    "mtime": 1787728163.6352477,
+    "seen": 1787728248.5802739,
+    "ast_hash": "3e28656e10da20b03fce94e55706b91f",
+    "semantic_hash": ""
+  },
+  "logs/V1_1_ACE_VALIDATION_LOG.md": {
+    "mtime": 1787728237.3808458,
+    "seen": 1787728248.580278,
+    "ast_hash": "ee7fb33556dba3a7c783ca8638eac548",
     "semantic_hash": ""
   }
 }

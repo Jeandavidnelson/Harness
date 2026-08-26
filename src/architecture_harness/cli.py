@@ -21,6 +21,8 @@ from architecture_harness.doctor import diagnose
 from architecture_harness.graph_freshness import check_graph_freshness
 from architecture_harness.exporters.agent_json import capabilities_payload, render_agent_context
 from architecture_harness.metrics.v1_1_benchmark import render_v1_1_benchmark, run_v1_1_benchmark
+from architecture_harness.ace.author import author_rule
+from architecture_harness.ace.ape_adapter import validate_with_ape
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -55,6 +57,12 @@ def build_parser() -> argparse.ArgumentParser:
     for action in ("validate", "doctor", "capabilities"):
         command = agent_sub.add_parser(action)
         command.add_argument("--format", choices=("json",), default="json")
+    ace = sub.add_parser("ace", help="experimental controlled-language authoring")
+    ace_sub = ace.add_subparsers(dest="ace_action", required=True)
+    ace_compile = ace_sub.add_parser("compile")
+    ace_compile.add_argument("--text", required=True)
+    ace_validate = ace_sub.add_parser("validate")
+    ace_validate.add_argument("path", type=Path)
     return parser
 
 
@@ -149,6 +157,12 @@ def main(argv: list[str] | None = None) -> int:
             context = load_context_directory(paths.context_dir)
             compact = select_context(args.focus, observed, context, target, rules, args.radius, args.max_items)
             print(render_agent_context(compact))
+            return 0
+        if args.command == "ace":
+            if args.ace_action == "compile":
+                print(json.dumps(author_rule(args.text).to_dict(), indent=2, sort_keys=True))
+            else:
+                print(json.dumps(validate_with_ape(args.path), indent=2, sort_keys=True))
             return 0
     except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
