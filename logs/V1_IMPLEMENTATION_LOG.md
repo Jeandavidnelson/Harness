@@ -37,3 +37,39 @@ Created a standard `src` package; dependency installation is isolated to develop
 
 ### Statut
 PASS
+
+## Étape 2 — 2026-08-26
+
+### Objectif
+Parse intentional Mermaid architecture into normalized nodes, edges, labels and subgraphs.
+
+### Commit
+Pending at test time; recorded in Git history after validation.
+
+### Fichiers créés / modifiés
+Mermaid adapter, architecture IR, target diagrams, CLI and tests.
+
+### Commandes exécutées
+`arch-harness target`, `pytest`, `git status`, `git diff`.
+
+### Tests
+Flowchart edges, labels and subgraph membership.
+
+### Résultat fonctionnel
+Target diagrams are parsed without assigning policy semantics to their arrows.
+
+### Problèmes rencontrés
+None.
+
+### Corrections effectuées
+N/A.
+
+### Métriques
+- tests passés: 3
+- erreurs: 0 known
+- token benchmark: N/A
+- contexte brut: N/A
+- contexte optimisé: N/A
+
+### Statut
+PASS
