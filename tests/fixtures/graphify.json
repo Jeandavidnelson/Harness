@@ -1,0 +1,5 @@
+{
+  "nodes": [{"id": "OrderController", "kind": "class", "file": "src/order/controller.py"}],
+  "edges": [{"source": "OrderController", "target": "OrderService", "relation": "calls", "provenance": "EXTRACTED"}]
+}
+

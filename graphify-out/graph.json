@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {"id": "PaymentController", "kind": "class", "file": "src/payment/controller.py"},
+    {"id": "PaymentService", "kind": "class", "file": "src/payment/service.py"},
+    {"id": "PaymentRepository", "kind": "class", "file": "src/payment/repository.py"},
+    {"id": "StripeClient", "kind": "class", "file": "src/payment/stripe.py"},
+    {"id": "Logger", "kind": "service", "file": "src/shared/logger.py"}
+  ],
+  "edges": [
+    {"source": "PaymentController", "target": "PaymentService", "relation": "calls", "provenance": "EXTRACTED"},
+    {"source": "PaymentService", "target": "PaymentRepository", "relation": "calls", "provenance": "EXTRACTED"},
+    {"source": "PaymentService", "target": "StripeClient", "relation": "calls", "provenance": "EXTRACTED"},
+    {"source": "PaymentService", "target": "Logger", "relation": "calls", "provenance": "INFERRED"}
+  ]
+}
+
