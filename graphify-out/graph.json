@@ -111,6 +111,30 @@
       "_origin": "ast"
     },
     {
+      "id": "scripts_validate_v1_1",
+      "label": "validate_v1_1.sh",
+      "file_type": "code",
+      "source_file": "scripts/validate_v1_1.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_validate_v1_1_sh__entry",
+      "label": "validate_v1_1.sh script",
+      "file_type": "code",
+      "source_file": "scripts/validate_v1_1.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
       "id": "src_architecture_harness_init",
       "label": "__init__.py",
       "file_type": "code",
@@ -1727,6 +1751,23 @@
       "_origin": "ast"
     },
     {
+      "id": "tests_test_validation_script",
+      "label": "test_validation_script.py",
+      "file_type": "code",
+      "source_file": "tests/test_validation_script.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_validation_script_test_v1_1_validation_order_and_fail_fast",
+      "label": "test_v1_1_validation_order_and_fail_fast()",
+      "file_type": "code",
+      "source_file": "tests/test_validation_script.py",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "agents",
       "label": "AGENTS.md",
       "file_type": "document",
@@ -2550,8 +2591,8 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
-      "label": "Gate 5 — Real repository architecture rules — 2026-08-26",
+      "id": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
+      "label": "Gate 10 — Global V1.1 validation — 2026-08-26",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -2613,30 +2654,120 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_133",
+      "id": "logs_v1_1_implementation_log_résultat_126",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L133",
+      "source_location": "L126",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_136",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_129",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L136",
+      "source_location": "L129",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_139",
+      "id": "logs_v1_1_implementation_log_statut_132",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L139",
+      "source_location": "L132",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "label": "Gate 5 — Real repository architecture rules — 2026-08-26",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L135",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_objectif_137",
+      "label": "Objectif",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L137",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_hypothèse_140",
+      "label": "Hypothèse",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L140",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commit_143",
+      "label": "Commit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L143",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_configuration_146",
+      "label": "Configuration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L146",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commandes_149",
+      "label": "Commandes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L149",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_152",
+      "label": "Tests et métriques",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L152",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_résultat_162",
+      "label": "Résultat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L162",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_165",
+      "label": "Problèmes et corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L165",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_statut_168",
+      "label": "Statut",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L168",
       "_origin": "ast"
     },
     {
@@ -2645,88 +2776,88 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L142",
+      "source_location": "L171",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_objectif_144",
+      "id": "logs_v1_1_implementation_log_objectif_173",
       "label": "Objectif",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L144",
+      "source_location": "L173",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_hypothèse_147",
+      "id": "logs_v1_1_implementation_log_hypothèse_176",
       "label": "Hypothèse",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L147",
+      "source_location": "L176",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commit_150",
+      "id": "logs_v1_1_implementation_log_commit_179",
       "label": "Commit",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L150",
+      "source_location": "L179",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_configuration_153",
+      "id": "logs_v1_1_implementation_log_configuration_182",
       "label": "Configuration",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L153",
+      "source_location": "L182",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commandes_156",
+      "id": "logs_v1_1_implementation_log_commandes_185",
       "label": "Commandes",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L156",
+      "source_location": "L185",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_tests_et_métriques_159",
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_188",
       "label": "Tests et métriques",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L159",
+      "source_location": "L188",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_167",
+      "id": "logs_v1_1_implementation_log_résultat_196",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L167",
+      "source_location": "L196",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_170",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_199",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L170",
+      "source_location": "L199",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_173",
+      "id": "logs_v1_1_implementation_log_statut_202",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L173",
+      "source_location": "L202",
       "_origin": "ast"
     },
     {
@@ -2735,75 +2866,12 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L176",
+      "source_location": "L205",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_objectif_178",
+      "id": "logs_v1_1_implementation_log_objectif_207",
       "label": "Objectif",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L178",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_hypothèse_181",
-      "label": "Hypothèse",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L181",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_commit_184",
-      "label": "Commit",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L184",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_configuration_187",
-      "label": "Configuration",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L187",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_commandes_190",
-      "label": "Commandes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L190",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_tests_et_métriques_193",
-      "label": "Tests et métriques",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L193",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_résultat_204",
-      "label": "Résultat",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L204",
-      "_origin": "ast"
-    },
-    {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_207",
-      "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -2811,12 +2879,75 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_210",
-      "label": "Statut",
+      "id": "logs_v1_1_implementation_log_hypothèse_210",
+      "label": "Hypothèse",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L210",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commit_213",
+      "label": "Commit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L213",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_configuration_216",
+      "label": "Configuration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L216",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_commandes_219",
+      "label": "Commandes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L219",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_222",
+      "label": "Tests et métriques",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L222",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_résultat_233",
+      "label": "Résultat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L233",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_236",
+      "label": "Problèmes et corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L236",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_statut_239",
+      "label": "Statut",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L239",
       "_origin": "ast"
     },
     {
@@ -2825,88 +2956,88 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L213",
+      "source_location": "L242",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_objectif_215",
+      "id": "logs_v1_1_implementation_log_objectif_244",
       "label": "Objectif",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L215",
+      "source_location": "L244",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_hypothèse_218",
+      "id": "logs_v1_1_implementation_log_hypothèse_247",
       "label": "Hypothèse",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L218",
+      "source_location": "L247",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commit_221",
+      "id": "logs_v1_1_implementation_log_commit_250",
       "label": "Commit",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L221",
+      "source_location": "L250",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_configuration_224",
+      "id": "logs_v1_1_implementation_log_configuration_253",
       "label": "Configuration",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L224",
+      "source_location": "L253",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commandes_227",
+      "id": "logs_v1_1_implementation_log_commandes_256",
       "label": "Commandes",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L227",
+      "source_location": "L256",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_tests_et_métriques_230",
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_259",
       "label": "Tests et métriques",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L230",
+      "source_location": "L259",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_235",
+      "id": "logs_v1_1_implementation_log_résultat_264",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L235",
+      "source_location": "L264",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_238",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_267",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L238",
+      "source_location": "L267",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_241",
+      "id": "logs_v1_1_implementation_log_statut_270",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L241",
+      "source_location": "L270",
       "_origin": "ast"
     },
     {
@@ -2915,88 +3046,88 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L244",
+      "source_location": "L273",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_objectif_246",
+      "id": "logs_v1_1_implementation_log_objectif_275",
       "label": "Objectif",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L246",
+      "source_location": "L275",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_hypothèse_249",
+      "id": "logs_v1_1_implementation_log_hypothèse_278",
       "label": "Hypothèse",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L249",
+      "source_location": "L278",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commit_252",
+      "id": "logs_v1_1_implementation_log_commit_281",
       "label": "Commit",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L252",
+      "source_location": "L281",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_configuration_255",
+      "id": "logs_v1_1_implementation_log_configuration_284",
       "label": "Configuration",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L255",
+      "source_location": "L284",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_commandes_258",
+      "id": "logs_v1_1_implementation_log_commandes_287",
       "label": "Commandes",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L258",
+      "source_location": "L287",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_tests_et_métriques_261",
+      "id": "logs_v1_1_implementation_log_tests_et_métriques_290",
       "label": "Tests et métriques",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L261",
+      "source_location": "L290",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_résultat_268",
+      "id": "logs_v1_1_implementation_log_résultat_297",
       "label": "Résultat",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L268",
+      "source_location": "L297",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_271",
+      "id": "logs_v1_1_implementation_log_problèmes_et_corrections_300",
       "label": "Problèmes et corrections",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L271",
+      "source_location": "L300",
       "_origin": "ast"
     },
     {
-      "id": "logs_v1_1_implementation_log_statut_274",
+      "id": "logs_v1_1_implementation_log_statut_303",
       "label": "Statut",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L274",
+      "source_location": "L303",
       "_origin": "ast"
     },
     {
@@ -4045,6 +4176,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate_v1.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_validate_v1_1",
+      "target": "scripts_validate_v1_1_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate_v1_1.sh",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
@@ -6541,12 +6682,23 @@
     },
     {
       "source": "src_architecture_harness_graph_freshness_check_graph_freshness",
+      "target": "src_architecture_harness_graph_freshness_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/graph_freshness.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_graph_freshness_check_graph_freshness",
       "target": "src_architecture_harness_graph_freshness_freshnessresult",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/graph_freshness.py",
-      "source_location": "L47",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8507,6 +8659,27 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_validation_script",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_validation_script.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_validation_script",
+      "target": "tests_test_validation_script_test_v1_1_validation_order_and_fail_fast",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_validation_script.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "agents",
       "target": "agents_architecture_harness_agent_instructions",
       "relation": "contains",
@@ -9358,7 +9531,7 @@
     },
     {
       "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
-      "target": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -9367,7 +9540,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "target": "logs_v1_1_implementation_log_objectif_108",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -9377,7 +9550,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "target": "logs_v1_1_implementation_log_hypothèse_111",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -9387,7 +9560,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "target": "logs_v1_1_implementation_log_commit_114",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -9397,7 +9570,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "target": "logs_v1_1_implementation_log_configuration_117",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -9407,7 +9580,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "target": "logs_v1_1_implementation_log_commandes_120",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -9417,7 +9590,7 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
       "target": "logs_v1_1_implementation_log_tests_et_métriques_123",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -9427,32 +9600,132 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_133",
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_126",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L133",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_129",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_10_global_v1_1_validation_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_132",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L135",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_136",
+      "target": "logs_v1_1_implementation_log_objectif_137",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L136",
+      "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_139",
+      "target": "logs_v1_1_implementation_log_hypothèse_140",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L139",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_143",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_146",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_149",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_152",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_162",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_165",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_5_real_repository_architecture_rules_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_168",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L168",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9462,97 +9735,97 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L142",
+      "source_location": "L171",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_objectif_144",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L144",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_hypothèse_147",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L147",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commit_150",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L150",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_configuration_153",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L153",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commandes_156",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L156",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_tests_et_métriques_159",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L159",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_167",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L167",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_170",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L170",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_173",
+      "target": "logs_v1_1_implementation_log_objectif_173",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_hypothèse_176",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_179",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_182",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_185",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_188",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_196",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_199",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_6_production_agent_correction_loops_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_202",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L202",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9562,83 +9835,13 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L176",
+      "source_location": "L205",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_objectif_178",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L178",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_hypothèse_181",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L181",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commit_184",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L184",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_configuration_187",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L187",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commandes_190",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L190",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_tests_et_métriques_193",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L193",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_204",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L204",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_207",
+      "target": "logs_v1_1_implementation_log_objectif_207",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
@@ -9648,11 +9851,81 @@
     },
     {
       "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_210",
+      "target": "logs_v1_1_implementation_log_hypothèse_210",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L210",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commit_213",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L213",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_configuration_216",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_commandes_219",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L219",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_222",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_résultat_233",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_236",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L236",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_gate_4_real_a_b_c_context_benchmark_2026_08_26",
+      "target": "logs_v1_1_implementation_log_statut_239",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L239",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9662,97 +9935,97 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L213",
+      "source_location": "L242",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_objectif_215",
+      "target": "logs_v1_1_implementation_log_objectif_244",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L215",
+      "source_location": "L244",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_hypothèse_218",
+      "target": "logs_v1_1_implementation_log_hypothèse_247",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L218",
+      "source_location": "L247",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commit_221",
+      "target": "logs_v1_1_implementation_log_commit_250",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L221",
+      "source_location": "L250",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_configuration_224",
+      "target": "logs_v1_1_implementation_log_configuration_253",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L224",
+      "source_location": "L253",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commandes_227",
+      "target": "logs_v1_1_implementation_log_commandes_256",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L227",
+      "source_location": "L256",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_tests_et_métriques_230",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_259",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L230",
+      "source_location": "L259",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_235",
+      "target": "logs_v1_1_implementation_log_résultat_264",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L235",
+      "source_location": "L264",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_238",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_267",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L238",
+      "source_location": "L267",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_3_agent_adapters_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_241",
+      "target": "logs_v1_1_implementation_log_statut_270",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L241",
+      "source_location": "L270",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9762,97 +10035,97 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L244",
+      "source_location": "L273",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_objectif_246",
+      "target": "logs_v1_1_implementation_log_objectif_275",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L246",
+      "source_location": "L275",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_hypothèse_249",
+      "target": "logs_v1_1_implementation_log_hypothèse_278",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L249",
+      "source_location": "L278",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commit_252",
+      "target": "logs_v1_1_implementation_log_commit_281",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L252",
+      "source_location": "L281",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_configuration_255",
+      "target": "logs_v1_1_implementation_log_configuration_284",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L255",
+      "source_location": "L284",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_commandes_258",
+      "target": "logs_v1_1_implementation_log_commandes_287",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L258",
+      "source_location": "L287",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_tests_et_métriques_261",
+      "target": "logs_v1_1_implementation_log_tests_et_métriques_290",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L261",
+      "source_location": "L290",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_résultat_268",
+      "target": "logs_v1_1_implementation_log_résultat_297",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L268",
+      "source_location": "L297",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_271",
+      "target": "logs_v1_1_implementation_log_problèmes_et_corrections_300",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L271",
+      "source_location": "L300",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "logs_v1_1_implementation_log_gate_2_universal_agent_json_contract_2026_08_26",
-      "target": "logs_v1_1_implementation_log_statut_274",
+      "target": "logs_v1_1_implementation_log_statut_303",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
-      "source_location": "L274",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast"
     },

@@ -282,9 +282,9 @@
     "semantic_hash": "67eb7794047b2d15e67d486ef749d109"
   },
   "src/architecture_harness/graph_freshness.py": {
-    "mtime": 1787727773.8471928,
-    "seen": 1787727774.4810119,
-    "ast_hash": "2467c68ce0cac3a13c72491aedb95dde",
+    "mtime": 1787728317.355395,
+    "seen": 1787728318.306816,
+    "ast_hash": "63b3e6694c3af18c585cee30f29503a7",
     "semantic_hash": ""
   },
   "tests/test_graph_freshness.py": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "logs/V1_1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787728280.672141,
-    "seen": 1787728281.4339929,
-    "ast_hash": "e30c44e42998a073ffc3cc2bbc7ba6c2",
+    "mtime": 1787728332.131223,
+    "seen": 1787728332.913894,
+    "ast_hash": "f7314e6324b794ede1fb42c4784a27a6",
     "semantic_hash": ""
   },
   "logs/V1_1_METRICS.md": {
@@ -447,6 +447,18 @@
     "mtime": 1787728237.3808458,
     "seen": 1787728248.580278,
     "ast_hash": "ee7fb33556dba3a7c783ca8638eac548",
+    "semantic_hash": ""
+  },
+  "scripts/validate_v1_1.sh": {
+    "mtime": 1787728317.3557093,
+    "seen": 1787728318.306787,
+    "ast_hash": "e71ac13ad85c6edd581729383b94e38b",
+    "semantic_hash": ""
+  },
+  "tests/test_validation_script.py": {
+    "mtime": 1787728332.130519,
+    "seen": 1787728332.91388,
+    "ast_hash": "3fc74792c8a374d6b9718da9897f6e97",
     "semantic_hash": ""
   }
 }

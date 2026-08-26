@@ -26,7 +26,11 @@ def check_graph_freshness(root: Path, manifest_path: Path | None = None) -> Fres
 
     stale: list[str] = []
     missing: list[str] = []
-    for relative, metadata in manifest.items():
+    code_manifest = {
+        relative: metadata for relative, metadata in manifest.items()
+        if relative == "pyproject.toml" or Path(relative).suffix in {".py", ".sh"}
+    }
+    for relative, metadata in code_manifest.items():
         path = root / relative
         if not path.exists():
             stale.append(relative)

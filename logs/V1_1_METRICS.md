@@ -79,3 +79,19 @@ Full graph baseline: 114604 `o200k_base` tokens. Model tool calls and model file
 | Unsupported cases in corpus | 0 |
 | Skill validator | PASS on iteration 2 |
 | APE | UNAVAILABLE / NOT_RUN |
+
+## Final global-validation benchmark
+
+The repository grew during V1.1, so the final reproducible run supersedes—but does not erase—the earlier Gate 4 snapshot.
+
+| Metric | Value |
+|---|---:|
+| Mean A context | 4608.4 tokens |
+| Mean B context | 5378.4 tokens |
+| Mean C context | 2895.8 tokens |
+| C vs B reduction | 46.2% |
+| C vs A reduction | 37.2% |
+| Full tests | 40 passed |
+| ACE focused tests | 3 passed |
+| Harness | PASS |
+| Skill validator | PASS |

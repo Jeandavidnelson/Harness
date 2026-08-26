@@ -103,6 +103,41 @@ APE is not installed; status is reported as UNAVAILABLE and never treated as par
 ### Statut
 PASS for ACE authoring experiment; APE remains optional and unavailable.
 
+## Gate 10 — Global V1.1 validation — 2026-08-26
+
+### Objectif
+Provide one fail-fast command for refresh, freshness, doctor, tests, harness, benchmark and ACE validation.
+
+### Hypothèse
+The complete workflow can execute unattended with coherent exit codes.
+
+### Commit
+Pending after validation.
+
+### Configuration
+`scripts/validate_v1_1.sh`, POSIX shell, local `.venv`.
+
+### Commandes
+`scripts/validate_v1_1.sh`.
+
+### Tests et métriques
+- iteration 1: FAIL (test assertion bug; 39 passed, 1 failed)
+- iteration 2: PASS (40 passed)
+- harness: PASS
+- doctor: PASS
+- ACE focused tests: 3 passed
+- skill validator: PASS
+- final C vs B context reduction: 46.2%
+
+### Résultat
+The fail-fast workflow completes in the required order and appends measured evidence.
+
+### Problèmes et corrections
+Freshness initially included non-code manifest entries, so appending a log could stale the code graph. Freshness is now scoped to Graphify code inputs only. Validation iteration 1 failed because its order test matched variable declarations rather than exact command invocations; the assertion was tightened before retrying.
+
+### Statut
+PASS
+
 ## Gate 5 — Real repository architecture rules — 2026-08-26
 
 ### Objectif
@@ -273,3 +308,31 @@ The focus currently has no connected declared Mermaid nodes; the empty declared-
 
 ### Statut
 PASS
+
+## Validation automatisée V1.1 — 2026-08-26T09:12:17+0200
+
+- Graphify refresh and stale check: PASS
+- doctor / pytest / harness: PASS
+- ACE tests and skill validation: PASS
+
+| Task | Condition | Context tokens | Tool calls | Graphify calls | Files read | Duration (s) | Harness |
+|---|---|---:|---:|---:|---:|---:|---|
+| adapt-graphify-schema | A_GRAPHIFY | 4289 | 1 | 1 | 1 | 0.2225 | NOT_RUN |
+| adapt-graphify-schema | B_GRAPHIFY_FULL_ARCH | 5059 | 1 | 1 | 7 | 0.2193 | NOT_RUN |
+| adapt-graphify-schema | C_AGENT_CONTEXT | 3076 | 1 | 0 | 10 | 0.0031 | PASS |
+| change-rule-evaluation | A_GRAPHIFY | 4425 | 1 | 1 | 1 | 0.2175 | NOT_RUN |
+| change-rule-evaluation | B_GRAPHIFY_FULL_ARCH | 5195 | 1 | 1 | 7 | 0.2163 | NOT_RUN |
+| change-rule-evaluation | C_AGENT_CONTEXT | 3051 | 1 | 0 | 12 | 0.0031 | PASS |
+| change-context-selection | A_GRAPHIFY | 3776 | 1 | 1 | 1 | 0.2196 | NOT_RUN |
+| change-context-selection | B_GRAPHIFY_FULL_ARCH | 4546 | 1 | 1 | 7 | 0.2231 | NOT_RUN |
+| change-context-selection | C_AGENT_CONTEXT | 2999 | 1 | 0 | 10 | 0.0031 | PASS |
+| extend-doctor | A_GRAPHIFY | 4108 | 1 | 1 | 1 | 0.2147 | NOT_RUN |
+| extend-doctor | B_GRAPHIFY_FULL_ARCH | 4878 | 1 | 1 | 7 | 0.2160 | NOT_RUN |
+| extend-doctor | C_AGENT_CONTEXT | 2138 | 1 | 0 | 8 | 0.0028 | PASS |
+| extend-agent-cli | A_GRAPHIFY | 6444 | 1 | 1 | 1 | 0.2215 | NOT_RUN |
+| extend-agent-cli | B_GRAPHIFY_FULL_ARCH | 7214 | 1 | 1 | 7 | 0.2204 | NOT_RUN |
+| extend-agent-cli | C_AGENT_CONTEXT | 3215 | 1 | 0 | 21 | 0.0032 | PASS |
+
+C vs B context reduction: 46.2%
+Tokenizer: tiktoken:o200k_base
+Task success/output/total tokens: NOT_MEASURED (no model task runner available)
