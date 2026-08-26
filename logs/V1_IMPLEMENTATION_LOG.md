@@ -38,6 +38,43 @@ Created a standard `src` package; dependency installation is isolated to develop
 ### Statut
 PASS
 
+## Étapes 9 et 11 — 2026-08-26
+
+### Objectif
+Prove an agent correction loop and automate deterministic validation.
+
+### Commit
+Pending at test time; recorded in Git history after validation.
+
+### Fichiers créés / modifiés
+Violation fixture, agent-loop integration test and four shell scripts.
+
+### Commandes exécutées
+`scripts/validate_v1.sh`, `pytest`.
+
+### Tests
+Naive direct dependency fails with a self-contained JSON report; removing it passes in one correction iteration.
+
+### Résultat fonctionnel
+The report alone identifies rule, path, files and provenance. The validation script performs refresh/validation/tests/check/benchmark and appends its evidence.
+
+### Problèmes rencontrés
+Graphify itself is trusted but no executable or project-specific invocation is available in this new repository.
+
+### Corrections effectuées
+The refresh script calls Graphify when installed; otherwise it explicitly validates and reuses the existing trusted output rather than fabricating a refresh.
+
+### Métriques
+- tests passés: 15
+- erreurs: 0 known
+- token benchmark: 44.0% mean reduction
+- contexte brut: 493
+- contexte optimisé: 258–312
+- correction iterations: 1
+
+### Statut
+PASS
+
 ## Étapes 10 et 12 — 2026-08-26
 
 ### Objectif
@@ -253,3 +290,19 @@ N/A.
 
 ### Statut
 PASS
+
+## Validation automatisée — 2026-08-26T03:18:50+0200
+
+- refresh Graphify: PASS (trusted existing output when executable unavailable)
+- Mermaid/rules/tests/harness: PASS
+
+| Task | Focus | Raw | Graph query | V1 | Reduction |
+|---|---|---:|---:|---:|---:|
+| modify-payment-service | PaymentService | 493 | 327 | 312 | 36.7% |
+| repository-change-impact | PaymentRepository | 493 | 327 | 270 | 45.2% |
+| add-external-service | StripeClient | 493 | 327 | 258 | 47.7% |
+| refactor-controller | PaymentController | 493 | 327 | 270 | 45.2% |
+| simple-architecture-violation | PaymentController | 493 | 327 | 270 | 45.2% |
+
+Average reduction: 44.0%
+Token method: lexical-estimate
