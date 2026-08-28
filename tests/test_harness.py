@@ -42,7 +42,10 @@ def test_indirect_forbidden_path():
 
 
 def test_missing_required_dependency():
-    result = run([("OrderService", "Logger")], Rule("must-repo", "required_path", "Service", "Repository"))
+    result = run(
+        [("OrderService", "Logger"), ("OrderRepository", "RepositoryLogger")],
+        Rule("must-repo", "required_path", "Service", "Repository"),
+    )
     assert result.status == "FAIL"
     assert result.violations[0].target == "Repository"
 

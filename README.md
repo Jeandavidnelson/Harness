@@ -1,4 +1,4 @@
-# Architecture Harness V2
+# Architecture Harness V2.1
 
 Architecture Harness donne à BMAD, Codex, Claude ou tout autre agent une ligne directrice architecturale compacte issue de Mermaid, puis vérifie déterministement le code réellement produit. Mermaid guide l’agent ; seules les règles explicitement validées par un humain peuvent bloquer.
 
@@ -60,6 +60,8 @@ proposed → clarification → candidate → review → validated
 
 Seule une violation d’une règle `severity: error` et `status: validated` produit un FAIL. Une candidate ou un warning apparaît comme `WARN`/advisory. Les candidates vivent dans `architecture/rules/candidates.yaml`; les promotions humaines sont tracées dans `architecture/rules/decisions.md`.
 
+L’applicabilité distingue une absence normale d’un mapping cassé : `when_observed` retourne `NOT_APPLICABLE` tant que le composant n’existe pas, `required` retourne `UNRESOLVED` si une règle validée ne peut pas résoudre sa source ou sa cible, et `declared_only` reste une ligne directrice non évaluée. Le Harness ne présente donc plus « rien à vérifier » comme un PASS.
+
 Exemple :
 
 ```yaml
@@ -73,6 +75,7 @@ Exemple :
   rationale: Controllers delegate through services.
   provenance: USER_CONFIRMED
   status: validated
+  applicability: required
 ```
 
 Le skill `skills/architecture-rule-author/` transforme les intentions Mermaid en candidates, pose les questions sur edge/path, scope, exceptions et sévérité, puis s’arrête avant promotion sans approbation explicite.
@@ -107,6 +110,8 @@ Codes de sortie :
 | 0 | PASS ou WARN non bloquant | continuer et conserver les advisories |
 | 1 | violation `error + validated` | corriger le code, refresh, relancer le gate |
 | 2 | erreur technique/configuration | lancer `doctor`, réparer, ne pas contourner |
+
+Un résultat `UNRESOLVED` utilise le code 2 : une règle validée marquée `required` n’a pas trouvé sa source ou sa cible et ne peut donc pas prétendre avoir contrôlé l’architecture. `NOT_APPLICABLE` utilise le code 0 pour un composant futur, optionnel ou purement déclaré.
 
 Le gate est en lecture seule : il ne modifie jamais le code, ne rafraîchit pas implicitement le graphe et refuse un graphe périmé.
 
@@ -174,7 +179,7 @@ bmad-architecture
 → bmad-code-review
 ```
 
-BMAD conserve ses checkpoints humains. L’essai E2E V2 a prouvé l’activation des overrides, le contexte et la propagation FAIL, puis s’est arrêté honnêtement à l’approbation de la spec.
+BMAD conserve ses checkpoints humains. L’essai E2E a été poursuivi après approbation explicite : implémentation, tests runtime, Graphify, gate PASS, trois couches de revue, correction d’un manque de vérification et revalidation finale ont abouti. Le commit local et l’ouverture VS Code ont seuls échoué dans l’environnement temporaire.
 
 ## Greenfield et brownfield
 
@@ -201,11 +206,11 @@ La validation rafraîchit Graphify, contrôle la fraîcheur et la configuration,
 
 Résultats V2 observés avant le gate final :
 
-- 62 tests passants ;
+- 65 tests passants ;
 - Test Lab déterministe : 12 scénarios, 4/4 violations connues détectées, 0 faux blocage dans le corpus ;
 - benchmark C vs B : 48,7 % de réduction de contexte sur cinq tâches ;
 - correction Codex réelle : réussite finale en deux processus, avec un échec fonctionnel intermédiaire conservé ;
-- BMAD réel : activation/context/FAIL prouvés, post-approbation non exécuté.
+- BMAD réel : workflow post-approbation complet jusqu’à l’implémentation revue et au gate final PASS.
 
 Ces chiffres ne sont pas généralisés au-delà des corpus exécutés. Les métriques indisponibles restent `NOT_MEASURED`.
 
@@ -235,7 +240,7 @@ src/architecture_harness/
 - Le Test Lab est déterministe ; il ne remplace pas les runs agentiques.
 - Une seule correction Codex réelle ne donne pas un taux de succès généralisable.
 - Claude et ArchUnit n’ont pas été exécutés réellement dans ce repository.
-- Le BMAD E2E post-approbation reste à terminer avec un humain.
+- Un seul petit E2E BMAD a été terminé ; son coût élevé et son comportement ne sont pas encore représentatifs de projets réels.
 
 ## Traçabilité
 

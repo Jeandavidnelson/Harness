@@ -55,11 +55,18 @@ def capabilities_payload() -> dict[str, object]:
         },
         "formats": ["json"],
         "rule_types": ["required_edge", "forbidden_edge", "required_path", "forbidden_path"],
+        "rule_applicability": ["when_observed", "required", "declared_only"],
+        "rule_evaluation_states": ["PASS", "FAIL", "NOT_APPLICABLE", "UNRESOLVED"],
         "provenance": {
             "origins": ["DECLARED", "OBSERVED", "INFERRED", "USER_CONFIRMED", "GENERATED", "AMBIGUOUS"],
             "confidence": ["EXTRACTED", "INFERRED", "AMBIGUOUS", "DECLARED_CONTEXT"],
         },
-        "exit_codes": {"pass": 0, "violation": 1, "technical_error": 2},
+        "exit_codes": {
+            "pass": 0,
+            "violation": 1,
+            "unresolved": 2,
+            "technical_error": 2,
+        },
         "llm_in_policy_engine": False,
         "core_orchestrator_dependency": None,
     }

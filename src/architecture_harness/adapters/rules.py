@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from architecture_harness.ir.rules import RULE_SEVERITIES, RULE_STATUSES, RULE_TYPES, MatchSpec, Rule, RulesIR
+from architecture_harness.ir.rules import RULE_APPLICABILITY, RULE_SEVERITIES, RULE_STATUSES, RULE_TYPES, MatchSpec, Rule, RulesIR
 
 
 class RulesError(ValueError):
@@ -82,10 +82,13 @@ def _make_rule(data: dict[str, object], source: Path, number: int) -> Rule:
         raise RulesError(f"{source}:{number}: unsupported rule type {data['type']}")
     severity = str(data.get("severity", "error"))
     status = str(data.get("status", "validated"))
+    applicability = str(data.get("applicability", "required"))
     if severity not in RULE_SEVERITIES:
         raise RulesError(f"{source}:{number}: unsupported severity {severity}")
     if status not in RULE_STATUSES:
         raise RulesError(f"{source}:{number}: unsupported status {status}")
+    if applicability not in RULE_APPLICABILITY:
+        raise RulesError(f"{source}:{number}: unsupported applicability {applicability}")
     allowed = data.get("allowed_targets", [])
     if isinstance(allowed, str):
         allowed = [allowed]
@@ -98,5 +101,5 @@ def _make_rule(data: dict[str, object], source: Path, number: int) -> Rule:
     return Rule(
         str(data["id"]), str(data["type"]), str(data["source"]), str(data["target"]), tuple(allowed),
         severity, tuple(scope), tuple(exceptions), str(data.get("rationale", "")),
-        str(data.get("provenance", "USER_CONFIRMED")), status,
+        str(data.get("provenance", "USER_CONFIRMED")), status, applicability,
     )

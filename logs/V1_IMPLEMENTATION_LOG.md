@@ -375,3 +375,19 @@ Token method: lexical-estimate
 
 Average reduction: 44.0%
 Token method: lexical-estimate
+
+## Validation automatisée — 2026-08-28T12:53:47+0200
+
+- refresh Graphify: PASS (trusted existing output when executable unavailable)
+- Mermaid/rules/tests/harness: PASS
+
+| Task | Focus | Raw | Graph query | V1 | Reduction |
+|---|---|---:|---:|---:|---:|
+| adapt-graphify-schema | load_graphify | 207731 | 63066 | 1455 | 99.3% |
+| change-rule-evaluation | evaluate | 207731 | 63066 | 1473 | 99.3% |
+| change-context-selection | select_context | 207731 | 63066 | 1424 | 99.3% |
+| extend-doctor | diagnose | 207731 | 63066 | 1428 | 99.3% |
+| extend-agent-cli | cli_main | 207731 | 63066 | 1619 | 99.2% |
+
+Average reduction: 99.3%
+Token method: tiktoken:o200k_base

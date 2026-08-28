@@ -497,3 +497,31 @@ BMAD correction/review after spec approval, Claude execution, Java/ArchUnit exec
 
 ### Status
 PASS — V2 implementation complete with documented partial evidence where human/external execution remains outstanding.
+
+## Gate 16 — Rule applicability and approved BMAD E2E — 2026-08-28
+
+### Objective
+Distinguish a real architecture violation from a rule that cannot yet be evaluated because Graphify did not observe one of its mapped elements, then continue the BMAD workflow through the human approval boundary.
+
+### Implementation
+- added explicit `required`, `when_observed`, and `declared_only` applicability to rules;
+- added deterministic `PASS`, `FAIL`, `NOT_APPLICABLE`, and `UNRESOLVED` assessments;
+- made a validated required rule with a missing Graphify mapping return `UNRESOLVED` and exit code 2 instead of a false violation;
+- kept production validated rules strict with `required`, while candidate rules use `when_observed`;
+- exposed assessments through the gate, JSON exporters, compact context, and agent capabilities;
+- promoted package metadata to 2.1.0.
+
+### Validation
+- production Graphify refresh: PASS, 844 normalized nodes / 1426 edges;
+- pytest: 65 passed;
+- architecture gate: PASS, 8 / 8 rules evaluated PASS;
+- capabilities, benchmark, Test Lab, skills, and BMAD overrides: PASS;
+- approved BMAD E2E: PASS;
+- runtime assertions: 2 / 2;
+- BMAD review layers: 3 / 3;
+- review findings corrected: 1 / 1;
+- protected rule and Mermaid modifications: 0;
+- final architecture gate in the generated project: PASS.
+
+### Status
+PASS — an absent Graphify identifier is now reported according to the rule's declared applicability, and the approved BMAD correction/review workflow has been exercised end to end once.

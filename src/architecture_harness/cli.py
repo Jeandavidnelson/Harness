@@ -114,7 +114,7 @@ def main(argv: list[str] | None = None) -> int:
             result = evaluate(load_graphify(paths.observed), load_mermaid_directory(paths.target_dir), load_rules(paths.rules))
             renderer = {"text": render_text, "json": render_json, "markdown": render_markdown}[args.format]
             print(renderer(result))
-            return 1 if any(violation.blocking for violation in result.violations) else 0
+            return result.exit_code
         if args.command == "context":
             context = load_context_directory(paths.context_dir)
             if args.context_action == "overview":
@@ -170,7 +170,7 @@ def main(argv: list[str] | None = None) -> int:
             )
             payload = gate_payload(result)
             print(json.dumps(payload, indent=2, sort_keys=True))
-            return 1 if payload["blocking"] else 0
+            return result.exit_code
         if args.command == "integrations":
             payload = install_bmad(paths.root, args.adapter_root.resolve(), args.force)
             print(json.dumps(payload, indent=2, sort_keys=True))
@@ -197,7 +197,7 @@ def main(argv: list[str] | None = None) -> int:
             if args.agent_action == "validate":
                 result = evaluate(observed, target, rules)
                 print(render_json(result))
-                return 1 if any(violation.blocking for violation in result.violations) else 0
+                return result.exit_code
             context = load_context_directory(paths.context_dir)
             compact = select_context(args.focus, observed, context, target, rules, args.radius, args.max_items)
             print(render_agent_context(compact))

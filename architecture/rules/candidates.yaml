@@ -17,3 +17,4 @@ rules:
     rationale: Replace or remove this example after an explicit architecture review.
     provenance: GENERATED
     status: candidate
+    applicability: when_observed

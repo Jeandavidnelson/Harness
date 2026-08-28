@@ -55,7 +55,7 @@ def select_context(
     for rule in rules.rules:
         endpoints = resolve(rule.source, observed, target, rules) | resolve(rule.target, observed, target, rules)
         if endpoints & observed_nodes:
-            detail = f"{rule.id} [{rule.severity}/{rule.status}]: {rule.type} {rule.source} -> {rule.target}"
+            detail = f"{rule.id} [{rule.severity}/{rule.status}/{rule.applicability}]: {rule.type} {rule.source} -> {rule.target}"
             if rule.rationale:
                 detail += f"; rationale={rule.rationale}"
             applicable.append(detail)

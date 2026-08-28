@@ -8,8 +8,9 @@ def gate_payload(result: HarnessResult) -> dict[str, object]:
     blocking = [violation.to_dict() for violation in result.violations if violation.blocking]
     advisories = [violation.to_dict() for violation in result.violations if not violation.blocking]
     return {
-        "status": "FAIL" if blocking else ("WARN" if advisories else "PASS"),
+        "status": result.status,
         "blocking": bool(blocking),
         "blocking_violations": blocking,
         "advisories": advisories,
+        "rule_assessments": [item.to_dict() for item in result.assessments or []],
     }

@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 RULE_TYPES = {"required_edge", "forbidden_edge", "required_path", "forbidden_path"}
 RULE_SEVERITIES = {"info", "warning", "error"}
 RULE_STATUSES = {"proposed", "clarification", "candidate", "review", "validated"}
+RULE_APPLICABILITY = {"when_observed", "required", "declared_only"}
 
 
 @dataclass(frozen=True)
@@ -29,6 +30,7 @@ class Rule:
     rationale: str = ""
     provenance: str = "USER_CONFIRMED"
     status: str = "validated"
+    applicability: str = "required"
 
     @property
     def blocking(self) -> bool:

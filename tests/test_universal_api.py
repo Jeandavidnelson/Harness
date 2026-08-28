@@ -14,7 +14,12 @@ def test_generic_consumer_can_discover_and_request_context():
     )
     contract = json.loads(capabilities.stdout)
     assert contract["api_version"] == "2.0"
-    assert contract["exit_codes"] == {"pass": 0, "technical_error": 2, "violation": 1}
+    assert contract["exit_codes"] == {
+        "pass": 0,
+        "technical_error": 2,
+        "unresolved": 2,
+        "violation": 1,
+    }
 
     context = subprocess.run(
         [str(CLI), "--root", str(ROOT), "agent", "context", "--focus", "cli", "--max-items", "5", "--format", "json"],

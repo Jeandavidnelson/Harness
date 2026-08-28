@@ -13,12 +13,47 @@ from architecture_harness.ir.rules import Rule, RulesIR
 @dataclass
 class HarnessResult:
     violations: list[Violation]
+    assessments: list["RuleAssessment"] | None = None
+
+    def __post_init__(self) -> None:
+        if self.assessments is None:
+            self.assessments = []
 
     @property
     def status(self) -> str:
         if any(violation.blocking for violation in self.violations):
             return "FAIL"
+        if any(item.status == "UNRESOLVED" for item in self.assessments or []):
+            return "UNRESOLVED"
+        if self.assessments and all(item.status == "NOT_APPLICABLE" for item in self.assessments):
+            return "NOT_APPLICABLE"
         return "WARN" if self.violations else "PASS"
+
+    @property
+    def exit_code(self) -> int:
+        if self.status == "FAIL":
+            return 1
+        if self.status == "UNRESOLVED":
+            return 2
+        return 0
+
+
+@dataclass(frozen=True)
+class RuleAssessment:
+    rule_id: str
+    status: str
+    reason: str
+    source_matches: tuple[str, ...] = ()
+    target_matches: tuple[str, ...] = ()
+
+    def to_dict(self) -> dict[str, object]:
+        return {
+            "rule_id": self.rule_id,
+            "status": self.status,
+            "reason": self.reason,
+            "source_matches": list(self.source_matches),
+            "target_matches": list(self.target_matches),
+        }
 
 
 def _evidence(graph: ObservedGraphIR, path: list[str]) -> tuple[tuple[str, ...], tuple[str, ...]]:
@@ -49,9 +84,26 @@ def _violation(rule: Rule, graph: ObservedGraphIR, path: list[str], target: str 
 
 def evaluate(observed: ObservedGraphIR, target: TargetArchitectureIR, rules: RulesIR) -> HarnessResult:
     violations: list[Violation] = []
+    assessments: list[RuleAssessment] = []
     for rule in rules.rules:
         sources = resolve(rule.source, observed, target, rules)
         targets = resolve(rule.target, observed, target, rules)
+        if rule.applicability == "declared_only":
+            assessments.append(RuleAssessment(
+                rule.id, "NOT_APPLICABLE", "Rule is declared guidance and is not evaluated against observed code.",
+                tuple(sorted(sources)), tuple(sorted(targets)),
+            ))
+            continue
+        if not sources or not targets:
+            missing = ", ".join(name for name, matches in (("source", sources), ("target", targets)) if not matches)
+            status = "UNRESOLVED" if rule.applicability == "required" and rule.status == "validated" else "NOT_APPLICABLE"
+            reason = (
+                f"Required validated rule cannot resolve its {missing} mapping."
+                if status == "UNRESOLVED"
+                else f"Rule applies when observed; its {missing} mapping is not present in the observed graph."
+            )
+            assessments.append(RuleAssessment(rule.id, status, reason, tuple(sorted(sources)), tuple(sorted(targets))))
+            continue
         allowed: set[str] = set()
         for reference in rule.allowed_targets:
             allowed.update(resolve(reference, observed, target, rules) or {reference})
@@ -75,4 +127,10 @@ def evaluate(observed: ObservedGraphIR, target: TargetArchitectureIR, rules: Rul
                 path = shortest_path(observed, source, targets)
                 if not path:
                     violations.append(_violation(rule, observed, [source], rule.target))
-    return HarnessResult(violations)
+        assessments.append(RuleAssessment(
+            rule.id,
+            "FAIL" if any(item.rule_id == rule.id for item in violations) else "PASS",
+            "Blocking or advisory violation detected." if any(item.rule_id == rule.id for item in violations) else "Rule evaluated against observed source and target mappings.",
+            tuple(sorted(sources)), tuple(sorted(targets)),
+        ))
+    return HarnessResult(violations, assessments)

@@ -5,7 +5,7 @@ Branch: `feat/architecture-harness-v2`
 
 ## Decision
 
-**GO — HARNESS + CONTEXT**, with BMAD post-approval E2E explicitly incomplete.
+**GO — HARNESS + CONTEXT**, with real-project and multi-task evidence still limited.
 
 V2 is suitable as a deterministic architecture guidance and feedback module for controlled use. It is not yet justified as an unattended guarantee of autonomous-agent success.
 
@@ -27,7 +27,7 @@ PARTIAL. Two real Codex processes took one isolated task from architecture FAIL 
 
 ## 4. BMAD integration
 
-PARTIAL/PASS THROUGH APPROVAL BOUNDARY. BMAD 6.11.0 was really installed. Three official team overrides were resolved by BMAD's own resolver. A real `$bmad-build` loaded the compact-context instruction, received a 490-token context, refreshed Graphify, propagated FAIL and generated a spec. It halted at the required human approval; correction/PASS/review were not run.
+PASS on one real E2E. BMAD 6.11.0 was installed and its three official team overrides were resolved. After explicit user approval, a real `$bmad-build` completed implementation, two runtime checks, production Graphify, gate PASS, all three review layers, one review-driven verification correction and the final completion gate. Rules and Mermaid remained unchanged.
 
 The core contains no BMAD dependency.
 
@@ -51,12 +51,12 @@ Costs and friction remain material: human clarification and maintenance costs ar
 | Universal CLI and exit codes | PASS |
 | Core independent from BMAD | PASS |
 | Real agent correction evidence | PASS, one qualified task |
-| Real BMAD E2E through review | PARTIAL |
+| Real BMAD E2E through review | PASS, one qualified task |
 | Cross-model proof | NOT_MEASURED |
 | Maintenance cost measured | PARTIAL, one synthetic evolution only |
 
 ## Final answer
 
-Architecture Harness reliably supplies compact, provenance-aware guidance and deterministic feedback to BMAD and other agents on the exercised cases without coupling the core to orchestration. Evidence is not yet sufficient to claim reliable unattended preservation across projects: human rule validation, functional tests, code review, and completion of the BMAD post-approval workflow remain necessary.
+Architecture Harness reliably supplies compact, provenance-aware guidance and deterministic feedback to BMAD and other agents on the exercised cases without coupling the core to orchestration. The approved BMAD workflow completed successfully, including review. Evidence is still insufficient to claim reliable unattended preservation across projects: human rule validation, functional tests, code review and broader real-project trials remain necessary.
 
-Recommended next milestone: obtain explicit approval for the generated BMAD spec, finish Build→PASS→code-review, then repeat matched real-agent tasks across Java and a second language while measuring clarification and rule-maintenance cost.
+Recommended next milestone: repeat matched real-agent tasks across a real Java project and a second language while measuring clarification, token cost and rule-maintenance effort.

@@ -18,14 +18,29 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 
 | Metric | Value |
 |---|---:|
-| Package version | 2.0.0 |
-| Tests | 62 passed |
-| Normalized nodes / edges | 816 / 1369 |
+| Package version | 2.1.0 |
+| Tests | 65 passed |
+| Normalized nodes / edges | 844 / 1426 |
 | Graph freshness / doctor / gate | PASS / PASS / PASS |
 | Test Lab | 12 / 12 reproduced |
 | Skills validated | 2 / 2 |
 | BMAD overrides parsed | 3 / 3 |
 | Decision | GO — HARNESS + CONTEXT |
+
+## Gate 16 applicability and approved BMAD E2E
+
+| Metric | Value |
+|---|---:|
+| Applicability modes | 3 |
+| Evaluation states | 4 |
+| Production rule assessments | 8 PASS |
+| Tests | 65 passed |
+| Normalized nodes / edges | 844 / 1426 |
+| Approved BMAD E2E | PASS |
+| Runtime assertions | 2 / 2 |
+| BMAD review layers | 3 / 3 |
+| Review findings corrected | 1 / 1 |
+| Final generated-project gate | PASS |
 
 ## Gate 1 V1.1 regression baseline
 
@@ -154,6 +169,20 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | FAIL propagation | PASS |
 | Post-approval correction | NOT_RUN |
 | E2E status | PARTIAL_HUMAN_APPROVAL_REQUIRED |
+
+### Approved continuation
+
+| Metric | Value |
+|---|---:|
+| BMAD approved E2E | PASS |
+| Runtime assertions | 2 / 2 |
+| BMAD review layers | 3 / 3 |
+| Review findings corrected | 1 / 1 |
+| Final architecture gate | PASS |
+| Protected rule/Mermaid changes | 0 |
+| Input tokens | 1318021 |
+| Cached input tokens | 1217024 |
+| Output tokens | 9233 |
 
 ## Gate 12 portability
 

@@ -35,6 +35,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: cli-must-run-harness
     type: required_edge
     source: CliMain
@@ -42,6 +43,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: harness-must-resolve-explicit-roles
     type: required_edge
     source: HarnessEvaluate
@@ -49,6 +51,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: harness-must-support-path-evidence
     type: required_path
     source: HarnessEvaluate
@@ -56,6 +59,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: doctor-must-validate-rules
     type: required_edge
     source: DoctorDiagnose
@@ -63,6 +67,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: graphify-adapter-must-not-depend-on-cli
     type: forbidden_path
     source: GraphifyLoad
@@ -70,6 +75,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: token-metrics-must-not-depend-on-cli
     type: forbidden_path
     source: MeasureTokens
@@ -77,6 +83,7 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required
   - id: cache-must-not-call-cli
     type: forbidden_edge
     source: CachePut
@@ -84,3 +91,4 @@ rules:
     severity: error
     provenance: USER_CONFIRMED
     status: validated
+    applicability: required

@@ -37,6 +37,7 @@ rules:
     rationale: Keep the boundary explicit
     provenance: GENERATED
     status: candidate
+    applicability: when_observed
 """)
     rule = load_rules(path).rules[0]
     assert rule.severity == "warning"
@@ -45,4 +46,5 @@ rules:
     assert rule.rationale == "Keep the boundary explicit"
     assert rule.provenance == "GENERATED"
     assert rule.status == "candidate"
+    assert rule.applicability == "when_observed"
     assert rule.blocking is False

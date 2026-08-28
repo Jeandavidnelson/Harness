@@ -14,6 +14,7 @@ Convert diagrams into candidate policy while preserving the boundary between dec
 3. Form candidate constraints using only `required_edge`, `forbidden_edge`, `required_path`, or `forbidden_path`.
 4. Ask concise clarification questions when intent changes policy. In particular, clarify whether an edge is mandatory or illustrative, whether indirect paths count, the scope, exceptions, and desired severity.
 5. Write agreed drafts to `architecture/rules/candidates.yaml` with `status: candidate`. Use `provenance: GENERATED` unless the user explicitly confirms the exact rule, then use `USER_CONFIRMED` while keeping candidate status until review.
+   Choose `applicability: when_observed` for future/optional code, `required` when missing mappings must be treated as configuration errors, or `declared_only` for guidance that must never be evaluated.
 6. Validate syntax with `arch-harness rules validate --file architecture/rules/candidates.yaml`.
 7. Present each rule with its rationale, assumptions, unresolved questions, and expected impact. Stop before promotion.
 8. Only after explicit human approval, move the approved rule to `architecture/rules/rules.yaml`, set `status: validated`, record the decision in `architecture/rules/decisions.md`, refresh the graph when source changed, and run `arch-harness gate --format json`.
@@ -34,6 +35,7 @@ Include every field:
   rationale: Keep domain policy independent from technical adapters.
   provenance: GENERATED
   status: candidate
+  applicability: when_observed
 ```
 
 Define referenced roles with explicit `exact`, `prefix`, `suffix`, or `contains` matchers. Prefer `exact` for blocking rules. Never accept a source or target that resolves to nothing as evidence of compliance.

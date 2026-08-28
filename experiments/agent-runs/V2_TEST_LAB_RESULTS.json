@@ -37,6 +37,19 @@
         "advisories": [],
         "blocking": false,
         "blocking_violations": [],
+        "rule_assessments": [
+          {
+            "reason": "Rule evaluated against observed source and target mappings.",
+            "rule_id": "no-direct",
+            "source_matches": [
+              "OrderController"
+            ],
+            "status": "PASS",
+            "target_matches": [
+              "OrderRepository"
+            ]
+          }
+        ],
         "status": "PASS"
       },
       "id": "A",
@@ -89,6 +102,19 @@
           "advisories": [],
           "blocking": false,
           "blocking_violations": [],
+          "rule_assessments": [
+            {
+              "reason": "Rule evaluated against observed source and target mappings.",
+              "rule_id": "no-direct",
+              "source_matches": [
+                "OrderController"
+              ],
+              "status": "PASS",
+              "target_matches": [
+                "OrderRepository"
+              ]
+            }
+          ],
           "status": "PASS"
         },
         "initial": {
@@ -115,6 +141,19 @@
               "severity": "error",
               "source": "OrderController",
               "target": "OrderRepository"
+            }
+          ],
+          "rule_assessments": [
+            {
+              "reason": "Blocking or advisory violation detected.",
+              "rule_id": "no-direct",
+              "source_matches": [
+                "OrderController"
+              ],
+              "status": "FAIL",
+              "target_matches": [
+                "OrderRepository"
+              ]
             }
           ],
           "status": "FAIL"
@@ -177,6 +216,19 @@
             "severity": "error",
             "source": "SalesDomain",
             "target": "SqlInfrastructure"
+          }
+        ],
+        "rule_assessments": [
+          {
+            "reason": "Blocking or advisory violation detected.",
+            "rule_id": "domain-isolation",
+            "source_matches": [
+              "SalesDomain"
+            ],
+            "status": "FAIL",
+            "target_matches": [
+              "SqlInfrastructure"
+            ]
           }
         ],
         "status": "FAIL"
@@ -255,6 +307,19 @@
           ],
           "blocking": false,
           "blocking_violations": [],
+          "rule_assessments": [
+            {
+              "reason": "Blocking or advisory violation detected.",
+              "rule_id": "candidate",
+              "source_matches": [
+                "OrderController"
+              ],
+              "status": "FAIL",
+              "target_matches": [
+                "OrderRepository"
+              ]
+            }
+          ],
           "status": "WARN"
         },
         "validated": {
@@ -281,6 +346,19 @@
               "severity": "error",
               "source": "OrderController",
               "target": "OrderRepository"
+            }
+          ],
+          "rule_assessments": [
+            {
+              "reason": "Blocking or advisory violation detected.",
+              "rule_id": "no-direct",
+              "source_matches": [
+                "OrderController"
+              ],
+              "status": "FAIL",
+              "target_matches": [
+                "OrderRepository"
+              ]
             }
           ],
           "status": "FAIL"
@@ -322,6 +400,19 @@
         "advisories": [],
         "blocking": false,
         "blocking_violations": [],
+        "rule_assessments": [
+          {
+            "reason": "Rule evaluated against observed source and target mappings.",
+            "rule_id": "no-direct",
+            "source_matches": [
+              "OrderController"
+            ],
+            "status": "PASS",
+            "target_matches": [
+              "OrderRepository"
+            ]
+          }
+        ],
         "status": "PASS"
       },
       "id": "F",
@@ -371,6 +462,19 @@
         "advisories": [],
         "blocking": false,
         "blocking_violations": [],
+        "rule_assessments": [
+          {
+            "reason": "Rule evaluated against observed source and target mappings.",
+            "rule_id": "no-direct",
+            "source_matches": [
+              "OrderController"
+            ],
+            "status": "PASS",
+            "target_matches": [
+              "OrderRepository"
+            ]
+          }
+        ],
         "status": "PASS"
       },
       "id": "G",
@@ -449,6 +553,19 @@
         "advisories": [],
         "blocking": false,
         "blocking_violations": [],
+        "rule_assessments": [
+          {
+            "reason": "Rule evaluated against observed source and target mappings.",
+            "rule_id": "no-direct",
+            "source_matches": [
+              "OrderController"
+            ],
+            "status": "PASS",
+            "target_matches": [
+              "OrderRepository"
+            ]
+          }
+        ],
         "status": "PASS"
       },
       "id": "I",
@@ -508,6 +625,19 @@
             "severity": "error",
             "source": "OrderController",
             "target": "OrderRepository"
+          }
+        ],
+        "rule_assessments": [
+          {
+            "reason": "Blocking or advisory violation detected.",
+            "rule_id": "no-repository-path",
+            "source_matches": [
+              "OrderController"
+            ],
+            "status": "FAIL",
+            "target_matches": [
+              "OrderRepository"
+            ]
           }
         ],
         "status": "FAIL"

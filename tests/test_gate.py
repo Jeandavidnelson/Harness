@@ -13,7 +13,7 @@ ROOT = Path(__file__).parents[1]
 
 def test_gate_payload_has_stable_pass_and_fail_states():
     assert gate_payload(HarnessResult([])) == {
-        "status": "PASS", "blocking": False, "blocking_violations": [], "advisories": []
+        "status": "PASS", "blocking": False, "blocking_violations": [], "advisories": [], "rule_assessments": []
     }
     violation = Violation("r1", "forbidden_edge", "A", "B", ("A", "B"))
     payload = gate_payload(HarnessResult([violation]))
