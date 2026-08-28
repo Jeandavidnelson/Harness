@@ -23,6 +23,7 @@ from architecture_harness.exporters.agent_json import capabilities_payload, rend
 from architecture_harness.metrics.v1_1_benchmark import render_v1_1_benchmark, run_v1_1_benchmark
 from architecture_harness.ace.author import author_rule
 from architecture_harness.ace.ape_adapter import validate_with_ape
+from architecture_harness.graphify_runtime import GraphifyRuntimeError, refresh_graph
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -47,6 +48,10 @@ def build_parser() -> argparse.ArgumentParser:
     benchmark.add_argument("--mode", choices=("v1", "v1.1"), default="v1")
     sub.add_parser("doctor", help="validate all inputs and local cache")
     sub.add_parser("stale", help="fail when Graphify output does not match source hashes")
+    graph = sub.add_parser("graph", help="manage the observed Graphify graph")
+    graph_sub = graph.add_subparsers(dest="graph_action", required=True)
+    graph_refresh = graph_sub.add_parser("refresh")
+    graph_refresh.add_argument("--format", choices=("json",), default="json")
     agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
     agent_sub = agent.add_subparsers(dest="agent_action", required=True)
     agent_context = agent_sub.add_parser("context")
@@ -131,6 +136,9 @@ def main(argv: list[str] | None = None) -> int:
             for path in freshness.missing_files:
                 print(f"missing: {path}")
             return 0 if freshness.fresh else 1
+        if args.command == "graph":
+            print(json.dumps(refresh_graph(paths.root), indent=2, sort_keys=True))
+            return 0
         if args.command == "agent":
             if args.agent_action == "capabilities":
                 print(json.dumps(capabilities_payload(), indent=2, sort_keys=True))
@@ -164,7 +172,7 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 print(json.dumps(validate_with_ape(args.path), indent=2, sort_keys=True))
             return 0
-    except (GraphifyError, MermaidError, RulesError, ValueError, OSError) as exc:
+    except (GraphifyError, GraphifyRuntimeError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2
     return 2

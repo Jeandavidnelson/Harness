@@ -30,3 +30,14 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Human clarification count | NOT_MEASURED |
 | Rule maintenance cost | NOT_MEASURED |
 
+## Gate 2 production Graphify integration
+
+| Metric | Value |
+|---|---:|
+| Tests | 43 passed |
+| Graph refresh | PASS |
+| Freshness after refresh | PASS |
+| Raw / normalized nodes | 600 / 614 |
+| Edges | 1104 |
+| EXTRACTED / INFERRED / AMBIGUOUS | 1031 / 73 / 0 |
+| Refresh duration | 0.8931 seconds |

@@ -95,3 +95,40 @@ Pending Gate 1 commit.
 ### Status
 PASS — Gate 2 may begin after commit.
 
+## Gate 2 — Production Graphify Integration — 2026-08-28
+
+### Objective
+Expose the proven production Graphify refresh through the universal core CLI.
+
+### Hypothesis
+Adapters can refresh observed architecture without knowing Graphify command details or shell-script paths.
+
+### Implementation
+Added `architecture_harness.graphify_runtime`, `arch-harness graph refresh --format json`, extract/update selection, executable discovery, post-refresh freshness verification and normalized summary. Reduced `scripts/refresh_graph.sh` to a compatibility wrapper around the core CLI.
+
+### Commands
+- `arch-harness graph refresh --format json`
+- pytest
+- `arch-harness agent validate --format json`
+
+### Tests
+- full suite: 43 passed;
+- real `graph refresh`: PASS;
+- freshness verification: PASS;
+- agent validation: PASS;
+- diff whitespace check: PASS.
+
+### Metrics
+- normalized nodes: 614;
+- edges: 1104;
+- EXTRACTED / INFERRED / AMBIGUOUS: 1031 / 73 / 0;
+- refresh duration reported by the CLI: 0.8931 seconds.
+
+### Problems / negative results
+Graphify still uses its own confidence vocabulary (`EXTRACTED`, `INFERRED`, `AMBIGUOUS`). V2 origin provenance remains a distinct concern for Gate 3.
+
+### Commit
+Pending Gate 2 commit.
+
+### Status
+PASS — the shell wrapper and adapters can rely on the universal CLI contract.
