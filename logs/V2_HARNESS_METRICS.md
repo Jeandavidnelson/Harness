@@ -129,3 +129,15 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Core BMAD dependencies | 0 |
 | Silent overwrites | 0 |
 | BMAD build runtime | BLOCKED_BY_MISSING_UV |
+
+## Gate 11 BMAD E2E
+
+| Metric | Value |
+|---|---:|
+| Real BMAD workflow runs | 1 |
+| uv version | 0.12.7 |
+| Compact context tokens | 490 |
+| BMAD spec tokens | 798 |
+| FAIL propagation | PASS |
+| Post-approval correction | NOT_RUN |
+| E2E status | PARTIAL_HUMAN_APPROVAL_REQUIRED |

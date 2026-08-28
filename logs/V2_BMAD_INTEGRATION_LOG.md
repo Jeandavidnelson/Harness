@@ -10,3 +10,15 @@
 - Verified all three with BMAD's `resolve_customization.py`: appended activation instructions and persistent facts resolved correctly.
 - Core BMAD dependencies added: 0.
 - Existing override overwrite attempt: correctly refused.
+
+## 2026-08-28 — Gate 11 real E2E attempt
+
+- Installed `uv` 0.12.7 in the project virtual environment.
+- Installed BMAD and adapter into the real correction fixture.
+- Invoked `$bmad-build` from an independent Codex CLI process.
+- Verified rendered workflow contains both harness persistent facts and activation step.
+- Compact context call: PASS, 490 tokens.
+- Initial graph refresh and blocking gate propagation: PASS.
+- BMAD spec generated: 798 tokens.
+- Workflow halted at the mandatory human approval checkpoint.
+- Implementation, correction, PASS and `bmad-code-review`: NOT_RUN.

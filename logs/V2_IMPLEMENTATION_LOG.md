@@ -376,3 +376,26 @@ The installed BMAD distribution requires `uv` to render `bmad-build` and `bmad-b
 
 ### Status
 PASS — pluggable adapter verified against BMAD 6.11.0; runtime E2E remains pending.
+
+## Gate 11 — BMAD End-to-End Test — 2026-08-28
+
+### Objective
+Run a real BMAD Build→context→FAIL→correction→PASS→review workflow.
+
+### Result
+A real `$bmad-build` invocation rendered the customized workflow, loaded the harness persistent instruction, requested a 490-token architecture context, refreshed Graphify, propagated the expected gate FAIL and generated a 798-token spec. BMAD then correctly halted at its mandatory human approval checkpoint.
+
+### Metrics
+- real BMAD workflow runs: 1;
+- override activation: PASS;
+- compact context injection: PASS;
+- FAIL propagation: PASS;
+- implementation/correction/review stages: NOT_RUN;
+- runner input tokens: 465219 (417280 cached);
+- runner output tokens: 3859.
+
+### Problems / negative results
+Completing the workflow requires explicit human approval of the generated spec. The agent did not self-approve a human checkpoint. Therefore no BMAD correction success claim can be made.
+
+### Status
+PARTIAL — structurally and behaviorally proven through the approval boundary; post-approval E2E remains pending human action.
