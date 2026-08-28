@@ -104,3 +104,16 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | False blocking rate | 0% |
 | Real agent runs | 0 |
 | Initial scenario-model defects found | 1 |
+
+## Gate 9 real agent correction
+
+| Metric | Value |
+|---|---:|
+| Real Codex processes | 2 |
+| First-pass full task success | 0 / 1 |
+| Final runtime + gate success | 1 / 1 |
+| Correction iterations | 2 |
+| Rule-model defects discovered | 1 |
+| Input tokens (cached included separately) | 433672 |
+| Cached input tokens | 380416 |
+| Output tokens | 4563 |

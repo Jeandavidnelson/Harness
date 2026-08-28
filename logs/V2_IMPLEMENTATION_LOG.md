@@ -317,3 +317,33 @@ These are deterministic simulations, not evidence of model task success. The ini
 
 ### Status
 PASS for deterministic Test Lab; agentic claims remain reserved for Gate 9.
+
+## Gate 9 — Real Agent Correction Loops — 2026-08-28
+
+### Objective
+Observe whether an external coding agent can use compact context and gate feedback to correct a real code graph.
+
+### Implementation and behavior
+Created an isolated Python project, extracted it with production Graphify, confirmed an initial gate FAIL, and ran two independent ephemeral Codex CLI processes. Preserved prompts, actions, changes, verdicts and token usage in `experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md`.
+
+### Results
+- real agent processes: 2;
+- first process: gate PASS but runtime FAIL due to missing service module;
+- second process: runtime PASS, then exposed an incorrectly modeled transitive rule;
+- final independently verified runtime: PASS;
+- final gate after correcting experimental rule semantics: PASS;
+- agent edits to rules or diagrams: 0.
+
+### Metrics
+- correction iterations: 2;
+- first-pass full task success: 0%;
+- final runtime-and-gate success: 100% for this single task;
+- rule-model defects discovered: 1;
+- total reported input tokens: 433672 (380416 cached);
+- total reported output tokens: 4563.
+
+### Problems / negative results
+The architecture gate accepted broken runtime code in the first pass. A badly chosen `forbidden_path` also encouraged architecture-check gaming. These results reinforce that the harness complements tests and review and that rule authoring quality is critical.
+
+### Status
+PASS as an experiment, with qualified product evidence: correction is possible, one-shot success is not demonstrated.
