@@ -44,8 +44,15 @@ def render_agent_context(context: CompactTaskContext) -> str:
 
 def capabilities_payload() -> dict[str, object]:
     return {
-        "api_version": "1.1",
-        "commands": ["context", "validate", "doctor", "capabilities"],
+        "api_version": "2.0",
+        "commands": {
+            "graph_refresh": "arch-harness graph refresh --format json",
+            "context": "arch-harness agent context --focus <node> --format json",
+            "validate": "arch-harness agent validate --format json",
+            "gate": "arch-harness gate --format json",
+            "capabilities": "arch-harness capabilities --format json",
+            "doctor": "arch-harness doctor",
+        },
         "formats": ["json"],
         "rule_types": ["required_edge", "forbidden_edge", "required_path", "forbidden_path"],
         "provenance": {
@@ -54,4 +61,5 @@ def capabilities_payload() -> dict[str, object]:
         },
         "exit_codes": {"pass": 0, "violation": 1, "technical_error": 2},
         "llm_in_policy_engine": False,
+        "core_orchestrator_dependency": None,
     }

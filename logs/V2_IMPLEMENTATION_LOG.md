@@ -166,3 +166,31 @@ The legacy field name `provenance` represents Graphify confidence, not evidence 
 
 ### Status
 PASS — provenance is explicit and deterministic; inferred facts are not promoted.
+
+## Gate 4 — Universal Agent API — 2026-08-28
+
+### Objective
+Provide a discoverable, orchestrator-neutral CLI contract.
+
+### Hypothesis
+A generic consumer can discover and call the harness without importing Python internals or knowing BMAD.
+
+### Implementation
+Promoted capabilities to the top-level CLI, versioned the contract as `2.0`, advertised canonical commands and exit codes, and declared the absence of an orchestrator dependency. Preserved the V1.1 `agent capabilities` alias.
+
+### Functional and behavior tests
+- full suite: 47 passed;
+- an external subprocess discovered capabilities and requested a bounded context;
+- direct capabilities and five-item context smoke tests: PASS;
+- graph freshness and diff whitespace: PASS.
+
+### Metrics
+- stable advertised commands: 6;
+- context returned to generic test: at most 5 observed edges;
+- core orchestrator dependencies: 0.
+
+### Problems / negative results
+The advertised `gate` endpoint is intentionally not callable until Gate 5. Capability discovery leads implementation by one committed gate, but no adapter is shipped against it yet.
+
+### Status
+PASS — BMAD, Codex and other consumers can share one machine-readable contract.

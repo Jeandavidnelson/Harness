@@ -52,6 +52,8 @@ def build_parser() -> argparse.ArgumentParser:
     graph_sub = graph.add_subparsers(dest="graph_action", required=True)
     graph_refresh = graph_sub.add_parser("refresh")
     graph_refresh.add_argument("--format", choices=("json",), default="json")
+    capabilities = sub.add_parser("capabilities", help="describe the stable machine-readable API")
+    capabilities.add_argument("--format", choices=("json",), default="json")
     agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
     agent_sub = agent.add_subparsers(dest="agent_action", required=True)
     agent_context = agent_sub.add_parser("context")
@@ -138,6 +140,9 @@ def main(argv: list[str] | None = None) -> int:
             return 0 if freshness.fresh else 1
         if args.command == "graph":
             print(json.dumps(refresh_graph(paths.root), indent=2, sort_keys=True))
+            return 0
+        if args.command == "capabilities":
+            print(json.dumps(capabilities_payload(), indent=2, sort_keys=True))
             return 0
         if args.command == "agent":
             if args.agent_action == "capabilities":

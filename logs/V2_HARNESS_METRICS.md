@@ -50,3 +50,13 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Evidence origins supported | 6 |
 | Automatic inference promotions | 0 |
 | Agent validation | PASS |
+
+## Gate 4 universal agent API
+
+| Metric | Value |
+|---|---:|
+| Tests | 47 passed |
+| API version | 2.0 |
+| Advertised universal commands | 6 |
+| Core orchestrator dependencies | 0 |
+| Generic subprocess consumer | PASS |
