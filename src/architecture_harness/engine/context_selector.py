@@ -55,7 +55,10 @@ def select_context(
     for rule in rules.rules:
         endpoints = resolve(rule.source, observed, target, rules) | resolve(rule.target, observed, target, rules)
         if endpoints & observed_nodes:
-            applicable.append(f"{rule.id}: {rule.type} {rule.source} -> {rule.target}")
+            detail = f"{rule.id} [{rule.severity}/{rule.status}]: {rule.type} {rule.source} -> {rule.target}"
+            if rule.rationale:
+                detail += f"; rationale={rule.rationale}"
+            applicable.append(detail)
     files = sorted({observed.nodes[node].file for node in observed_nodes if observed.nodes[node].file})
     edge_truncated = any(len(items) >= max_items for items in (observed_edges, context_edges, target_edges))
     return CompactTaskContext(tuple(focus), observed_edges, context_edges, target_edges, applicable[:max_items], files[:max_items], truncated or context_truncated or edge_truncated)

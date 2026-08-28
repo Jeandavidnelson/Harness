@@ -12,3 +12,11 @@ def test_real_graphify_vs_agent_context_benchmark():
     assert rows[2].harness_result == "PASS"
     assert rows[0].task_success == "NOT_MEASURED"
 
+
+def test_v2_benchmark_keeps_unavailable_agent_metrics_explicit():
+    root = Path(__file__).parents[1]
+    rows = run_v1_1_benchmark(ProjectPaths(root), root / "experiments" / "tasks.yaml")
+    assert len(rows) == 15
+    assert {row.task_success for row in rows} == {"NOT_MEASURED"}
+    assert {row.output_tokens for row in rows} == {"NOT_MEASURED"}
+    assert all(row.context_tokens > 0 for row in rows)

@@ -441,3 +441,25 @@ No Java fixture or native ArchUnit execution was added because this repository i
 
 ### Status
 PASS for external skill boundary; Java runtime behavior remains NOT_MEASURED.
+
+## Gate 14 — A/B/C Benchmark — 2026-08-28
+
+### Objective
+Compare Graphify-only, Graphify-plus-full-architecture and compact Harness context on five identical tasks.
+
+### Implementation and results
+Added V2 benchmark mode, enriched applicable compact rules with severity/status/rationale, and ran all 15 context conditions with real Graphify queries for A/B. Detailed results are in `experiments/results/V2_ABC_BENCHMARK.md`.
+
+### Metrics
+- tasks: 5;
+- A/B/C rows: 15;
+- aggregate C versus B token reduction: 48.7%;
+- Graphify calls A/B/C: 5 / 5 / 0;
+- C assembly time: 0.0044–0.0047 seconds per task;
+- task success and model output tokens: NOT_MEASURED.
+
+### Problems / negative results
+The benchmark measures context, not model performance. C selected up to 26 relevant files on the CLI task, and its benefit varies from 33.8% to 56.7% token reduction. No effectiveness claim is inferred from compression.
+
+### Status
+PASS for reproducible context benchmark; comparative model success remains NOT_MEASURED.

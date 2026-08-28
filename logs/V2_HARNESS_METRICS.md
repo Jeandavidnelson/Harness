@@ -162,3 +162,14 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Core ArchUnit dependencies | 0 |
 | Generated Java tests | 0 |
 | Java runtime result | NOT_MEASURED |
+
+## Gate 14 A/B/C benchmark
+
+| Metric | Value |
+|---|---:|
+| Identical tasks | 5 |
+| Context conditions | 15 |
+| C vs B token reduction | 48.7% |
+| Graphify calls A / B / C | 5 / 5 / 0 |
+| C duration range | 0.0044–0.0047 s |
+| Model task success | NOT_MEASURED |

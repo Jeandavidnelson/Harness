@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787909095.5573254,
-    "seen": 1787909104.066091,
-    "ast_hash": "d3e3a556f3a9810165ca156f06bf7bc9",
+    "mtime": 1787909499.6866796,
+    "seen": 1787909506.495459,
+    "ast_hash": "805f8f3265eb8d241f2a5177c0351162",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -102,10 +102,10 @@
     "semantic_hash": "c6357add16059977980a109e17ed5db9"
   },
   "src/architecture_harness/engine/context_selector.py": {
-    "mtime": 1787706938.9692616,
-    "seen": 1787727622.981518,
-    "ast_hash": "598ab424b4e3259246285572e5090c49",
-    "semantic_hash": "598ab424b4e3259246285572e5090c49"
+    "mtime": 1787909499.6877115,
+    "seen": 1787909506.4954638,
+    "ast_hash": "309934942a2a601bb8f9e0abe10a41b4",
+    "semantic_hash": ""
   },
   "src/architecture_harness/engine/harness.py": {
     "mtime": 1787908337.9546914,
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "tests/test_v1_1_benchmark.py": {
-    "mtime": 1787727969.4806616,
-    "seen": 1787727974.33628,
-    "ast_hash": "d303d5d5831bf57ae7764a6d542c6de3",
+    "mtime": 1787909499.6884894,
+    "seen": 1787909506.495517,
+    "ast_hash": "81590b0f1927b503244de42e41e96c67",
     "semantic_hash": ""
   },
   "tests/test_production_rules.py": {
@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787909394.3640807,
-    "seen": 1787909440.4514098,
-    "ast_hash": "9ffa2ce22452bb2e98ad8625e8002c2d",
+    "mtime": 1787909452.8968492,
+    "seen": 1787909506.4955552,
+    "ast_hash": "663422890078e0886576af2707bc7bf6",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787909394.3634963,
-    "seen": 1787909440.451411,
-    "ast_hash": "3f3d2e14e75cb0b1ddef54584c2c96d5",
+    "mtime": 1787909452.8959117,
+    "seen": 1787909506.495556,
+    "ast_hash": "7969d9a4f188aa340c12597ab2dce8cc",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {

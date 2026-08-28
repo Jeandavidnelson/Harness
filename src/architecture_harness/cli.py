@@ -48,7 +48,7 @@ def build_parser() -> argparse.ArgumentParser:
     build.add_argument("--max-items", type=int, default=50)
     benchmark = sub.add_parser("benchmark", help="measure compact context token reduction")
     benchmark.add_argument("--tasks", type=Path)
-    benchmark.add_argument("--mode", choices=("v1", "v1.1"), default="v1")
+    benchmark.add_argument("--mode", choices=("v1", "v1.1", "v2"), default="v1")
     sub.add_parser("doctor", help="validate all inputs and local cache")
     sub.add_parser("stale", help="fail when Graphify output does not match source hashes")
     graph = sub.add_parser("graph", help="manage the observed Graphify graph")
@@ -131,7 +131,7 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         if args.command == "benchmark":
             tasks = args.tasks or paths.root / "experiments" / "tasks.yaml"
-            if args.mode == "v1.1":
+            if args.mode in {"v1.1", "v2"}:
                 print(render_v1_1_benchmark(run_v1_1_benchmark(paths, tasks)))
             else:
                 print(render_benchmark(run_benchmark(paths, tasks)))
