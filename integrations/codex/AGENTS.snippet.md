@@ -11,3 +11,5 @@ Use the compact result as architectural guidance. After a meaningful checkpoint 
 `arch-harness gate --format json`
 
 Exit 1 means correct every blocking violation and repeat. Exit 2 means run `arch-harness doctor`. Never change validated rules to force PASS; request human review when policy is obsolete.
+
+After Mermaid changes, after the first greenfield Graphify refresh, or when mappings are unresolved, automatically use `$architecture-rule-author` with `arch-harness rules author-context --format json`. Resolve evidence-backed mappings without asking the user; ask only for genuine semantic ambiguity and promotion to blocking policy.

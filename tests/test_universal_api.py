@@ -20,6 +20,8 @@ def test_generic_consumer_can_discover_and_request_context():
         "unresolved": 2,
         "violation": 1,
     }
+    assert contract["commands"]["rule_author_context"].startswith("arch-harness rules author-context")
+    assert "architecture-rule-author" in contract["orchestrator_skills"]
 
     context = subprocess.run(
         [str(CLI), "--root", str(ROOT), "agent", "context", "--focus", "cli", "--max-items", "5", "--format", "json"],

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "architecture-harness"
-version = "2.1.0"
+version = "2.2.0"
 description = "Deterministic architecture harness and compact context selector"
 requires-python = ">=3.10"
 dependencies = []
@@ -17,6 +17,9 @@ arch-harness = "architecture_harness.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+architecture_harness = ["runtime/*.mjs"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

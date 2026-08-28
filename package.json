@@ -1,0 +1,11 @@
+{
+  "name": "architecture-harness-mermaid-runtime",
+  "private": true,
+  "version": "2.2.0",
+  "type": "module",
+  "dependencies": {
+    "@mermaid-js/parser": "^1.2.1",
+    "jsdom": "^26.1.0",
+    "mermaid": "11.17.2"
+  }
+}

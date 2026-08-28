@@ -525,3 +525,33 @@ Distinguish a real architecture violation from a rule that cannot yet be evaluat
 
 ### Status
 PASS — an absent Graphify identifier is now reported according to the rule's declared applicability, and the approved BMAD correction/review workflow has been exercised end to end once.
+
+## Gate 17 — Official Mermaid and automatic Rule Author orchestration — 2026-08-28
+
+### Objective
+Install and invoke the Architecture Rule Author from each supported orchestrator, translate every official-parser-valid Mermaid source into retained facts and candidates, and resolve Mermaid-to-Graphify mappings without manual identifiers when evidence is sufficient.
+
+### Implementation
+- replaced the Python regex parser with a Node bridge backed by official Mermaid 11.17.2 and `@mermaid-js/parser`;
+- added normalized graph extraction for flowchart, architecture, sequence, class, ER and state structures while retaining complete validated Mermaid source for every other family;
+- added `arch-harness rules author-context --format json` with declared facts and ranked Graphify mapping evidence;
+- revised `architecture-rule-author` to resolve evidence-backed mappings, defer greenfield mappings until code exists, and ask only about genuine semantic ambiguity or blocking promotion;
+- made BMAD architecture/build invoke the installed skill automatically;
+- added Codex and Claude installers that deploy the same skill plus project instructions;
+- added the detailed cross-orchestrator manual guide in `documentation/INSTALLATION_ET_TEST_MANUEL.md`;
+- promoted package metadata to 2.2.0.
+
+### Validation
+- skill validator: PASS;
+- official Mermaid tests: flowchart, architecture-beta, sequence, class and ER PASS;
+- BMAD, Codex and Claude isolated installation smoke tests: PASS;
+- pytest: 68 passed;
+- production Graphify: 899 normalized nodes / 1525 edges;
+- V1 validation: PASS;
+- V2 validation, production gate, benchmark, Test Lab, both skills and BMAD override parsing: PASS.
+
+### Qualification
+The official Mermaid parser validates all Mermaid-supported syntax, but diagram families without dependency-like semantics do not invent policy edges. Their complete source and extracted facts are retained for the LLM skill, which emits `declared_only` guidance or candidates. Only explicit human promotion can create blocking policy.
+
+### Status
+PASS — orchestrators now receive and invoke the Rule Author as an installed skill, mappings are proposed from real Graphify evidence, and Mermaid parsing is delegated to the official runtime.

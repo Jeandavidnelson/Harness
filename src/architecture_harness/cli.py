@@ -25,7 +25,9 @@ from architecture_harness.ace.author import author_rule
 from architecture_harness.ace.ape_adapter import validate_with_ape
 from architecture_harness.graphify_runtime import GraphifyRuntimeError, refresh_graph
 from architecture_harness.engine.gate import gate_payload
-from architecture_harness.integrations import IntegrationError, install_bmad
+from architecture_harness.ir.graph import ObservedGraphIR
+from architecture_harness.integrations import IntegrationError, install_bmad, install_claude, install_codex
+from architecture_harness.engine.rule_author_context import build_rule_author_context
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -35,8 +37,9 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("observed", help="summarize Graphify output")
     sub.add_parser("target", help="print normalized target architecture")
     rules_parser = sub.add_parser("rules", help="validate or list rules")
-    rules_parser.add_argument("action", choices=("validate", "list"))
+    rules_parser.add_argument("action", choices=("validate", "list", "author-context"))
     rules_parser.add_argument("--file", type=Path, help="rules file to inspect; defaults to validated rules")
+    rules_parser.add_argument("--format", choices=("json",), default="json")
     check = sub.add_parser("check", help="evaluate architecture policies")
     check.add_argument("--format", choices=("text", "json", "markdown"), default="text")
     context_parser = sub.add_parser("context", help="inspect or build declared context")
@@ -62,7 +65,7 @@ def build_parser() -> argparse.ArgumentParser:
     integrations = sub.add_parser("integrations", help="install orchestrator adapters")
     integrations_sub = integrations.add_subparsers(dest="integration_action", required=True)
     integration_install = integrations_sub.add_parser("install")
-    integration_install.add_argument("name", choices=("bmad",))
+    integration_install.add_argument("name", choices=("bmad", "codex", "claude"))
     integration_install.add_argument("--adapter-root", type=Path, default=Path(__file__).parents[2])
     integration_install.add_argument("--force", action="store_true")
     agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
@@ -103,6 +106,13 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  {name}: {', '.join(sorted(members))}")
             return 0
         if args.command == "rules":
+            if args.action == "author-context":
+                observed = load_graphify(paths.observed) if paths.observed.is_file() else ObservedGraphIR()
+                payload = build_rule_author_context(
+                    paths.root, load_mermaid_directory(paths.target_dir), observed,
+                )
+                print(json.dumps(payload, indent=2, sort_keys=True))
+                return 0
             rules = load_rules(args.file if args.file else paths.rules)
             if args.action == "validate":
                 print(f"valid: {len(rules.rules)} rules, {len(rules.roles)} roles")
@@ -172,7 +182,8 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
             return result.exit_code
         if args.command == "integrations":
-            payload = install_bmad(paths.root, args.adapter_root.resolve(), args.force)
+            installers = {"bmad": install_bmad, "codex": install_codex, "claude": install_claude}
+            payload = installers[args.name](paths.root, args.adapter_root.resolve(), args.force)
             print(json.dumps(payload, indent=2, sort_keys=True))
             return 0
         if args.command == "agent":

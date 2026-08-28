@@ -6,6 +6,7 @@ activation_steps_append = [
 
 persistent_facts = [
   "At each meaningful implementation checkpoint, run `arch-harness graph refresh --format json` then `arch-harness gate --format json`. Never mark Build complete while a validated error is blocking. Correct code and repeat; never silently edit architecture policy to obtain PASS.",
+  "After the first greenfield Graphify refresh or whenever mappings are UNRESOLVED, automatically invoke architecture-rule-author with `arch-harness rules author-context --format json` to resolve candidate mappings. Ask the human only for remaining ambiguity and promotion.",
 ]
 
 on_complete = "Before reporting Build complete, run `arch-harness graph refresh --format json` and `arch-harness gate --format json`. If exit code is 1, return to implementation with the compact violations until PASS. If exit code is 2, run `arch-harness doctor` and report the technical failure."

@@ -57,6 +57,102 @@
       "_origin": "ast"
     },
     {
+      "id": "package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_type",
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_mermaid_js_parser",
+      "label": "@mermaid-js/parser",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "mermaid_js_parser",
+      "label": "@mermaid-js/parser",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_jsdom",
+      "label": "jsdom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "jsdom",
+      "label": "jsdom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies_mermaid",
+      "label": "mermaid",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_json_mermaid",
+      "label": "mermaid",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
       "id": "pkg_architecture_harness",
       "label": "architecture-harness",
       "file_type": "code",
@@ -64,7 +160,7 @@
       "ecosystem": "python",
       "source_file": "pyproject.toml",
       "source_location": "L1",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "_origin": "ast"
     },
     {
@@ -411,7 +507,7 @@
       "label": "MermaidError",
       "file_type": "code",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L9",
+      "source_location": "L11",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -425,20 +521,11 @@
       "_origin": "ast"
     },
     {
-      "id": "src_architecture_harness_adapters_mermaid_node",
-      "label": "_node()",
-      "file_type": "code",
-      "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L18",
-      "_callable": true,
-      "_origin": "ast"
-    },
-    {
       "id": "src_architecture_harness_adapters_mermaid_parse_mermaid",
       "label": "parse_mermaid()",
       "file_type": "code",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L27",
+      "source_location": "L15",
       "_callable": true,
       "_origin": "ast"
     },
@@ -447,7 +534,7 @@
       "label": "load_mermaid_directory()",
       "file_type": "code",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L68",
+      "source_location": "L43",
       "_callable": true,
       "_origin": "ast"
     },
@@ -627,7 +714,7 @@
       "label": "build_parser()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "_callable": true,
       "_origin": "ast"
     },
@@ -644,7 +731,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L87",
+      "source_location": "L90",
       "_callable": true,
       "_origin": "ast"
     },
@@ -935,6 +1022,49 @@
       "source_file": "src/architecture_harness/engine/paths.py",
       "source_location": "L30",
       "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_engine_rule_author_context",
+      "label": "rule_author_context.py",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_engine_rule_author_context_terms",
+      "label": "_terms()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_engine_rule_author_context_score",
+      "label": "_score()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "label": "build_rule_author_context()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_engine_rule_author_context_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast"
     },
     {
@@ -1238,6 +1368,51 @@
       "file_type": "code",
       "source_file": "",
       "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_copy_tree",
+      "label": "_copy_tree()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_install_rule_author_skill",
+      "label": "_install_rule_author_skill()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_install_project_instructions",
+      "label": "_install_project_instructions()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_install_codex",
+      "label": "install_codex()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_install_claude",
+      "label": "install_claude()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L64",
+      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -1623,6 +1798,97 @@
       "_origin": "ast"
     },
     {
+      "id": "src_architecture_harness_runtime_mermaid_bridge",
+      "label": "mermaid_bridge.mjs",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_input",
+      "label": "input",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_dom",
+      "label": "dom",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_nodes",
+      "label": "nodes",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_edges",
+      "label": "edges",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_subgraphs",
+      "label": "subgraphs",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_addnode",
+      "label": "addNode()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_addedge",
+      "label": "addEdge()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_runtime_mermaid_bridge_values",
+      "label": "values()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "mermaid_mermaid",
+      "label": "mermaid",
+      "file_type": "code",
+      "source_file": "mermaid",
+      "confidence": "EXTRACTED",
+      "_origin": "ast"
+    },
+    {
+      "id": "parser",
+      "label": "@mermaid-js/parser",
+      "file_type": "code",
+      "source_file": "@mermaid-js/parser",
+      "confidence": "EXTRACTED",
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_ace_author",
       "label": "test_ace_author.py",
       "file_type": "code",
@@ -1827,7 +2093,16 @@
       "label": "test_bmad_installer_requires_real_bmad_layout()",
       "file_type": "code",
       "source_file": "tests/test_bmad_integration.py",
-      "source_location": "L28",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_bmad_integration_test_codex_and_claude_install_the_rule_author_and_project_instructions",
+      "label": "test_codex_and_claude_install_the_rule_author_and_project_instructions()",
+      "file_type": "code",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L34",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2111,6 +2386,15 @@
       "_origin": "ast"
     },
     {
+      "id": "tests_test_mermaid_adapter_test_official_mermaid_parser_supports_architecture_and_non_flowchart_diagrams",
+      "label": "test_official_mermaid_parser_supports_architecture_and_non_flowchart_diagrams()",
+      "file_type": "code",
+      "source_file": "tests/test_mermaid_adapter.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_production_agent_loop",
       "label": "test_production_agent_loop.py",
       "file_type": "code",
@@ -2245,6 +2529,23 @@
       "file_type": "code",
       "source_file": "tests/test_rule_applicability.py",
       "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_rule_author_context",
+      "label": "test_rule_author_context.py",
+      "file_type": "code",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_rule_author_context_test_author_context_ranks_real_graphify_mappings_and_preserves_source",
+      "label": "test_author_context_ranks_real_graphify_mappings_and_preserves_source()",
+      "file_type": "code",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L11",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2422,8 +2723,8 @@
       "_origin": "ast"
     },
     {
-      "id": "readme_architecture_harness_v2_1",
-      "label": "Architecture Harness V2.1",
+      "id": "readme_architecture_harness_v2_2",
+      "label": "Architecture Harness V2.2",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
@@ -2481,7 +2782,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L95",
+      "source_location": "L98",
       "_origin": "ast"
     },
     {
@@ -2490,7 +2791,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L118",
+      "source_location": "L122",
       "_origin": "ast"
     },
     {
@@ -2499,7 +2800,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L120",
+      "source_location": "L124",
       "_origin": "ast"
     },
     {
@@ -2508,7 +2809,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L130",
+      "source_location": "L134",
       "_origin": "ast"
     },
     {
@@ -2517,7 +2818,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L134",
+      "source_location": "L138",
       "_origin": "ast"
     },
     {
@@ -2526,7 +2827,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L143",
+      "source_location": "L147",
       "_origin": "ast"
     },
     {
@@ -2535,7 +2836,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L151",
       "_origin": "ast"
     },
     {
@@ -2544,7 +2845,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L184",
+      "source_location": "L190",
       "_origin": "ast"
     },
     {
@@ -2553,7 +2854,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L189",
+      "source_location": "L195",
       "_origin": "ast"
     },
     {
@@ -2562,7 +2863,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L199",
+      "source_location": "L207",
       "_origin": "ast"
     },
     {
@@ -2571,7 +2872,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L217",
+      "source_location": "L225",
       "_origin": "ast"
     },
     {
@@ -2580,7 +2881,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L234",
+      "source_location": "L242",
       "_origin": "ast"
     },
     {
@@ -2589,7 +2890,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L245",
+      "source_location": "L253",
       "_origin": "ast"
     },
     {
@@ -2608,6 +2909,87 @@
       "node_kind": "heading",
       "source_file": "architecture/rules/decisions.md",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel",
+      "label": "INSTALLATION_ET_TEST_MANUEL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "label": "Installer et tester Architecture Harness V2.2",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_1_prérequis_communs",
+      "label": "1. Prérequis communs",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_2_créer_le_projet_cible",
+      "label": "2. Créer le projet cible",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_3_utilisation_avec_bmad",
+      "label": "3. Utilisation avec BMAD",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_4_utilisation_avec_codex_sans_bmad",
+      "label": "4. Utilisation avec Codex sans BMAD",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L150",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_5_utilisation_avec_claude_code",
+      "label": "5. Utilisation avec Claude Code",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L169",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_6_test_manuel_des_quatre_résultats_du_gate",
+      "label": "6. Test manuel des quatre résultats du gate",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L188",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_et_test_manuel_7_diagnostic",
+      "label": "7. Diagnostic",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L207",
       "_origin": "ast"
     },
     {
@@ -5890,6 +6272,15 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v1_implementation_log_validation_automatisée_2026_08_28t14_21_35_0200",
+      "label": "Validation automatisée — 2026-08-28T14:21:35+0200",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_IMPLEMENTATION_LOG.md",
+      "source_location": "L395",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_agent_behavior_log",
       "label": "V2_AGENT_BEHAVIOR_LOG.md",
       "file_type": "document",
@@ -6007,12 +6398,21 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_harness_metrics_gate_17_official_mermaid_and_orchestrator_rule_author",
+      "label": "Gate 17 official Mermaid and orchestrator Rule Author",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_harness_metrics_gate_1_v1_1_regression_baseline",
       "label": "Gate 1 V1.1 regression baseline",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L45",
+      "source_location": "L58",
       "_origin": "ast"
     },
     {
@@ -6021,7 +6421,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L61",
+      "source_location": "L74",
       "_origin": "ast"
     },
     {
@@ -6030,7 +6430,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L73",
+      "source_location": "L86",
       "_origin": "ast"
     },
     {
@@ -6039,7 +6439,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L82",
+      "source_location": "L95",
       "_origin": "ast"
     },
     {
@@ -6048,7 +6448,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L92",
+      "source_location": "L105",
       "_origin": "ast"
     },
     {
@@ -6057,7 +6457,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L102",
+      "source_location": "L115",
       "_origin": "ast"
     },
     {
@@ -6066,7 +6466,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L113",
+      "source_location": "L126",
       "_origin": "ast"
     },
     {
@@ -6075,7 +6475,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L124",
+      "source_location": "L137",
       "_origin": "ast"
     },
     {
@@ -6084,7 +6484,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L136",
+      "source_location": "L149",
       "_origin": "ast"
     },
     {
@@ -6093,7 +6493,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L149",
+      "source_location": "L162",
       "_origin": "ast"
     },
     {
@@ -6102,7 +6502,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L161",
+      "source_location": "L174",
       "_origin": "ast"
     },
     {
@@ -6111,7 +6511,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L173",
+      "source_location": "L186",
       "_origin": "ast"
     },
     {
@@ -6120,7 +6520,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L187",
+      "source_location": "L200",
       "_origin": "ast"
     },
     {
@@ -6129,7 +6529,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L198",
+      "source_location": "L211",
       "_origin": "ast"
     },
     {
@@ -6138,7 +6538,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L208",
+      "source_location": "L221",
       "_origin": "ast"
     },
     {
@@ -7348,6 +7748,60 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "label": "Gate 17 — Official Mermaid and automatic Rule Author orchestration — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L529",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_531",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L531",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_534",
+      "label": "Implementation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L534",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_validation_544",
+      "label": "Validation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L544",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_qualification",
+      "label": "Qualification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L553",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_556",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L556",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_rule_authoring_log",
       "label": "V2_RULE_AUTHORING_LOG.md",
       "file_type": "document",
@@ -7383,7 +7837,7 @@
       "source_location": "L1",
       "frontmatter": {
         "name": "architecture-rule-author",
-        "description": "Derive explicit, reviewable architecture rule candidates from Mermaid diagrams and project intent without silently turning interpretation into blocking policy. Use when an agent must translate architecture diagrams or guidelines into architecture-harness rules, clarify ambiguous boundaries, revise candidate rules, or prepare rules for human validation."
+        "description": "Automatically translate official-parser-validated Mermaid diagrams into declared facts, Graphify-backed role mappings, and reviewable Architecture Harness rule candidates. Use when an orchestrator creates or changes architecture, after the first greenfield code graph exists, when mappings are unresolved, or when rules need human promotion without silently turning LLM interpretation into blocking policy."
       },
       "_origin": "ast"
     },
@@ -7411,7 +7865,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "skills/architecture-rule-author/SKILL.md",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast"
     },
     {
@@ -7420,7 +7874,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "skills/architecture-rule-author/SKILL.md",
-      "source_location": "L43",
+      "source_location": "L46",
       "_origin": "ast"
     },
     {
@@ -7429,7 +7883,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "skills/architecture-rule-author/SKILL.md",
-      "source_location": "L52",
+      "source_location": "L55",
       "_origin": "ast"
     }
   ],
@@ -7647,6 +8101,119 @@
       "source_file": "experiments/run_v2_test_lab.py",
       "source_location": "L71",
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package",
+      "target": "package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_mermaid_js_parser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_mermaid_js_parser",
+      "target": "mermaid_js_parser",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_jsdom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_jsdom",
+      "target": "jsdom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_mermaid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "package_dependencies_mermaid",
+      "target": "package_json_mermaid",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "import",
       "_origin": "ast"
     },
     {
@@ -8150,7 +8717,7 @@
     },
     {
       "source": "src_architecture_harness_adapters_mermaid",
-      "target": "re",
+      "target": "json",
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -8161,8 +8728,8 @@
     },
     {
       "source": "src_architecture_harness_adapters_mermaid",
-      "target": "pathlib",
-      "relation": "imports_from",
+      "target": "shutil",
+      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
@@ -8172,7 +8739,18 @@
     },
     {
       "source": "src_architecture_harness_adapters_mermaid",
-      "target": "src_architecture_harness_ir_architecture",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/adapters/mermaid.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_adapters_mermaid",
+      "target": "pathlib",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -8183,11 +8761,22 @@
     },
     {
       "source": "src_architecture_harness_adapters_mermaid",
+      "target": "src_architecture_harness_ir_architecture",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/adapters/mermaid.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_adapters_mermaid",
       "target": "src_architecture_harness_adapters_mermaid_mermaiderror",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L9",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8197,17 +8786,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_adapters_mermaid",
-      "target": "src_architecture_harness_adapters_mermaid_node",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L18",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8217,7 +8796,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L27",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8228,7 +8807,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L27",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8238,7 +8817,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L68",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8249,7 +8828,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L68",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8260,18 +8839,29 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L68",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "src_architecture_harness_adapters_mermaid_node",
+      "source": "src_architecture_harness_adapters_mermaid_parse_mermaid",
       "target": "src_architecture_harness_adapters_mermaid_mermaiderror",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L22",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_adapters_mermaid_parse_mermaid",
+      "target": "src_architecture_harness_adapters_mermaid_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/adapters/mermaid.py",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8282,29 +8872,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_adapters_mermaid_parse_mermaid",
-      "target": "src_architecture_harness_adapters_mermaid_mermaiderror",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_adapters_mermaid_parse_mermaid",
-      "target": "src_architecture_harness_adapters_mermaid_node",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L41",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8315,7 +8883,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L69",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8326,7 +8894,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L70",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8337,7 +8905,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L72",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8348,7 +8916,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L74",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9013,7 +9581,7 @@
     },
     {
       "source": "src_architecture_harness_cli",
-      "target": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_ir_graph",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9024,11 +9592,33 @@
     },
     {
       "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_engine_rule_author_context",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
       "target": "src_architecture_harness_cli_build_parser",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9039,7 +9629,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9049,7 +9639,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L87",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9060,7 +9650,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L88",
+      "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9965,6 +10555,146 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_ir_architecture",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_ir_graph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context_terms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context_score",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_ir_architecture_targetarchitectureir",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_score",
+      "target": "src_architecture_harness_engine_rule_author_context_terms",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context_score",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_engine_violations",
       "target": "dataclasses",
       "relation": "imports_from",
@@ -10636,6 +11366,111 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_copy_tree",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_copy_tree",
+      "target": "src_architecture_harness_integrations_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_install_rule_author_skill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_rule_author_skill",
+      "target": "src_architecture_harness_integrations_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_install_project_instructions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_project_instructions",
+      "target": "src_architecture_harness_integrations_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_install_codex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_codex",
+      "target": "src_architecture_harness_integrations_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_install_claude",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_claude",
+      "target": "src_architecture_harness_integrations_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_integrations_install_bmad",
       "target": "src_architecture_harness_integrations_integrationerror",
       "relation": "calls",
@@ -10643,6 +11478,105 @@
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/integrations.py",
       "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_bmad",
+      "target": "src_architecture_harness_integrations_install_rule_author_skill",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_copy_tree",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_rule_author_skill",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_rule_author_skill",
+      "target": "src_architecture_harness_integrations_copy_tree",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_codex",
+      "target": "src_architecture_harness_integrations_install_rule_author_skill",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_codex",
+      "target": "src_architecture_harness_integrations_install_project_instructions",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_claude",
+      "target": "src_architecture_harness_integrations_install_rule_author_skill",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_claude",
+      "target": "src_architecture_harness_integrations_copy_tree",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_claude",
+      "target": "src_architecture_harness_integrations_install_project_instructions",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11551,6 +12485,124 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "ref_jsdom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_input",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_nodes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_edges",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_subgraphs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_addnode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_addedge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_values",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge_addedge",
+      "target": "src_architecture_harness_runtime_mermaid_bridge_addnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "mermaid",
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_runtime_mermaid_bridge",
+      "target": "parser",
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/runtime/mermaid_bridge.mjs",
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_ace_author",
       "target": "json",
       "relation": "imports",
@@ -11980,7 +13032,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_bmad_integration.py",
-      "source_location": "L28",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "tests_test_bmad_integration_test_codex_and_claude_install_the_rule_author_and_project_instructions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12589,6 +13651,16 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_mermaid_adapter",
+      "target": "tests_test_mermaid_adapter_test_official_mermaid_parser_supports_architecture_and_non_flowchart_diagrams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_mermaid_adapter.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_production_agent_loop",
       "target": "json",
       "relation": "imports",
@@ -13140,6 +14212,60 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_rule_author_context",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context",
+      "target": "src_architecture_harness_adapters_graphify",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context",
+      "target": "src_architecture_harness_adapters_mermaid",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context",
+      "target": "src_architecture_harness_engine_rule_author_context",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context",
+      "target": "tests_test_rule_author_context_test_author_context_ranks_real_graphify_mappings_and_preserves_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_rule_author_skill",
       "target": "pathlib",
       "relation": "imports_from",
@@ -13427,7 +14553,7 @@
     },
     {
       "source": "readme",
-      "target": "readme_architecture_harness_v2_1",
+      "target": "readme_architecture_harness_v2_2",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
@@ -13436,7 +14562,7 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_le_principe",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13446,7 +14572,7 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_pourquoi_ce_n_est_pas_archunit",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13456,7 +14582,7 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_provenance_et_confiance",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13466,7 +14592,7 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_règles_et_lifecycle",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13476,7 +14602,7 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_installation",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13486,22 +14612,22 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_api_universelle",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L95",
+      "source_location": "L98",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_workflow_quotidien",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L118",
+      "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13511,7 +14637,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L120",
+      "source_location": "L124",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13521,7 +14647,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L130",
+      "source_location": "L134",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13531,7 +14657,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L134",
+      "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13541,77 +14667,77 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L143",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_architecture_harness_v2_1",
-      "target": "readme_workflow_bmad",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
+      "target": "readme_workflow_bmad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_greenfield_et_brownfield",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L184",
+      "source_location": "L190",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_adapters",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L189",
+      "source_location": "L195",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_validation",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L199",
+      "source_location": "L207",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_architecture_interne",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L217",
+      "source_location": "L225",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_limites_connues",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L234",
+      "source_location": "L242",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v2_1",
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_traçabilité",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L245",
+      "source_location": "L253",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13622,6 +14748,86 @@
       "confidence": "EXTRACTED",
       "source_file": "architecture/rules/decisions.md",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel",
+      "target": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_1_prérequis_communs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_2_créer_le_projet_cible",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_3_utilisation_avec_bmad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_4_utilisation_avec_codex_sans_bmad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_5_utilisation_avec_claude_code",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_6_test_manuel_des_quatre_résultats_du_gate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_et_test_manuel_installer_et_tester_architecture_harness_v2_2",
+      "target": "documentation_installation_et_test_manuel_7_diagnostic",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
+      "source_location": "L207",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17056,6 +18262,16 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v1_implementation_log_v1_implementation_log",
+      "target": "logs_v1_implementation_log_validation_automatisée_2026_08_28t14_21_35_0200",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_IMPLEMENTATION_LOG.md",
+      "source_location": "L395",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_agent_behavior_log",
       "target": "logs_v2_agent_behavior_log_v2_agent_behavior_log",
       "relation": "contains",
@@ -17157,7 +18373,7 @@
     },
     {
       "source": "logs_v2_harness_metrics_v2_harness_metrics",
-      "target": "logs_v2_harness_metrics_gate_1_v1_1_regression_baseline",
+      "target": "logs_v2_harness_metrics_gate_17_official_mermaid_and_orchestrator_rule_author",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
@@ -17167,11 +18383,21 @@
     },
     {
       "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_1_v1_1_regression_baseline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
       "target": "logs_v2_harness_metrics_gate_2_production_graphify_integration",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L61",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17181,7 +18407,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L73",
+      "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17191,7 +18417,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L82",
+      "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17201,7 +18427,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L92",
+      "source_location": "L105",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17211,7 +18437,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L102",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17221,7 +18447,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L113",
+      "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17231,7 +18457,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L124",
+      "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17241,7 +18467,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L136",
+      "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17251,7 +18477,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L149",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17261,7 +18487,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L161",
+      "source_location": "L174",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17271,7 +18497,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L173",
+      "source_location": "L186",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17281,7 +18507,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L187",
+      "source_location": "L200",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17291,7 +18517,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L198",
+      "source_location": "L211",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17301,7 +18527,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
-      "source_location": "L208",
+      "source_location": "L221",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18636,6 +19862,66 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L529",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_531",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L531",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_534",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L534",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "target": "logs_v2_implementation_log_validation_544",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L544",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "target": "logs_v2_implementation_log_qualification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L553",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_17_official_mermaid_and_automatic_rule_author_orchestration_2026_08_28",
+      "target": "logs_v2_implementation_log_status_556",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L556",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_rule_authoring_log",
       "target": "logs_v2_rule_authoring_log_v2_rule_authoring_log",
       "relation": "contains",
@@ -18681,7 +19967,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "skills/architecture-rule-author/SKILL.md",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18691,7 +19977,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "skills/architecture-rule-author/SKILL.md",
-      "source_location": "L43",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18701,7 +19987,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "skills/architecture-rule-author/SKILL.md",
-      "source_location": "L52",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18811,7 +20097,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19147,7 +20433,7 @@
     },
     {
       "source": "src_architecture_harness_cli",
-      "target": "src_architecture_harness_integrations_integrationerror",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -19158,12 +20444,56 @@
     },
     {
       "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
       "target": "src_architecture_harness_integrations_install_bmad",
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L28",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations_install_claude",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations_install_codex",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19472,6 +20802,28 @@
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/engine/paths.py",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_ir_architecture_targetarchitectureir",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19889,7 +21241,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L89",
+      "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19900,7 +21252,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L92",
+      "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19911,7 +21263,29 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L96",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L111",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19922,7 +21296,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L106",
+      "source_location": "L116",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19933,7 +21307,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L114",
+      "source_location": "L124",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19944,7 +21318,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L119",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19955,7 +21329,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L125",
+      "source_location": "L135",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19966,7 +21340,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L130",
+      "source_location": "L140",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19977,7 +21351,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L135",
+      "source_location": "L145",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19988,7 +21362,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L135",
+      "source_location": "L145",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19999,7 +21373,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L137",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20010,7 +21384,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L137",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20021,7 +21395,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L140",
+      "source_location": "L150",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20032,7 +21406,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L145",
+      "source_location": "L155",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20043,7 +21417,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L153",
+      "source_location": "L163",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20054,7 +21428,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L156",
+      "source_location": "L166",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20065,18 +21439,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L171",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "src_architecture_harness_cli_main",
-      "target": "src_architecture_harness_integrations_install_bmad",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L175",
+      "source_location": "L181",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20087,7 +21450,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L199",
+      "source_location": "L210",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20098,7 +21461,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L203",
+      "source_location": "L214",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20109,7 +21472,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L207",
+      "source_location": "L218",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20120,7 +21483,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L209",
+      "source_location": "L220",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -20593,7 +21956,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L27",
+      "source_location": "L15",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20604,7 +21967,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/adapters/mermaid.py",
-      "source_location": "L68",
+      "source_location": "L43",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20615,7 +21978,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L211",
+      "source_location": "L222",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20626,7 +21989,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L211",
+      "source_location": "L222",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20637,7 +22000,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L211",
+      "source_location": "L222",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20648,7 +22011,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L89",
+      "source_location": "L92",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20659,7 +22022,18 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L211",
+      "source_location": "L222",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L110",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20670,7 +22044,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L211",
+      "source_location": "L222",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -20884,6 +22258,28 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_ir_architecture_targetarchitectureir",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/engine/rule_author_context.py",
+      "source_location": "L37",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_exporters_agent_json_context_payload",
       "target": "src_architecture_harness_ir_context_compacttaskcontext",
       "relation": "uses",
@@ -21066,7 +22462,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "tests/test_bmad_integration.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -21077,7 +22473,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "tests/test_bmad_integration.py",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -21576,7 +22972,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L115",
+      "source_location": "L125",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21588,7 +22984,43 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L115",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_integrations_install_bmad",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_integrations_install_codex",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_integrations_install_claude",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L185",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21792,7 +23224,31 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tests/test_bmad_integration.py",
-      "source_location": "L30",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration_test_codex_and_claude_install_the_rule_author_and_project_instructions",
+      "target": "src_architecture_harness_integrations_install_codex",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration_test_codex_and_claude_install_the_rule_author_and_project_instructions",
+      "target": "src_architecture_harness_integrations_install_claude",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -22181,6 +23637,18 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_mermaid_adapter_test_official_mermaid_parser_supports_architecture_and_non_flowchart_diagrams",
+      "target": "src_architecture_harness_adapters_mermaid_parse_mermaid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_mermaid_adapter.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_production_agent_loop_test_three_compact_production_correction_loops",
       "target": "src_architecture_harness_adapters_graphify_load_graphify",
       "relation": "calls",
@@ -22405,6 +23873,42 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_rule_applicability.py",
       "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context_test_author_context_ranks_real_graphify_mappings_and_preserves_source",
+      "target": "src_architecture_harness_adapters_mermaid_parse_mermaid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context_test_author_context_ranks_real_graphify_mappings_and_preserves_source",
+      "target": "src_architecture_harness_engine_rule_author_context_build_rule_author_context",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_context_test_author_context_ranks_real_graphify_mappings_and_preserves_source",
+      "target": "src_architecture_harness_adapters_graphify_load_graphify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_rule_author_context.py",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },

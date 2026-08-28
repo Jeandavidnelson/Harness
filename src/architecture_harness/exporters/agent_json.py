@@ -52,6 +52,7 @@ def capabilities_payload() -> dict[str, object]:
             "gate": "arch-harness gate --format json",
             "capabilities": "arch-harness capabilities --format json",
             "doctor": "arch-harness doctor",
+            "rule_author_context": "arch-harness rules author-context --format json",
         },
         "formats": ["json"],
         "rule_types": ["required_edge", "forbidden_edge", "required_path", "forbidden_path"],
@@ -69,4 +70,5 @@ def capabilities_payload() -> dict[str, object]:
         },
         "llm_in_policy_engine": False,
         "core_orchestrator_dependency": None,
+        "orchestrator_skills": ["architecture-rule-author"],
     }

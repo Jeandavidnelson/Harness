@@ -2,10 +2,11 @@
 
 activation_steps_append = [
   "For brownfield architecture, establish a production Graphify baseline before comparing declared Mermaid with observed code. For greenfield architecture, do not require Graphify before meaningful code exists.",
+  "Automatically invoke the installed architecture-rule-author skill after creating or changing Mermaid. Its required input is `arch-harness rules author-context --format json`; do not ask the user to invoke it manually.",
 ]
 
 persistent_facts = [
-  "Mermaid expresses declared direction, not automatically blocking policy. Use the architecture-rule-author skill to create candidate rules and request human review before promotion.",
+  "Mermaid expresses declared direction, not automatically blocking policy. The architecture-rule-author skill must retain all Mermaid facts, resolve Graphify mappings automatically when evidence is sufficient, and ask only about remaining semantic ambiguities or rule promotion.",
 ]
 
-on_complete = "After architecture Mermaid is updated, run the architecture-rule-author skill. Validate candidate syntax, present ambiguities and candidates to the user, promote only explicitly approved rules, record decisions, then run `arch-harness doctor`."
+on_complete = "After architecture Mermaid is updated, invoke the installed architecture-rule-author skill automatically. Validate candidate syntax, present only unresolved ambiguities and candidates to the user, promote only explicitly approved rules, record decisions, then run `arch-harness doctor`."

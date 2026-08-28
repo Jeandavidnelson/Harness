@@ -42,6 +42,19 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Review findings corrected | 1 / 1 |
 | Final generated-project gate | PASS |
 
+## Gate 17 official Mermaid and orchestrator Rule Author
+
+| Metric | Value |
+|---|---:|
+| Package version | 2.2.0 |
+| Tests | 68 passed |
+| Normalized nodes / edges | 899 / 1525 |
+| Official Mermaid families exercised | 5 |
+| Orchestrator installation smoke tests | 3 / 3 |
+| Rule Author skill validation | PASS |
+| Production rule assessments | 8 PASS |
+| V1 / V2 validation | PASS / PASS |
+
 ## Gate 1 V1.1 regression baseline
 
 | Metric | Value |

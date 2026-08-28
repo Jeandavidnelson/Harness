@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-import re
+import json
+import shutil
+import subprocess
 from pathlib import Path
 
 from architecture_harness.ir.architecture import TargetArchitectureIR
@@ -10,59 +12,32 @@ class MermaidError(ValueError):
     pass
 
 
-HEADER = re.compile(r"^(?:flowchart|graph)\s+(LR|RL|TB|TD|BT)\s*$", re.I)
-NODE = re.compile(r'^([A-Za-z_][\w.-]*)(?:\s*(?:\[([^]]*)\]|\(([^)]*)\)|\{([^}]*)\}))?$')
-EDGE = re.compile(r"\s*(?:--(?:[^>-]*?)--?>|-->|==>|-.->)\s*")
-
-
-def _node(token: str) -> tuple[str, str]:
-    token = token.strip()
-    match = NODE.match(token)
-    if not match:
-        raise MermaidError(f"Unsupported Mermaid node syntax: {token}")
-    identifier = match.group(1)
-    return identifier, next((value for value in match.groups()[1:] if value is not None), identifier)
-
-
 def parse_mermaid(text: str, source: str = "<memory>") -> TargetArchitectureIR:
-    graph = TargetArchitectureIR(sources=[source])
-    current: str | None = None
-    header_seen = False
-    for number, raw_line in enumerate(text.splitlines(), 1):
-        line = raw_line.split("%%", 1)[0].strip().rstrip(";")
-        if not line:
-            continue
-        if not header_seen:
-            if not HEADER.match(line):
-                raise MermaidError(f"{source}:{number}: expected flowchart/graph header")
-            header_seen = True
-            continue
-        if line.lower().startswith("subgraph "):
-            name, _ = _node(line[9:].strip())
-            current = name
-            graph.subgraphs.setdefault(name, set())
-            continue
-        if line.lower() == "end":
-            current = None
-            continue
-        if line.startswith(("direction ", "classDef ", "class ", "style ", "linkStyle ")):
-            continue
-        parts = EDGE.split(line)
-        if len(parts) > 1:
-            parsed = [_node(part) for part in parts]
-            for identifier, label in parsed:
-                graph.nodes[identifier] = label
-                if current:
-                    graph.subgraphs[current].add(identifier)
-            graph.edges.extend((parsed[i][0], parsed[i + 1][0]) for i in range(len(parsed) - 1))
-        else:
-            identifier, label = _node(line)
-            graph.nodes[identifier] = label
-            if current:
-                graph.subgraphs[current].add(identifier)
-    if not header_seen:
-        raise MermaidError(f"{source}: empty Mermaid graph")
-    return graph
+    node = shutil.which("node")
+    if not node:
+        raise MermaidError("Node.js is required by the official Mermaid parser runtime")
+    bridge = Path(__file__).parents[1] / "runtime" / "mermaid_bridge.mjs"
+    try:
+        completed = subprocess.run(
+            [node, str(bridge)], input=json.dumps({"text": text, "source": source}),
+            text=True, capture_output=True, check=False,
+        )
+    except OSError as exc:
+        raise MermaidError(f"Cannot execute official Mermaid parser: {exc}") from exc
+    if completed.returncode:
+        detail = completed.stderr.strip().splitlines()[-1] if completed.stderr.strip() else "unknown parse error"
+        raise MermaidError(f"{source}: Mermaid parser rejected diagram: {detail}")
+    try:
+        payload = json.loads(completed.stdout)
+    except json.JSONDecodeError as exc:
+        raise MermaidError(f"{source}: invalid response from official Mermaid parser") from exc
+    return TargetArchitectureIR(
+        nodes={item["id"]: item["label"] for item in payload["nodes"]},
+        edges=[(item["source"], item["target"]) for item in payload["edges"]],
+        subgraphs={name: set(members) for name, members in payload["subgraphs"].items()},
+        sources=[source],
+        diagram_types=[payload["diagram_type"]],
+    )
 
 
 def load_mermaid_directory(directory: str | Path) -> TargetArchitectureIR:
@@ -77,5 +52,5 @@ def load_mermaid_directory(directory: str | Path) -> TargetArchitectureIR:
         for name, members in parsed.subgraphs.items():
             result.subgraphs.setdefault(name, set()).update(members)
         result.sources.extend(parsed.sources)
+        result.diagram_types.extend(parsed.diagram_types)
     return result
-

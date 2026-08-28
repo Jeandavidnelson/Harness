@@ -1,8 +1,8 @@
 {
   "pyproject.toml": {
-    "mtime": 1787914288.5570965,
-    "seen": 1787914344.750298,
-    "ast_hash": "28676621b347867b46af8d13f75f1a99",
+    "mtime": 1787919189.673675,
+    "seen": 1787919500.761933,
+    "ast_hash": "4341a4287d632e83084f9095f056ef08",
     "semantic_hash": ""
   },
   "scripts/benchmark_tokens.sh": {
@@ -30,9 +30,9 @@
     "semantic_hash": "8f75bd7ba890938b43dd0dcd9fed603b"
   },
   "src/architecture_harness/__init__.py": {
-    "mtime": 1787914288.5577009,
-    "seen": 1787914344.7503061,
-    "ast_hash": "83e9fd29c390dbce3d2248bc47fbcb3d",
+    "mtime": 1787919189.6741562,
+    "seen": 1787919500.761942,
+    "ast_hash": "3f16dfe37533bfad1a92f59e0d157206",
     "semantic_hash": ""
   },
   "src/architecture_harness/adapters/__init__.py": {
@@ -54,10 +54,10 @@
     "semantic_hash": ""
   },
   "src/architecture_harness/adapters/mermaid.py": {
-    "mtime": 1787706648.7329652,
-    "seen": 1787727622.9815118,
-    "ast_hash": "ab12c14d92df963338949f21ce628dbe",
-    "semantic_hash": "ab12c14d92df963338949f21ce628dbe"
+    "mtime": 1787919128.8044567,
+    "seen": 1787919500.76195,
+    "ast_hash": "3fe0942baf2cb958b19ad1007c08529b",
+    "semantic_hash": ""
   },
   "src/architecture_harness/adapters/rules.py": {
     "mtime": 1787913702.0001526,
@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787913672.400135,
-    "seen": 1787913720.788033,
-    "ast_hash": "226825dcc9ad2dc3fd8f81451503329e",
+    "mtime": 1787919189.6718462,
+    "seen": 1787919500.761954,
+    "ast_hash": "6a250ef3098c81df6097d841c1d00376",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -168,10 +168,10 @@
     "semantic_hash": "84c32664596a0002f3ae641c72537908"
   },
   "src/architecture_harness/ir/architecture.py": {
-    "mtime": 1787706648.6069295,
-    "seen": 1787727622.981527,
-    "ast_hash": "1a35a27f9e51aa6af36a6a9e99cf9a9e",
-    "semantic_hash": "1a35a27f9e51aa6af36a6a9e99cf9a9e"
+    "mtime": 1787919128.8049493,
+    "seen": 1787919500.7619772,
+    "ast_hash": "18a59b6d1199fe7fb6342521d4d15db4",
+    "semantic_hash": ""
   },
   "src/architecture_harness/ir/context.py": {
     "mtime": 1787706916.5774062,
@@ -264,10 +264,10 @@
     "semantic_hash": ""
   },
   "tests/test_mermaid_adapter.py": {
-    "mtime": 1787706649.197318,
-    "seen": 1787727622.9815402,
-    "ast_hash": "fc46d939c92afdaab05c72f06fb18d35",
-    "semantic_hash": "fc46d939c92afdaab05c72f06fb18d35"
+    "mtime": 1787919482.1578743,
+    "seen": 1787919500.762006,
+    "ast_hash": "011e89b9703bbbdbe9b26cc7f2e3ca44",
+    "semantic_hash": ""
   },
   "tests/test_rules.py": {
     "mtime": 1787913715.297392,
@@ -300,9 +300,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787914288.5604894,
-    "seen": 1787914344.750384,
-    "ast_hash": "ee0e55fbc4a69ea84bf6d2b4836a0a10",
+    "mtime": 1787919795.8276172,
+    "seen": 1787919813.176212,
+    "ast_hash": "e3799b15fac0432cbd5e563c093c7cc8",
     "semantic_hash": ""
   },
   "architecture/rules/rules.yaml": {
@@ -336,15 +336,15 @@
     "semantic_hash": ""
   },
   "logs/V1_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787914427.7017834,
-    "seen": 1787914428.5260339,
-    "ast_hash": "f6f2597c3cf5532f80b30fa11fac133e",
+    "mtime": 1787919695.1904187,
+    "seen": 1787919696.072167,
+    "ast_hash": "809b3d38bf8fd53e6987204a32ad57c5",
     "semantic_hash": ""
   },
   "src/architecture_harness/exporters/agent_json.py": {
-    "mtime": 1787914396.2222786,
-    "seen": 1787914402.7473989,
-    "ast_hash": "4d70b8ecb3404029bf7985620ff31f79",
+    "mtime": 1787919189.6725247,
+    "seen": 1787919500.7619672,
+    "ast_hash": "74950c89aa445be929d7b7245f31e31f",
     "semantic_hash": ""
   },
   "tests/test_agent_cli.py": {
@@ -372,9 +372,9 @@
     "semantic_hash": ""
   },
   "integrations/claude/architecture-harness/SKILL.md": {
-    "mtime": 1787909366.4704032,
-    "seen": 1787909380.9776242,
-    "ast_hash": "eb6f330fd71919fce6824f9fa45f691b",
+    "mtime": 1787919272.1485627,
+    "seen": 1787919500.762049,
+    "ast_hash": "1bf22e0f149659b3e549245dcd3836d8",
     "semantic_hash": ""
   },
   "src/architecture_harness/metrics/v1_1_benchmark.py": {
@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787914443.2732434,
-    "seen": 1787914448.259495,
-    "ast_hash": "55365153965fcf642e36c73593b98784",
+    "mtime": 1787919821.935505,
+    "seen": 1787919826.845589,
+    "ast_hash": "1a6814a5c15ad2761014b4f5bf71db91",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787914443.272022,
-    "seen": 1787914448.259496,
-    "ast_hash": "fa3ade80f592a3a5806ca27170949f5a",
+    "mtime": 1787919821.9338107,
+    "seen": 1787919826.845591,
+    "ast_hash": "9145a1f9063fdb47259e21e038fff99b",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
@@ -534,9 +534,9 @@
     "semantic_hash": ""
   },
   "tests/test_universal_api.py": {
-    "mtime": 1787914416.46974,
-    "seen": 1787914422.051379,
-    "ast_hash": "b658785ec5a3319ec3f1f5004a784d53",
+    "mtime": 1787919482.158666,
+    "seen": 1787919500.762016,
+    "ast_hash": "bcf7617f1195175e489c786cf4d198f0",
     "semantic_hash": ""
   },
   "src/architecture_harness/engine/gate.py": {
@@ -570,20 +570,20 @@
     "semantic_hash": ""
   },
   "skills/architecture-rule-author/SKILL.md": {
-    "mtime": 1787913686.102719,
-    "seen": 1787913720.788137,
-    "ast_hash": "0f258e2317121efbef7bd3faf699c5c2",
+    "mtime": 1787919263.3180757,
+    "seen": 1787919500.762062,
+    "ast_hash": "2e2d5c38d71c469325dbe1f8501bece7",
     "semantic_hash": ""
   },
   "skills/architecture-rule-author/agents/openai.yaml": {
-    "mtime": 1787908405.7909873,
-    "seen": 1787908495.1866188,
-    "ast_hash": "2ad2845110dd3c453f25c97b35a40226",
+    "mtime": 1787919263.3187845,
+    "seen": 1787919500.762063,
+    "ast_hash": "3fc873925d211d0944b2409e007f4ceb",
     "semantic_hash": ""
   },
   "experiments/agent-runs/V2_TEST_LAB_RESULTS.json": {
-    "mtime": 1787914436.4261277,
-    "seen": 1787914448.2593741,
+    "mtime": 1787919753.6590476,
+    "seen": 1787919813.1761138,
     "ast_hash": "da577bfb6b3d6c67ce4e05bcd89177c0",
     "semantic_hash": ""
   },
@@ -600,15 +600,15 @@
     "semantic_hash": ""
   },
   "src/architecture_harness/integrations.py": {
-    "mtime": 1787909095.5563684,
-    "seen": 1787909104.066112,
-    "ast_hash": "e1bacbab3ff6b61889001699777c73c5",
+    "mtime": 1787919366.0127225,
+    "seen": 1787919500.761975,
+    "ast_hash": "4fdae08648865c33bbc340b2f7f7192a",
     "semantic_hash": ""
   },
   "tests/test_bmad_integration.py": {
-    "mtime": 1787909095.560989,
-    "seen": 1787909104.066132,
-    "ast_hash": "2c6977b3aa6610cce2acaac6b4e91c63",
+    "mtime": 1787919482.1573465,
+    "seen": 1787919500.761997,
+    "ast_hash": "31911cac4aeb31c66e67606098a00f28",
     "semantic_hash": ""
   },
   "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md": {
@@ -636,15 +636,15 @@
     "semantic_hash": ""
   },
   "integrations/claude/SKILL.md": {
-    "mtime": 1787909366.4680068,
-    "seen": 1787909380.977623,
-    "ast_hash": "efd5eb61f39d39fbfda37f119b88b384",
+    "mtime": 1787919272.1496842,
+    "seen": 1787919500.762048,
+    "ast_hash": "019ff7c31762be14e16b3ddf0eda61bb",
     "semantic_hash": ""
   },
   "integrations/codex/AGENTS.snippet.md": {
-    "mtime": 1787909366.467748,
-    "seen": 1787909380.9776251,
-    "ast_hash": "cadd183bfdf61cf0cd61980ced43aea2",
+    "mtime": 1787919272.1502206,
+    "seen": 1787919500.7620502,
+    "ast_hash": "7949e945ff166d75037eafd239baa047",
     "semantic_hash": ""
   },
   "integrations/generic/README.md": {
@@ -699,6 +699,36 @@
     "mtime": 1787914288.5591369,
     "seen": 1787914344.750391,
     "ast_hash": "7c3f44307baf638683a83fe390440084",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1787919035.6145227,
+    "seen": 1787919500.7619321,
+    "ast_hash": "4fc9c88dfd0c64409d2587ce8888310b",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/engine/rule_author_context.py": {
+    "mtime": 1787919632.4293764,
+    "seen": 1787919646.174013,
+    "ast_hash": "3543c9550028567f8bb1602ea8baff0c",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/runtime/mermaid_bridge.mjs": {
+    "mtime": 1787919395.1597986,
+    "seen": 1787919500.761987,
+    "ast_hash": "2127f56b62efe289abb6dcd588243006",
+    "semantic_hash": ""
+  },
+  "tests/test_rule_author_context.py": {
+    "mtime": 1787919304.1650045,
+    "seen": 1787919500.762012,
+    "ast_hash": "b525c12a6427bf18fc4b768334c0d264",
+    "semantic_hash": ""
+  },
+  "documentation/INSTALLATION_ET_TEST_MANUEL.md": {
+    "mtime": 1787919366.0131848,
+    "seen": 1787919500.762026,
+    "ast_hash": "74f1e70230469bd47832b19541fa7f14",
     "semantic_hash": ""
   }
 }

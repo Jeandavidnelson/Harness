@@ -1,4 +1,4 @@
-# Architecture Harness V2.1
+# Architecture Harness V2.2
 
 Architecture Harness donne à BMAD, Codex, Claude ou tout autre agent une ligne directrice architecturale compacte issue de Mermaid, puis vérifie déterministement le code réellement produit. Mermaid guide l’agent ; seules les règles explicitement validées par un humain peuvent bloquer.
 
@@ -78,19 +78,22 @@ Exemple :
   applicability: required
 ```
 
-Le skill `skills/architecture-rule-author/` transforme les intentions Mermaid en candidates, pose les questions sur edge/path, scope, exceptions et sévérité, puis s’arrête avant promotion sans approbation explicite.
+Le skill `skills/architecture-rule-author/` est installé dans l’orchestrateur. Il reçoit automatiquement le Mermaid validé par le parser officiel, les faits normalisés et des mappings Graphify classés via `arch-harness rules author-context --format json`. Il résout les correspondances étayées, ne pose de questions que pour les ambiguïtés restantes, écrit les candidates, puis s’arrête avant promotion sans approbation explicite.
 
 ## Installation
 
-Prérequis : Python 3.10+.
+Prérequis : Python 3.10+, Node.js 20+ et npm.
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
+npm ci
 .venv/bin/arch-harness doctor
 ```
 
 Graphify 0.9.50 est la source de l’architecture observée. Le harnais ne réimplémente pas son analyse.
+
+Mermaid 11.17.2 est la source officielle du parsing déclaré. Le runtime Node remplace l’ancien parseur Python regex, valide les familles Mermaid avec Mermaid lui-même et normalise leurs faits structurels. Le texte officiel validé reste fourni au Rule Author pour les diagrammes qui ne représentent pas un graphe de dépendances uniforme.
 
 ## API universelle
 
@@ -100,6 +103,7 @@ arch-harness agent context --focus <node> --format json
 arch-harness agent validate --format json
 arch-harness gate --format json
 arch-harness capabilities --format json
+arch-harness rules author-context --format json
 arch-harness doctor
 ```
 
@@ -154,11 +158,13 @@ arch-harness --root /path/to/project integrations install bmad \
   --adapter-root /path/to/architecture-harness
 ```
 
-BMAD 6.11 requiert `uv` pour rendre `bmad-build`. L’adapter installe trois overrides d’équipe officiels dans `_bmad/custom/` :
+BMAD 6.11 requiert `uv` pour rendre `bmad-build`. L’adapter installe trois overrides d’équipe officiels dans `_bmad/custom/` et le skill appelable dans `.agents/skills/architecture-rule-author/` :
 
 - `bmad-architecture` confronte brownfield observé et Mermaid, puis déclenche l’authoring candidat ;
 - `bmad-build` demande le contexte compact, impose les checkpoints et boucle sur les FAIL ;
 - `bmad-code-review` charge le dernier verdict sans remplacer la revue.
+
+`bmad-architecture` invoque automatiquement le Rule Author après un changement Mermaid. `bmad-build` le réinvoque après le premier graphe greenfield ou un mapping non résolu afin de rapprocher Mermaid et Graphify sans demander d’identifiants manuels.
 
 Séquence recommandée :
 
@@ -196,6 +202,8 @@ BMAD conserve ses checkpoints humains. L’essai E2E a été poursuivi après ap
 
 Tous appellent la même CLI. `arch-harness capabilities --format json` suffit à un consommateur générique pour découvrir le contrat.
 
+Les installateurs `integrations install codex` et `integrations install claude` déploient le même Rule Author ainsi que les instructions de déclenchement du projet. Le guide complet BMAD, Codex et Claude se trouve dans `documentation/INSTALLATION_ET_TEST_MANUEL.md`.
+
 ## Validation
 
 ```bash
@@ -206,7 +214,7 @@ La validation rafraîchit Graphify, contrôle la fraîcheur et la configuration,
 
 Résultats V2 observés avant le gate final :
 
-- 65 tests passants ;
+- 68 tests passants ;
 - Test Lab déterministe : 12 scénarios, 4/4 violations connues détectées, 0 faux blocage dans le corpus ;
 - benchmark C vs B : 48,7 % de réduction de contexte sur cinq tâches ;
 - correction Codex réelle : réussite finale en deux processus, avec un échec fonctionnel intermédiaire conservé ;
@@ -235,7 +243,7 @@ src/architecture_harness/
 
 - Les matchers de rôles restent explicites et lexicaux ; leur résolution doit être testée.
 - `scope` et `exceptions` sont conservés dans l’IR mais n’ont pas encore de sémantique active universelle.
-- Le sous-ensemble Mermaid est ciblé ; le diagramme n’est pas un langage de politique.
+- Mermaid officiel accepte les familles supportées par Mermaid, mais certaines familles non orientées dépendances ne produisent naturellement aucune arête de politique ; leur texte et leurs faits restent transmis au skill comme guidance déclarée.
 - La qualité dépend fortement de la précision edge/path des règles.
 - Le Test Lab est déterministe ; il ne remplace pas les runs agentiques.
 - Une seule correction Codex réelle ne donne pas un taux de succès généralisable.

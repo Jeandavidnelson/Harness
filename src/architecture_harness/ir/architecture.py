@@ -9,4 +9,4 @@ class TargetArchitectureIR:
     edges: list[tuple[str, str]] = field(default_factory=list)
     subgraphs: dict[str, set[str]] = field(default_factory=dict)
     sources: list[str] = field(default_factory=list)
-
+    diagram_types: list[str] = field(default_factory=list)
