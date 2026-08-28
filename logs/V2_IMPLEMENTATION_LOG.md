@@ -420,3 +420,24 @@ Only Codex has a real correction run in this environment. Claude portability is 
 
 ### Status
 PASS for interface portability; cross-model behavior remains partially measured.
+
+## Gate 13 — Optional ArchUnit Skill — 2026-08-28
+
+### Objective
+Offer code-level Java enforcement as an optional downstream module without coupling it to the macro harness.
+
+### Implementation
+Used the official skill-creator workflow to add `integrations/archunit`. It translates only human-confirmed validated rules, requires faithful relation/package mapping and keeps generated tests as review candidates.
+
+### Tests and metrics
+- official skill validation: PASS;
+- full suite: 61 passed;
+- core ArchUnit references/dependencies: 0;
+- architecture gate: PASS;
+- generated Java tests in this non-Java repository: 0.
+
+### Problems / negative results
+No Java fixture or native ArchUnit execution was added because this repository is Python and the module is intentionally optional. Runtime effectiveness is NOT_MEASURED.
+
+### Status
+PASS for external skill boundary; Java runtime behavior remains NOT_MEASURED.

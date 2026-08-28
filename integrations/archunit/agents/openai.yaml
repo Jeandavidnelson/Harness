@@ -1,0 +1,4 @@
+interface:
+  display_name: "ArchUnit Test Author"
+  short_description: "Generate reviewable ArchUnit test candidates"
+  default_prompt: "Use $archunit to turn validated architecture rules into candidate Java ArchUnit tests."

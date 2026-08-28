@@ -1693,6 +1693,32 @@
       "_origin": "ast"
     },
     {
+      "id": "tests_test_archunit_skill",
+      "label": "test_archunit_skill.py",
+      "file_type": "code",
+      "source_file": "tests/test_archunit_skill.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_archunit_skill_test_archunit_is_an_external_human_reviewed_skill",
+      "label": "test_archunit_is_an_external_human_reviewed_skill()",
+      "file_type": "code",
+      "source_file": "tests/test_archunit_skill.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_archunit_skill_test_core_does_not_reference_archunit",
+      "label": "test_core_does_not_reference_archunit()",
+      "file_type": "code",
+      "source_file": "tests/test_archunit_skill.py",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_benchmark",
       "label": "test_benchmark.py",
       "file_type": "code",
@@ -3201,6 +3227,64 @@
       "node_kind": "heading",
       "source_file": "integrations/ace-rule-author/SKILL.md",
       "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_archunit_skill",
+      "label": "SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "name": "archunit",
+        "description": "Generate reviewable Java ArchUnit test candidates from Architecture Harness Mermaid context and human-validated rules while keeping native tests outside the harness core. Use when a Java project wants to enforce validated macro-architecture rules as code-level ArchUnit invariants or review existing ArchUnit coverage against harness policy."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_archunit_skill_archunit_test_author",
+      "label": "ArchUnit Test Author",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_archunit_skill_workflow",
+      "label": "Workflow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_archunit_skill_translation_guidance",
+      "label": "Translation guidance",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_archunit_skill_safety_boundary",
+      "label": "Safety boundary",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_archunit_skill_completion_report",
+      "label": "Completion report",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L32",
       "_origin": "ast"
     },
     {
@@ -5800,6 +5884,15 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_harness_metrics_gate_12_portability",
+      "label": "Gate 12 portability",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L145",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_implementation_log",
       "label": "V2_IMPLEMENTATION_LOG.md",
       "file_type": "document",
@@ -6733,6 +6826,60 @@
       "node_kind": "heading",
       "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
       "source_location": "L400",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "label": "Gate 12 — Generic / Codex / Claude Portability — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L403",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_405",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L405",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_408",
+      "label": "Implementation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L408",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_tests_and_metrics",
+      "label": "Tests and metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L411",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_418",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L418",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_421",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L421",
       "_origin": "ast"
     },
     {
@@ -11164,6 +11311,37 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_archunit_skill",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_archunit_skill.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_archunit_skill",
+      "target": "tests_test_archunit_skill_test_archunit_is_an_external_human_reviewed_skill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_archunit_skill.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_archunit_skill",
+      "target": "tests_test_archunit_skill_test_core_does_not_reference_archunit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_archunit_skill.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_benchmark",
       "target": "pathlib",
       "relation": "imports_from",
@@ -13454,6 +13632,56 @@
       "confidence": "EXTRACTED",
       "source_file": "integrations/ace-rule-author/SKILL.md",
       "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_archunit_skill",
+      "target": "integrations_archunit_skill_archunit_test_author",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_archunit_skill_archunit_test_author",
+      "target": "integrations_archunit_skill_workflow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_archunit_skill_archunit_test_author",
+      "target": "integrations_archunit_skill_translation_guidance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_archunit_skill_archunit_test_author",
+      "target": "integrations_archunit_skill_safety_boundary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_archunit_skill_archunit_test_author",
+      "target": "integrations_archunit_skill_completion_report",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/archunit/SKILL.md",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16208,6 +16436,16 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_12_portability",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_implementation_log",
       "target": "logs_v2_implementation_log_v2_implementation_log",
       "relation": "contains",
@@ -17234,6 +17472,66 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
       "source_location": "L400",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L403",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_405",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L405",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_408",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L408",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "target": "logs_v2_implementation_log_tests_and_metrics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L411",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_418",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L418",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_12_generic_codex_claude_portability_2026_08_28",
+      "target": "logs_v2_implementation_log_status_421",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L421",
       "weight": 1.0,
       "_origin": "ast"
     },

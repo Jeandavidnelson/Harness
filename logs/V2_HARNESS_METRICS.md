@@ -152,3 +152,13 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Generic subprocess | PASS |
 | Codex real execution | PASS_WITH_QUALIFICATIONS |
 | Claude real execution | NOT_MEASURED |
+
+## Gate 13 optional ArchUnit skill
+
+| Metric | Value |
+|---|---:|
+| Tests | 61 passed |
+| Official skill validation | PASS |
+| Core ArchUnit dependencies | 0 |
+| Generated Java tests | 0 |
+| Java runtime result | NOT_MEASURED |

@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787909328.2487407,
-    "seen": 1787909380.977634,
-    "ast_hash": "495a1276542be59c73542e41ce22c4cf",
+    "mtime": 1787909394.3640807,
+    "seen": 1787909440.4514098,
+    "ast_hash": "9ffa2ce22452bb2e98ad8625e8002c2d",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787909328.2481909,
-    "seen": 1787909380.977634,
-    "ast_hash": "ed8e98ff90d53e89087c37545a62a6ed",
+    "mtime": 1787909394.3634963,
+    "seen": 1787909440.451411,
+    "ast_hash": "3f3d2e14e75cb0b1ddef54584c2c96d5",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
@@ -657,6 +657,24 @@
     "mtime": 1787909366.4685073,
     "seen": 1787909380.977626,
     "ast_hash": "c8038f547148f561abeab01f9cca4f5d",
+    "semantic_hash": ""
+  },
+  "tests/test_archunit_skill.py": {
+    "mtime": 1787909433.2662292,
+    "seen": 1787909440.45135,
+    "ast_hash": "90fc9a19bf8957bfc33d524db85ed7b8",
+    "semantic_hash": ""
+  },
+  "integrations/archunit/SKILL.md": {
+    "mtime": 1787909433.265945,
+    "seen": 1787909440.451391,
+    "ast_hash": "3432e391226d9b40bce332034528a555",
+    "semantic_hash": ""
+  },
+  "integrations/archunit/agents/openai.yaml": {
+    "mtime": 1787909411.3379374,
+    "seen": 1787909440.451392,
+    "ast_hash": "33465863dcd010523750b685c689e5cd",
     "semantic_hash": ""
   }
 }
