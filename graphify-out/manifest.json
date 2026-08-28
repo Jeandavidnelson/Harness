@@ -42,10 +42,10 @@
     "semantic_hash": "56971b85b754087500e747ea86e060b2"
   },
   "src/architecture_harness/adapters/context_mermaid.py": {
-    "mtime": 1787706916.7050729,
-    "seen": 1787727622.9815109,
-    "ast_hash": "12eea6eb4f9f5d12e8a59b8385df182e",
-    "semantic_hash": "12eea6eb4f9f5d12e8a59b8385df182e"
+    "mtime": 1787908119.5611145,
+    "seen": 1787908130.068382,
+    "ast_hash": "a79761c2604926576721a3d27b482e52",
+    "semantic_hash": ""
   },
   "src/architecture_harness/adapters/graphify.py": {
     "mtime": 1787727743.7785156,
@@ -144,10 +144,10 @@
     "semantic_hash": "b172c6890579aa17233a72fd00468544"
   },
   "src/architecture_harness/exporters/llm_context.py": {
-    "mtime": 1787706916.9604175,
-    "seen": 1787727622.981524,
-    "ast_hash": "61df2a8f48e1b4015ca65668c1e8e792",
-    "semantic_hash": "61df2a8f48e1b4015ca65668c1e8e792"
+    "mtime": 1787908119.5624878,
+    "seen": 1787908130.0684001,
+    "ast_hash": "10ebbcb92f1a7408a17fca351de0a7de",
+    "semantic_hash": ""
   },
   "src/architecture_harness/exporters/markdown.py": {
     "mtime": 1787706824.5290906,
@@ -180,10 +180,10 @@
     "semantic_hash": "3a2632445d54843666b3d5bc5a9773ac"
   },
   "src/architecture_harness/ir/graph.py": {
-    "mtime": 1787706539.5120292,
-    "seen": 1787727622.981529,
-    "ast_hash": "9af25ab61f331fb83ab4d333c71e0758",
-    "semantic_hash": "9af25ab61f331fb83ab4d333c71e0758"
+    "mtime": 1787908119.5601158,
+    "seen": 1787908130.0684092,
+    "ast_hash": "af44f72059a43fa29cee2b1eddd68362",
+    "semantic_hash": ""
   },
   "src/architecture_harness/ir/rules.py": {
     "mtime": 1787706730.113382,
@@ -246,15 +246,15 @@
     "semantic_hash": "feadb41847aefc983f6cb5759666a19d"
   },
   "tests/test_context_selector.py": {
-    "mtime": 1787706917.5584128,
-    "seen": 1787727622.981537,
-    "ast_hash": "50f59947e06932f7818d876bdc26406b",
-    "semantic_hash": "50f59947e06932f7818d876bdc26406b"
+    "mtime": 1787908119.563968,
+    "seen": 1787908130.068426,
+    "ast_hash": "98a35a93176f779157cbb3ba063bc591",
+    "semantic_hash": ""
   },
   "tests/test_graphify_adapter.py": {
-    "mtime": 1787727743.779866,
-    "seen": 1787727751.6584132,
-    "ast_hash": "8275b7aba212f8e8ffe05e49fb72ef96",
+    "mtime": 1787908119.5634956,
+    "seen": 1787908130.068428,
+    "ast_hash": "09d212c61ef6587c690143961be21467",
     "semantic_hash": ""
   },
   "tests/test_harness.py": {
@@ -342,9 +342,9 @@
     "semantic_hash": ""
   },
   "src/architecture_harness/exporters/agent_json.py": {
-    "mtime": 1787727842.5958867,
-    "seen": 1787727849.28178,
-    "ast_hash": "8ffcf73b34a6e4566a600fb6ced8e375",
+    "mtime": 1787908119.5619423,
+    "seen": 1787908130.068398,
+    "ast_hash": "3b456ba1806c8a74dc1b091a606a1233",
     "semantic_hash": ""
   },
   "tests/test_agent_cli.py": {
@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787907923.1227007,
-    "seen": 1787908035.808403,
-    "ast_hash": "61344af2c295dc7149b4edf98bf5863c",
+    "mtime": 1787908053.4111514,
+    "seen": 1787908130.06846,
+    "ast_hash": "7543db7accfcf00b04f59365d9c623a7",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787907978.2961996,
-    "seen": 1787908035.808404,
-    "ast_hash": "29b54635ff002c9c5fb04ec578a33b7e",
+    "mtime": 1787908053.410076,
+    "seen": 1787908130.06846,
+    "ast_hash": "9380de415f107f7cafb377979e6d7e6d",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
@@ -519,6 +519,18 @@
     "mtime": 1787907923.1215146,
     "seen": 1787908035.8083892,
     "ast_hash": "2c6b9c4bfbc61520b61cbc88b290dc87",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/ir/provenance.py": {
+    "mtime": 1787908119.559312,
+    "seen": 1787908130.0684102,
+    "ast_hash": "52eb254cd13f23075f405137fa5e277d",
+    "semantic_hash": ""
+  },
+  "tests/test_provenance.py": {
+    "mtime": 1787908119.5642335,
+    "seen": 1787908130.068434,
+    "ast_hash": "4ddf676cc97142cc6edcd04104ee0f43",
     "semantic_hash": ""
   }
 }

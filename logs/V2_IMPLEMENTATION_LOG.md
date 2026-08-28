@@ -132,3 +132,37 @@ Pending Gate 2 commit.
 
 ### Status
 PASS — the shell wrapper and adapters can rely on the universal CLI contract.
+
+## Gate 3 — Provenance Model — 2026-08-28
+
+### Objective
+Separate the origin of architectural evidence from extractor confidence.
+
+### Hypothesis
+Agents can reason safely when declared, observed, inferred, confirmed, generated and ambiguous facts are explicit without discarding Graphify's native confidence.
+
+### Implementation
+Added the six-value `EvidenceOrigin` model, deterministic confidence-to-origin mapping, explicit Mermaid declaration origin, and origin fields in agent context/capabilities. Kept the existing `provenance` field as extractor confidence for backward compatibility.
+
+### Commands
+- `arch-harness agent context --focus ir --format json`
+- `scripts/refresh_graph.sh`
+- `pytest -q`
+- `arch-harness agent validate --format json`
+
+### Tests
+- first run: 43 passed, 2 failed because the stale-graph guard correctly rejected changed source files;
+- after required Graphify refresh: 45 passed;
+- agent validation: PASS;
+- diff whitespace check: PASS.
+
+### Metrics
+- supported evidence origins: 6;
+- new provenance tests: 2;
+- hidden provenance promotions: 0.
+
+### Problems / negative results
+The legacy field name `provenance` represents Graphify confidence, not evidence origin. It remains temporarily supported to avoid a breaking V1.1 migration; V2 payloads expose both dimensions.
+
+### Status
+PASS — provenance is explicit and deterministic; inferred facts are not promoted.

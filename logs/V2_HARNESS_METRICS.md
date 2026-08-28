@@ -41,3 +41,12 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Edges | 1104 |
 | EXTRACTED / INFERRED / AMBIGUOUS | 1031 / 73 / 0 |
 | Refresh duration | 0.8931 seconds |
+
+## Gate 3 provenance model
+
+| Metric | Value |
+|---|---:|
+| Tests after graph refresh | 45 passed |
+| Evidence origins supported | 6 |
+| Automatic inference promotions | 0 |
+| Agent validation | PASS |

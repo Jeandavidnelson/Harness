@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from architecture_harness.ir.provenance import EvidenceOrigin, origin_for_confidence
+
 
 @dataclass(frozen=True)
 class Node:
@@ -17,6 +19,11 @@ class Edge:
     relation: str = "depends_on"
     provenance: str = "EXTRACTED"
     source_file: str | None = None
+    origin: EvidenceOrigin | None = None
+
+    @property
+    def evidence_origin(self) -> EvidenceOrigin:
+        return self.origin or origin_for_confidence(self.provenance)
 
 
 @dataclass
@@ -31,4 +38,3 @@ class ObservedGraphIR:
                 edge.provenance.upper() == provenance for edge in self.edges
             )
         return result
-

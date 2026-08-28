@@ -17,6 +17,7 @@ def test_load_real_graphify_schema(tmp_path):
     assert graph.nodes["module"].file == "src/module.py"
     assert graph.nodes["module"].kind == "code"
     assert graph.edges[0].provenance == "INFERRED"
+    assert graph.edges[0].evidence_origin.value == "INFERRED"
 
 
 def test_load_networkx_links_schema(tmp_path):
@@ -25,3 +26,4 @@ def test_load_networkx_links_schema(tmp_path):
     graph = load_graphify(path)
     assert len(graph.edges) == 1
     assert set(graph.nodes) == {"A", "B"}
+    assert graph.edges[0].evidence_origin.value == "OBSERVED"

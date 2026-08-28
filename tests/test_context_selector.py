@@ -19,7 +19,6 @@ def test_context_is_compact_connected_and_preserves_provenance():
     compact = select_context(["PaymentService"], observed, context, TargetArchitectureIR(), rules, radius=1, max_items=10)
     rendered = render_llm_context(compact)
     assert "Unrelated" not in rendered
-    assert "PaymentService -> Gateway [DECLARED_CONTEXT" in rendered
+    assert "PaymentService -> Gateway [DECLARED; confidence=DECLARED_CONTEXT" in rendered
     assert "must-repo" in rendered
     assert len(compact.observed_edges) < len(observed.edges)
-
