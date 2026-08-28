@@ -50,3 +50,48 @@ Pending Gate 0 commit.
 ### Status
 PASS — challenge completed; Gate 1 may begin only after commit.
 
+## Gate 1 — V1.1 Regression Baseline — 2026-08-28
+
+### Objective
+Reproduce all V1.1 gates before introducing V2 behavior.
+
+### Hypothesis
+The tagged/documented V1.1 implementation remains operational on the current repository and environment.
+
+### Implementation
+Executed pytest, doctor, harness JSON check, real A/B/C benchmark and the complete V1.1 validation script. Recorded `experiments/results/V2_BASELINE.md`.
+
+### Commands
+- `.venv/bin/pytest -q`
+- `.venv/bin/arch-harness doctor`
+- `.venv/bin/arch-harness check --format json`
+- `.venv/bin/arch-harness benchmark --mode v1.1`
+- `scripts/validate_v1_1.sh`
+
+### Tests
+- full suite: 40 passed;
+- ACE focused suite: 3 passed;
+- skill validator: PASS;
+- doctor: PASS;
+- harness: PASS.
+
+### Metrics
+- Graphify: 0.9.50;
+- raw/normalized nodes: 555 / 569;
+- edges: 1033;
+- C versus B context reduction: 46.2%;
+- observed aggregate wall time: 13 seconds;
+- model task success: NOT_MEASURED.
+
+### Negative findings
+The successful regression run still has no real BMAD execution, no real autonomous implementation, no lifecycle/severity semantics and no maintenance-cost measurement.
+
+### Result
+V1.1 baseline is reproducible without failures.
+
+### Commit
+Pending Gate 1 commit.
+
+### Status
+PASS — Gate 2 may begin after commit.
+
