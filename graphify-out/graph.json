@@ -567,7 +567,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1965,6 +1965,23 @@
       "file_type": "code",
       "source_file": "tests/test_provenance.py",
       "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_rule_author_skill",
+      "label": "test_rule_author_skill.py",
+      "file_type": "code",
+      "source_file": "tests/test_rule_author_skill.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_rule_author_skill_test_rule_author_skill_preserves_human_validation_boundary",
+      "label": "test_rule_author_skill_preserves_human_validation_boundary()",
+      "file_type": "code",
+      "source_file": "tests/test_rule_author_skill.py",
+      "source_location": "L10",
       "_callable": true,
       "_origin": "ast"
     },
@@ -5298,6 +5315,15 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_harness_metrics_gate_6_rule_lifecycle",
+      "label": "Gate 6 rule lifecycle",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_implementation_log",
       "label": "V2_IMPLEMENTATION_LOG.md",
       "file_type": "document",
@@ -5838,6 +5864,78 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "label": "Gate 6 — Candidate / Validated Rule Lifecycle — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L227",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_229",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L229",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_hypothesis_232",
+      "label": "Hypothesis",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L232",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_235",
+      "label": "Implementation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L235",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_functional_and_behavior_tests_238",
+      "label": "Functional and behavior tests",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L238",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_246",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L246",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_253",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L253",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_256",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L256",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_rule_authoring_log",
       "label": "V2_RULE_AUTHORING_LOG.md",
       "file_type": "document",
@@ -5853,6 +5951,64 @@
       "node_kind": "heading",
       "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_architecture_rule_author_skill",
+      "label": "SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "name": "architecture-rule-author",
+        "description": "Derive explicit, reviewable architecture rule candidates from Mermaid diagrams and project intent without silently turning interpretation into blocking policy. Use when an agent must translate architecture diagrams or guidelines into architecture-harness rules, clarify ambiguous boundaries, revise candidate rules, or prepare rules for human validation."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_architecture_rule_author_skill_architecture_rule_author",
+      "label": "Architecture Rule Author",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_architecture_rule_author_skill_workflow",
+      "label": "Workflow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_architecture_rule_author_skill_candidate_schema",
+      "label": "Candidate schema",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_architecture_rule_author_skill_safety_rules",
+      "label": "Safety rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_architecture_rule_author_skill_completion_report",
+      "label": "Completion report",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L50",
       "_origin": "ast"
     }
   ],
@@ -7236,7 +7392,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7247,7 +7403,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L80",
+      "source_location": "L81",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10883,6 +11039,38 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_rule_author_skill",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_skill.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_skill",
+      "target": "src_architecture_harness_cli",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_skill.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_skill",
+      "target": "tests_test_rule_author_skill_test_rule_author_skill_preserves_human_validation_boundary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_rule_author_skill.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_rules",
       "target": "src_architecture_harness_adapters_rules",
       "relation": "imports_from",
@@ -14495,6 +14683,16 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_6_rule_lifecycle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_implementation_log",
       "target": "logs_v2_implementation_log_v2_implementation_log",
       "relation": "contains",
@@ -15085,12 +15283,142 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L227",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_229",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L229",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_hypothesis_232",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_235",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L235",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_functional_and_behavior_tests_238",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_246",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_253",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_6_candidate_validated_rule_lifecycle_2026_08_28",
+      "target": "logs_v2_implementation_log_status_256",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L256",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_rule_authoring_log",
       "target": "logs_v2_rule_authoring_log_v2_rule_authoring_log",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_architecture_rule_author_skill",
+      "target": "skills_architecture_rule_author_skill_architecture_rule_author",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_architecture_rule_author_skill_architecture_rule_author",
+      "target": "skills_architecture_rule_author_skill_workflow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_architecture_rule_author_skill_architecture_rule_author",
+      "target": "skills_architecture_rule_author_skill_candidate_schema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_architecture_rule_author_skill_architecture_rule_author",
+      "target": "skills_architecture_rule_author_skill_safety_rules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_architecture_rule_author_skill_architecture_rule_author",
+      "target": "skills_architecture_rule_author_skill_completion_report",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/architecture-rule-author/SKILL.md",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16256,7 +16584,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L81",
+      "source_location": "L82",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16267,7 +16595,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L84",
+      "source_location": "L85",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16278,7 +16606,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L88",
+      "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16289,7 +16617,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L98",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16300,7 +16628,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L106",
+      "source_location": "L107",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16311,7 +16639,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L111",
+      "source_location": "L112",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16322,7 +16650,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L117",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16333,7 +16661,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L122",
+      "source_location": "L123",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16344,7 +16672,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L127",
+      "source_location": "L128",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16355,7 +16683,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L127",
+      "source_location": "L128",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16366,7 +16694,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L129",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16377,7 +16705,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L129",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16388,7 +16716,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L132",
+      "source_location": "L133",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16399,7 +16727,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L137",
+      "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16410,7 +16738,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L145",
+      "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16421,7 +16749,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L148",
+      "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16432,7 +16760,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L163",
+      "source_location": "L164",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16443,7 +16771,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L187",
+      "source_location": "L188",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16454,7 +16782,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L191",
+      "source_location": "L192",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16465,7 +16793,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L195",
+      "source_location": "L196",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16476,7 +16804,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L197",
+      "source_location": "L198",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16927,7 +17255,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L199",
+      "source_location": "L200",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -16938,7 +17266,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L199",
+      "source_location": "L200",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -16949,7 +17277,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L199",
+      "source_location": "L200",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -16960,7 +17288,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L81",
+      "source_location": "L82",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -16971,7 +17299,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L199",
+      "source_location": "L200",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -17709,7 +18037,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L107",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17721,7 +18049,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L107",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18442,6 +18770,18 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_production_rules.py",
       "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_rule_author_skill_test_rule_author_skill_preserves_human_validation_boundary",
+      "target": "src_architecture_harness_cli_main",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_rule_author_skill.py",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },

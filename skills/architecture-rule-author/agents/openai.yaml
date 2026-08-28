@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Rule Author"
+  short_description: "Turn Mermaid guidance into reviewable rules"
+  default_prompt: "Use $architecture-rule-author to derive candidate architecture rules from my Mermaid diagrams."

@@ -35,6 +35,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("target", help="print normalized target architecture")
     rules_parser = sub.add_parser("rules", help="validate or list rules")
     rules_parser.add_argument("action", choices=("validate", "list"))
+    rules_parser.add_argument("--file", type=Path, help="rules file to inspect; defaults to validated rules")
     check = sub.add_parser("check", help="evaluate architecture policies")
     check.add_argument("--format", choices=("text", "json", "markdown"), default="text")
     context_parser = sub.add_parser("context", help="inspect or build declared context")
@@ -95,7 +96,7 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  {name}: {', '.join(sorted(members))}")
             return 0
         if args.command == "rules":
-            rules = load_rules(paths.rules)
+            rules = load_rules(args.file if args.file else paths.rules)
             if args.action == "validate":
                 print(f"valid: {len(rules.rules)} rules, {len(rules.roles)} roles")
             else:

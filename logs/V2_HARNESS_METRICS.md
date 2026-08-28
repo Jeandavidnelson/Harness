@@ -81,3 +81,14 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Lifecycle states / severities | 5 / 3 |
 | Automatic promotions | 0 |
 | False blocking in lifecycle tests | 0 |
+
+## Gate 7 rule authoring skill
+
+| Metric | Value |
+|---|---:|
+| Tests | 52 passed |
+| Official skill validation | PASS |
+| Candidate syntax validation | PASS |
+| Rules promoted | 0 |
+| Real forward-test runs | 0 |
+| Generalization | NOT_MEASURED |

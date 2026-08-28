@@ -255,3 +255,33 @@ Scope and exceptions are preserved in the IR but do not yet alter matching; usin
 
 ### Status
 PASS — only human-confirmed validated errors can hard-fail the gate.
+
+## Gate 7 — Architecture Rule Authoring Skill — 2026-08-28
+
+### Objective
+Package the Mermaid-to-candidate workflow as a reusable agent skill.
+
+### Hypothesis
+An agent can derive reviewable candidates while preserving human control over blocking policy.
+
+### Implementation
+Used the official skill-creator workflow to initialize `skills/architecture-rule-author`, added concise authoring and clarification instructions, safety boundaries, candidate schema, UI metadata and a CLI `--file` option for candidate validation.
+
+### Functional and behavior tests
+- official `quick_validate.py`: PASS under the project virtual environment;
+- candidate file validation: 1 rule / 2 roles;
+- full suite: 52 passed;
+- architecture gate: PASS;
+- static safety-boundary behavior assertions: PASS.
+
+### Metrics
+- candidate rules created by the skill implementation: 1 example;
+- rules promoted: 0;
+- clarification questions in this implementation run: 0 (requirements were explicit);
+- real forward-test agent runs: 0.
+
+### Problems / negative results
+The system Python lacked PyYAML, so the official validator was rerun successfully with `.venv/bin/python`. No subagent forward-test was run because current execution instructions prohibit spawning subagents unless explicitly requested; Gate 9 remains responsible for real-agent evidence through available external runners.
+
+### Status
+PASS for packaging and deterministic behavior; real-agent generalization remains NOT_MEASURED.
