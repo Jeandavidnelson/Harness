@@ -141,3 +141,14 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | FAIL propagation | PASS |
 | Post-approval correction | NOT_RUN |
 | E2E status | PARTIAL_HUMAN_APPROVAL_REQUIRED |
+
+## Gate 12 portability
+
+| Metric | Value |
+|---|---:|
+| Tests | 59 passed |
+| Adapters sharing V2 CLI | 4 |
+| Core orchestrator imports | 0 |
+| Generic subprocess | PASS |
+| Codex real execution | PASS_WITH_QUALIFICATIONS |
+| Claude real execution | NOT_MEASURED |

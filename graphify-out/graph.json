@@ -1614,6 +1614,24 @@
       "_origin": "ast"
     },
     {
+      "id": "tests_test_agent_adapters_test_v2_portability_adapters_share_exact_cli_contract",
+      "label": "test_v2_portability_adapters_share_exact_cli_contract()",
+      "file_type": "code",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_agent_adapters_test_core_source_has_no_orchestrator_imports",
+      "label": "test_core_source_has_no_orchestrator_imports()",
+      "file_type": "code",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "tests_test_agent_cli",
       "label": "test_agent_cli.py",
       "file_type": "code",
@@ -2750,6 +2768,42 @@
       "_origin": "ast"
     },
     {
+      "id": "experiments_agent_runs_v2_bmad_e2e_partial",
+      "label": "V2_BMAD_E2E_PARTIAL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_bmad_e2e_partial_v2_bmad_end_to_end_run",
+      "label": "V2 BMAD End-to-End Run",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_bmad_e2e_partial_executed_path",
+      "label": "Executed path",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_bmad_e2e_partial_assessment",
+      "label": "Assessment",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
       "id": "experiments_agent_runs_v2_real_codex_correction",
       "label": "V2_REAL_CODEX_CORRECTION.md",
       "file_type": "document",
@@ -3240,6 +3294,28 @@
       "_origin": "ast"
     },
     {
+      "id": "integrations_claude_skill",
+      "label": "SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/claude/SKILL.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "name": "architecture-harness",
+        "description": "Supply compact Mermaid-informed architecture context and enforce deterministic architecture checkpoints around significant code changes. Use when Claude implements, refactors, reviews, or corrects code in a project configured with Architecture Harness."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_claude_skill_architecture_harness",
+      "label": "Architecture Harness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/claude/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
       "id": "integrations_claude_architecture_harness_skill",
       "label": "SKILL.md",
       "file_type": "document",
@@ -3264,6 +3340,42 @@
       "node_kind": "heading",
       "source_file": "integrations/claude/architecture-harness/SKILL.md",
       "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_codex_agents_snippet",
+      "label": "AGENTS.snippet.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/codex/AGENTS.snippet.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_codex_agents_snippet_architecture_harness_checkpoint",
+      "label": "Architecture Harness checkpoint",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/codex/AGENTS.snippet.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_generic_readme",
+      "label": "README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/generic/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_generic_readme_generic_agent_integration",
+      "label": "Generic agent integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/generic/README.md",
+      "source_location": "L1",
       "_origin": "ast"
     },
     {
@@ -5544,6 +5656,24 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_bmad_integration_log_2026_08_28_bmad_6_11_0_adapter",
+      "label": "2026-08-28 — BMAD 6.11.0 adapter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_BMAD_INTEGRATION_LOG.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_bmad_integration_log_2026_08_28_gate_11_real_e2e_attempt",
+      "label": "2026-08-28 — Gate 11 real E2E attempt",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_BMAD_INTEGRATION_LOG.md",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_harness_metrics",
       "label": "V2_HARNESS_METRICS.md",
       "file_type": "document",
@@ -5649,6 +5779,24 @@
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
       "source_location": "L108",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_harness_metrics_gate_10_bmad_adapter",
+      "label": "Gate 10 BMAD adapter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L121",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_harness_metrics_gate_11_bmad_e2e",
+      "label": "Gate 11 BMAD E2E",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L133",
       "_origin": "ast"
     },
     {
@@ -6468,6 +6616,123 @@
       "node_kind": "heading",
       "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
       "source_location": "L348",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "label": "Gate 10 — BMAD Adapter — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L351",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_353",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L353",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_356",
+      "label": "Implementation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L356",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_functional_and_behavior_tests_359",
+      "label": "Functional and behavior tests",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L359",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_368",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L368",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_374",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L374",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_377",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L377",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "label": "Gate 11 — BMAD End-to-End Test — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L380",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_382",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L382",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_result_385",
+      "label": "Result",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L385",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_388",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L388",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_397",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L397",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_400",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L400",
       "_origin": "ast"
     },
     {
@@ -10708,6 +10973,26 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_agent_adapters",
+      "target": "tests_test_agent_adapters_test_v2_portability_adapters_share_exact_cli_contract",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_agent_adapters",
+      "target": "tests_test_agent_adapters_test_core_source_has_no_orchestrator_imports",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent_adapters.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_agent_cli",
       "target": "json",
       "relation": "imports",
@@ -12753,6 +13038,36 @@
       "_origin": "ast"
     },
     {
+      "source": "experiments_agent_runs_v2_bmad_e2e_partial",
+      "target": "experiments_agent_runs_v2_bmad_e2e_partial_v2_bmad_end_to_end_run",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_bmad_e2e_partial_v2_bmad_end_to_end_run",
+      "target": "experiments_agent_runs_v2_bmad_e2e_partial_executed_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_bmad_e2e_partial_v2_bmad_end_to_end_run",
+      "target": "experiments_agent_runs_v2_bmad_e2e_partial_assessment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "experiments_agent_runs_v2_real_codex_correction",
       "target": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
       "relation": "contains",
@@ -13223,6 +13538,16 @@
       "_origin": "ast"
     },
     {
+      "source": "integrations_claude_skill",
+      "target": "integrations_claude_skill_architecture_harness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/claude/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "integrations_claude_architecture_harness_skill",
       "target": "integrations_claude_architecture_harness_skill_architecture_harness",
       "relation": "contains",
@@ -13239,6 +13564,26 @@
       "confidence": "EXTRACTED",
       "source_file": "integrations/claude/architecture-harness/SKILL.md",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_codex_agents_snippet",
+      "target": "integrations_codex_agents_snippet_architecture_harness_checkpoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/codex/AGENTS.snippet.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_generic_readme",
+      "target": "integrations_generic_readme_generic_agent_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/generic/README.md",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15713,6 +16058,26 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_bmad_integration_log_v2_bmad_integration_log",
+      "target": "logs_v2_bmad_integration_log_2026_08_28_bmad_6_11_0_adapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_BMAD_INTEGRATION_LOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_bmad_integration_log_v2_bmad_integration_log",
+      "target": "logs_v2_bmad_integration_log_2026_08_28_gate_11_real_e2e_attempt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_BMAD_INTEGRATION_LOG.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_harness_metrics",
       "target": "logs_v2_harness_metrics_v2_harness_metrics",
       "relation": "contains",
@@ -15819,6 +16184,26 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
       "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_10_bmad_adapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_11_bmad_e2e",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L133",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16719,6 +17104,136 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
       "source_location": "L348",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L351",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_353",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L353",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_356",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L356",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "target": "logs_v2_implementation_log_functional_and_behavior_tests_359",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L359",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_368",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L368",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_374",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_10_bmad_adapter_2026_08_28",
+      "target": "logs_v2_implementation_log_status_377",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L377",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L380",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_382",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L382",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "target": "logs_v2_implementation_log_result_385",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L385",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_388",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L388",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_397",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L397",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_11_bmad_end_to_end_test_2026_08_28",
+      "target": "logs_v2_implementation_log_status_400",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L400",
       "weight": 1.0,
       "_origin": "ast"
     },

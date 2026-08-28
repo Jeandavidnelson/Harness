@@ -399,3 +399,24 @@ Completing the workflow requires explicit human approval of the generated spec. 
 
 ### Status
 PARTIAL — structurally and behaviorally proven through the approval boundary; post-approval E2E remains pending human action.
+
+## Gate 12 — Generic / Codex / Claude Portability — 2026-08-28
+
+### Objective
+Prove that BMAD remains an adapter and the same public contract serves other agents.
+
+### Implementation
+Added requested Codex, Claude and generic adapters using the exact context, refresh and gate commands. Updated legacy snippets to the V2 checkpoint while retaining the V1.1 validate alias.
+
+### Tests and metrics
+- full suite: 59 passed;
+- adapter contract parity: PASS for BMAD, Codex, Claude and generic;
+- core imports of BMAD/Claude: 0;
+- generic external subprocess contract test from Gate 4: PASS;
+- current architecture gate: PASS.
+
+### Problems / negative results
+Only Codex has a real correction run in this environment. Claude portability is contract-tested but model execution is NOT_MEASURED because no Claude CLI is installed.
+
+### Status
+PASS for interface portability; cross-model behavior remains partially measured.

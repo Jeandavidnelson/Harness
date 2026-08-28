@@ -6,9 +6,9 @@ context
 dev
   implement the scoped task using relevant_files and applicable_rules
 refresh
-  scripts/refresh_graph.sh
+  arch-harness graph refresh --format json
 validate
-  arch-harness agent validate --format json
+  arch-harness gate --format json
 correct
   on exit 1, fix every reported violation and repeat refresh + validate
 diagnose
@@ -16,4 +16,3 @@ diagnose
 ```
 
 Never substitute declared Mermaid context for observed Graphify evidence. Never ask an LLM to decide PASS/FAIL.
-

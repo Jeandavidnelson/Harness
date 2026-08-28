@@ -354,9 +354,9 @@
     "semantic_hash": ""
   },
   "tests/test_agent_adapters.py": {
-    "mtime": 1787727882.1197417,
-    "seen": 1787727888.531785,
-    "ast_hash": "762f1953d14c019ea4b66c470098407d",
+    "mtime": 1787909372.9722292,
+    "seen": 1787909380.9775732,
+    "ast_hash": "d70567a4e71453e4c5fdbdd191883786",
     "semantic_hash": ""
   },
   "integrations/bmad/README.md": {
@@ -366,15 +366,15 @@
     "semantic_hash": ""
   },
   "integrations/bmad/workflow-snippet.md": {
-    "mtime": 1787727882.1194994,
-    "seen": 1787727888.531805,
-    "ast_hash": "17e455bbfb866ea6ede52a6225da29ec",
+    "mtime": 1787909366.4694903,
+    "seen": 1787909380.977622,
+    "ast_hash": "5ca28374ac074ab957eb7d59bf6312a1",
     "semantic_hash": ""
   },
   "integrations/claude/architecture-harness/SKILL.md": {
-    "mtime": 1787727882.1181054,
-    "seen": 1787727888.531806,
-    "ast_hash": "c0bf6fc576801fb618d35fc39f4446c6",
+    "mtime": 1787909366.4704032,
+    "seen": 1787909380.9776242,
+    "ast_hash": "eb6f330fd71919fce6824f9fa45f691b",
     "semantic_hash": ""
   },
   "src/architecture_harness/metrics/v1_1_benchmark.py": {
@@ -480,21 +480,21 @@
     "semantic_hash": ""
   },
   "logs/V2_BMAD_INTEGRATION_LOG.md": {
-    "mtime": 1787907850.7955298,
-    "seen": 1787907878.551033,
-    "ast_hash": "23e69ac820d4c5abde1d5807776ceca9",
+    "mtime": 1787909328.2474432,
+    "seen": 1787909380.977633,
+    "ast_hash": "42e6d70e77158b38e5ea57a7733481c3",
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787908969.44796,
-    "seen": 1787909104.0661829,
-    "ast_hash": "2e316e451431d4b23a0da0b4b6294058",
+    "mtime": 1787909328.2487407,
+    "seen": 1787909380.977634,
+    "ast_hash": "495a1276542be59c73542e41ce22c4cf",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787908969.4474242,
-    "seen": 1787909104.066184,
-    "ast_hash": "cf382e940c12f8ebb99d0d50bcdb1ad2",
+    "mtime": 1787909328.2481909,
+    "seen": 1787909380.977634,
+    "ast_hash": "ed8e98ff90d53e89087c37545a62a6ed",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
@@ -633,6 +633,30 @@
     "mtime": 1787909095.5591578,
     "seen": 1787909104.0661728,
     "ast_hash": "1e6a77b05e2ed36c624889c4d1c86722",
+    "semantic_hash": ""
+  },
+  "experiments/agent-runs/V2_BMAD_E2E_PARTIAL.md": {
+    "mtime": 1787909328.246768,
+    "seen": 1787909380.977608,
+    "ast_hash": "a6f7c22dba22f712b4072038a8de4692",
+    "semantic_hash": ""
+  },
+  "integrations/claude/SKILL.md": {
+    "mtime": 1787909366.4680068,
+    "seen": 1787909380.977623,
+    "ast_hash": "efd5eb61f39d39fbfda37f119b88b384",
+    "semantic_hash": ""
+  },
+  "integrations/codex/AGENTS.snippet.md": {
+    "mtime": 1787909366.467748,
+    "seen": 1787909380.9776251,
+    "ast_hash": "cadd183bfdf61cf0cd61980ced43aea2",
+    "semantic_hash": ""
+  },
+  "integrations/generic/README.md": {
+    "mtime": 1787909366.4685073,
+    "seen": 1787909380.977626,
+    "ast_hash": "c8038f547148f561abeab01f9cca4f5d",
     "semantic_hash": ""
   }
 }
