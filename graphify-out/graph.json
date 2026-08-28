@@ -603,7 +603,7 @@
       "label": "build_parser()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L30",
+      "source_location": "L31",
       "_callable": true,
       "_origin": "ast"
     },
@@ -620,7 +620,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L80",
+      "source_location": "L87",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1137,6 +1137,49 @@
       "_origin": "ast"
     },
     {
+      "id": "src_architecture_harness_integrations",
+      "label": "integrations.py",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_integrationerror",
+      "label": "IntegrationError",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_py_valueerror",
+      "label": "ValueError",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_install_bmad",
+      "label": "install_bmad()",
+      "file_type": "code",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "src_architecture_harness_integrations_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
       "id": "src_architecture_harness_ir_init",
       "label": "__init__.py",
       "file_type": "code",
@@ -1645,6 +1688,41 @@
       "file_type": "code",
       "source_file": "tests/test_benchmark.py",
       "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_bmad_integration",
+      "label": "test_bmad_integration.py",
+      "file_type": "code",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_bmad_integration_test_bmad_overrides_match_real_customization_surface",
+      "label": "test_bmad_overrides_match_real_customization_surface()",
+      "file_type": "code",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_bmad_integration_test_bmad_installer_is_pluggable_and_non_destructive",
+      "label": "test_bmad_installer_is_pluggable_and_non_destructive()",
+      "file_type": "code",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L19",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_bmad_integration_test_bmad_installer_requires_real_bmad_layout",
+      "label": "test_bmad_installer_requires_real_bmad_layout()",
+      "file_type": "code",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L28",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2672,6 +2750,87 @@
       "_origin": "ast"
     },
     {
+      "id": "experiments_agent_runs_v2_real_codex_correction",
+      "label": "V2_REAL_CODEX_CORRECTION.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "label": "V2 Real Codex Correction Run",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_prompt_and_context",
+      "label": "Prompt and context",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_before",
+      "label": "Before",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_agent_run_1",
+      "label": "Agent run 1",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_agent_run_2",
+      "label": "Agent run 2",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_human_analysis_and_correction",
+      "label": "Human analysis and correction",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_metrics",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L51",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_agent_runs_v2_real_codex_correction_conclusion",
+      "label": "Conclusion",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
       "id": "experiments_results_v1_1_final_report",
       "label": "V1_1_FINAL_REPORT.md",
       "file_type": "document",
@@ -3000,11 +3159,65 @@
       "_origin": "ast"
     },
     {
-      "id": "integrations_bmad_readme_bmad_adapter",
-      "label": "BMAD adapter",
+      "id": "integrations_bmad_readme_bmad_6_11_architecture_harness_adapter",
+      "label": "BMAD 6.11 architecture-harness adapter",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "integrations/bmad/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_architecture_harness_context",
+      "label": "architecture-harness-context.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/bmad/architecture-harness-context.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_architecture_harness_context_stable_bmad_architecture_context",
+      "label": "Stable BMAD architecture context",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/bmad/architecture-harness-context.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_architecture_harness_gate",
+      "label": "architecture-harness-gate.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/bmad/architecture-harness-gate.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_architecture_harness_gate_bmad_architecture_checkpoint",
+      "label": "BMAD architecture checkpoint",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/bmad/architecture-harness-gate.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_install",
+      "label": "install.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "integrations/bmad/install.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integrations_bmad_install_installation",
+      "label": "Installation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "integrations/bmad/install.md",
       "source_location": "L1",
       "_origin": "ast"
     },
@@ -5304,6 +5517,15 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_agent_behavior_log_2026_08_28_real_codex_correction_loop",
+      "label": "2026-08-28 — Real Codex correction loop",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_AGENT_BEHAVIOR_LOG.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_bmad_integration_log",
       "label": "V2_BMAD_INTEGRATION_LOG.md",
       "file_type": "document",
@@ -5409,6 +5631,24 @@
       "node_kind": "heading",
       "source_file": "logs/V2_HARNESS_METRICS.md",
       "source_location": "L85",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_harness_metrics_gate_8_deterministic_test_lab",
+      "label": "Gate 8 deterministic Test Lab",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L96",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_harness_metrics_gate_9_real_agent_correction",
+      "label": "Gate 9 real agent correction",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L108",
       "_origin": "ast"
     },
     {
@@ -6096,6 +6336,141 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "label": "Gate 8 — V2 Test Lab A–L — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L289",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_291",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L291",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_hypothesis_294",
+      "label": "Hypothesis",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L294",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_297",
+      "label": "Implementation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L297",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_functional_and_behavior_tests_300",
+      "label": "Functional and behavior tests",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L300",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_307",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L307",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_315",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L315",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_318",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L318",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "label": "Gate 9 — Real Agent Correction Loops — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L321",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_323",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L323",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_and_behavior",
+      "label": "Implementation and behavior",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L326",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_results",
+      "label": "Results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L329",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_337",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L337",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_345",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L345",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_348",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L348",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_rule_authoring_log",
       "label": "V2_RULE_AUTHORING_LOG.md",
       "file_type": "document",
@@ -6114,21 +6489,12 @@
       "_origin": "ast"
     },
     {
-      "id": "logs_v2_rule_authoring_log_v2_rule_authoring_log_4",
-      "label": "V2 Rule Authoring Log",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
-      "source_location": "L4",
-      "_origin": "ast"
-    },
-    {
       "id": "logs_v2_rule_authoring_log_2026_08_28_gate_7_skill_packaging",
       "label": "2026-08-28 — Gate 7 skill packaging",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
-      "source_location": "L6",
+      "source_location": "L3",
       "_origin": "ast"
     },
     {
@@ -7760,11 +8126,22 @@
     },
     {
       "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
       "target": "src_architecture_harness_cli_build_parser",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7775,7 +8152,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7785,7 +8162,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L80",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7796,7 +8173,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L81",
+      "source_location": "L88",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9258,6 +9635,80 @@
       "_origin": "ast"
     },
     {
+      "source": "src_architecture_harness_integrations",
+      "target": "shutil",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_integrationerror",
+      "target": "src_architecture_harness_integrations_py_valueerror",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations",
+      "target": "src_architecture_harness_integrations_install_bmad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_bmad",
+      "target": "src_architecture_harness_integrations_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_integrations_install_bmad",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/integrations.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_ir_init_rationale_1",
       "target": "src_architecture_harness_ir_init",
       "relation": "rationale_for",
@@ -10467,6 +10918,80 @@
       "confidence": "EXTRACTED",
       "source_file": "tests/test_benchmark.py",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "tomllib",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "pytest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "src_architecture_harness_integrations",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "tests_test_bmad_integration_test_bmad_overrides_match_real_customization_surface",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "tests_test_bmad_integration_test_bmad_installer_is_pluggable_and_non_destructive",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration",
+      "target": "tests_test_bmad_integration_test_bmad_installer_requires_real_bmad_layout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12228,6 +12753,86 @@
       "_origin": "ast"
     },
     {
+      "source": "experiments_agent_runs_v2_real_codex_correction",
+      "target": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_prompt_and_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_before",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_agent_run_1",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_agent_run_2",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_human_analysis_and_correction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_metrics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_agent_runs_v2_real_codex_correction_v2_real_codex_correction_run",
+      "target": "experiments_agent_runs_v2_real_codex_correction_conclusion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "experiments_results_v1_1_final_report",
       "target": "experiments_results_v1_1_final_report_v1_1_final_report",
       "relation": "contains",
@@ -12539,7 +13144,7 @@
     },
     {
       "source": "integrations_bmad_readme",
-      "target": "integrations_bmad_readme_bmad_adapter",
+      "target": "integrations_bmad_readme_bmad_6_11_architecture_harness_adapter",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "integrations/bmad/README.md",
@@ -12549,11 +13154,61 @@
     },
     {
       "source": "integrations_bmad_readme",
-      "target": "integrations_bmad_workflow_snippet",
+      "target": "integrations_bmad_install",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "integrations/bmad/README.md",
-      "source_location": "L5",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_readme",
+      "target": "integrations_bmad_architecture_harness_context",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_readme",
+      "target": "integrations_bmad_architecture_harness_gate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_architecture_harness_context",
+      "target": "integrations_bmad_architecture_harness_context_stable_bmad_architecture_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/architecture-harness-context.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_architecture_harness_gate",
+      "target": "integrations_bmad_architecture_harness_gate_bmad_architecture_checkpoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/architecture-harness-gate.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "integrations_bmad_install",
+      "target": "integrations_bmad_install_installation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integrations/bmad/install.md",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15038,6 +15693,16 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_agent_behavior_log_v2_agent_behavior_log",
+      "target": "logs_v2_agent_behavior_log_2026_08_28_real_codex_correction_loop",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_AGENT_BEHAVIOR_LOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_bmad_integration_log",
       "target": "logs_v2_bmad_integration_log_v2_bmad_integration_log",
       "relation": "contains",
@@ -15134,6 +15799,26 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_HARNESS_METRICS.md",
       "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_8_deterministic_test_lab",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_9_real_agent_correction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15888,6 +16573,156 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L289",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_291",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L291",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_hypothesis_294",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L294",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_297",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L297",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_functional_and_behavior_tests_300",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_307",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L307",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_315",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L315",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_8_v2_test_lab_a_l_2026_08_28",
+      "target": "logs_v2_implementation_log_status_318",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L318",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L321",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_323",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L323",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_and_behavior",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L326",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "target": "logs_v2_implementation_log_results",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L329",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_337",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L337",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_345",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L345",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_9_real_agent_correction_loops_2026_08_28",
+      "target": "logs_v2_implementation_log_status_348",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L348",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_rule_authoring_log",
       "target": "logs_v2_rule_authoring_log_v2_rule_authoring_log",
       "relation": "contains",
@@ -15898,22 +16733,12 @@
       "_origin": "ast"
     },
     {
-      "source": "logs_v2_rule_authoring_log",
-      "target": "logs_v2_rule_authoring_log_v2_rule_authoring_log_4",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "logs_v2_rule_authoring_log_v2_rule_authoring_log_4",
+      "source": "logs_v2_rule_authoring_log_v2_rule_authoring_log",
       "target": "logs_v2_rule_authoring_log_2026_08_28_gate_7_skill_packaging",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
-      "source_location": "L6",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16404,6 +17229,28 @@
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
       "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli",
+      "target": "src_architecture_harness_integrations_install_bmad",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17129,7 +17976,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L82",
+      "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17140,7 +17987,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L85",
+      "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17151,7 +17998,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L89",
+      "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17162,7 +18009,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L99",
+      "source_location": "L106",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17173,7 +18020,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L107",
+      "source_location": "L114",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17184,7 +18031,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L112",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17195,7 +18042,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L118",
+      "source_location": "L125",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17206,7 +18053,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L123",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17217,7 +18064,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L128",
+      "source_location": "L135",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17228,7 +18075,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L128",
+      "source_location": "L135",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17239,7 +18086,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L130",
+      "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17250,7 +18097,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L130",
+      "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17261,7 +18108,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L133",
+      "source_location": "L140",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17272,7 +18119,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L138",
+      "source_location": "L145",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17283,7 +18130,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L146",
+      "source_location": "L153",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17294,7 +18141,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L149",
+      "source_location": "L156",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17305,7 +18152,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L164",
+      "source_location": "L171",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_integrations_install_bmad",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L175",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17316,7 +18174,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L188",
+      "source_location": "L199",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17327,7 +18185,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L192",
+      "source_location": "L203",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17338,7 +18196,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L196",
+      "source_location": "L207",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17349,7 +18207,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L198",
+      "source_location": "L209",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17844,7 +18702,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L200",
+      "source_location": "L211",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -17855,7 +18713,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L200",
+      "source_location": "L211",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -17866,7 +18724,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L200",
+      "source_location": "L211",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -17877,7 +18735,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L82",
+      "source_location": "L89",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -17888,7 +18746,18 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L200",
+      "source_location": "L211",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "src_architecture_harness_cli_main",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/architecture_harness/cli.py",
+      "source_location": "L211",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -18278,6 +19147,28 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_bmad_integration_test_bmad_installer_is_pluggable_and_non_destructive",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L24",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration_test_bmad_installer_requires_real_bmad_layout",
+      "target": "src_architecture_harness_integrations_integrationerror",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L29",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_cache_test_cache_invalidates_only_when_input_changes",
       "target": "src_architecture_harness_cache_manager_cachemanager",
       "relation": "uses",
@@ -18662,7 +19553,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L108",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18674,7 +19565,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "src/architecture_harness/cli.py",
-      "source_location": "L108",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18855,6 +19746,30 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_benchmark.py",
       "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration_test_bmad_installer_is_pluggable_and_non_destructive",
+      "target": "src_architecture_harness_integrations_install_bmad",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_bmad_integration_test_bmad_installer_requires_real_bmad_layout",
+      "target": "src_architecture_harness_integrations_install_bmad",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bmad_integration.py",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },

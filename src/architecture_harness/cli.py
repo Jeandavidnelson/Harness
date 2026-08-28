@@ -25,6 +25,7 @@ from architecture_harness.ace.author import author_rule
 from architecture_harness.ace.ape_adapter import validate_with_ape
 from architecture_harness.graphify_runtime import GraphifyRuntimeError, refresh_graph
 from architecture_harness.engine.gate import gate_payload
+from architecture_harness.integrations import IntegrationError, install_bmad
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -58,6 +59,12 @@ def build_parser() -> argparse.ArgumentParser:
     capabilities.add_argument("--format", choices=("json",), default="json")
     gate = sub.add_parser("gate", help="run the immutable architecture checkpoint")
     gate.add_argument("--format", choices=("json",), default="json")
+    integrations = sub.add_parser("integrations", help="install orchestrator adapters")
+    integrations_sub = integrations.add_subparsers(dest="integration_action", required=True)
+    integration_install = integrations_sub.add_parser("install")
+    integration_install.add_argument("name", choices=("bmad",))
+    integration_install.add_argument("--adapter-root", type=Path, default=Path(__file__).parents[2])
+    integration_install.add_argument("--force", action="store_true")
     agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
     agent_sub = agent.add_subparsers(dest="agent_action", required=True)
     agent_context = agent_sub.add_parser("context")
@@ -164,6 +171,10 @@ def main(argv: list[str] | None = None) -> int:
             payload = gate_payload(result)
             print(json.dumps(payload, indent=2, sort_keys=True))
             return 1 if payload["blocking"] else 0
+        if args.command == "integrations":
+            payload = install_bmad(paths.root, args.adapter_root.resolve(), args.force)
+            print(json.dumps(payload, indent=2, sort_keys=True))
+            return 0
         if args.command == "agent":
             if args.agent_action == "capabilities":
                 print(json.dumps(capabilities_payload(), indent=2, sort_keys=True))
@@ -197,7 +208,7 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 print(json.dumps(validate_with_ape(args.path), indent=2, sort_keys=True))
             return 0
-    except (GraphifyError, GraphifyRuntimeError, MermaidError, RulesError, ValueError, OSError) as exc:
+    except (GraphifyError, GraphifyRuntimeError, IntegrationError, MermaidError, RulesError, ValueError, OSError) as exc:
         print(f"configuration error: {exc}", file=sys.stderr)
         return 2
     return 2

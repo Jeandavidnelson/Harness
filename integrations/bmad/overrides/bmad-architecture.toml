@@ -1,0 +1,11 @@
+[workflow]
+
+activation_steps_append = [
+  "For brownfield architecture, establish a production Graphify baseline before comparing declared Mermaid with observed code. For greenfield architecture, do not require Graphify before meaningful code exists.",
+]
+
+persistent_facts = [
+  "Mermaid expresses declared direction, not automatically blocking policy. Use the architecture-rule-author skill to create candidate rules and request human review before promotion.",
+]
+
+on_complete = "After architecture Mermaid is updated, run the architecture-rule-author skill. Validate candidate syntax, present ambiguities and candidates to the user, promote only explicitly approved rules, record decisions, then run `arch-harness doctor`."

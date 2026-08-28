@@ -347,3 +347,32 @@ The architecture gate accepted broken runtime code in the first pass. A badly ch
 
 ### Status
 PASS as an experiment, with qualified product evidence: correction is possible, one-shot success is not demonstrated.
+
+## Gate 10 — BMAD Adapter — 2026-08-28
+
+### Objective
+Make BMAD the first supported orchestrator through official customization while keeping the core independent.
+
+### Implementation
+Inspected and installed BMad Method 6.11.0, then added documented context/gate procedures, three sparse team overrides and a non-destructive `integrations install bmad` command. The overrides target the officially exposed architecture, build and code-review workflow fields.
+
+### Functional and behavior tests
+- real BMAD install: PASS, 49 Codex skills rendered;
+- adapter installer into real BMAD tree: PASS;
+- BMAD official customization resolver for 3 workflows: PASS;
+- TOML parse validation: PASS;
+- overwrite refusal and missing-install behavior: PASS;
+- full suite: 57 passed;
+- architecture gate: PASS.
+
+### Metrics
+- BMAD core dependencies: 0;
+- official workflow overrides: 3;
+- resolved override failures: 0;
+- existing files silently overwritten: 0.
+
+### Problems / negative results
+The installed BMAD distribution requires `uv` to render `bmad-build` and `bmad-build-auto`; `uv` is not installed in the current environment. The adapter is structurally verified, but a real Build workflow is deferred to Gate 11.
+
+### Status
+PASS — pluggable adapter verified against BMAD 6.11.0; runtime E2E remains pending.

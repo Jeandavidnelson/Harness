@@ -1,0 +1,9 @@
+[workflow]
+
+activation_steps_append = [
+  "Run `arch-harness gate --format json` at review start and include blocking violations, advisories, applicable rules and prior corrections in review context. The gate complements but does not replace code review.",
+]
+
+persistent_facts = [
+  "Do not approve while an `error + validated` architecture violation remains. Never change a validated rule without explicit human review.",
+]

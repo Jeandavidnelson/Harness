@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787908471.4928904,
-    "seen": 1787908495.186538,
-    "ast_hash": "f4033748b6518af0f86d339450d7dc3e",
+    "mtime": 1787909095.5573254,
+    "seen": 1787909104.066091,
+    "ast_hash": "d3e3a556f3a9810165ca156f06bf7bc9",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -360,9 +360,9 @@
     "semantic_hash": ""
   },
   "integrations/bmad/README.md": {
-    "mtime": 1787727882.1192856,
-    "seen": 1787727888.5318038,
-    "ast_hash": "56d6aae77e7a6b7c865325c79d1d3a86",
+    "mtime": 1787909095.5588665,
+    "seen": 1787909104.0661702,
+    "ast_hash": "7a4ed56cfc728a52e7c09ee1b0531380",
     "semantic_hash": ""
   },
   "integrations/bmad/workflow-snippet.md": {
@@ -474,9 +474,9 @@
     "semantic_hash": ""
   },
   "logs/V2_AGENT_BEHAVIOR_LOG.md": {
-    "mtime": 1787907850.795316,
-    "seen": 1787907878.551032,
-    "ast_hash": "ccbb51a3dca84cc2439b15ecbcc80640",
+    "mtime": 1787908980.71784,
+    "seen": 1787909104.0661812,
+    "ast_hash": "f662270819d0b251a316fe72f2b9d128",
     "semantic_hash": ""
   },
   "logs/V2_BMAD_INTEGRATION_LOG.md": {
@@ -486,21 +486,21 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787908517.6101246,
-    "seen": 1787908596.3268218,
-    "ast_hash": "c5b73fe680e260ec89c14276ae197b05",
+    "mtime": 1787908969.44796,
+    "seen": 1787909104.0661829,
+    "ast_hash": "2e316e451431d4b23a0da0b4b6294058",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787908517.608825,
-    "seen": 1787908596.326823,
-    "ast_hash": "0d6fac3cefa89d65f21f705181fe5d86",
+    "mtime": 1787908969.4474242,
+    "seen": 1787909104.066184,
+    "ast_hash": "cf382e940c12f8ebb99d0d50bcdb1ad2",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
-    "mtime": 1787908517.6106138,
-    "seen": 1787908596.326824,
-    "ast_hash": "0c1dc28edd853b8cfa8bbd632ebaea58",
+    "mtime": 1787908637.9285002,
+    "seen": 1787909104.066185,
+    "ast_hash": "2b563fab9bcb15c519dadfac00158455",
     "semantic_hash": ""
   },
   "src/architecture_harness/graphify_runtime.py": {
@@ -597,6 +597,42 @@
     "mtime": 1787908588.7537673,
     "seen": 1787908596.326795,
     "ast_hash": "e4e57e1466c44de1eddd2ca067983c90",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/integrations.py": {
+    "mtime": 1787909095.5563684,
+    "seen": 1787909104.066112,
+    "ast_hash": "e1bacbab3ff6b61889001699777c73c5",
+    "semantic_hash": ""
+  },
+  "tests/test_bmad_integration.py": {
+    "mtime": 1787909095.560989,
+    "seen": 1787909104.066132,
+    "ast_hash": "2c6977b3aa6610cce2acaac6b4e91c63",
+    "semantic_hash": ""
+  },
+  "experiments/agent-runs/V2_REAL_CODEX_CORRECTION.md": {
+    "mtime": 1787908969.4458125,
+    "seen": 1787909104.0661619,
+    "ast_hash": "73ba2420c8b799b98b7fd0d39e67ffd3",
+    "semantic_hash": ""
+  },
+  "integrations/bmad/architecture-harness-context.md": {
+    "mtime": 1787909095.5593975,
+    "seen": 1787909104.066171,
+    "ast_hash": "06dd7c024c7ced0f304ff543da0298ab",
+    "semantic_hash": ""
+  },
+  "integrations/bmad/architecture-harness-gate.md": {
+    "mtime": 1787909095.5596287,
+    "seen": 1787909104.066172,
+    "ast_hash": "1e67dd8b5bc5205cd244ec9e7802bd1f",
+    "semantic_hash": ""
+  },
+  "integrations/bmad/install.md": {
+    "mtime": 1787909095.5591578,
+    "seen": 1787909104.0661728,
+    "ast_hash": "1e6a77b05e2ed36c624889c4d1c86722",
     "semantic_hash": ""
   }
 }

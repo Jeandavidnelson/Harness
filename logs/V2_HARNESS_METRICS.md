@@ -117,3 +117,15 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Input tokens (cached included separately) | 433672 |
 | Cached input tokens | 380416 |
 | Output tokens | 4563 |
+
+## Gate 10 BMAD adapter
+
+| Metric | Value |
+|---|---:|
+| Tests | 57 passed |
+| BMAD version inspected | 6.11.0 |
+| BMAD Codex skills rendered | 49 |
+| Official overrides resolved | 3 / 3 |
+| Core BMAD dependencies | 0 |
+| Silent overwrites | 0 |
+| BMAD build runtime | BLOCKED_BY_MISSING_UV |
