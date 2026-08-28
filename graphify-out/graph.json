@@ -64,7 +64,7 @@
       "ecosystem": "python",
       "source_file": "pyproject.toml",
       "source_location": "L1",
-      "version": "1.1.0",
+      "version": "2.0.0",
       "_origin": "ast"
     },
     {
@@ -180,6 +180,30 @@
       "label": "validate_v1_1.sh script",
       "file_type": "code",
       "source_file": "scripts/validate_v1_1.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_validate_v2",
+      "label": "validate_v2.sh",
+      "file_type": "code",
+      "source_file": "scripts/validate_v2.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_validate_v2_sh__entry",
+      "label": "validate_v2.sh script",
+      "file_type": "code",
+      "source_file": "scripts/validate_v2.sh",
       "source_location": "L1",
       "metadata": {
         "language": "bash",
@@ -2317,8 +2341,8 @@
       "_origin": "ast"
     },
     {
-      "id": "readme_architecture_harness_v1_1",
-      "label": "Architecture Harness V1.1",
+      "id": "readme_architecture_harness_v2",
+      "label": "Architecture Harness V2",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
@@ -2326,26 +2350,26 @@
       "_origin": "ast"
     },
     {
-      "id": "readme_pourquoi_ce_logiciel_existe",
-      "label": "Pourquoi ce logiciel existe",
+      "id": "readme_le_principe",
+      "label": "Le principe",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L14",
+      "source_location": "L7",
       "_origin": "ast"
     },
     {
-      "id": "readme_principes_fondamentaux",
-      "label": "Principes fondamentaux",
+      "id": "readme_pourquoi_ce_n_est_pas_archunit",
+      "label": "Pourquoi ce n’est pas ArchUnit",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L36",
+      "source_location": "L32",
       "_origin": "ast"
     },
     {
-      "id": "readme_1_séparer_observation_intention_et_politique",
-      "label": "1. Séparer observation, intention et politique",
+      "id": "readme_provenance_et_confiance",
+      "label": "Provenance et confiance",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
@@ -2353,57 +2377,12 @@
       "_origin": "ast"
     },
     {
-      "id": "readme_2_conserver_la_provenance",
-      "label": "2. Conserver la provenance",
+      "id": "readme_règles_et_lifecycle",
+      "label": "Règles et lifecycle",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L47",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_3_préférer_les_règles_explicites",
-      "label": "3. Préférer les règles explicites",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L58",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_4_refuser_les_graphes_périmés",
-      "label": "4. Refuser les graphes périmés",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L71",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_5_borner_le_contexte_agent",
-      "label": "5. Borner le contexte agent",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L77",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_architecture_interne",
-      "label": "Architecture interne",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L83",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_flux_de_validation",
-      "label": "Flux de validation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L99",
+      "source_location": "L53",
       "_origin": "ast"
     },
     {
@@ -2412,169 +2391,124 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L109",
+      "source_location": "L80",
       "_origin": "ast"
     },
     {
-      "id": "readme_workflow_quotidien_détaillé",
-      "label": "Workflow quotidien détaillé",
+      "id": "readme_api_universelle",
+      "label": "API universelle",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L121",
+      "source_location": "L92",
       "_origin": "ast"
     },
     {
-      "id": "readme_étape_1_construire_le_contexte_avant_de_modifier_le_code",
-      "label": "Étape 1 — Construire le contexte avant de modifier le code",
+      "id": "readme_workflow_quotidien",
+      "label": "Workflow quotidien",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L123",
+      "source_location": "L113",
       "_origin": "ast"
     },
     {
-      "id": "readme_étape_2_modifier_les_fichiers_pertinents",
-      "label": "Étape 2 — Modifier les fichiers pertinents",
+      "id": "readme_1_avant_une_modification_significative",
+      "label": "1. Avant une modification significative",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L143",
+      "source_location": "L115",
       "_origin": "ast"
     },
     {
-      "id": "readme_étape_3_rafraîchir_l_observation",
-      "label": "Étape 3 — Rafraîchir l’observation",
+      "id": "readme_2_implémenter_et_tester",
+      "label": "2. Implémenter et tester",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L125",
       "_origin": "ast"
     },
     {
-      "id": "readme_étape_4_valider_l_architecture",
-      "label": "Étape 4 — Valider l’architecture",
+      "id": "readme_3_checkpoint_significatif",
+      "label": "3. Checkpoint significatif",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L164",
+      "source_location": "L129",
       "_origin": "ast"
     },
     {
-      "id": "readme_étape_5_corriger_une_violation",
-      "label": "Étape 5 — Corriger une violation",
+      "id": "readme_4_en_cas_de_fail",
+      "label": "4. En cas de FAIL",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L188",
+      "source_location": "L138",
       "_origin": "ast"
     },
     {
-      "id": "readme_interface_universelle_pour_agents",
-      "label": "Interface universelle pour agents",
+      "id": "readme_workflow_bmad",
+      "label": "Workflow BMAD",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L201",
+      "source_location": "L142",
       "_origin": "ast"
     },
     {
-      "id": "readme_écrire_une_règle",
-      "label": "Écrire une règle",
+      "id": "readme_greenfield_et_brownfield",
+      "label": "Greenfield et brownfield",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L218",
+      "source_location": "L179",
       "_origin": "ast"
     },
     {
-      "id": "readme_expérimentation_ace_cnl",
-      "label": "Expérimentation ACE/CNL",
+      "id": "readme_adapters",
+      "label": "Adapters",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L248",
+      "source_location": "L184",
       "_origin": "ast"
     },
     {
-      "id": "readme_validation_complète_et_ci",
-      "label": "Validation complète et CI",
+      "id": "readme_validation",
+      "label": "Validation",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L277",
+      "source_location": "L194",
       "_origin": "ast"
     },
     {
-      "id": "readme_benchmark_v1_1",
-      "label": "Benchmark V1.1",
+      "id": "readme_architecture_interne",
+      "label": "Architecture interne",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L305",
+      "source_location": "L212",
       "_origin": "ast"
     },
     {
-      "id": "readme_commandes_de_diagnostic",
-      "label": "Commandes de diagnostic",
+      "id": "readme_limites_connues",
+      "label": "Limites connues",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L325",
+      "source_location": "L229",
       "_origin": "ast"
     },
     {
-      "id": "readme_le_graphe_est_stale",
-      "label": "Le graphe est stale",
+      "id": "readme_traçabilité",
+      "label": "Traçabilité",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L339",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_une_règle_ne_détecte_rien",
-      "label": "Une règle ne détecte rien",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L343",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_une_violation_semble_fausse",
-      "label": "Une violation semble fausse",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L347",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_le_contexte_est_trop_volumineux",
-      "label": "Le contexte est trop volumineux",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L351",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_limites_assumées",
-      "label": "Limites assumées",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L355",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_résultats_et_traçabilité",
-      "label": "Résultats et traçabilité",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L364",
+      "source_location": "L240",
       "_origin": "ast"
     },
     {
@@ -3091,6 +3025,51 @@
       "_origin": "ast"
     },
     {
+      "id": "experiments_results_v2_abc_benchmark",
+      "label": "V2_ABC_BENCHMARK.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_abc_benchmark_v2_a_b_c_benchmark",
+      "label": "V2 A/B/C Benchmark",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_abc_benchmark_conditions",
+      "label": "Conditions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_abc_benchmark_required_metrics",
+      "label": "Required metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_abc_benchmark_interpretation",
+      "label": "Interpretation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
       "id": "experiments_results_v2_baseline",
       "label": "V2_BASELINE.md",
       "file_type": "document",
@@ -3187,6 +3166,105 @@
       "node_kind": "heading",
       "source_file": "experiments/results/V2_BASELINE.md",
       "source_location": "L107",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation",
+      "label": "V2_FINAL_EVALUATION.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "label": "Architecture Harness V2 — Final Evaluation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_decision",
+      "label": "Decision",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_1_software_correctness",
+      "label": "1. Software correctness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_2_harness_correctness",
+      "label": "2. Harness correctness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_3_agent_effectiveness",
+      "label": "3. Agent effectiveness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_4_bmad_integration",
+      "label": "4. BMAD integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_5_portability",
+      "label": "5. Portability",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_6_product_usefulness",
+      "label": "6. Product usefulness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_acceptance_criteria_assessment",
+      "label": "Acceptance criteria assessment",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_results_v2_final_evaluation_final_answer",
+      "label": "Final answer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L58",
       "_origin": "ast"
     },
     {
@@ -5911,6 +5989,15 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_harness_metrics_gate_14_a_b_c_benchmark",
+      "label": "Gate 14 A/B/C benchmark",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L166",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_implementation_log",
       "label": "V2_IMPLEMENTATION_LOG.md",
       "file_type": "document",
@@ -6955,6 +7042,60 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "label": "Gate 14 — A/B/C Benchmark — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L445",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_447",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L447",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_and_results",
+      "label": "Implementation and results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L450",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_453",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L453",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_461",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L461",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_464",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L464",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_rule_authoring_log",
       "label": "V2_RULE_AUTHORING_LOG.md",
       "file_type": "document",
@@ -7302,6 +7443,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/validate_v1_1.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_validate_v2",
+      "target": "scripts_validate_v2_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate_v2.sh",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
@@ -12779,7 +12930,7 @@
     },
     {
       "source": "readme",
-      "target": "readme_architecture_harness_v1_1",
+      "target": "readme_architecture_harness_v2",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
@@ -12788,28 +12939,28 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_pourquoi_ce_logiciel_existe",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_le_principe",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L14",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_principes_fondamentaux",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_pourquoi_ce_n_est_pas_archunit",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L36",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_principes_fondamentaux",
-      "target": "readme_1_séparer_observation_intention_et_politique",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_provenance_et_confiance",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
@@ -12818,252 +12969,152 @@
       "_origin": "ast"
     },
     {
-      "source": "readme_principes_fondamentaux",
-      "target": "readme_2_conserver_la_provenance",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_règles_et_lifecycle",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L47",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_principes_fondamentaux",
-      "target": "readme_3_préférer_les_règles_explicites",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L58",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_principes_fondamentaux",
-      "target": "readme_4_refuser_les_graphes_périmés",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_principes_fondamentaux",
-      "target": "readme_5_borner_le_contexte_agent",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L77",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_architecture_interne",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_architecture_interne",
-      "target": "readme_flux_de_validation",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L99",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_architecture_harness_v1_1",
+      "source": "readme_architecture_harness_v2",
       "target": "readme_installation",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L109",
+      "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_workflow_quotidien_détaillé",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_api_universelle",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L121",
+      "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_workflow_quotidien_détaillé",
-      "target": "readme_étape_1_construire_le_contexte_avant_de_modifier_le_code",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_workflow_quotidien",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L123",
+      "source_location": "L113",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_workflow_quotidien_détaillé",
-      "target": "readme_étape_2_modifier_les_fichiers_pertinents",
+      "source": "readme_workflow_quotidien",
+      "target": "readme_1_avant_une_modification_significative",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L143",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_workflow_quotidien_détaillé",
-      "target": "readme_étape_3_rafraîchir_l_observation",
+      "source": "readme_workflow_quotidien",
+      "target": "readme_2_implémenter_et_tester",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L125",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_workflow_quotidien_détaillé",
-      "target": "readme_étape_4_valider_l_architecture",
+      "source": "readme_workflow_quotidien",
+      "target": "readme_3_checkpoint_significatif",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L164",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_workflow_quotidien_détaillé",
-      "target": "readme_étape_5_corriger_une_violation",
+      "source": "readme_workflow_quotidien",
+      "target": "readme_4_en_cas_de_fail",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L188",
+      "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_interface_universelle_pour_agents",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_workflow_bmad",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L201",
+      "source_location": "L142",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_écrire_une_règle",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_greenfield_et_brownfield",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L218",
+      "source_location": "L179",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_expérimentation_ace_cnl",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_adapters",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L248",
+      "source_location": "L184",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_validation_complète_et_ci",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_validation",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L277",
+      "source_location": "L194",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_benchmark_v1_1",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_architecture_interne",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L305",
+      "source_location": "L212",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_commandes_de_diagnostic",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_limites_connues",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L325",
+      "source_location": "L229",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "readme_commandes_de_diagnostic",
-      "target": "readme_le_graphe_est_stale",
+      "source": "readme_architecture_harness_v2",
+      "target": "readme_traçabilité",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L339",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_commandes_de_diagnostic",
-      "target": "readme_une_règle_ne_détecte_rien",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L343",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_commandes_de_diagnostic",
-      "target": "readme_une_violation_semble_fausse",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L347",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_commandes_de_diagnostic",
-      "target": "readme_le_contexte_est_trop_volumineux",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L351",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_limites_assumées",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L355",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme_architecture_harness_v1_1",
-      "target": "readme_résultats_et_traçabilité",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L364",
+      "source_location": "L240",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13578,6 +13629,46 @@
       "_origin": "ast"
     },
     {
+      "source": "experiments_results_v2_abc_benchmark",
+      "target": "experiments_results_v2_abc_benchmark_v2_a_b_c_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_abc_benchmark_v2_a_b_c_benchmark",
+      "target": "experiments_results_v2_abc_benchmark_conditions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_abc_benchmark_v2_a_b_c_benchmark",
+      "target": "experiments_results_v2_abc_benchmark_required_metrics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_abc_benchmark_v2_a_b_c_benchmark",
+      "target": "experiments_results_v2_abc_benchmark_interpretation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_ABC_BENCHMARK.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "experiments_results_v2_baseline",
       "target": "experiments_results_v2_baseline_v2_baseline_v1_1_reproduction",
       "relation": "contains",
@@ -13674,6 +13765,106 @@
       "confidence": "EXTRACTED",
       "source_file": "experiments/results/V2_BASELINE.md",
       "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_decision",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_1_software_correctness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_2_harness_correctness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_3_agent_effectiveness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_4_bmad_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_5_portability",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_6_product_usefulness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_acceptance_criteria_assessment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_results_v2_final_evaluation_architecture_harness_v2_final_evaluation",
+      "target": "experiments_results_v2_final_evaluation_final_answer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/results/V2_FINAL_EVALUATION.md",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16538,6 +16729,16 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_14_a_b_c_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_implementation_log",
       "target": "logs_v2_implementation_log_v2_implementation_log",
       "relation": "contains",
@@ -17684,6 +17885,66 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
       "source_location": "L442",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L445",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_447",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L447",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_and_results",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L450",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_453",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L453",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_461",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L461",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_14_a_b_c_benchmark_2026_08_28",
+      "target": "logs_v2_implementation_log_status_464",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L464",
       "weight": 1.0,
       "_origin": "ast"
     },

@@ -14,6 +14,19 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Rule maintenance cost | NOT_MEASURED |
 | Model task success | NOT_MEASURED |
 
+## Gate 15 final validation
+
+| Metric | Value |
+|---|---:|
+| Package version | 2.0.0 |
+| Tests | 62 passed |
+| Normalized nodes / edges | 816 / 1369 |
+| Graph freshness / doctor / gate | PASS / PASS / PASS |
+| Test Lab | 12 / 12 reproduced |
+| Skills validated | 2 / 2 |
+| BMAD overrides parsed | 3 / 3 |
+| Decision | GO — HARNESS + CONTEXT |
+
 ## Gate 1 V1.1 regression baseline
 
 | Metric | Value |

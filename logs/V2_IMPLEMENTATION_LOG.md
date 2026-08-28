@@ -463,3 +463,37 @@ The benchmark measures context, not model performance. C selected up to 26 relev
 
 ### Status
 PASS for reproducible context benchmark; comparative model success remains NOT_MEASURED.
+
+## Gate 15 — Final Evaluation — 2026-08-28
+
+### Objective
+Run the complete V2 validation and decide whether the evidence supports product use.
+
+### Implementation
+Promoted package metadata to 2.0.0, replaced the README with the detailed V2/BMAD workflow and principles, added `scripts/validate_v2.sh`, and produced `experiments/results/V2_FINAL_EVALUATION.md`.
+
+### Final functional validation
+- production Graphify refresh: PASS;
+- normalized nodes / edges: 816 / 1369;
+- freshness and doctor: PASS;
+- pytest: 62 passed;
+- architecture gate: PASS;
+- capabilities contract: PASS;
+- five-task A/B/C benchmark: PASS;
+- Test Lab A–L: PASS;
+- Rule Author and ArchUnit skills: PASS;
+- BMAD override TOML: PASS.
+
+### Final assessment
+- software correctness: PASS;
+- harness correctness: PASS on tested corpus, qualified;
+- agent effectiveness: PARTIAL;
+- BMAD integration: PARTIAL through mandatory approval boundary;
+- portability: PASS at contract level;
+- product usefulness: GO — HARNESS + CONTEXT.
+
+### Problems / negative results
+BMAD correction/review after spec approval, Claude execution, Java/ArchUnit execution, multi-task model success, and scaled maintenance cost remain NOT_MEASURED. V2 must not be sold as an unattended correctness guarantee.
+
+### Status
+PASS — V2 implementation complete with documented partial evidence where human/external execution remains outstanding.

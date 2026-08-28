@@ -1,114 +1,85 @@
-# Architecture Harness V1.1
+# Architecture Harness V2
 
-Architecture Harness est un logiciel Python qui transforme une architecture logicielle souhaitée en contrôles automatiques, reproductibles et exploitables par des humains comme par des agents de développement.
+Architecture Harness donne à BMAD, Codex, Claude ou tout autre agent une ligne directrice architecturale compacte issue de Mermaid, puis vérifie déterministement le code réellement produit. Mermaid guide l’agent ; seules les règles explicitement validées par un humain peuvent bloquer.
 
-Il combine quatre sources d’information sans les confondre :
+Le logiciel ne génère pas lui-même le code et ne remplace ni Graphify, ni les tests métier, ni la revue. Il fournit le module architectural pluggable entre l’orchestrateur et ces outils.
 
-1. le graphe du code réellement observé par Graphify ;
-2. l’architecture cible déclarée en Mermaid ;
-3. les règles exécutables déclarées explicitement ;
-4. le contexte d’exécution externe au code, également déclaré en Mermaid.
+## Le principe
 
-Le résultat est un harness déterministe qui retourne `PASS` ou `FAIL`, accompagné d’une preuve compacte. Le même graphe sert aussi à construire un contexte ciblé afin qu’un agent n’ait pas à charger tout le repository dans son prompt.
-
-## Pourquoi ce logiciel existe
-
-Un diagramme d’architecture classique documente une intention, mais il ne garantit pas que le code la respecte. À l’inverse, un graphe extrait du code décrit ce qui existe, mais ne sait pas à lui seul ce qui est autorisé ou interdit.
-
-Architecture Harness relie ces deux mondes :
-
-```text
-Code source
-   │
-   ▼
-Graphify ───────────────► graphe observé
-                              │
-Mermaid cible ────────────────┤
-Règles explicites ────────────┤──► harness ──► PASS / FAIL + preuve
-                              │
-Mermaid de contexte ──────────┘
-                              │
-                              └──► sélecteur ──► contexte agent compact
+```mermaid
+flowchart TD
+    M["Mermaid déclaré"] --> C["Context Builder"]
+    G["Code source"] --> GF["Graphify"]
+    GF --> O["Graphe observé"]
+    R["Règles validées"] --> H["Architecture Gate"]
+    O --> C
+    O --> H
+    M --> H
+    C --> A["Agent BMAD / Codex / Claude"]
+    A --> G
+    H -->|"FAIL compact"| A
+    H -->|"PASS ou WARN"| N["Étape suivante"]
 ```
 
-Le LLM n’est jamais chargé de calculer les chemins, de trouver les violations ou de décider du résultat. Ces opérations sont exécutées par du code Python. Un modèle peut proposer une modification ou aider à écrire une règle, mais le verdict reste produit par le moteur déterministe.
+Trois notions restent séparées :
 
-## Principes fondamentaux
+- l’architecture **déclarée** dans `architecture/diagrams/*.mmd` et `contexte/*.mmd` ;
+- l’architecture **observée** par Graphify dans `graphify-out/graph.json` ;
+- la politique **validée** dans `architecture/rules/rules.yaml`.
 
-### 1. Séparer observation, intention et politique
+Une flèche Mermaid est une direction de conception, jamais automatiquement une obligation. Le Rule Authoring Skill demande les précisions nécessaires et écrit d’abord une candidate non bloquante.
 
-- `graphify-out/graph.json` contient l’observation du code.
-- `architecture/diagrams/*.mmd` décrit l’intention architecturale.
-- `architecture/rules/rules.yaml` définit la politique exécutable.
-- `contexte/*.mmd` décrit ce que le code seul ne montre pas : processus externes, infrastructure, frontières de confiance ou déploiement.
+## Pourquoi ce n’est pas ArchUnit
 
-Une flèche Mermaid `A --> B` ne signifie pas automatiquement « A doit appeler B ». Elle décrit seulement la cible. La sémantique obligatoire ou interdite vient toujours de `rules.yaml`.
+Architecture Harness agit au niveau macro, indépendamment du langage et de l’orchestrateur. Il combine Mermaid, graphe observé et règles pour guider l’agent avant le code et le corriger après un checkpoint. ArchUnit est un validateur Java natif, excellent pour des invariants de packages/classes dans les tests.
 
-### 2. Conserver la provenance
+Les deux sont complémentaires : le skill externe `integrations/archunit/` peut traduire une règle déjà validée en test ArchUnit candidat. Le core Python n’importe jamais ArchUnit et ne valide jamais automatiquement le test généré.
 
-Chaque relation garde son origine :
+## Provenance et confiance
 
-- `EXTRACTED` : relation directement extraite du code ;
-- `INFERRED` : relation résolue par Graphify ;
-- `AMBIGUOUS` : relation incertaine, ignorée pour les échecs durs en V1.1 ;
-- `DECLARED_CONTEXT` : relation déclarée dans un Mermaid de contexte.
+V2 distingue l’origine d’une preuve de la confiance de l’extracteur :
 
-Une relation déclarée n’est jamais présentée silencieusement comme une observation du code.
-
-### 3. Préférer les règles explicites
-
-Les rôles sont associés au code par des matchers déclarés : `exact`, `suffix`, `prefix` ou `contains`. Il n’existe aucune inférence LLM de rôle dans le harness.
-
-Les quatre règles disponibles sont :
-
-| Type | Signification |
+| Origine | Sens |
 |---|---|
-| `required_edge` | une dépendance directe doit exister |
-| `forbidden_edge` | une dépendance directe ne doit pas exister |
-| `required_path` | un chemin direct ou transitif doit exister |
-| `forbidden_path` | aucun chemin direct ou transitif ne doit exister |
+| `DECLARED` | fait présent dans Mermaid |
+| `OBSERVED` | fait extrait du code |
+| `INFERRED` | relation déduite, non promue automatiquement |
+| `USER_CONFIRMED` | décision explicitement confirmée |
+| `GENERATED` | proposition produite par un outil/agent |
+| `AMBIGUOUS` | information trop incertaine pour bloquer |
 
-### 4. Refuser les graphes périmés
+Graphify conserve parallèlement sa confiance native (`EXTRACTED`, `INFERRED`, `AMBIGUOUS`). Une inférence LLM ou Graphify ne devient jamais silencieusement une règle validée.
 
-Graphify maintient `graphify-out/manifest.json` avec le hash des sources analysées. La commande `arch-harness stale` compare ces hashes aux fichiers Python, shell et au manifeste du package.
+## Règles et lifecycle
 
-Si une source change sans refresh, les commandes agent `context` et `validate` refusent de continuer avec le code d’erreur technique `2`. Le système ne donne donc pas un faux sentiment de sécurité à partir d’un ancien graphe.
-
-### 5. Borner le contexte agent
-
-Le sélecteur part d’un nœud focus, explore ses voisins dans un rayon borné, conserve les chemins utiles, projette les règles applicables et liste les fichiers pertinents. Les limites portent d’abord sur la structure — rayon et nombre d’éléments — puis les tokens sont mesurés.
-
-Le graphe complet n’est jamais renvoyé par défaut dans l’interface agent.
-
-## Architecture interne
+Types supportés : `required_edge`, `forbidden_edge`, `required_path`, `forbidden_path`. Le Rule IR conserve aussi `allowed_targets`, `severity`, `scope`, `exceptions`, `rationale`, `provenance` et `status`.
 
 ```text
-src/architecture_harness/
-├── adapters/       lecture Graphify, Mermaid et règles
-├── ir/             représentations intermédiaires normalisées
-├── engine/         matching, chemins, harness et sélection de contexte
-├── exporters/      sorties text, Markdown, JSON et JSON agent
-├── metrics/        tokenisation et benchmarks A/B/C
-├── cache/          cache local adressé par contenu
-├── ace/            expérimentation d’authoring ACE, séparée du harness
-├── graph_freshness.py
-├── doctor.py
-└── cli.py
+proposed → clarification → candidate → review → validated
 ```
 
-### Flux de validation
+Seule une violation d’une règle `severity: error` et `status: validated` produit un FAIL. Une candidate ou un warning apparaît comme `WARN`/advisory. Les candidates vivent dans `architecture/rules/candidates.yaml`; les promotions humaines sont tracées dans `architecture/rules/decisions.md`.
 
-1. L’adapter Graphify normalise les variantes officielles `edges` et `links`, ainsi que `provenance`/`confidence` et `file`/`source_file`.
-2. Le parser Mermaid transforme les diagrammes en nœuds, arêtes et appartenances aux subgraphs.
-3. Le parser de règles charge le sous-ensemble YAML volontairement limité de la V1.1.
-4. Le matcher résout chaque rôle vers des identifiants Graphify exacts.
-5. Le moteur cherche les arêtes ou chemins requis/interdits.
-6. Pour un chemin interdit, le plus court chemin observé devient la preuve.
-7. Les exporters limitent le rapport aux violations, fichiers et provenances nécessaires.
+Exemple :
+
+```yaml
+- id: controller-must-not-call-repository
+  type: forbidden_edge
+  source: Controller
+  target: Repository
+  severity: error
+  scope: [src]
+  exceptions: []
+  rationale: Controllers delegate through services.
+  provenance: USER_CONFIRMED
+  status: validated
+```
+
+Le skill `skills/architecture-rule-author/` transforme les intentions Mermaid en candidates, pose les questions sur edge/path, scope, exceptions et sévérité, puis s’arrête avant promotion sans approbation explicite.
 
 ## Installation
 
-Prérequis : Python 3.10 ou supérieur.
+Prérequis : Python 3.10+.
 
 ```bash
 python3 -m venv .venv
@@ -116,256 +87,162 @@ python3 -m venv .venv
 .venv/bin/arch-harness doctor
 ```
 
-Les dépendances de développement installent Graphify `0.9.50`, pytest, `tiktoken` et les outils nécessaires à la validation du Skill ACE.
+Graphify 0.9.50 est la source de l’architecture observée. Le harnais ne réimplémente pas son analyse.
 
-## Workflow quotidien détaillé
-
-### Étape 1 — Construire le contexte avant de modifier le code
+## API universelle
 
 ```bash
-.venv/bin/arch-harness agent context \
-  --focus src_architecture_harness_engine_harness_evaluate \
-  --format json
-```
-
-La réponse contient uniquement :
-
-- les arêtes observées pertinentes ;
-- le contexte Mermaid connecté ;
-- la projection de l’architecture cible ;
-- les règles applicables ;
-- les fichiers pertinents ;
-- les provenances ;
-- les métriques et l’indication de troncature.
-
-Le focus accepte aussi une sous-chaîne pratique telle que `evaluate` ou `load_graphify`.
-
-### Étape 2 — Modifier les fichiers pertinents
-
-La modification s’effectue normalement. Le harness n’impose aucun framework et ne remplace ni Git, ni les tests métier, ni Graphify.
-
-### Étape 3 — Rafraîchir l’observation
-
-```bash
-scripts/refresh_graph.sh
-```
-
-Le script exécute réellement le binaire Graphify de `.venv`. Si un manifest existe, il effectue une mise à jour incrémentale ; sinon il effectue une extraction AST locale complète en mode code-only. Il vérifie ensuite immédiatement la fraîcheur du résultat et affiche le résumé du graphe.
-
-Pour lancer Graphify directement :
-
-```bash
-.venv/bin/graphify extract . --code-only --no-cluster
-.venv/bin/graphify update . --no-cluster
-```
-
-Graphify est utilisé comme moteur d’observation éprouvé ; Architecture Harness ne réimplémente pas son analyse AST. Voir la [documentation Graphify](https://graphify.com/docs) et le [repository officiel](https://github.com/Graphify-Labs/graphify).
-
-### Étape 4 — Valider l’architecture
-
-Pour un humain :
-
-```bash
-.venv/bin/arch-harness check --format text
-.venv/bin/arch-harness check --format markdown
-.venv/bin/arch-harness check --format json
-```
-
-Pour un agent :
-
-```bash
-.venv/bin/arch-harness agent validate --format json
+arch-harness graph refresh --format json
+arch-harness agent context --focus <node> --format json
+arch-harness agent validate --format json
+arch-harness gate --format json
+arch-harness capabilities --format json
+arch-harness doctor
 ```
 
 Codes de sortie :
 
-| Code | Signification | Action |
+| Code | Sens | Action |
 |---:|---|---|
-| `0` | architecture conforme | terminer ou poursuivre les tests métier |
-| `1` | violation architecturale | corriger toutes les violations puis rafraîchir |
-| `2` | erreur technique/configuration | lancer `agent doctor` et corriger la configuration |
+| 0 | PASS ou WARN non bloquant | continuer et conserver les advisories |
+| 1 | violation `error + validated` | corriger le code, refresh, relancer le gate |
+| 2 | erreur technique/configuration | lancer `doctor`, réparer, ne pas contourner |
 
-### Étape 5 — Corriger une violation
+Le gate est en lecture seule : il ne modifie jamais le code, ne rafraîchit pas implicitement le graphe et refuse un graphe périmé.
 
-Le rapport compact fournit :
+## Workflow quotidien
 
-- l’identifiant de règle ;
-- le type de politique ;
-- la source et la cible ;
-- le plus court chemin observé ;
-- les fichiers concernés ;
-- la provenance des relations.
+### 1. Avant une modification significative
 
-L’agent corrige le code à partir de cette preuve, rejoue `refresh_graph.sh`, puis `agent validate`. Les trois scénarios V1.1 ont demandé une seule itération, avec des feedbacks de 107 à 167 tokens contre 114 604 tokens pour le graphe complet.
-
-## Interface universelle pour agents
+Identifier un nœud Graphify pertinent :
 
 ```bash
-arch-harness agent capabilities --format json
-arch-harness agent doctor --format json
-arch-harness agent context --focus <node> --format json
-arch-harness agent validate --format json
+arch-harness agent context --focus PaymentService --format json
 ```
 
-Les adapters n’ajoutent aucune logique métier :
+La réponse borne le voisinage, projette Mermaid et les règles applicables, donne les fichiers utiles et conserve provenance, sévérité, statut et rationale. L’agent ne charge pas tout le graphe.
 
-- Codex : `AGENTS.md` ;
-- Claude : `integrations/claude/architecture-harness/SKILL.md` ;
-- BMAD : `integrations/bmad/workflow-snippet.md`.
+### 2. Implémenter et tester
 
-Un nouvel agent peut découvrir le contrat via `capabilities`, diagnostiquer l’installation, demander son contexte, modifier le code et consommer le résultat de validation sans connaître l’implémentation interne.
+L’agent modifie le code et exécute les tests fonctionnels. Un PASS architectural ne prouve pas que le logiciel fonctionne : le run réel V2 a justement produit une première correction gate-PASS mais runtime-FAIL.
 
-## Écrire une règle
-
-Exemple de règle réelle :
-
-```yaml
-roles:
-  CliMain:
-    match:
-      exact: src_architecture_harness_cli_main
-  HarnessEvaluate:
-    match:
-      exact: src_architecture_harness_engine_harness_evaluate
-
-rules:
-  - id: cli-must-run-harness
-    type: required_edge
-    source: CliMain
-    target: HarnessEvaluate
-```
-
-Workflow recommandé :
-
-1. trouver les identifiants réels avec Graphify ;
-2. ajouter un matcher explicite ;
-3. choisir edge ou path selon la sémantique directe ou transitive ;
-4. exécuter `arch-harness rules validate` ;
-5. exécuter `scripts/refresh_graph.sh` si du code a changé ;
-6. exécuter `arch-harness check` ;
-7. ajouter un test PASS et un test de régression FAIL.
-
-## Expérimentation ACE/CNL
-
-ACE est une couche d’aide à l’écriture, pas le harness.
+### 3. Checkpoint significatif
 
 ```bash
-arch-harness ace compile \
-  --text "Controllers must never call repositories directly."
+arch-harness graph refresh --format json
+arch-harness gate --format json
 ```
 
-La sortie conserve l’original, l’intention, le statut, le candidat ACE, l’interprétation structurée, les hypothèses et un mapping harness éventuel.
+Ne pas lancer le gate après chaque fichier. L’utiliser après une étape cohérente, une story, avant revue et avant de déclarer terminé.
 
-Les statuts sont :
+### 4. En cas de FAIL
 
-- `EXACT` : la modalité et la relation sont suffisamment précises ;
-- `NEEDS_CLARIFICATION` : la phrase contient par exemple `should`, `normally`, `preferably` ou une condition inexécutable ;
-- `UNSUPPORTED` : la relation dépasse le corpus déterministe ou combine plusieurs contraintes.
+Le rapport fournit règle, sévérité, source/cible, plus court chemin, fichiers, provenance, rationale et architecture attendue. Réinjecter uniquement ce rapport compact dans l’agent, corriger le code, puis répéter refresh/gate. Ne jamais affaiblir une règle pour obtenir PASS ; une règle obsolète exige une décision humaine.
 
-Une formulation comme « Services should use caching when useful » ne devient jamais une obligation. Elle retourne `NEEDS_CLARIFICATION`, sans ACE et sans règle harness.
+## Workflow BMAD
 
-Validation APE optionnelle :
+BMAD 6.11 est le consommateur officiel principal, sans dépendance dans le core.
 
 ```bash
-arch-harness ace validate rule.ace
+npx bmad-method install --modules bmm --tools codex
+arch-harness --root /path/to/project integrations install bmad \
+  --adapter-root /path/to/architecture-harness
 ```
 
-Lorsque l’exécutable APE n’est pas installé, la commande retourne `UNAVAILABLE / NOT_RUN` sans casser le harness principal.
+BMAD 6.11 requiert `uv` pour rendre `bmad-build`. L’adapter installe trois overrides d’équipe officiels dans `_bmad/custom/` :
 
-Le skill réutilisable se trouve dans `integrations/ace-rule-author/`.
+- `bmad-architecture` confronte brownfield observé et Mermaid, puis déclenche l’authoring candidat ;
+- `bmad-build` demande le contexte compact, impose les checkpoints et boucle sur les FAIL ;
+- `bmad-code-review` charge le dernier verdict sans remplacer la revue.
 
-## Validation complète et CI
+Séquence recommandée :
 
-La commande de référence est :
+```text
+bmad-architecture
+→ Mermaid
+→ Rule Authoring Skill
+→ clarification
+→ candidates
+→ validation humaine
+→ rules validated
+→ bmad-build
+→ context compact
+→ code + tests
+→ Graphify refresh
+→ gate
+→ correction jusqu’à PASS
+→ bmad-code-review
+```
+
+BMAD conserve ses checkpoints humains. L’essai E2E V2 a prouvé l’activation des overrides, le contexte et la propagation FAIL, puis s’est arrêté honnêtement à l’approbation de la spec.
+
+## Greenfield et brownfield
+
+- Greenfield : partir de Mermaid/règles candidates, écrire du code significatif, puis créer le premier graphe et lancer le premier gate.
+- Brownfield : exécuter Graphify avant le développement pour obtenir une baseline, puis comparer observé, déclaré et règles validées.
+
+## Adapters
+
+- BMAD : `integrations/bmad/`
+- Codex : `integrations/codex/AGENTS.snippet.md`
+- Claude : `integrations/claude/SKILL.md`
+- générique : `integrations/generic/README.md`
+- ArchUnit optionnel : `integrations/archunit/SKILL.md`
+
+Tous appellent la même CLI. `arch-harness capabilities --format json` suffit à un consommateur générique pour découvrir le contrat.
+
+## Validation
 
 ```bash
-scripts/validate_v1_1.sh
+scripts/validate_v2.sh
 ```
 
-Elle exécute, dans cet ordre :
+La validation rafraîchit Graphify, contrôle la fraîcheur et la configuration, exécute pytest, le gate, les capacités, le benchmark V2, le Test Lab A–L, les validateurs de skills et le parsing des overrides BMAD.
 
-1. refresh Graphify ;
-2. stale graph check ;
-3. doctor JSON ;
-4. suite pytest complète ;
-5. harness ;
-6. benchmark A/B/C ;
-7. tests ACE ;
-8. validation structurelle du skill ;
-9. ajout du résumé au journal.
+Résultats V2 observés avant le gate final :
 
-Exemple CI :
+- 62 tests passants ;
+- Test Lab déterministe : 12 scénarios, 4/4 violations connues détectées, 0 faux blocage dans le corpus ;
+- benchmark C vs B : 48,7 % de réduction de contexte sur cinq tâches ;
+- correction Codex réelle : réussite finale en deux processus, avec un échec fonctionnel intermédiaire conservé ;
+- BMAD réel : activation/context/FAIL prouvés, post-approbation non exécuté.
 
-```yaml
-- run: python3 -m venv .venv
-- run: .venv/bin/python -m pip install -e '.[dev]'
-- run: scripts/validate_v1_1.sh
+Ces chiffres ne sont pas généralisés au-delà des corpus exécutés. Les métriques indisponibles restent `NOT_MEASURED`.
+
+## Architecture interne
+
+```text
+src/architecture_harness/
+├── adapters/       Graphify, Mermaid, règles
+├── ir/             graphes, règles, provenance
+├── engine/         matching, chemins, contexte, gate
+├── exporters/      JSON, texte, Markdown
+├── metrics/        tokens et benchmark A/B/C
+├── ace/            expérimentation optionnelle
+├── integrations.py installation des adapters
+├── graphify_runtime.py
+├── graph_freshness.py
+├── doctor.py
+└── cli.py
 ```
 
-## Benchmark V1.1
+## Limites connues
 
-Les cinq tâches portent sur des nœuds réels du repository. Les tokens sont mesurés avec `tiktoken:o200k_base`.
+- Les matchers de rôles restent explicites et lexicaux ; leur résolution doit être testée.
+- `scope` et `exceptions` sont conservés dans l’IR mais n’ont pas encore de sémantique active universelle.
+- Le sous-ensemble Mermaid est ciblé ; le diagramme n’est pas un langage de politique.
+- La qualité dépend fortement de la précision edge/path des règles.
+- Le Test Lab est déterministe ; il ne remplace pas les runs agentiques.
+- Une seule correction Codex réelle ne donne pas un taux de succès généralisable.
+- Claude et ArchUnit n’ont pas été exécutés réellement dans ce repository.
+- Le BMAD E2E post-approbation reste à terminer avec un humain.
 
-| Condition | Contenu |
-|---|---|
-| A | sortie d’une vraie requête Graphify |
-| B | Graphify + architecture et contexte complets |
-| C | `arch-harness agent context` |
+## Traçabilité
 
-Résultat final :
-
-- moyenne A : 4 608,4 tokens ;
-- moyenne B : 5 378,4 tokens ;
-- moyenne C : 2 895,8 tokens ;
-- réduction C face à B : 46,2 % ;
-- réduction C face à A : 37,2 %.
-
-Le taux de réussite d’un modèle et ses tokens de sortie restent `NOT_MEASURED`, car aucun runner de modèle contrôlé n’était disponible. Le rapport ne les invente pas.
-
-## Commandes de diagnostic
-
-```bash
-arch-harness observed
-arch-harness target
-arch-harness context overview
-arch-harness context build --focus <node> --radius 1 --max-items 50
-arch-harness rules validate
-arch-harness rules list
-arch-harness stale
-arch-harness doctor
-arch-harness benchmark --mode v1.1
-```
-
-### Le graphe est stale
-
-Exécuter `scripts/refresh_graph.sh`, puis `arch-harness stale`. Ne pas contourner le contrôle en modifiant manuellement le manifest.
-
-### Une règle ne détecte rien
-
-Vérifier que ses rôles correspondent à au moins un identifiant réel Graphify. Une règle dont la source ne résout aucun nœud peut passer sans évaluer d’entité ; `doctor` garantit que la référence est déclarée, mais les tests de production doivent aussi prouver sa résolution.
-
-### Une violation semble fausse
-
-Inspecter le matcher, le chemin minimal et la provenance. Les relations `AMBIGUOUS` ne provoquent pas de FAIL dur. Une allowlist ciblée est préférable à une règle trop large.
-
-### Le contexte est trop volumineux
-
-Réduire `--radius` ou `--max-items`, puis mesurer de nouveau. Ne pas supprimer une information nécessaire uniquement pour améliorer un pourcentage.
-
-## Limites assumées
-
-- Le parser Mermaid prend en charge un sous-ensemble ciblé : `flowchart`/`graph`, directions courantes, nœuds, labels, arêtes dirigées et subgraphs.
-- Le parser YAML des règles est volontairement restreint au contrat V1.1.
-- Le moteur analyse la topologie fournie par Graphify ; il ne prouve pas des propriétés métier ou de sécurité arbitraires.
-- Les matchers sont lexicaux et explicites.
-- APE est optionnel et n’était pas disponible pendant la validation.
-- Le benchmark mesure le contexte, pas la qualité d’un modèle externe.
-
-## Résultats et traçabilité
-
-- Rapport final : `experiments/results/V1_1_FINAL_REPORT.md`
-- Journal d’exécution : `logs/V1_1_IMPLEMENTATION_LOG.md`
-- Métriques : `logs/V1_1_METRICS.md`
-- Conversions ACE : `logs/V1_1_ACE_VALIDATION_LOG.md`
-- Baseline V1 : tag Git `v1.0.0`
-
+- évaluation finale : `experiments/results/V2_FINAL_EVALUATION.md`
+- baseline : `experiments/results/V2_BASELINE.md`
+- benchmark : `experiments/results/V2_ABC_BENCHMARK.md`
+- Test Lab : `experiments/agent-runs/V2_TEST_LAB_RESULTS.json`
+- runs réels : `experiments/agent-runs/`
+- journaux : `logs/V2_*.md`
+- baseline V1 : tag Git `v1.0.0`

@@ -1,8 +1,8 @@
 {
   "pyproject.toml": {
-    "mtime": 1787728471.67292,
-    "seen": 1787728487.8391411,
-    "ast_hash": "dcb10e92aad2f5779b3029d872f4cf1f",
+    "mtime": 1787909656.690431,
+    "seen": 1787909668.352968,
+    "ast_hash": "35ca413ac17b236c6864ad7d80f2f33c",
     "semantic_hash": ""
   },
   "scripts/benchmark_tokens.sh": {
@@ -30,9 +30,9 @@
     "semantic_hash": "8f75bd7ba890938b43dd0dcd9fed603b"
   },
   "src/architecture_harness/__init__.py": {
-    "mtime": 1787728471.6737988,
-    "seen": 1787728487.8391528,
-    "ast_hash": "b4a38aff48ea36121fef4114010a662b",
+    "mtime": 1787909656.6911163,
+    "seen": 1787909668.3529768,
+    "ast_hash": "a09ab88708b104edb6066ae4a3dee630",
     "semantic_hash": ""
   },
   "src/architecture_harness/adapters/__init__.py": {
@@ -300,9 +300,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787728471.675575,
-    "seen": 1787728487.839218,
-    "ast_hash": "f5bb135b3f9ed33a7cd9517c831d99c4",
+    "mtime": 1787909656.6925988,
+    "seen": 1787909668.353048,
+    "ast_hash": "40a88b724123aee54bd2a16a17a3f6df",
     "semantic_hash": ""
   },
   "architecture/rules/rules.yaml": {
@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787909452.8968492,
-    "seen": 1787909506.4955552,
-    "ast_hash": "663422890078e0886576af2707bc7bf6",
+    "mtime": 1787909534.263686,
+    "seen": 1787909668.3530822,
+    "ast_hash": "3502cc6c4496d4780398f326532c6b13",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787909452.8959117,
-    "seen": 1787909506.495556,
-    "ast_hash": "7969d9a4f188aa340c12597ab2dce8cc",
+    "mtime": 1787909534.2628694,
+    "seen": 1787909668.353083,
+    "ast_hash": "3020777e46ea0fcbad23b842aa7a6524",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
@@ -675,6 +675,24 @@
     "mtime": 1787909411.3379374,
     "seen": 1787909440.451392,
     "ast_hash": "33465863dcd010523750b685c689e5cd",
+    "semantic_hash": ""
+  },
+  "scripts/validate_v2.sh": {
+    "mtime": 1787909661.8279798,
+    "seen": 1787909668.3529751,
+    "ast_hash": "94e9b00e59e362737201ee0849e973b2",
+    "semantic_hash": ""
+  },
+  "experiments/results/V2_ABC_BENCHMARK.md": {
+    "mtime": 1787909534.2619765,
+    "seen": 1787909668.353059,
+    "ast_hash": "0ce79be9e3acc0857d17184d8815a0f3",
+    "semantic_hash": ""
+  },
+  "experiments/results/V2_FINAL_EVALUATION.md": {
+    "mtime": 1787909656.6928136,
+    "seen": 1787909668.3530612,
+    "ast_hash": "e721ca36797e690a6719707a18d092f2",
     "semantic_hash": ""
   }
 }
