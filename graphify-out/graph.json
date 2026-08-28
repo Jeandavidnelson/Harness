@@ -2863,7 +2863,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L207",
+      "source_location": "L213",
       "_origin": "ast"
     },
     {
@@ -2872,7 +2872,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L225",
+      "source_location": "L231",
       "_origin": "ast"
     },
     {
@@ -2881,7 +2881,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L242",
+      "source_location": "L248",
       "_origin": "ast"
     },
     {
@@ -2890,7 +2890,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L253",
+      "source_location": "L259",
       "_origin": "ast"
     },
     {
@@ -2909,6 +2909,366 @@
       "node_kind": "heading",
       "source_file": "architecture/rules/decisions.md",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours",
+      "label": "COMMANDES_ET_RETOURS.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "label": "Référence des commandes et retours d’Architecture Harness V2.2",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_1_convention_générale",
+      "label": "1. Convention générale",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_2_codes_de_sortie",
+      "label": "2. Codes de sortie",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "label": "3. Statuts d’évaluation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_pass",
+      "label": "`PASS`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_warn",
+      "label": "`WARN`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L51",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_fail",
+      "label": "`FAIL`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L68",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_unresolved",
+      "label": "`UNRESOLVED`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_not_applicable",
+      "label": "`NOT_APPLICABLE`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L104",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_error",
+      "label": "`ERROR`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L108",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_4_doctor",
+      "label": "4. `doctor`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L120",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_5_graph_refresh",
+      "label": "5. `graph refresh`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L148",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_6_stale",
+      "label": "6. `stale`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L176",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_7_observed",
+      "label": "7. `observed`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L197",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_8_target",
+      "label": "8. `target`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L215",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_9_rules_validate",
+      "label": "9. `rules validate`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L234",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_10_rules_list",
+      "label": "10. `rules list`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L251",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_11_rules_author_context",
+      "label": "11. `rules author-context`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L264",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_12_context_overview",
+      "label": "12. `context overview`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L308",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_13_context_build",
+      "label": "13. `context build`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L322",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_14_agent_context",
+      "label": "14. `agent context`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L344",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_15_check",
+      "label": "15. `check`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L369",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_16_gate",
+      "label": "16. `gate`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L385",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_17_agent_validate",
+      "label": "17. `agent validate`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L421",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_18_capabilities",
+      "label": "18. `capabilities`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L429",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_19_integrations_install",
+      "label": "19. `integrations install`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L461",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_bmad",
+      "label": "BMAD",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L463",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_codex",
+      "label": "Codex",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L474",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_claude_code",
+      "label": "Claude Code",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L483",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_protection_contre_l_écrasement",
+      "label": "Protection contre l’écrasement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L492",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_20_benchmark",
+      "label": "20. `benchmark`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L508",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_21_commandes_ace_expérimentales",
+      "label": "21. Commandes ACE expérimentales",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L519",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "label": "22. Erreurs de configuration courantes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L536",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_node_js_absent",
+      "label": "Node.js absent",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L538",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_mermaid_invalide",
+      "label": "Mermaid invalide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L546",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_graphify_absent",
+      "label": "Graphify absent",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L554",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_graphe_périmé",
+      "label": "Graphe périmé",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L563",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_mapping_non_résolu",
+      "label": "Mapping non résolu",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L574",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_commandes_et_retours_23_séquence_recommandée_pour_une_story",
+      "label": "23. Séquence recommandée pour une story",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L584",
       "_origin": "ast"
     },
     {
@@ -2990,6 +3350,195 @@
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
       "source_location": "L207",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique",
+      "label": "WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "label": "Workflow et architecture technique d’Architecture Harness V2.2",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_1_rôle_du_logiciel",
+      "label": "1. Rôle du logiciel",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_2_organisation_d_un_projet_consommateur",
+      "label": "2. Organisation d’un projet consommateur",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_3_parsing_mermaid_officiel",
+      "label": "3. Parsing Mermaid officiel",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_3_1_runtime",
+      "label": "3.1 Runtime",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_3_2_normalisation",
+      "label": "3.2 Normalisation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L90",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_4_graphe_observé_avec_graphify",
+      "label": "4. Graphe observé avec Graphify",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L113",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_5_génération_automatique_du_contexte_d_authoring",
+      "label": "5. Génération automatique du contexte d’authoring",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L132",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_6_architecture_rule_author",
+      "label": "6. Architecture Rule Author",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L164",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_7_modèle_des_règles",
+      "label": "7. Modèle des règles",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L185",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_8_lifecycle_et_sécurité_des_règles",
+      "label": "8. Lifecycle et sécurité des règles",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L222",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_9_évaluation_déterministe",
+      "label": "9. Évaluation déterministe",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L246",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_10_applicabilité",
+      "label": "10. Applicabilité",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L264",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_11_contexte_compact_avant_développement",
+      "label": "11. Contexte compact avant développement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L272",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_12_gate_et_boucle_de_correction",
+      "label": "12. Gate et boucle de correction",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L291",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_13_intégrations_orchestrateurs",
+      "label": "13. Intégrations orchestrateurs",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L314",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_bmad",
+      "label": "BMAD",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L316",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_codex",
+      "label": "Codex",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L329",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_claude_code",
+      "label": "Claude Code",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L333",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_workflow_et_architecture_technique_14_validation_interne_du_projet",
+      "label": "14. Validation interne du projet",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L339",
       "_origin": "ast"
     },
     {
@@ -14707,7 +15256,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L207",
+      "source_location": "L213",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14717,7 +15266,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L225",
+      "source_location": "L231",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14727,7 +15276,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L242",
+      "source_location": "L248",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14737,7 +15286,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L253",
+      "source_location": "L259",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14748,6 +15297,396 @@
       "confidence": "EXTRACTED",
       "source_file": "architecture/rules/decisions.md",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours",
+      "target": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_1_convention_générale",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_2_codes_de_sortie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "target": "documentation_commandes_et_retours_pass",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "target": "documentation_commandes_et_retours_warn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "target": "documentation_commandes_et_retours_fail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "target": "documentation_commandes_et_retours_unresolved",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "target": "documentation_commandes_et_retours_not_applicable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_3_statuts_d_évaluation",
+      "target": "documentation_commandes_et_retours_error",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_4_doctor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_5_graph_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_6_stale",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_7_observed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_8_target",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_9_rules_validate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L234",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_10_rules_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_11_rules_author_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_12_context_overview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L308",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_13_context_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L322",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_14_agent_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L344",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_15_check",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L369",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_16_gate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L385",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_17_agent_validate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L421",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_18_capabilities",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L429",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_19_integrations_install",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L461",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_19_integrations_install",
+      "target": "documentation_commandes_et_retours_bmad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L463",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_19_integrations_install",
+      "target": "documentation_commandes_et_retours_codex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L474",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_19_integrations_install",
+      "target": "documentation_commandes_et_retours_claude_code",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L483",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_19_integrations_install",
+      "target": "documentation_commandes_et_retours_protection_contre_l_écrasement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L492",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_20_benchmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L508",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_21_commandes_ace_expérimentales",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L519",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L536",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "target": "documentation_commandes_et_retours_node_js_absent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L538",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "target": "documentation_commandes_et_retours_mermaid_invalide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L546",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "target": "documentation_commandes_et_retours_graphify_absent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L554",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "target": "documentation_commandes_et_retours_graphe_périmé",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L563",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_22_erreurs_de_configuration_courantes",
+      "target": "documentation_commandes_et_retours_mapping_non_résolu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L574",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_commandes_et_retours_référence_des_commandes_et_retours_d_architecture_harness_v2_2",
+      "target": "documentation_commandes_et_retours_23_séquence_recommandée_pour_une_story",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/COMMANDES_ET_RETOURS.md",
+      "source_location": "L584",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14828,6 +15767,206 @@
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ET_TEST_MANUEL.md",
       "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique",
+      "target": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_1_rôle_du_logiciel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_2_organisation_d_un_projet_consommateur",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_3_parsing_mermaid_officiel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_3_parsing_mermaid_officiel",
+      "target": "documentation_workflow_et_architecture_technique_3_1_runtime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_3_parsing_mermaid_officiel",
+      "target": "documentation_workflow_et_architecture_technique_3_2_normalisation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_4_graphe_observé_avec_graphify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_5_génération_automatique_du_contexte_d_authoring",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_6_architecture_rule_author",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_7_modèle_des_règles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_8_lifecycle_et_sécurité_des_règles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_9_évaluation_déterministe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_10_applicabilité",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_11_contexte_compact_avant_développement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L272",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_12_gate_et_boucle_de_correction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L291",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_13_intégrations_orchestrateurs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L314",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_13_intégrations_orchestrateurs",
+      "target": "documentation_workflow_et_architecture_technique_bmad",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L316",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_13_intégrations_orchestrateurs",
+      "target": "documentation_workflow_et_architecture_technique_codex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L329",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_13_intégrations_orchestrateurs",
+      "target": "documentation_workflow_et_architecture_technique_claude_code",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L333",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_workflow_et_architecture_technique_workflow_et_architecture_technique_d_architecture_harness_v2_2",
+      "target": "documentation_workflow_et_architecture_technique_14_validation_interne_du_projet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md",
+      "source_location": "L339",
       "weight": 1.0,
       "_origin": "ast"
     },

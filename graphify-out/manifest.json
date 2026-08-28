@@ -300,9 +300,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787919795.8276172,
-    "seen": 1787919813.176212,
-    "ast_hash": "e3799b15fac0432cbd5e563c093c7cc8",
+    "mtime": 1787920705.840877,
+    "seen": 1787920713.473043,
+    "ast_hash": "1d30a3405c22081d548ae0c14a95f61e",
     "semantic_hash": ""
   },
   "architecture/rules/rules.yaml": {
@@ -729,6 +729,18 @@
     "mtime": 1787919366.0131848,
     "seen": 1787919500.762026,
     "ast_hash": "74f1e70230469bd47832b19541fa7f14",
+    "semantic_hash": ""
+  },
+  "documentation/COMMANDES_ET_RETOURS.md": {
+    "mtime": 1787920694.1548498,
+    "seen": 1787920713.4730492,
+    "ast_hash": "24d02f550b5bbf1e5209b548595f0d29",
+    "semantic_hash": ""
+  },
+  "documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md": {
+    "mtime": 1787920694.154475,
+    "seen": 1787920713.4730508,
+    "ast_hash": "2e133e1f4bcea0611575788a9a59656c",
     "semantic_hash": ""
   }
 }

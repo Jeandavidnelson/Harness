@@ -202,7 +202,13 @@ BMAD conserve ses checkpoints humains. L’essai E2E a été poursuivi après ap
 
 Tous appellent la même CLI. `arch-harness capabilities --format json` suffit à un consommateur générique pour découvrir le contrat.
 
-Les installateurs `integrations install codex` et `integrations install claude` déploient le même Rule Author ainsi que les instructions de déclenchement du projet. Le guide complet BMAD, Codex et Claude se trouve dans `documentation/INSTALLATION_ET_TEST_MANUEL.md`.
+Les installateurs `integrations install codex` et `integrations install claude` déploient le même Rule Author ainsi que les instructions de déclenchement du projet.
+
+Documentation détaillée :
+
+- installation et test dans un autre projet : `documentation/INSTALLATION_ET_TEST_MANUEL.md` ;
+- workflow et fonctionnement technique : `documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md` ;
+- commandes, statuts et retours : `documentation/COMMANDES_ET_RETOURS.md`.
 
 ## Validation
 
