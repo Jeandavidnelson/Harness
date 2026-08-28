@@ -92,3 +92,15 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Rules promoted | 0 |
 | Real forward-test runs | 0 |
 | Generalization | NOT_MEASURED |
+
+## Gate 8 deterministic Test Lab
+
+| Metric | Value |
+|---|---:|
+| Scenarios | 12 |
+| Tests | 54 passed |
+| Known violations detected | 4 / 4 |
+| Detection rate | 100% |
+| False blocking rate | 0% |
+| Real agent runs | 0 |
+| Initial scenario-model defects found | 1 |

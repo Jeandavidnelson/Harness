@@ -1,0 +1,595 @@
+{
+  "cases": [
+    {
+      "agent_actions": [
+        "implement"
+      ],
+      "assessment": "PASS as expected",
+      "context_given": [
+        "Controller -> Service -> Repository"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/order"
+      ],
+      "graphify_after": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "graphify_before": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "harness_verdict": {
+        "advisories": [],
+        "blocking": false,
+        "blocking_violations": [],
+        "status": "PASS"
+      },
+      "id": "A",
+      "metrics": {
+        "correction_iterations": 0
+      },
+      "prompt": "Implement layered order lookup"
+    },
+    {
+      "agent_actions": [
+        "implement bypass",
+        "run gate",
+        "correct"
+      ],
+      "assessment": "FAIL then PASS",
+      "context_given": [
+        "validated no-direct rule"
+      ],
+      "correction": "remove direct edge",
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/OrderController.py"
+      ],
+      "graphify_after": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ],
+        [
+          "OrderController",
+          "OrderRepository"
+        ]
+      ],
+      "graphify_before": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "harness_verdict": {
+        "final": {
+          "advisories": [],
+          "blocking": false,
+          "blocking_violations": [],
+          "status": "PASS"
+        },
+        "initial": {
+          "advisories": [],
+          "blocking": true,
+          "blocking_violations": [
+            {
+              "expected_architecture": "Controller forbidden_edge Repository",
+              "files": [
+                "src/OrderController.py",
+                "src/OrderRepository.py"
+              ],
+              "observed_path": [
+                "OrderController",
+                "OrderRepository"
+              ],
+              "policy": "forbidden_edge",
+              "provenance": [
+                "EXTRACTED"
+              ],
+              "rationale": "Controllers use services",
+              "rule_id": "no-direct",
+              "rule_status": "validated",
+              "severity": "error",
+              "source": "OrderController",
+              "target": "OrderRepository"
+            }
+          ],
+          "status": "FAIL"
+        }
+      },
+      "id": "B",
+      "metrics": {
+        "correction_iterations": 1
+      },
+      "prompt": "Bypass the service layer"
+    },
+    {
+      "agent_actions": [
+        "implement",
+        "run gate"
+      ],
+      "assessment": "Indirect violation detected",
+      "context_given": [
+        "domain isolation"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/Domain.py"
+      ],
+      "graphify_after": [
+        [
+          "SalesDomain",
+          "Helper"
+        ],
+        [
+          "Helper",
+          "SqlInfrastructure"
+        ]
+      ],
+      "graphify_before": [],
+      "harness_verdict": {
+        "advisories": [],
+        "blocking": true,
+        "blocking_violations": [
+          {
+            "expected_architecture": "Domain forbidden_path Infrastructure",
+            "files": [
+              "src/SalesDomain.py",
+              "src/Helper.py",
+              "src/SqlInfrastructure.py"
+            ],
+            "observed_path": [
+              "SalesDomain",
+              "Helper",
+              "SqlInfrastructure"
+            ],
+            "policy": "forbidden_path",
+            "provenance": [
+              "EXTRACTED"
+            ],
+            "rationale": "Keep domain pure",
+            "rule_id": "domain-isolation",
+            "rule_status": "validated",
+            "severity": "error",
+            "source": "SalesDomain",
+            "target": "SqlInfrastructure"
+          }
+        ],
+        "status": "FAIL"
+      },
+      "id": "C",
+      "metrics": {
+        "detected": 1
+      },
+      "prompt": "Add domain helper backed by SQL"
+    },
+    {
+      "agent_actions": [
+        "ask whether edge is mandatory or illustrative"
+      ],
+      "assessment": "Question required; no rule invented",
+      "context_given": [
+        "A --> B; semantics unspecified"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [],
+      "graphify_after": null,
+      "graphify_before": null,
+      "harness_verdict": "CLARIFICATION",
+      "id": "D",
+      "metrics": {
+        "clarification_questions": 1,
+        "invented_rules": 0
+      },
+      "prompt": "Turn an illustrative Mermaid arrow into guidance"
+    },
+    {
+      "agent_actions": [
+        "evaluate candidate",
+        "human validates",
+        "evaluate validated"
+      ],
+      "assessment": "Candidate warns; validated error blocks",
+      "context_given": [
+        "candidate rule"
+      ],
+      "correction": "human promotion",
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [],
+      "graphify_after": [
+        [
+          "OrderController",
+          "OrderRepository"
+        ]
+      ],
+      "graphify_before": [],
+      "harness_verdict": {
+        "candidate": {
+          "advisories": [
+            {
+              "expected_architecture": "Controller forbidden_edge Repository",
+              "files": [
+                "src/OrderController.py",
+                "src/OrderRepository.py"
+              ],
+              "observed_path": [
+                "OrderController",
+                "OrderRepository"
+              ],
+              "policy": "forbidden_edge",
+              "provenance": [
+                "EXTRACTED"
+              ],
+              "rationale": "",
+              "rule_id": "candidate",
+              "rule_status": "candidate",
+              "severity": "error",
+              "source": "OrderController",
+              "target": "OrderRepository"
+            }
+          ],
+          "blocking": false,
+          "blocking_violations": [],
+          "status": "WARN"
+        },
+        "validated": {
+          "advisories": [],
+          "blocking": true,
+          "blocking_violations": [
+            {
+              "expected_architecture": "Controller forbidden_edge Repository",
+              "files": [
+                "src/OrderController.py",
+                "src/OrderRepository.py"
+              ],
+              "observed_path": [
+                "OrderController",
+                "OrderRepository"
+              ],
+              "policy": "forbidden_edge",
+              "provenance": [
+                "EXTRACTED"
+              ],
+              "rationale": "Controllers use services",
+              "rule_id": "no-direct",
+              "rule_status": "validated",
+              "severity": "error",
+              "source": "OrderController",
+              "target": "OrderRepository"
+            }
+          ],
+          "status": "FAIL"
+        }
+      },
+      "id": "E",
+      "metrics": {
+        "automatic_promotions": 0
+      },
+      "prompt": "Evaluate a candidate boundary"
+    },
+    {
+      "agent_actions": [
+        "write meaningful code",
+        "first graph refresh",
+        "gate"
+      ],
+      "assessment": "First gate at meaningful checkpoint",
+      "context_given": [
+        "declared Mermaid"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/new_service"
+      ],
+      "graphify_after": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "graphify_before": "NOT_AVAILABLE_BEFORE_CODE",
+      "harness_verdict": {
+        "advisories": [],
+        "blocking": false,
+        "blocking_violations": [],
+        "status": "PASS"
+      },
+      "id": "F",
+      "metrics": {
+        "premature_graphify_calls": 0
+      },
+      "prompt": "Start a greenfield service"
+    },
+    {
+      "agent_actions": [
+        "Graphify baseline",
+        "develop",
+        "refresh",
+        "gate"
+      ],
+      "assessment": "Baseline precedes development",
+      "context_given": [
+        "observed baseline",
+        "compact context"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/existing"
+      ],
+      "graphify_after": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "graphify_before": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "harness_verdict": {
+        "advisories": [],
+        "blocking": false,
+        "blocking_violations": [],
+        "status": "PASS"
+      },
+      "id": "G",
+      "metrics": {
+        "baseline_graphify_calls": 1
+      },
+      "prompt": "Change an existing service"
+    },
+    {
+      "agent_actions": [
+        "request compact context",
+        "implement"
+      ],
+      "assessment": "External context supplied although Stripe is absent from code",
+      "context_given": [
+        "PaymentService -> EgressGateway -> Stripe (DECLARED)"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/payment"
+      ],
+      "graphify_after": [
+        [
+          "PaymentService",
+          "EgressGateway"
+        ]
+      ],
+      "graphify_before": [],
+      "harness_verdict": "PASS",
+      "id": "H",
+      "metrics": {
+        "declared_external_edges_supplied": 2
+      },
+      "prompt": "Call Stripe through the egress gateway"
+    },
+    {
+      "agent_actions": [
+        "implement",
+        "gate"
+      ],
+      "assessment": "Legitimate unspecified dependency allowed",
+      "context_given": [
+        "no rule forbids Logger"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/service"
+      ],
+      "graphify_after": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ],
+        [
+          "OrderService",
+          "Logger"
+        ]
+      ],
+      "graphify_before": [
+        [
+          "OrderController",
+          "OrderService"
+        ],
+        [
+          "OrderService",
+          "OrderRepository"
+        ]
+      ],
+      "harness_verdict": {
+        "advisories": [],
+        "blocking": false,
+        "blocking_violations": [],
+        "status": "PASS"
+      },
+      "id": "I",
+      "metrics": {
+        "false_positives": 0
+      },
+      "prompt": "Add service logging"
+    },
+    {
+      "agent_actions": [
+        "implement",
+        "gate"
+      ],
+      "assessment": "Indirect bypass detected",
+      "context_given": [
+        "forbidden controller-to-repository path"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/adapter"
+      ],
+      "graphify_after": [
+        [
+          "OrderController",
+          "Adapter"
+        ],
+        [
+          "Adapter",
+          "OrderRepository"
+        ]
+      ],
+      "graphify_before": [],
+      "harness_verdict": {
+        "advisories": [],
+        "blocking": true,
+        "blocking_violations": [
+          {
+            "expected_architecture": "Controller forbidden_path Repository",
+            "files": [
+              "src/OrderController.py",
+              "src/Adapter.py",
+              "src/OrderRepository.py"
+            ],
+            "observed_path": [
+              "OrderController",
+              "Adapter",
+              "OrderRepository"
+            ],
+            "policy": "forbidden_path",
+            "provenance": [
+              "EXTRACTED"
+            ],
+            "rationale": "No indirect bypass",
+            "rule_id": "no-repository-path",
+            "rule_status": "validated",
+            "severity": "error",
+            "source": "OrderController",
+            "target": "OrderRepository"
+          }
+        ],
+        "status": "FAIL"
+      },
+      "id": "J",
+      "metrics": {
+        "detected": 1
+      },
+      "prompt": "Reuse repository through an adapter"
+    },
+    {
+      "agent_actions": [
+        "build bounded context",
+        "implement",
+        "gate"
+      ],
+      "assessment": "Multi-service graph remains separable",
+      "context_given": [
+        "service-specific gateways and repositories"
+      ],
+      "correction": null,
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "src/order",
+        "src/payment"
+      ],
+      "graphify_after": [
+        [
+          "OrderService",
+          "OrderRepository"
+        ],
+        [
+          "PaymentService",
+          "PaymentGateway"
+        ]
+      ],
+      "graphify_before": [],
+      "harness_verdict": "PASS",
+      "id": "K",
+      "metrics": {
+        "services": 2
+      },
+      "prompt": "Coordinate order and payment services"
+    },
+    {
+      "agent_actions": [
+        "diff diagrams",
+        "review affected rule",
+        "update one candidate"
+      ],
+      "assessment": "Evolution cost recorded; no automatic promotion",
+      "context_given": [
+        "old and new declared diagrams"
+      ],
+      "correction": "review one candidate rule",
+      "execution_kind": "DETERMINISTIC_SIMULATION",
+      "files_modified": [
+        "architecture/diagrams/payment.mmd",
+        "architecture/rules/candidates.yaml"
+      ],
+      "graphify_after": {
+        "PaymentService": "EgressGateway -> Stripe"
+      },
+      "graphify_before": {
+        "PaymentService": "Stripe"
+      },
+      "harness_verdict": "WARN_UNTIL_REVIEW",
+      "id": "L",
+      "metrics": {
+        "human_clarifications": 1,
+        "rule_maintenance_edits": 1
+      },
+      "prompt": "Evolve payment Mermaid to add a gateway"
+    }
+  ],
+  "summary": {
+    "detection_rate": 1.0,
+    "deterministic_scenarios": 12,
+    "false_blocking_rate": 0.0,
+    "known_violation_scenarios": 4,
+    "known_violations_detected": 4,
+    "real_agent_runs": 0,
+    "scenarios": 12
+  }
+}

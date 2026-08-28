@@ -285,3 +285,35 @@ The system Python lacked PyYAML, so the official validator was rerun successfull
 
 ### Status
 PASS for packaging and deterministic behavior; real-agent generalization remains NOT_MEASURED.
+
+## Gate 8 — V2 Test Lab A–L — 2026-08-28
+
+### Objective
+Exercise the architecture semantics across twelve reproducible project situations and retain raw experiment records beyond pytest output.
+
+### Hypothesis
+Validated rules detect known direct and indirect violations without blocking legitimate unspecified dependencies or candidate interpretations.
+
+### Implementation
+Added an executable Test Lab covering A–L. Every record captures prompt, context, actions, modified files, before/after graph, verdict, correction, metrics, assessment and execution kind. Generated `experiments/agent-runs/V2_TEST_LAB_RESULTS.json`.
+
+### Functional and behavior tests
+- first behavior run: scenario B correction remained FAIL because its test policy incorrectly used `forbidden_path`;
+- correction: split direct-edge and indirect-path policies;
+- retest: 54 passed;
+- 12/12 scenarios reproduced;
+- current repository gate: PASS.
+
+### Metrics
+- known violation scenarios: 4;
+- detected: 4;
+- deterministic detection rate: 100%;
+- deterministic false blocking rate: 0%;
+- correction iterations in adversarial B: 1;
+- real agent runs: 0.
+
+### Problems / negative results
+These are deterministic simulations, not evidence of model task success. The initial faulty B policy demonstrates why rule semantics must be tested rather than inferred from names.
+
+### Status
+PASS for deterministic Test Lab; agentic claims remain reserved for Gate 9.

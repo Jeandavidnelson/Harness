@@ -486,21 +486,21 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787908372.1046689,
-    "seen": 1787908495.1866162,
-    "ast_hash": "dea29a8483424e79c96a9054e5793459",
+    "mtime": 1787908517.6101246,
+    "seen": 1787908596.3268218,
+    "ast_hash": "c5b73fe680e260ec89c14276ae197b05",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787908372.1038837,
-    "seen": 1787908495.1866162,
-    "ast_hash": "1d5107f14d019a71f58d0ce46b9f9200",
+    "mtime": 1787908517.608825,
+    "seen": 1787908596.326823,
+    "ast_hash": "0d6fac3cefa89d65f21f705181fe5d86",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
-    "mtime": 1787907850.7951112,
-    "seen": 1787907878.551036,
-    "ast_hash": "2fbb21678a25fb2ec95e0b0c07559b87",
+    "mtime": 1787908517.6106138,
+    "seen": 1787908596.326824,
+    "ast_hash": "0c1dc28edd853b8cfa8bbd632ebaea58",
     "semantic_hash": ""
   },
   "src/architecture_harness/graphify_runtime.py": {
@@ -579,6 +579,24 @@
     "mtime": 1787908405.7909873,
     "seen": 1787908495.1866188,
     "ast_hash": "2ad2845110dd3c453f25c97b35a40226",
+    "semantic_hash": ""
+  },
+  "experiments/agent-runs/V2_TEST_LAB_RESULTS.json": {
+    "mtime": 1787908617.8607519,
+    "seen": 1787908618.776085,
+    "ast_hash": "9ee07a8e06cd0b2afa49ae41613968a4",
+    "semantic_hash": ""
+  },
+  "experiments/run_v2_test_lab.py": {
+    "mtime": 1787908610.4750838,
+    "seen": 1787908618.7760892,
+    "ast_hash": "bb33f30195d151c46758e9ca1a82bb96",
+    "semantic_hash": ""
+  },
+  "tests/test_v2_test_lab.py": {
+    "mtime": 1787908588.7537673,
+    "seen": 1787908596.326795,
+    "ast_hash": "e4e57e1466c44de1eddd2ca067983c90",
     "semantic_hash": ""
   }
 }

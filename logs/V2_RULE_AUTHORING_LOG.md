@@ -1,8 +1,5 @@
 # V2 Rule Authoring Log
 
-No V2 rules have been authored. Gate 0 forbids implementation before challenge completion.
-# V2 Rule Authoring Log
-
 ## 2026-08-28 — Gate 7 skill packaging
 
 - Input: V2 plan, declared Mermaid workflow and validated-rule safety boundary.

@@ -4,6 +4,59 @@
   "output_tokens": 0,
   "nodes": [
     {
+      "id": "experiments_run_v2_test_lab",
+      "label": "run_v2_test_lab.py",
+      "file_type": "code",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_run_v2_test_lab_graph",
+      "label": "graph()",
+      "file_type": "code",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_run_v2_test_lab_verdict",
+      "label": "verdict()",
+      "file_type": "code",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_run_v2_test_lab_record",
+      "label": "record()",
+      "file_type": "code",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_run_v2_test_lab_run_lab",
+      "label": "run_lab()",
+      "file_type": "code",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "experiments_run_v2_test_lab_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L70",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "pkg_architecture_harness",
       "label": "architecture-harness",
       "file_type": "code",
@@ -2059,6 +2112,32 @@
       "file_type": "code",
       "source_file": "tests/test_v1_1_benchmark.py",
       "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_v2_test_lab",
+      "label": "test_v2_test_lab.py",
+      "file_type": "code",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_v2_test_lab_test_all_v2_lab_scenarios_are_reproducible_and_honest",
+      "label": "test_all_v2_lab_scenarios_are_reproducible_and_honest()",
+      "file_type": "code",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_v2_test_lab_test_adversarial_and_candidate_behavior",
+      "label": "test_adversarial_and_candidate_behavior()",
+      "file_type": "code",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L21",
       "_callable": true,
       "_origin": "ast"
     },
@@ -5324,6 +5403,15 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_harness_metrics_gate_7_rule_authoring_skill",
+      "label": "Gate 7 rule authoring skill",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L85",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_implementation_log",
       "label": "V2_IMPLEMENTATION_LOG.md",
       "file_type": "document",
@@ -5936,6 +6024,78 @@
       "_origin": "ast"
     },
     {
+      "id": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "label": "Gate 7 — Architecture Rule Authoring Skill — 2026-08-28",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L259",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_objective_261",
+      "label": "Objective",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L261",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_hypothesis_264",
+      "label": "Hypothesis",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L264",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_implementation_267",
+      "label": "Implementation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L267",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_functional_and_behavior_tests_270",
+      "label": "Functional and behavior tests",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L270",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_metrics_277",
+      "label": "Metrics",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L277",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_problems_negative_results_283",
+      "label": "Problems / negative results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L283",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_implementation_log_status_286",
+      "label": "Status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L286",
+      "_origin": "ast"
+    },
+    {
       "id": "logs_v2_rule_authoring_log",
       "label": "V2_RULE_AUTHORING_LOG.md",
       "file_type": "document",
@@ -5951,6 +6111,24 @@
       "node_kind": "heading",
       "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_rule_authoring_log_v2_rule_authoring_log_4",
+      "label": "V2 Rule Authoring Log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v2_rule_authoring_log_2026_08_28_gate_7_skill_packaging",
+      "label": "2026-08-28 — Gate 7 skill packaging",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
+      "source_location": "L6",
       "_origin": "ast"
     },
     {
@@ -6013,6 +6191,221 @@
     }
   ],
   "links": [
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "src_architecture_harness_engine_gate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "src_architecture_harness_engine_harness",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "src_architecture_harness_ir_architecture",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "src_architecture_harness_ir_graph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "src_architecture_harness_ir_rules",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "experiments_run_v2_test_lab_graph",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_graph",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "experiments_run_v2_test_lab_verdict",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_verdict",
+      "target": "src_architecture_harness_ir_rules_rule",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "experiments_run_v2_test_lab_record",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "experiments_run_v2_test_lab_run_lab",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab",
+      "target": "experiments_run_v2_test_lab_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_graph",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_verdict",
+      "target": "experiments_run_v2_test_lab_graph",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_run_lab",
+      "target": "src_architecture_harness_ir_rules_rule",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_run_lab",
+      "target": "experiments_run_v2_test_lab_record",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_run_lab",
+      "target": "experiments_run_v2_test_lab_verdict",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_main",
+      "target": "experiments_run_v2_test_lab_run_lab",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
     {
       "source": "scripts_benchmark_tokens",
       "target": "scripts_benchmark_tokens_sh__entry",
@@ -11242,6 +11635,48 @@
       "_origin": "ast"
     },
     {
+      "source": "tests_test_v2_test_lab",
+      "target": "importlib_util",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v2_test_lab",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v2_test_lab",
+      "target": "tests_test_v2_test_lab_test_all_v2_lab_scenarios_are_reproducible_and_honest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_v2_test_lab",
+      "target": "tests_test_v2_test_lab_test_adversarial_and_candidate_behavior",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_v2_test_lab.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "tests_test_validation_script",
       "target": "pathlib",
       "relation": "imports_from",
@@ -14693,6 +15128,16 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_harness_metrics_v2_harness_metrics",
+      "target": "logs_v2_harness_metrics_gate_7_rule_authoring_skill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_HARNESS_METRICS.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_implementation_log",
       "target": "logs_v2_implementation_log_v2_implementation_log",
       "relation": "contains",
@@ -15363,12 +15808,112 @@
       "_origin": "ast"
     },
     {
+      "source": "logs_v2_implementation_log_v2_implementation_log",
+      "target": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L259",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_objective_261",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L261",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_hypothesis_264",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_implementation_267",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_functional_and_behavior_tests_270",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_metrics_277",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L277",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_problems_negative_results_283",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L283",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_implementation_log_gate_7_architecture_rule_authoring_skill_2026_08_28",
+      "target": "logs_v2_implementation_log_status_286",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_IMPLEMENTATION_LOG.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "logs_v2_rule_authoring_log",
       "target": "logs_v2_rule_authoring_log_v2_rule_authoring_log",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_rule_authoring_log",
+      "target": "logs_v2_rule_authoring_log_v2_rule_authoring_log_4",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v2_rule_authoring_log_v2_rule_authoring_log_4",
+      "target": "logs_v2_rule_authoring_log_2026_08_28_gate_7_skill_packaging",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V2_RULE_AUTHORING_LOG.md",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17139,6 +17684,50 @@
       "_origin": "ast"
     },
     {
+      "source": "experiments_run_v2_test_lab_verdict",
+      "target": "src_architecture_harness_ir_architecture_targetarchitectureir",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L28",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_graph",
+      "target": "src_architecture_harness_ir_graph_edge",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L24",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_graph",
+      "target": "src_architecture_harness_ir_graph_node",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L24",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_graph",
+      "target": "src_architecture_harness_ir_graph_observedgraphir",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L22",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "src_architecture_harness_adapters_context_mermaid_load_context_directory",
       "target": "src_architecture_harness_adapters_mermaid_mermaiderror",
       "relation": "uses",
@@ -18027,6 +18616,42 @@
       "source_file": "tests/test_v1_1_benchmark.py",
       "source_location": "L9",
       "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_verdict",
+      "target": "src_architecture_harness_engine_gate_gate_payload",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_verdict",
+      "target": "src_architecture_harness_engine_harness_evaluate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "experiments_run_v2_test_lab_verdict",
+      "target": "src_architecture_harness_ir_rules_rulesir",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "experiments/run_v2_test_lab.py",
+      "source_location": "L28",
+      "weight": 1.0,
       "_origin": "ast"
     },
     {
