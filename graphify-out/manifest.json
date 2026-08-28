@@ -78,9 +78,9 @@
     "semantic_hash": "2ce793049c2150be89cfb9bfd97bfe7b"
   },
   "src/architecture_harness/cli.py": {
-    "mtime": 1787908186.648521,
-    "seen": 1787908194.905849,
-    "ast_hash": "c4fff3fb7a61392080f39387366675da",
+    "mtime": 1787908249.087846,
+    "seen": 1787908253.8379571,
+    "ast_hash": "1cbaefa2f92f21224d63af1ac72a25c1",
     "semantic_hash": ""
   },
   "src/architecture_harness/config.py": {
@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "logs/V2_HARNESS_METRICS.md": {
-    "mtime": 1787908145.9016223,
-    "seen": 1787908194.905926,
-    "ast_hash": "dcaba249bd6267a8e2c7e181791c2613",
+    "mtime": 1787908214.912511,
+    "seen": 1787908253.838038,
+    "ast_hash": "450c3e1a1dfce0a18dc0d3c3d5ea7936",
     "semantic_hash": ""
   },
   "logs/V2_IMPLEMENTATION_LOG.md": {
-    "mtime": 1787908145.9009082,
-    "seen": 1787908194.905927,
-    "ast_hash": "93c0da4e09af63a90b41767ba0f6a8d5",
+    "mtime": 1787908214.9115565,
+    "seen": 1787908253.838039,
+    "ast_hash": "76911dc59a9d0fad9af57e2ce566a51e",
     "semantic_hash": ""
   },
   "logs/V2_RULE_AUTHORING_LOG.md": {
@@ -537,6 +537,18 @@
     "mtime": 1787908186.650898,
     "seen": 1787908194.905901,
     "ast_hash": "e3cdcfbc63ca724ecd8dafc5326c13d4",
+    "semantic_hash": ""
+  },
+  "src/architecture_harness/engine/gate.py": {
+    "mtime": 1787908249.087186,
+    "seen": 1787908253.837963,
+    "ast_hash": "c577b5375eb4367bc2812c6ddb869e6d",
+    "semantic_hash": ""
+  },
+  "tests/test_gate.py": {
+    "mtime": 1787908249.0882447,
+    "seen": 1787908253.838,
+    "ast_hash": "edc7d0c680f9b5cd870f44a88de2ee35",
     "semantic_hash": ""
   }
 }

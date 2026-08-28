@@ -60,3 +60,13 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Advertised universal commands | 6 |
 | Core orchestrator dependencies | 0 |
 | Generic subprocess consumer | PASS |
+
+## Gate 5 architecture gate lifecycle
+
+| Metric | Value |
+|---|---:|
+| Tests | 49 passed |
+| Current gate | PASS |
+| Gate code mutations | 0 |
+| Blocking violations | 0 |
+| Exit classes | 3 |

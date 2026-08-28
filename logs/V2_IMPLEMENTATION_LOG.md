@@ -194,3 +194,32 @@ The advertised `gate` endpoint is intentionally not callable until Gate 5. Capab
 
 ### Status
 PASS — BMAD, Codex and other consumers can share one machine-readable contract.
+
+## Gate 5 — Architecture Gate Lifecycle — 2026-08-28
+
+### Objective
+Expose an immutable, deterministic checkpoint with stable exit semantics.
+
+### Hypothesis
+Any orchestrator can decide when to invoke the architecture gate while the core remains read-only and orchestration-neutral.
+
+### Implementation
+Added `arch-harness gate --format json`, stale-graph refusal, `PASS`/`FAIL`/technical `ERROR` semantics, blocking/advisory collections and a pure gate payload builder. The command evaluates existing inputs but never refreshes or edits code.
+
+### Functional and behavior tests
+- full suite: 49 passed;
+- current repository gate: PASS, exit 0;
+- agent validation parity: PASS;
+- gate payload failure behavior: PASS;
+- source hash before/after gate unchanged: PASS.
+
+### Metrics
+- gate code mutations: 0;
+- blocking violations in current repository: 0;
+- exit classes: 3.
+
+### Problems / negative results
+Until Gate 6 adds severity and validation status, every V1 rule remains blocking for backward compatibility and advisories remain empty.
+
+### Status
+PASS — checkpoint control belongs to the consuming workflow, not the core.

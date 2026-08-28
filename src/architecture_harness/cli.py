@@ -24,6 +24,7 @@ from architecture_harness.metrics.v1_1_benchmark import render_v1_1_benchmark, r
 from architecture_harness.ace.author import author_rule
 from architecture_harness.ace.ape_adapter import validate_with_ape
 from architecture_harness.graphify_runtime import GraphifyRuntimeError, refresh_graph
+from architecture_harness.engine.gate import gate_payload
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -54,6 +55,8 @@ def build_parser() -> argparse.ArgumentParser:
     graph_refresh.add_argument("--format", choices=("json",), default="json")
     capabilities = sub.add_parser("capabilities", help="describe the stable machine-readable API")
     capabilities.add_argument("--format", choices=("json",), default="json")
+    gate = sub.add_parser("gate", help="run the immutable architecture checkpoint")
+    gate.add_argument("--format", choices=("json",), default="json")
     agent = sub.add_parser("agent", help="stable machine-readable interface for coding agents")
     agent_sub = agent.add_subparsers(dest="agent_action", required=True)
     agent_context = agent_sub.add_parser("context")
@@ -144,6 +147,22 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "capabilities":
             print(json.dumps(capabilities_payload(), indent=2, sort_keys=True))
             return 0
+        if args.command == "gate":
+            freshness = check_graph_freshness(paths.root)
+            if not freshness.fresh:
+                print(json.dumps({
+                    "status": "ERROR", "blocking": False, "error": "STALE_GRAPH",
+                    "files": list(freshness.stale_files + freshness.missing_files),
+                }, indent=2, sort_keys=True))
+                return 2
+            result = evaluate(
+                load_graphify(paths.observed),
+                load_mermaid_directory(paths.target_dir),
+                load_rules(paths.rules),
+            )
+            payload = gate_payload(result)
+            print(json.dumps(payload, indent=2, sort_keys=True))
+            return 1 if payload["blocking"] else 0
         if args.command == "agent":
             if args.agent_action == "capabilities":
                 print(json.dumps(capabilities_payload(), indent=2, sort_keys=True))
