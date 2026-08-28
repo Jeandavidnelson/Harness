@@ -22,6 +22,23 @@ def test_gate_payload_has_stable_pass_and_fail_states():
     assert payload["blocking_violations"][0]["rule_id"] == "r1"
 
 
+def test_only_validated_error_is_blocking():
+    advisory = Violation(
+        "candidate", "forbidden_edge", "A", "B", ("A", "B"),
+        severity="error", rule_status="candidate", rationale="Needs review",
+    )
+    payload = gate_payload(HarnessResult([advisory]))
+    assert payload["status"] == "WARN"
+    assert payload["blocking"] is False
+    assert payload["advisories"][0]["rationale"] == "Needs review"
+
+    warning = Violation(
+        "warning", "forbidden_edge", "A", "B", ("A", "B"),
+        severity="warning", rule_status="validated",
+    )
+    assert gate_payload(HarnessResult([warning]))["status"] == "WARN"
+
+
 def test_gate_is_read_only_and_returns_machine_contract(capsys):
     tracked = ROOT / "src" / "architecture_harness" / "ir" / "rules.py"
     before = hashlib.sha256(tracked.read_bytes()).hexdigest()

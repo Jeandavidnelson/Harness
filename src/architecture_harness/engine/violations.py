@@ -12,6 +12,14 @@ class Violation:
     observed_path: tuple[str, ...]
     files: tuple[str, ...] = ()
     provenance: tuple[str, ...] = ()
+    severity: str = "error"
+    rule_status: str = "validated"
+    rationale: str = ""
+    expected_architecture: str = ""
+
+    @property
+    def blocking(self) -> bool:
+        return self.severity == "error" and self.rule_status == "validated"
 
     def to_dict(self) -> dict[str, object]:
         data = asdict(self)
@@ -19,4 +27,3 @@ class Violation:
         data["files"] = list(self.files)
         data["provenance"] = list(self.provenance)
         return data
-

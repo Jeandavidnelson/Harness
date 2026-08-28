@@ -5,10 +5,11 @@ from architecture_harness.engine.harness import HarnessResult
 
 def gate_payload(result: HarnessResult) -> dict[str, object]:
     """Return the stable checkpoint result. The gate never mutates project code."""
-    violations = [violation.to_dict() for violation in result.violations]
+    blocking = [violation.to_dict() for violation in result.violations if violation.blocking]
+    advisories = [violation.to_dict() for violation in result.violations if not violation.blocking]
     return {
-        "status": "FAIL" if violations else "PASS",
-        "blocking": bool(violations),
-        "blocking_violations": violations,
-        "advisories": [],
+        "status": "FAIL" if blocking else ("WARN" if advisories else "PASS"),
+        "blocking": bool(blocking),
+        "blocking_violations": blocking,
+        "advisories": advisories,
     }

@@ -16,7 +16,9 @@ class HarnessResult:
 
     @property
     def status(self) -> str:
-        return "FAIL" if self.violations else "PASS"
+        if any(violation.blocking for violation in self.violations):
+            return "FAIL"
+        return "WARN" if self.violations else "PASS"
 
 
 def _evidence(graph: ObservedGraphIR, path: list[str]) -> tuple[tuple[str, ...], tuple[str, ...]]:
@@ -38,7 +40,11 @@ def _evidence(graph: ObservedGraphIR, path: list[str]) -> tuple[tuple[str, ...],
 
 def _violation(rule: Rule, graph: ObservedGraphIR, path: list[str], target: str | None = None) -> Violation:
     files, provenance = _evidence(graph, path)
-    return Violation(rule.id, rule.type, path[0], target or path[-1], tuple(path), files, provenance)
+    expected = f"{rule.source} {rule.type} {rule.target}"
+    return Violation(
+        rule.id, rule.type, path[0], target or path[-1], tuple(path), files, provenance,
+        rule.severity, rule.status, rule.rationale, expected,
+    )
 
 
 def evaluate(observed: ObservedGraphIR, target: TargetArchitectureIR, rules: RulesIR) -> HarnessResult:
@@ -70,4 +76,3 @@ def evaluate(observed: ObservedGraphIR, target: TargetArchitectureIR, rules: Rul
                 if not path:
                     violations.append(_violation(rule, observed, [source], rule.target))
     return HarnessResult(violations)
-

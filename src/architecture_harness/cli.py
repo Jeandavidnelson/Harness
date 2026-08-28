@@ -106,7 +106,7 @@ def main(argv: list[str] | None = None) -> int:
             result = evaluate(load_graphify(paths.observed), load_mermaid_directory(paths.target_dir), load_rules(paths.rules))
             renderer = {"text": render_text, "json": render_json, "markdown": render_markdown}[args.format]
             print(renderer(result))
-            return 1 if result.violations else 0
+            return 1 if any(violation.blocking for violation in result.violations) else 0
         if args.command == "context":
             context = load_context_directory(paths.context_dir)
             if args.context_action == "overview":
@@ -185,7 +185,7 @@ def main(argv: list[str] | None = None) -> int:
             if args.agent_action == "validate":
                 result = evaluate(observed, target, rules)
                 print(render_json(result))
-                return 1 if result.violations else 0
+                return 1 if any(violation.blocking for violation in result.violations) else 0
             context = load_context_directory(paths.context_dir)
             compact = select_context(args.focus, observed, context, target, rules, args.radius, args.max_items)
             print(render_agent_context(compact))

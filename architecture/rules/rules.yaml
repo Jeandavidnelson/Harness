@@ -32,31 +32,55 @@ rules:
     type: required_edge
     source: CliMain
     target: GraphifyLoad
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: cli-must-run-harness
     type: required_edge
     source: CliMain
     target: HarnessEvaluate
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: harness-must-resolve-explicit-roles
     type: required_edge
     source: HarnessEvaluate
     target: RoleResolve
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: harness-must-support-path-evidence
     type: required_path
     source: HarnessEvaluate
     target: ShortestPath
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: doctor-must-validate-rules
     type: required_edge
     source: DoctorDiagnose
     target: RulesLoad
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: graphify-adapter-must-not-depend-on-cli
     type: forbidden_path
     source: GraphifyLoad
     target: CliMain
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: token-metrics-must-not-depend-on-cli
     type: forbidden_path
     source: MeasureTokens
     target: CliMain
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated
   - id: cache-must-not-call-cli
     type: forbidden_edge
     source: CachePut
     target: CliMain
+    severity: error
+    provenance: USER_CONFIRMED
+    status: validated

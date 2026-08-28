@@ -223,3 +223,35 @@ Until Gate 6 adds severity and validation status, every V1 rule remains blocking
 
 ### Status
 PASS — checkpoint control belongs to the consuming workflow, not the core.
+
+## Gate 6 — Candidate / Validated Rule Lifecycle — 2026-08-28
+
+### Objective
+Prevent generated or unreviewed architecture interpretations from becoming hard policy.
+
+### Hypothesis
+Rule findings can remain useful to agents without blocking until a human explicitly validates an error-level rule.
+
+### Implementation
+Extended Rule IR with allowed targets, severity, scope, exceptions, rationale, provenance and lifecycle status. Added the complete proposed-to-validated vocabulary, candidate and decision files, enriched violation evidence, and PASS/WARN/FAIL partitioning. Existing production rules are explicitly `error`, `USER_CONFIRMED`, `validated`; candidate rules remain outside the blocking rules file.
+
+### Functional and behavior tests
+- full suite: 51 passed;
+- current architecture gate: PASS;
+- production rule validation: 8 rules / 9 roles;
+- candidate error violation: WARN/non-blocking;
+- validated warning violation: WARN/non-blocking;
+- validated error violation: FAIL/blocking.
+
+### Metrics
+- validated production rules: 8;
+- unpromoted example candidates: 1;
+- lifecycle states supported: 5;
+- severities supported: 3;
+- automatic candidate promotions: 0.
+
+### Problems / negative results
+Scope and exceptions are preserved in the IR but do not yet alter matching; using them as active policy without defined semantics would be unsafe. Candidate promotion remains a deliberate file review, not an automatic CLI mutation.
+
+### Status
+PASS — only human-confirmed validated errors can hard-fail the gate.

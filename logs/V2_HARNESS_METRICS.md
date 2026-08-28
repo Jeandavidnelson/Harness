@@ -70,3 +70,14 @@ Metrics not supported by available instrumentation are recorded as `NOT_MEASURED
 | Gate code mutations | 0 |
 | Blocking violations | 0 |
 | Exit classes | 3 |
+
+## Gate 6 rule lifecycle
+
+| Metric | Value |
+|---|---:|
+| Tests | 51 passed |
+| Validated production rules | 8 |
+| Candidate examples | 1 |
+| Lifecycle states / severities | 5 / 3 |
+| Automatic promotions | 0 |
+| False blocking in lifecycle tests | 0 |

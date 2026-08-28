@@ -22,3 +22,27 @@ rules:
     assert resolve("Controller", graph, TargetArchitectureIR(), rules) == {"OrderController"}
     assert rules.rules[0].allowed_targets == ("AuditRepo",)
 
+
+def test_v2_rule_lifecycle_fields_and_defaults(tmp_path):
+    path = tmp_path / "rules.yaml"
+    path.write_text("""roles:
+rules:
+  - id: candidate-boundary
+    type: forbidden_path
+    source: A
+    target: B
+    severity: warning
+    scope: [src]
+    exceptions: [migration]
+    rationale: Keep the boundary explicit
+    provenance: GENERATED
+    status: candidate
+""")
+    rule = load_rules(path).rules[0]
+    assert rule.severity == "warning"
+    assert rule.scope == ("src",)
+    assert rule.exceptions == ("migration",)
+    assert rule.rationale == "Keep the boundary explicit"
+    assert rule.provenance == "GENERATED"
+    assert rule.status == "candidate"
+    assert rule.blocking is False

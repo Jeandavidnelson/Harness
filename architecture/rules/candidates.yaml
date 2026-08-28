@@ -1,0 +1,19 @@
+roles:
+  ExampleSource:
+    match:
+      exact: replace_with_graph_node
+  ExampleTarget:
+    match:
+      exact: replace_with_graph_node
+
+rules:
+  - id: example-candidate-not-active
+    type: forbidden_path
+    source: ExampleSource
+    target: ExampleTarget
+    severity: warning
+    scope: [example]
+    exceptions: []
+    rationale: Replace or remove this example after an explicit architecture review.
+    provenance: GENERATED
+    status: candidate
