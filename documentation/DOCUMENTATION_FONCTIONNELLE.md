@@ -2,6 +2,16 @@
 
 Ce guide explique Architecture Harness sans supposer de connaissance préalable. Il présente le problème résolu, les concepts, les répertoires attendus, le cycle de vie des règles et le skill qui aide à les rédiger. Pour les détails d’implémentation, consultez [DOCUMENTATION_TECHNIQUE.md](DOCUMENTATION_TECHNIQUE.md). Pour installer le produit, consultez [INSTALLATION_ORCHESTRATEURS.md](INSTALLATION_ORCHESTRATEURS.md).
 
+## Légende des responsabilités
+
+| Icône | Responsable | Ce qu’il fait |
+|---|---|---|
+| 👤 | Utilisateur | exprime l’intention, répond aux ambiguïtés et valide les règles |
+| 🤖 | Agent / orchestrateur | exploite le contexte, propose des candidates et modifie le code |
+| ⚙️ | Automatique | parse Mermaid, extrait le graphe et évalue les règles sans LLM |
+
+Une icône placée devant une étape indique immédiatement qui en est responsable.
+
 ## 1. À quoi sert Architecture Harness ?
 
 Un agent de développement sait écrire du code, mais il peut ignorer une contrainte d’architecture : appeler directement une base depuis un contrôleur, contourner une couche métier ou introduire une dépendance interdite.
@@ -15,10 +25,10 @@ Le Harness ne génère pas le code, ne remplace pas les tests et ne décide pas 
 
 ```mermaid
 flowchart LR
-    U["Utilisateur"] --> O["Agent ou orchestrateur"]
-    D["Architecture Mermaid"] --> H["Architecture Harness"]
-    R["Règles validées"] --> H
-    C["Code source"] --> G["Graphify"]
+    U["👤 Utilisateur"] --> O["🤖 Agent ou orchestrateur"]
+    D["👤 Architecture Mermaid"] --> H["⚙️ Architecture Harness"]
+    R["👤 Règles validées"] --> H
+    C["🤖 Code source"] --> G["⚙️ Graphify"]
     G --> H
     H -->|"Contexte ciblé"| O
     O --> C
@@ -39,11 +49,11 @@ Une flèche Mermaid exprime une intention de conception. Elle ne devient pas aut
 
 ```mermaid
 flowchart TD
-    M["Mermaid : déclaré"] --> Q{"Revue humaine"}
-    G["Graphify : observé"] --> Q
-    Q -->|"Proposition"| C["candidates.yaml"]
-    C -->|"Approbation explicite"| R["rules.yaml"]
-    G --> E["Gate déterministe"]
+    M["👤 Mermaid : déclaré"] --> Q{"👤 Revue humaine"}
+    G["⚙️ Graphify : observé"] --> Q
+    Q -->|"Proposition"| C["🤖 candidates.yaml"]
+    C -->|"Approbation explicite"| R["👤 rules.yaml"]
+    G --> E["⚙️ Gate déterministe"]
     R --> E
 ```
 
@@ -80,10 +90,10 @@ Exemple `architecture/diagrams/target.mmd` :
 architecture-beta
 group orders(cloud)[Orders]
 service controller(server)[Order Controller] in orders
-service service(server)[Order Service] in orders
+service order_service(server)[Order Service] in orders
 service repository(database)[Order Repository] in orders
-controller:R --> L:service
-service:R --> L:repository
+controller:R --> L:order_service
+order_service:R --> L:repository
 ```
 
 ### `contexte/`
@@ -190,11 +200,11 @@ stateDiagram-v2
 
 Le chemin normal est :
 
-1. un diagramme ou une demande fait apparaître une intention ;
-2. le skill prépare une règle dans `candidates.yaml` ;
-3. un humain vérifie le sens, les mappings, la sévérité et les exceptions ;
-4. après approbation explicite, la règle rejoint `rules.yaml` et la décision est tracée ;
-5. le gate peut désormais l’utiliser.
+1. 👤 un diagramme ou une demande fait apparaître une intention ;
+2. 🤖 le skill prépare une règle dans `candidates.yaml` ;
+3. 👤 un humain vérifie le sens, les mappings, la sévérité et les exceptions ;
+4. 👤 après approbation explicite, la règle rejoint `rules.yaml` et la décision est tracée ;
+5. ⚙️ le gate peut désormais l’utiliser.
 
 Ne modifiez jamais une règle validée uniquement pour obtenir un PASS. Si l’architecture a changé, faites réviser la politique par un humain.
 
@@ -213,10 +223,10 @@ Ce skill assiste Codex, Claude ou BMAD pour transformer des diagrammes en règle
 
 ```mermaid
 sequenceDiagram
-    participant A as Agent
-    participant H as Harness
-    participant S as Rule Author Skill
-    participant U as Utilisateur
+    participant A as 🤖 Agent
+    participant H as ⚙️ Harness
+    participant S as 🤖 Rule Author Skill
+    participant U as 👤 Utilisateur
     A->>H: rules author-context
     H-->>S: Mermaid validé + faits + mappings classés
     S->>S: crée des candidates non bloquantes
@@ -239,24 +249,24 @@ Elle fournit le texte Mermaid validé par le parseur officiel, les faits normali
 
 Le skill doit ensuite :
 
-- conserver tous les faits déclarés utiles ;
-- vérifier l’identifiant, le fichier et le type de chaque mapping proposé ;
-- ne jamais inventer un identifiant Graphify ;
-- écrire seulement dans `candidates.yaml` avant approbation ;
-- utiliser `provenance: GENERATED` pour une proposition ;
-- poser une question uniquement si plusieurs interprétations changent réellement la politique ;
-- arrêter le workflow avant toute promotion non approuvée.
+- 🤖 conserver tous les faits déclarés utiles ;
+- 🤖 vérifier l’identifiant, le fichier et le type de chaque mapping proposé ;
+- 🤖 ne jamais inventer un identifiant Graphify ;
+- 🤖 écrire seulement dans `candidates.yaml` avant approbation ;
+- 🤖 utiliser `provenance: GENERATED` pour une proposition ;
+- 👤 solliciter l’utilisateur uniquement si plusieurs interprétations changent réellement la politique ;
+- 👤 arrêter le workflow avant toute promotion non approuvée.
 
 ### Exemple d’utilisation
 
-Demande à l’agent :
+👤 Demande à l’agent :
 
 ```text
 Ajoute PaymentService dans architecture/diagrams/target.mmd et propose les règles
 architecturales correspondantes avec le skill architecture-rule-author.
 ```
 
-Vérification manuelle :
+👤 Vérification manuelle :
 
 ```bash
 arch-harness rules validate --file architecture/rules/candidates.yaml
@@ -288,11 +298,11 @@ rules:
 
 ```mermaid
 flowchart TD
-    A["Choisir le composant concerné"] --> C["Demander le contexte compact"]
-    C --> I["Développer et tester"]
-    I --> R["Rafraîchir Graphify"]
-    R --> G["Exécuter le gate"]
-    G -->|"FAIL"| F["Corriger le code"]
+    A["👤 Choisir le composant concerné"] --> C["🤖 Demander le contexte compact"]
+    C --> I["🤖 Développer et tester"]
+    I --> R["⚙️ Rafraîchir Graphify"]
+    R --> G["⚙️ Exécuter le gate"]
+    G -->|"FAIL"| F["🤖 Corriger le code"]
     F --> R
     G -->|"PASS ou WARN"| V["Revue de code"]
 ```
@@ -300,8 +310,10 @@ flowchart TD
 Commandes typiques :
 
 ```bash
+# 🤖 demandé par l’agent ou l’orchestrateur
 arch-harness agent context --focus OrderService --format json
-# développement + tests fonctionnels
+# 🤖 développement + tests fonctionnels
+# ⚙️ checkpoint automatique
 arch-harness graph refresh --format json
 arch-harness gate --format json
 ```
@@ -312,11 +324,11 @@ Le code de sortie `0` autorise la suite, `1` indique une violation architectural
 
 ### Nouveau projet (greenfield)
 
-Commencez par Mermaid et des candidates `when_observed`. Après l’apparition du premier code, rafraîchissez Graphify puis relancez le Rule Author pour remplacer les mappings provisoires par des identifiants observés.
+👤 Commencez par Mermaid. 🤖 Le Rule Author produit des candidates `when_observed`. Après l’apparition du premier code, ⚙️ Graphify est rafraîchi puis 🤖 le Rule Author remplace les mappings provisoires par des identifiants observés.
 
 ### Projet existant (brownfield)
 
-Commencez par `graph refresh` pour obtenir la réalité du code. Le diagramme cible et les premières règles doivent ensuite tenir compte de cette baseline, sans présenter l’existant comme automatiquement souhaitable.
+⚙️ Commencez par `graph refresh` pour obtenir la réalité du code. 👤 Le diagramme cible et les premières règles doivent ensuite tenir compte de cette baseline, sans présenter l’existant comme automatiquement souhaitable.
 
 ## 9. Lire un verdict
 

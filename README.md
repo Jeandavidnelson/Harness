@@ -4,18 +4,28 @@ Architecture Harness donne à BMAD, Codex, Claude ou tout autre agent une ligne 
 
 Le logiciel ne génère pas lui-même le code et ne remplace ni Graphify, ni les tests métier, ni la revue. Il fournit le module architectural pluggable entre l’orchestrateur et ces outils.
 
+### Légende des responsabilités
+
+| Icône | Responsable | Signification |
+|---|---|---|
+| 👤 | Utilisateur | décision, validation ou commande lancée manuellement |
+| 🤖 | Agent / orchestrateur | lecture du contexte, génération de code ou correction |
+| ⚙️ | Automatique | parsing, extraction Graphify, sélection de contexte et gate déterministe |
+
+Les mêmes icônes sont utilisées dans toute la documentation détaillée.
+
 ## Le principe
 
 ```mermaid
 flowchart TD
-    M["Mermaid déclaré"] --> C["Context Builder"]
-    G["Code source"] --> GF["Graphify"]
-    GF --> O["Graphe observé"]
-    R["Règles validées"] --> H["Architecture Gate"]
+    M["👤 Mermaid déclaré"] --> C["⚙️ Context Builder"]
+    G["🤖 Code source"] --> GF["⚙️ Graphify"]
+    GF --> O["⚙️ Graphe observé"]
+    R["👤 Règles validées"] --> H["⚙️ Architecture Gate"]
     O --> C
     O --> H
     M --> H
-    C --> A["Agent BMAD / Codex / Claude"]
+    C --> A["🤖 Agent BMAD / Codex / Claude"]
     A --> G
     H -->|"FAIL compact"| A
     H -->|"PASS ou WARN"| N["Étape suivante"]
@@ -121,7 +131,7 @@ Le gate est en lecture seule : il ne modifie jamais le code, ne rafraîchit pas 
 
 ## Workflow quotidien
 
-### 1. Avant une modification significative
+### 1. 🤖 Avant une modification significative
 
 Identifier un nœud Graphify pertinent :
 
@@ -131,11 +141,11 @@ arch-harness agent context --focus PaymentService --format json
 
 La réponse borne le voisinage, projette Mermaid et les règles applicables, donne les fichiers utiles et conserve provenance, sévérité, statut et rationale. L’agent ne charge pas tout le graphe.
 
-### 2. Implémenter et tester
+### 2. 🤖 Implémenter et tester
 
 L’agent modifie le code et exécute les tests fonctionnels. Un PASS architectural ne prouve pas que le logiciel fonctionne : le run réel V2 a justement produit une première correction gate-PASS mais runtime-FAIL.
 
-### 3. Checkpoint significatif
+### 3. ⚙️ Checkpoint significatif
 
 ```bash
 arch-harness graph refresh --format json
@@ -144,7 +154,7 @@ arch-harness gate --format json
 
 Ne pas lancer le gate après chaque fichier. L’utiliser après une étape cohérente, une story, avant revue et avant de déclarer terminé.
 
-### 4. En cas de FAIL
+### 4. 🤖 En cas de FAIL
 
 Le rapport fournit règle, sévérité, source/cible, plus court chemin, fichiers, provenance, rationale et architecture attendue. Réinjecter uniquement ce rapport compact dans l’agent, corriger le code, puis répéter refresh/gate. Ne jamais affaiblir une règle pour obtenir PASS ; une règle obsolète exige une décision humaine.
 
@@ -169,20 +179,20 @@ BMAD 6.11 requiert `uv` pour rendre `bmad-build`. L’adapter installe trois ove
 Séquence recommandée :
 
 ```text
-bmad-architecture
-→ Mermaid
-→ Rule Authoring Skill
-→ clarification
-→ candidates
-→ validation humaine
-→ rules validated
-→ bmad-build
-→ context compact
-→ code + tests
-→ Graphify refresh
-→ gate
-→ correction jusqu’à PASS
-→ bmad-code-review
+👤 bmad-architecture
+→ 👤 Mermaid
+→ 🤖 Rule Authoring Skill
+→ 👤 clarification
+→ 🤖 candidates
+→ 👤 validation humaine
+→ 👤 rules validated
+→ 🤖 bmad-build
+→ ⚙️ context compact
+→ 🤖 code + tests
+→ ⚙️ Graphify refresh
+→ ⚙️ gate
+→ 🤖 correction jusqu’à PASS
+→ 🤖 bmad-code-review
 ```
 
 BMAD conserve ses checkpoints humains. L’essai E2E a été poursuivi après approbation explicite : implémentation, tests runtime, Graphify, gate PASS, trois couches de revue, correction d’un manque de vérification et revalidation finale ont abouti. Le commit local et l’ouverture VS Code ont seuls échoué dans l’environnement temporaire.
@@ -192,17 +202,46 @@ BMAD conserve ses checkpoints humains. L’essai E2E a été poursuivi après ap
 - Greenfield : partir de Mermaid/règles candidates, écrire du code significatif, puis créer le premier graphe et lancer le premier gate.
 - Brownfield : exécuter Graphify avant le développement pour obtenir une baseline, puis comparer observé, déclaré et règles validées.
 
-## Adapters
+## Intégrations : installation et vérification
 
-- BMAD : `integrations/bmad/`
-- Codex : `integrations/codex/AGENTS.snippet.md`
-- Claude : `integrations/claude/SKILL.md`
-- générique : `integrations/generic/README.md`
-- ArchUnit optionnel : `integrations/archunit/SKILL.md`
+Les intégrations appellent toutes la même CLI. Elles copient des instructions et des skills dans le projet cible, mais n’ajoutent aucune dépendance au core (`core_dependency_added: false`). Exécuter la commande depuis le projet cible en passant le chemin absolu du dépôt Harness :
 
-Tous appellent la même CLI. `arch-harness capabilities --format json` suffit à un consommateur générique pour découvrir le contrat.
+| Orchestrateur | Installation | Preuve principale |
+|---|---|---|
+| Codex | `arch-harness --root "$PWD" integrations install codex --adapter-root /opt/architecture-harness` | `AGENTS.md` et `.agents/skills/architecture-rule-author/SKILL.md` |
+| Claude Code | `arch-harness --root "$PWD" integrations install claude --adapter-root /opt/architecture-harness` | `CLAUDE.md` et deux skills dans `.claude/skills/` |
+| BMAD | installer BMAD, puis `arch-harness --root "$PWD" integrations install bmad --adapter-root /opt/architecture-harness` | trois overrides dans `_bmad/custom/` et le Rule Author |
+| GitHub Copilot | intégration générique manuelle | `.github/copilot-instructions.md` et skill copié dans `skills/` |
 
-Les installateurs `integrations install codex` et `integrations install claude` déploient le même Rule Author ainsi que les instructions de déclenchement du projet.
+Une installation native réussie retourne notamment :
+
+```json
+{
+  "status": "PASS",
+  "integration": "codex",
+  "core_dependency_added": false,
+  "installed": ["... fichiers réellement copiés ..."]
+}
+```
+
+Vérification commune après l’installation et la préparation du projet :
+
+```bash
+arch-harness --root "$PWD" capabilities --format json
+arch-harness --root "$PWD" target
+arch-harness --root "$PWD" rules validate
+arch-harness --root "$PWD" rules author-context --format json
+```
+
+`doctor` et le gate deviennent des contrôles de bout en bout après la création du premier code et du premier graphe :
+
+```bash
+arch-harness --root "$PWD" graph refresh --format json
+arch-harness --root "$PWD" agent doctor --format json
+arch-harness --root "$PWD" gate --format json
+```
+
+Les emplacements sources sont `integrations/bmad/`, `integrations/codex/AGENTS.snippet.md`, `integrations/claude/`, `integrations/generic/` et `integrations/archunit/`. Le guide [Installation des orchestrateurs](documentation/INSTALLATION_ORCHESTRATEURS.md) détaille les fichiers attendus et le test propre à chaque outil.
 
 Documentation détaillée :
 

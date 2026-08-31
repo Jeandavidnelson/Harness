@@ -2,20 +2,30 @@
 
 Ce document décrit l’architecture interne d’Architecture Harness V2.2, les interactions entre couches et toutes les commandes de la CLI. Les exemples supposent que `arch-harness` est disponible dans le `PATH`. Depuis le dépôt du Harness, utilisez au besoin `.venv/bin/arch-harness`.
 
+## Légende des responsabilités
+
+| Icône | Responsable | Exemple technique |
+|---|---|---|
+| 👤 | Utilisateur | valide une règle ou lance une commande manuelle |
+| 🤖 | Agent / orchestrateur | demande le contexte, code et traite les violations |
+| ⚙️ | Automatique | parser, Graphify, moteur déterministe, exporters |
+
+`👤/🤖` signifie qu’une commande peut être lancée manuellement ou par un orchestrateur.
+
 ## 1. Vue d’ensemble des couches
 
 ```mermaid
 flowchart TD
-    CLI["CLI<br/>cli.py"] --> CFG["Configuration<br/>config.py"]
-    CLI --> AD["Adaptateurs"]
-    AD --> MM["Mermaid officiel<br/>runtime Node"]
-    AD --> GF["Graphify<br/>graphe observé"]
-    AD --> YML["Règles YAML"]
-    AD --> IR["IR normalisés"]
-    IR --> CS["Context Selector"]
-    IR --> EV["Moteur d’évaluation"]
-    CS --> EX["Exporters agent/texte"]
-    EV --> GT["Gate"]
+    CLI["👤/🤖 CLI<br/>cli.py"] --> CFG["⚙️ Configuration<br/>config.py"]
+    CLI --> AD["⚙️ Adaptateurs"]
+    AD --> MM["⚙️ Mermaid officiel<br/>runtime Node"]
+    AD --> GF["⚙️ Graphify<br/>graphe observé"]
+    AD --> YML["👤 Règles YAML"]
+    AD --> IR["⚙️ IR normalisés"]
+    IR --> CS["⚙️ Context Selector"]
+    IR --> EV["⚙️ Moteur d’évaluation"]
+    CS --> EX["⚙️ Exporters agent/texte"]
+    EV --> GT["⚙️ Gate"]
     GT --> EX
     CLI --> INT["Installateurs d’intégrations"]
 ```
@@ -47,7 +57,7 @@ Pour une racine `--root /projets/orders`, `ProjectPaths` résout :
 
 `--root` est donc la racine du projet analysé, pas celle du Harness. Sans `--root`, la CLI utilise le répertoire courant.
 
-## 3. Pipeline Mermaid déclaré
+## 3. ⚙️ Pipeline Mermaid déclaré
 
 `adapters/mermaid.py` transmet le texte au bridge Node embarqué. Le bridge utilise Mermaid 11.17.2 comme autorité de validation et `@mermaid-js/parser` lorsque son AST est disponible.
 
@@ -66,7 +76,7 @@ sequenceDiagram
 
 Les flowcharts, architectures, classes, séquences, ER et états sont normalisés selon les faits disponibles. Un diagramme valide mais non orienté dépendances conserve son type et son texte ; il n’est pas transformé artificiellement en règle.
 
-## 4. Pipeline Graphify observé
+## 4. ⚙️ Pipeline Graphify observé
 
 `arch-harness graph refresh` cherche d’abord `PROJECT/.venv/bin/graphify`, puis un exécutable système. Sans manifeste, il exécute une extraction complète ; avec un manifeste, une mise à jour incrémentale.
 
@@ -77,7 +87,7 @@ passages suivants : graphify update <root> --no-cluster
 
 Le résultat est converti en `ObservedGraphIR` : nœuds, fichiers, types, arêtes, relation, provenance et confiance. `manifest.json` relie le graphe aux empreintes des sources. Le gate refuse un graphe périmé afin de ne jamais valider une ancienne version du code.
 
-## 5. Pipeline des règles
+## 5. ⚙️ Pipeline des règles
 
 `adapters/rules.py` charge les rôles et les contraintes YAML. Le moteur suit ensuite ce flux :
 
@@ -95,7 +105,7 @@ flowchart LR
 
 Les recherches de chemin produisent le plus court chemin comme preuve. Une violation n’est bloquante que pour une règle `status: validated` et `severity: error`.
 
-## 6. Construction du contexte compact
+## 6. ⚙️ Construction du contexte compact
 
 `engine/context_selector.py` reçoit un ou plusieurs focus, un rayon et une limite. Il sélectionne le voisinage observé, projette les faits déclarés et les règles pertinentes, puis retourne les fichiers utiles et une métrique de tokens.
 
@@ -113,7 +123,7 @@ flowchart TD
 
 Cette étape évite d’envoyer l’intégralité de `graphify-out/graph.json` à l’agent.
 
-## 7. Gate et codes de sortie
+## 7. ⚙️ Gate et codes de sortie
 
 Le gate vérifie d’abord la fraîcheur, charge les trois IR, appelle `evaluate`, puis construit un payload immuable.
 
@@ -137,7 +147,7 @@ Exemple hors du projet courant :
 arch-harness --root /projets/orders doctor
 ```
 
-### `graph refresh`
+### ⚙️ `graph refresh`
 
 ```bash
 arch-harness graph refresh --format json
@@ -145,7 +155,7 @@ arch-harness graph refresh --format json
 
 Rafraîchit l’architecture observée, écrit `graph.json` et `manifest.json`, puis vérifie immédiatement leur fraîcheur. La réponse indique `mode` (`extract` ou `update`), commande Graphify, résumé et durée. À exécuter après une modification cohérente du code, avant le gate.
 
-### `stale`
+### 👤/🤖 `stale`
 
 ```bash
 arch-harness stale
@@ -160,7 +170,7 @@ stale: src/orders/service.py
 
 Utile dans un script CI qui veut distinguer « graphe périmé » de « règle violée ».
 
-### `observed`
+### 👤/🤖 `observed`
 
 ```bash
 arch-harness observed
@@ -176,7 +186,7 @@ inferred: 15
 ambiguous: 0
 ```
 
-### `target`
+### 👤/🤖 `target`
 
 ```bash
 arch-harness target
@@ -184,7 +194,7 @@ arch-harness target
 
 Parse tous les Mermaid de `architecture/diagrams/` et affiche nœuds, arêtes et sous-graphes normalisés. À utiliser pour diagnostiquer un diagramme rejeté ou vérifier ses identifiants.
 
-### `context overview`
+### 👤/🤖 `context overview`
 
 ```bash
 arch-harness context overview
@@ -192,7 +202,7 @@ arch-harness context overview
 
 Résume les Mermaid de `contexte/` : nœuds, relations et provenance `DECLARED_CONTEXT`. Cette commande n’analyse pas le code.
 
-### `context build`
+### 👤/🤖 `context build`
 
 ```bash
 arch-harness context build --focus OrderController --radius 1 --max-items 50
@@ -206,7 +216,7 @@ Exemple avec deux zones :
 arch-harness context build --focus OrderController --focus PaymentService --radius 2
 ```
 
-### `rules validate`
+### 👤/🤖 `rules validate`
 
 ```bash
 arch-harness rules validate
@@ -221,7 +231,7 @@ Exemple de sortie :
 valid: 3 rules, 4 roles
 ```
 
-### `rules list`
+### 👤/🤖 `rules list`
 
 ```bash
 arch-harness rules list
@@ -233,7 +243,7 @@ Liste les règles validées sous forme courte. Exemple :
 controller-must-use-service: required_edge Controller -> Service
 ```
 
-### `rules author-context`
+### 🤖 `rules author-context`
 
 ```bash
 arch-harness rules author-context --format json
@@ -261,7 +271,7 @@ Extrait simplifié :
 }
 ```
 
-### `check`
+### 👤/🤖 `check`
 
 ```bash
 arch-harness check --format text
@@ -271,7 +281,7 @@ arch-harness check --format markdown
 
 Évalue directement l’architecture et permet trois formats de rapport. Contrairement à `gate`, cette commande ne vérifie pas préalablement le manifeste de fraîcheur. Préférez `gate` dans les workflows automatisés.
 
-### `gate`
+### ⚙️ `gate`
 
 ```bash
 arch-harness gate --format json
@@ -283,7 +293,7 @@ Checkpoint sûr : refuse un graphe périmé, évalue les règles et retourne un 
 arch-harness graph refresh --format json && arch-harness gate --format json
 ```
 
-### `doctor`
+### 👤/🤖 `doctor`
 
 ```bash
 arch-harness doctor
@@ -291,7 +301,7 @@ arch-harness doctor
 
 Diagnostique les entrées, Mermaid, graphe, règles et cache. À lancer après un code de sortie 2. Chaque contrôle est affiché avec `PASS` ou `FAIL`.
 
-### `capabilities`
+### 🤖 `capabilities`
 
 ```bash
 arch-harness capabilities --format json
@@ -299,7 +309,7 @@ arch-harness capabilities --format json
 
 Décrit le contrat machine-readable : commandes, formats, statuts et codes de sortie. Un nouvel orchestrateur doit découvrir l’API par cette commande au lieu de supposer ses capacités.
 
-### `agent context`
+### 🤖 `agent context`
 
 ```bash
 arch-harness agent context --focus OrderService --radius 1 --max-items 50 --format json
@@ -307,7 +317,7 @@ arch-harness agent context --focus OrderService --radius 1 --max-items 50 --form
 
 Version JSON stable de `context build`, destinée aux agents. Retourne `observed_code`, `declared_context`, `target_architecture`, `applicable_rules`, `relevant_files`, provenance et métriques.
 
-### `agent validate`
+### 🤖 `agent validate`
 
 ```bash
 arch-harness agent validate --format json
@@ -315,7 +325,7 @@ arch-harness agent validate --format json
 
 Vérifie la fraîcheur puis évalue l’architecture avec un contrat JSON stable. C’est l’équivalent agent du checkpoint final. Code 1 pour les violations, code 2 pour un problème technique ou un `UNRESOLVED` obligatoire.
 
-### `agent doctor`
+### 🤖 `agent doctor`
 
 ```bash
 arch-harness agent doctor --format json
@@ -323,7 +333,7 @@ arch-harness agent doctor --format json
 
 Version JSON de `doctor`, conçue pour permettre à un agent de diagnostiquer un code 2 sans parser du texte humain.
 
-### `agent capabilities`
+### 🤖 `agent capabilities`
 
 ```bash
 arch-harness agent capabilities --format json
@@ -331,7 +341,7 @@ arch-harness agent capabilities --format json
 
 Expose le même contrat stable que `capabilities` dans l’espace de commandes réservé aux agents.
 
-### `integrations install`
+### 👤 `integrations install`
 
 ```bash
 arch-harness --root /projets/orders integrations install codex --adapter-root /opt/architecture-harness
@@ -341,7 +351,29 @@ arch-harness --root /projets/orders integrations install bmad --adapter-root /op
 
 Copie les skills et instructions de l’orchestrateur. Les valeurs acceptées sont `codex`, `claude` et `bmad`. L’installateur refuse d’écraser les assets existants ; `--force` ne doit être utilisé qu’après comparaison et sauvegarde.
 
-### `benchmark`
+Le résultat JSON est la première preuve d’installation : `status` doit être `PASS`, `integration` doit correspondre au nom demandé et tous les chemins de `installed` doivent exister. `core_dependency_added: false` confirme que l’adaptateur n’a pas introduit l’orchestrateur dans le core.
+
+Exemple de contrôle reproductible pour Codex :
+
+```bash
+arch-harness --root /projets/orders integrations install codex \
+  --adapter-root /opt/architecture-harness
+test -f /projets/orders/AGENTS.md
+test -f /projets/orders/.agents/skills/architecture-rule-author/SKILL.md
+arch-harness --root /projets/orders rules author-context --format json
+```
+
+Après l’existence du premier code, la preuve de bout en bout est :
+
+```bash
+arch-harness --root /projets/orders graph refresh --format json
+arch-harness --root /projets/orders agent doctor --format json
+arch-harness --root /projets/orders gate --format json
+```
+
+Ne confondez pas les deux niveaux : un installateur PASS prouve la copie des assets ; le second cycle prouve que le projet cible est correctement analysable.
+
+### 👤 `benchmark`
 
 ```bash
 arch-harness benchmark --mode v2 --tasks experiments/tasks.yaml
@@ -349,7 +381,7 @@ arch-harness benchmark --mode v2 --tasks experiments/tasks.yaml
 
 Mesure la réduction de tokens obtenue par le contexte compact sur un corpus de tâches. Modes : `v1`, `v1.1`, `v2`. Cette commande sert à la métrologie, pas au gate de production.
 
-### `ace compile` et `ace validate` — expérimental
+### 👤/🤖 `ace compile` et `ace validate` — expérimental
 
 ```bash
 arch-harness ace compile --text "Controller must not call Repository"
@@ -362,12 +394,12 @@ arch-harness ace validate architecture/rules/candidates.yaml
 
 ```mermaid
 sequenceDiagram
-    participant O as Orchestrateur
-    participant CLI as CLI
-    participant CS as Context Selector
-    participant DEV as Agent de code
-    participant GF as Graphify
-    participant E as Engine/Gate
+    participant O as 🤖 Orchestrateur
+    participant CLI as ⚙️ CLI
+    participant CS as ⚙️ Context Selector
+    participant DEV as 🤖 Agent de code
+    participant GF as ⚙️ Graphify
+    participant E as ⚙️ Engine/Gate
     O->>CLI: agent context --focus X
     CLI->>CS: select_context(X)
     CS-->>O: JSON compact
@@ -381,7 +413,7 @@ sequenceDiagram
     E-->>O: PASS/WARN/FAIL + preuves
 ```
 
-## 10. CI recommandée
+## 10. ⚙️ CI recommandée
 
 ```bash
 set -e

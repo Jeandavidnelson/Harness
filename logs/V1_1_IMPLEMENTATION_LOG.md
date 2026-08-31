@@ -456,3 +456,59 @@ Task success/output/total tokens: NOT_MEASURED (no model task runner available)
 C vs B context reduction: 50.1%
 Tokenizer: tiktoken:o200k_base
 Task success/output/total tokens: NOT_MEASURED (no model task runner available)
+
+## Validation automatisée V1.1 — 2026-08-31T14:05:26+0200
+
+- Graphify refresh and stale check: PASS
+- doctor / pytest / harness: PASS
+- ACE tests and skill validation: PASS
+
+| Task | Condition | Context tokens | Tool calls | Graphify calls | Files read | Duration (s) | Harness |
+|---|---|---:|---:|---:|---:|---:|---|
+| adapt-graphify-schema | A_GRAPHIFY | 5344 | 1 | 1 | 1 | 0.2521 | NOT_RUN |
+| adapt-graphify-schema | B_GRAPHIFY_FULL_ARCH | 6298 | 1 | 1 | 7 | 0.2521 | NOT_RUN |
+| adapt-graphify-schema | C_AGENT_CONTEXT | 3494 | 1 | 0 | 12 | 0.0055 | PASS |
+| change-rule-evaluation | A_GRAPHIFY | 5839 | 1 | 1 | 1 | 0.2595 | NOT_RUN |
+| change-rule-evaluation | B_GRAPHIFY_FULL_ARCH | 6793 | 1 | 1 | 7 | 0.2509 | NOT_RUN |
+| change-rule-evaluation | C_AGENT_CONTEXT | 3482 | 1 | 0 | 14 | 0.0055 | PASS |
+| change-context-selection | A_GRAPHIFY | 4382 | 1 | 1 | 1 | 0.2466 | NOT_RUN |
+| change-context-selection | B_GRAPHIFY_FULL_ARCH | 5336 | 1 | 1 | 7 | 0.2475 | NOT_RUN |
+| change-context-selection | C_AGENT_CONTEXT | 3482 | 1 | 0 | 10 | 0.0057 | PASS |
+| extend-doctor | A_GRAPHIFY | 4821 | 1 | 1 | 1 | 0.2485 | NOT_RUN |
+| extend-doctor | B_GRAPHIFY_FULL_ARCH | 5775 | 1 | 1 | 7 | 0.2461 | NOT_RUN |
+| extend-doctor | C_AGENT_CONTEXT | 2459 | 1 | 0 | 8 | 0.0054 | PASS |
+| extend-agent-cli | A_GRAPHIFY | 8258 | 1 | 1 | 1 | 0.2447 | NOT_RUN |
+| extend-agent-cli | B_GRAPHIFY_FULL_ARCH | 9212 | 1 | 1 | 7 | 0.2431 | NOT_RUN |
+| extend-agent-cli | C_AGENT_CONTEXT | 3745 | 1 | 0 | 28 | 0.0058 | PASS |
+
+C vs B context reduction: 50.1%
+Tokenizer: tiktoken:o200k_base
+Task success/output/total tokens: NOT_MEASURED (no model task runner available)
+
+## Validation automatisée V1.1 — 2026-08-31T14:12:17+0200
+
+- Graphify refresh and stale check: PASS
+- doctor / pytest / harness: PASS
+- ACE tests and skill validation: PASS
+
+| Task | Condition | Context tokens | Tool calls | Graphify calls | Files read | Duration (s) | Harness |
+|---|---|---:|---:|---:|---:|---:|---|
+| adapt-graphify-schema | A_GRAPHIFY | 5344 | 1 | 1 | 1 | 0.2432 | NOT_RUN |
+| adapt-graphify-schema | B_GRAPHIFY_FULL_ARCH | 6298 | 1 | 1 | 7 | 0.2531 | NOT_RUN |
+| adapt-graphify-schema | C_AGENT_CONTEXT | 3494 | 1 | 0 | 12 | 0.0058 | PASS |
+| change-rule-evaluation | A_GRAPHIFY | 5839 | 1 | 1 | 1 | 0.2496 | NOT_RUN |
+| change-rule-evaluation | B_GRAPHIFY_FULL_ARCH | 6793 | 1 | 1 | 7 | 0.2471 | NOT_RUN |
+| change-rule-evaluation | C_AGENT_CONTEXT | 3482 | 1 | 0 | 14 | 0.0055 | PASS |
+| change-context-selection | A_GRAPHIFY | 4382 | 1 | 1 | 1 | 0.2507 | NOT_RUN |
+| change-context-selection | B_GRAPHIFY_FULL_ARCH | 5336 | 1 | 1 | 7 | 0.2496 | NOT_RUN |
+| change-context-selection | C_AGENT_CONTEXT | 3482 | 1 | 0 | 10 | 0.0056 | PASS |
+| extend-doctor | A_GRAPHIFY | 4821 | 1 | 1 | 1 | 0.2466 | NOT_RUN |
+| extend-doctor | B_GRAPHIFY_FULL_ARCH | 5775 | 1 | 1 | 7 | 0.2451 | NOT_RUN |
+| extend-doctor | C_AGENT_CONTEXT | 2459 | 1 | 0 | 8 | 0.0054 | PASS |
+| extend-agent-cli | A_GRAPHIFY | 8258 | 1 | 1 | 1 | 0.2500 | NOT_RUN |
+| extend-agent-cli | B_GRAPHIFY_FULL_ARCH | 9212 | 1 | 1 | 7 | 0.2534 | NOT_RUN |
+| extend-agent-cli | C_AGENT_CONTEXT | 3745 | 1 | 0 | 28 | 0.0056 | PASS |
+
+C vs B context reduction: 50.1%
+Tokenizer: tiktoken:o200k_base
+Task success/output/total tokens: NOT_MEASURED (no model task runner available)

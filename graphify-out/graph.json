@@ -2732,12 +2732,21 @@
       "_origin": "ast"
     },
     {
+      "id": "readme_légende_des_responsabilités",
+      "label": "Légende des responsabilités",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
       "id": "readme_le_principe",
       "label": "Le principe",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L7",
+      "source_location": "L17",
       "_origin": "ast"
     },
     {
@@ -2746,7 +2755,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L42",
       "_origin": "ast"
     },
     {
@@ -2755,7 +2764,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L38",
+      "source_location": "L48",
       "_origin": "ast"
     },
     {
@@ -2764,7 +2773,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L63",
       "_origin": "ast"
     },
     {
@@ -2773,7 +2782,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L83",
+      "source_location": "L93",
       "_origin": "ast"
     },
     {
@@ -2782,7 +2791,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L98",
+      "source_location": "L108",
       "_origin": "ast"
     },
     {
@@ -2791,21 +2800,12 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L122",
+      "source_location": "L132",
       "_origin": "ast"
     },
     {
       "id": "readme_1_avant_une_modification_significative",
-      "label": "1. Avant une modification significative",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "README.md",
-      "source_location": "L124",
-      "_origin": "ast"
-    },
-    {
-      "id": "readme_2_implémenter_et_tester",
-      "label": "2. Implémenter et tester",
+      "label": "1. 🤖 Avant une modification significative",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
@@ -2813,21 +2813,30 @@
       "_origin": "ast"
     },
     {
-      "id": "readme_3_checkpoint_significatif",
-      "label": "3. Checkpoint significatif",
+      "id": "readme_2_implémenter_et_tester",
+      "label": "2. 🤖 Implémenter et tester",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L138",
+      "source_location": "L144",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_3_checkpoint_significatif",
+      "label": "3. ⚙️ Checkpoint significatif",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L148",
       "_origin": "ast"
     },
     {
       "id": "readme_4_en_cas_de_fail",
-      "label": "4. En cas de FAIL",
+      "label": "4. 🤖 En cas de FAIL",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L157",
       "_origin": "ast"
     },
     {
@@ -2836,7 +2845,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L151",
+      "source_location": "L161",
       "_origin": "ast"
     },
     {
@@ -2845,16 +2854,16 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L190",
+      "source_location": "L200",
       "_origin": "ast"
     },
     {
-      "id": "readme_adapters",
-      "label": "Adapters",
+      "id": "readme_intégrations_installation_et_vérification",
+      "label": "Intégrations : installation et vérification",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L195",
+      "source_location": "L205",
       "_origin": "ast"
     },
     {
@@ -2863,7 +2872,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L213",
+      "source_location": "L252",
       "_origin": "ast"
     },
     {
@@ -2872,7 +2881,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L231",
+      "source_location": "L270",
       "_origin": "ast"
     },
     {
@@ -2881,7 +2890,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L248",
+      "source_location": "L287",
       "_origin": "ast"
     },
     {
@@ -2890,7 +2899,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "README.md",
-      "source_location": "L259",
+      "source_location": "L298",
       "_origin": "ast"
     },
     {
@@ -2930,12 +2939,21 @@
       "_origin": "ast"
     },
     {
+      "id": "documentation_documentation_fonctionnelle_légende_des_responsabilités",
+      "label": "Légende des responsabilités",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
       "id": "documentation_documentation_fonctionnelle_1_à_quoi_sert_architecture_harness",
       "label": "1. À quoi sert Architecture Harness ?",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L5",
+      "source_location": "L15",
       "_origin": "ast"
     },
     {
@@ -2944,7 +2962,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L28",
+      "source_location": "L38",
       "_origin": "ast"
     },
     {
@@ -2953,7 +2971,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L50",
+      "source_location": "L60",
       "_origin": "ast"
     },
     {
@@ -2962,7 +2980,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L73",
+      "source_location": "L83",
       "_origin": "ast"
     },
     {
@@ -2971,7 +2989,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L89",
+      "source_location": "L99",
       "_origin": "ast"
     },
     {
@@ -2980,7 +2998,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L105",
+      "source_location": "L115",
       "_origin": "ast"
     },
     {
@@ -2989,7 +3007,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L109",
+      "source_location": "L119",
       "_origin": "ast"
     },
     {
@@ -2998,7 +3016,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L113",
+      "source_location": "L123",
       "_origin": "ast"
     },
     {
@@ -3007,7 +3025,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L117",
+      "source_location": "L127",
       "_origin": "ast"
     },
     {
@@ -3016,7 +3034,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L121",
+      "source_location": "L131",
       "_origin": "ast"
     },
     {
@@ -3025,7 +3043,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L151",
+      "source_location": "L161",
       "_origin": "ast"
     },
     {
@@ -3034,7 +3052,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L170",
+      "source_location": "L180",
       "_origin": "ast"
     },
     {
@@ -3043,7 +3061,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L178",
+      "source_location": "L188",
       "_origin": "ast"
     },
     {
@@ -3052,7 +3070,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L201",
+      "source_location": "L211",
       "_origin": "ast"
     },
     {
@@ -3061,7 +3079,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L205",
+      "source_location": "L215",
       "_origin": "ast"
     },
     {
@@ -3070,7 +3088,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L212",
+      "source_location": "L222",
       "_origin": "ast"
     },
     {
@@ -3079,7 +3097,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L250",
+      "source_location": "L260",
       "_origin": "ast"
     },
     {
@@ -3088,7 +3106,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L287",
+      "source_location": "L297",
       "_origin": "ast"
     },
     {
@@ -3097,7 +3115,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L311",
+      "source_location": "L323",
       "_origin": "ast"
     },
     {
@@ -3106,7 +3124,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L313",
+      "source_location": "L325",
       "_origin": "ast"
     },
     {
@@ -3115,7 +3133,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L317",
+      "source_location": "L329",
       "_origin": "ast"
     },
     {
@@ -3124,7 +3142,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L321",
+      "source_location": "L333",
       "_origin": "ast"
     },
     {
@@ -3146,12 +3164,21 @@
       "_origin": "ast"
     },
     {
+      "id": "documentation_documentation_technique_légende_des_responsabilités",
+      "label": "Légende des responsabilités",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
       "id": "documentation_documentation_technique_1_vue_d_ensemble_des_couches",
       "label": "1. Vue d’ensemble des couches",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L5",
+      "source_location": "L15",
       "_origin": "ast"
     },
     {
@@ -3160,52 +3187,52 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L37",
+      "source_location": "L47",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_3_pipeline_mermaid_déclaré",
-      "label": "3. Pipeline Mermaid déclaré",
+      "label": "3. ⚙️ Pipeline Mermaid déclaré",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L50",
+      "source_location": "L60",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_4_pipeline_graphify_observé",
-      "label": "4. Pipeline Graphify observé",
+      "label": "4. ⚙️ Pipeline Graphify observé",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L69",
+      "source_location": "L79",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_5_pipeline_des_règles",
-      "label": "5. Pipeline des règles",
+      "label": "5. ⚙️ Pipeline des règles",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L80",
+      "source_location": "L90",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_6_construction_du_contexte_compact",
-      "label": "6. Construction du contexte compact",
+      "label": "6. ⚙️ Construction du contexte compact",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L98",
+      "source_location": "L108",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_7_gate_et_codes_de_sortie",
-      "label": "7. Gate et codes de sortie",
+      "label": "7. ⚙️ Gate et codes de sortie",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L116",
+      "source_location": "L126",
       "_origin": "ast"
     },
     {
@@ -3214,7 +3241,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L126",
+      "source_location": "L136",
       "_origin": "ast"
     },
     {
@@ -3223,102 +3250,93 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L128",
+      "source_location": "L138",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_graph_refresh",
-      "label": "`graph refresh`",
+      "label": "⚙️ `graph refresh`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L140",
+      "source_location": "L150",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_stale",
-      "label": "`stale`",
+      "label": "👤/🤖 `stale`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L148",
+      "source_location": "L158",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_observed",
-      "label": "`observed`",
+      "label": "👤/🤖 `observed`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L163",
+      "source_location": "L173",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_target",
-      "label": "`target`",
+      "label": "👤/🤖 `target`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L179",
+      "source_location": "L189",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_context_overview",
-      "label": "`context overview`",
+      "label": "👤/🤖 `context overview`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L187",
+      "source_location": "L197",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_context_build",
-      "label": "`context build`",
+      "label": "👤/🤖 `context build`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L195",
+      "source_location": "L205",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_rules_validate",
-      "label": "`rules validate`",
+      "label": "👤/🤖 `rules validate`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L209",
+      "source_location": "L219",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_rules_list",
-      "label": "`rules list`",
+      "label": "👤/🤖 `rules list`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L224",
+      "source_location": "L234",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_rules_author_context",
-      "label": "`rules author-context`",
+      "label": "🤖 `rules author-context`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L236",
+      "source_location": "L246",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_check",
-      "label": "`check`",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L264",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_documentation_technique_gate",
-      "label": "`gate`",
+      "label": "👤/🤖 `check`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
@@ -3326,71 +3344,71 @@
       "_origin": "ast"
     },
     {
-      "id": "documentation_documentation_technique_doctor",
-      "label": "`doctor`",
+      "id": "documentation_documentation_technique_gate",
+      "label": "⚙️ `gate`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L286",
+      "source_location": "L284",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_documentation_technique_doctor",
+      "label": "👤/🤖 `doctor`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
+      "source_location": "L296",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_capabilities",
-      "label": "`capabilities`",
+      "label": "🤖 `capabilities`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L294",
+      "source_location": "L304",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_agent_context",
-      "label": "`agent context`",
+      "label": "🤖 `agent context`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L302",
+      "source_location": "L312",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_agent_validate",
-      "label": "`agent validate`",
+      "label": "🤖 `agent validate`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L310",
+      "source_location": "L320",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_agent_doctor",
-      "label": "`agent doctor`",
+      "label": "🤖 `agent doctor`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L318",
+      "source_location": "L328",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_agent_capabilities",
-      "label": "`agent capabilities`",
+      "label": "🤖 `agent capabilities`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L326",
+      "source_location": "L336",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_integrations_install",
-      "label": "`integrations install`",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L334",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_documentation_technique_benchmark",
-      "label": "`benchmark`",
+      "label": "👤 `integrations install`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
@@ -3398,12 +3416,21 @@
       "_origin": "ast"
     },
     {
-      "id": "documentation_documentation_technique_ace_compile_et_ace_validate_expérimental",
-      "label": "`ace compile` et `ace validate` — expérimental",
+      "id": "documentation_documentation_technique_benchmark",
+      "label": "👤 `benchmark`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L352",
+      "source_location": "L376",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_documentation_technique_ace_compile_et_ace_validate_expérimental",
+      "label": "👤/🤖 `ace compile` et `ace validate` — expérimental",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
+      "source_location": "L384",
       "_origin": "ast"
     },
     {
@@ -3412,16 +3439,16 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L361",
+      "source_location": "L393",
       "_origin": "ast"
     },
     {
       "id": "documentation_documentation_technique_10_ci_recommandée",
-      "label": "10. CI recommandée",
+      "label": "10. ⚙️ CI recommandée",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L384",
+      "source_location": "L416",
       "_origin": "ast"
     },
     {
@@ -3430,7 +3457,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L403",
+      "source_location": "L435",
       "_origin": "ast"
     },
     {
@@ -3452,8 +3479,8 @@
       "_origin": "ast"
     },
     {
-      "id": "documentation_installation_orchestrateurs_1_prérequis",
-      "label": "1. Prérequis",
+      "id": "documentation_installation_orchestrateurs_légende_des_responsabilités",
+      "label": "Légende des responsabilités",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
@@ -3461,21 +3488,39 @@
       "_origin": "ast"
     },
     {
-      "id": "documentation_installation_orchestrateurs_2_installer_architecture_harness",
-      "label": "2. Installer Architecture Harness",
+      "id": "documentation_installation_orchestrateurs_1_prérequis",
+      "label": "1. Prérequis",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L27",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_2_installer_architecture_harness",
+      "label": "2. 👤 Installer Architecture Harness",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L35",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_3_préparer_le_projet_cible",
-      "label": "3. Préparer le projet cible",
+      "label": "3. 👤 Préparer le projet cible",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L55",
+      "source_location": "L63",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_3_1_comprendre_le_résultat_d_un_installateur",
+      "label": "3.1 Comprendre le résultat d’un installateur",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L121",
       "_origin": "ast"
     },
     {
@@ -3484,34 +3529,43 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L113",
+      "source_location": "L152",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_1_installer_l_adaptateur",
-      "label": "Étape 1 — installer l’adaptateur",
+      "label": "👤 Étape 1 — installer l’adaptateur",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L115",
+      "source_location": "L154",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_2_vérifier_les_fichiers",
-      "label": "Étape 2 — vérifier les fichiers",
+      "label": "👤 Étape 2 — vérifier les fichiers",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L130",
+      "source_location": "L169",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_3_tester_dans_codex",
-      "label": "Étape 3 — tester dans Codex",
+      "label": "🤖 Étape 3 — tester dans Codex",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L137",
+      "source_location": "L182",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_étape_4_preuve_de_fonctionnement",
+      "label": "⚙️ Étape 4 — preuve de fonctionnement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L204",
       "_origin": "ast"
     },
     {
@@ -3520,34 +3574,43 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L157",
+      "source_location": "L217",
       "_origin": "ast"
     },
     {
-      "id": "documentation_installation_orchestrateurs_étape_1_installer_l_adaptateur_159",
-      "label": "Étape 1 — installer l’adaptateur",
+      "id": "documentation_installation_orchestrateurs_étape_1_installer_l_adaptateur_219",
+      "label": "👤 Étape 1 — installer l’adaptateur",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L159",
+      "source_location": "L219",
       "_origin": "ast"
     },
     {
-      "id": "documentation_installation_orchestrateurs_étape_2_vérifier_les_fichiers_174",
-      "label": "Étape 2 — vérifier les fichiers",
+      "id": "documentation_installation_orchestrateurs_étape_2_vérifier_les_fichiers_234",
+      "label": "👤 Étape 2 — vérifier les fichiers",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L174",
+      "source_location": "L234",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_3_tester_dans_claude_code",
-      "label": "Étape 3 — tester dans Claude Code",
+      "label": "🤖 Étape 3 — tester dans Claude Code",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L181",
+      "source_location": "L250",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_étape_4_preuve_de_fonctionnement_261",
+      "label": "⚙️ Étape 4 — preuve de fonctionnement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L261",
       "_origin": "ast"
     },
     {
@@ -3556,43 +3619,52 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L192",
+      "source_location": "L273",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_1_installer_bmad_et_uv",
-      "label": "Étape 1 — installer BMAD et `uv`",
+      "label": "👤 Étape 1 — installer BMAD et `uv`",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L196",
+      "source_location": "L277",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_2_installer_l_adaptateur_harness",
-      "label": "Étape 2 — installer l’adaptateur Harness",
+      "label": "👤 Étape 2 — installer l’adaptateur Harness",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L206",
+      "source_location": "L287",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_3_vérifier",
-      "label": "Étape 3 — vérifier",
+      "label": "👤 Étape 3 — vérifier",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L222",
+      "source_location": "L303",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_4_utiliser_le_workflow",
-      "label": "Étape 4 — utiliser le workflow",
+      "label": "👤/🤖 Étape 4 — utiliser le workflow",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L230",
+      "source_location": "L318",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_étape_5_preuve_de_fonctionnement",
+      "label": "⚙️ Étape 5 — preuve de fonctionnement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L343",
       "_origin": "ast"
     },
     {
@@ -3601,61 +3673,79 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L255",
+      "source_location": "L355",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_étape_1_créer_les_instructions_copilot",
-      "label": "Étape 1 — créer les instructions Copilot",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L259",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_installation_orchestrateurs_étape_2_rendre_le_skill_accessible",
-      "label": "Étape 2 — rendre le skill accessible",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L286",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_installation_orchestrateurs_étape_3_tester_dans_copilot_chat",
-      "label": "Étape 3 — tester dans Copilot Chat",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L296",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_installation_orchestrateurs_8_premier_cycle_commun",
-      "label": "8. Premier cycle commun",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L315",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_installation_orchestrateurs_9_mettre_à_jour_une_intégration",
-      "label": "9. Mettre à jour une intégration",
-      "file_type": "document",
-      "node_kind": "heading",
-      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L342",
-      "_origin": "ast"
-    },
-    {
-      "id": "documentation_installation_orchestrateurs_10_résolution_des_problèmes",
-      "label": "10. Résolution des problèmes",
+      "label": "👤 Étape 1 — créer les instructions Copilot",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
       "source_location": "L359",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_étape_2_rendre_le_skill_accessible",
+      "label": "👤 Étape 2 — rendre le skill accessible",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L386",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_étape_3_tester_dans_copilot_chat",
+      "label": "🤖 Étape 3 — tester dans Copilot Chat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L396",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_étape_4_vérifier_l_installation_manuelle",
+      "label": "👤 Étape 4 — vérifier l’installation manuelle",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L415",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_7_1_tableau_de_diagnostic_des_intégrations",
+      "label": "7.1 Tableau de diagnostic des intégrations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L428",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_8_premier_cycle_commun",
+      "label": "8. 👤/🤖 Premier cycle commun",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L439",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_9_mettre_à_jour_une_intégration",
+      "label": "9. 👤 Mettre à jour une intégration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L466",
+      "_origin": "ast"
+    },
+    {
+      "id": "documentation_installation_orchestrateurs_10_résolution_des_problèmes",
+      "label": "10. 👤 Résolution des problèmes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L483",
       "_origin": "ast"
     },
     {
@@ -3664,7 +3754,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L361",
+      "source_location": "L485",
       "_origin": "ast"
     },
     {
@@ -3673,7 +3763,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L369",
+      "source_location": "L493",
       "_origin": "ast"
     },
     {
@@ -3682,7 +3772,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L377",
+      "source_location": "L501",
       "_origin": "ast"
     },
     {
@@ -3691,7 +3781,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L385",
+      "source_location": "L509",
       "_origin": "ast"
     },
     {
@@ -3700,7 +3790,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L392",
+      "source_location": "L516",
       "_origin": "ast"
     },
     {
@@ -3709,16 +3799,16 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L400",
+      "source_location": "L524",
       "_origin": "ast"
     },
     {
       "id": "documentation_installation_orchestrateurs_11_test_de_recette_minimal",
-      "label": "11. Test de recette minimal",
+      "label": "11. 👤 Test de recette minimal",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L404",
+      "source_location": "L528",
       "_origin": "ast"
     },
     {
@@ -5972,6 +6062,24 @@
       "node_kind": "heading",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L404",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_validation_automatisée_v1_1_2026_08_31t13_44_26_0200",
+      "label": "Validation automatisée V1.1 — 2026-08-31T13:44:26+0200",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L432",
+      "_origin": "ast"
+    },
+    {
+      "id": "logs_v1_1_implementation_log_validation_automatisée_v1_1_2026_08_31t14_05_26_0200",
+      "label": "Validation automatisée V1.1 — 2026-08-31T14:05:26+0200",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L460",
       "_origin": "ast"
     },
     {
@@ -15292,7 +15400,7 @@
     },
     {
       "source": "readme_architecture_harness_v2_2",
-      "target": "readme_le_principe",
+      "target": "readme_légende_des_responsabilités",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
@@ -15302,11 +15410,21 @@
     },
     {
       "source": "readme_architecture_harness_v2_2",
+      "target": "readme_le_principe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_architecture_harness_v2_2",
       "target": "readme_pourquoi_ce_n_est_pas_archunit",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15316,7 +15434,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L38",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15326,7 +15444,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15336,7 +15454,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L83",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15346,7 +15464,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L98",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15356,7 +15474,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L122",
+      "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15366,7 +15484,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L124",
+      "source_location": "L134",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15376,7 +15494,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L134",
+      "source_location": "L144",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15386,7 +15504,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L138",
+      "source_location": "L148",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15396,7 +15514,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L157",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15406,7 +15524,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L151",
+      "source_location": "L161",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15416,37 +15534,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L190",
+      "source_location": "L200",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "readme_architecture_harness_v2_2",
-      "target": "readme_adapters",
+      "target": "readme_intégrations_installation_et_vérification",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L195",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme",
-      "target": "documentation_documentation_fonctionnelle",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L209",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "readme",
-      "target": "documentation_documentation_technique",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L210",
+      "source_location": "L205",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15456,7 +15554,27 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L211",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "documentation_documentation_fonctionnelle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L248",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "documentation_documentation_technique",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L249",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15466,7 +15584,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L213",
+      "source_location": "L252",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15476,7 +15594,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L231",
+      "source_location": "L270",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15486,7 +15604,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L248",
+      "source_location": "L287",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15496,7 +15614,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L259",
+      "source_location": "L298",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15542,7 +15660,7 @@
     },
     {
       "source": "documentation_documentation_fonctionnelle_documentation_fonctionnelle",
-      "target": "documentation_documentation_fonctionnelle_1_à_quoi_sert_architecture_harness",
+      "target": "documentation_documentation_fonctionnelle_légende_des_responsabilités",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
@@ -15552,11 +15670,21 @@
     },
     {
       "source": "documentation_documentation_fonctionnelle_documentation_fonctionnelle",
+      "target": "documentation_documentation_fonctionnelle_1_à_quoi_sert_architecture_harness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_documentation_fonctionnelle_documentation_fonctionnelle",
       "target": "documentation_documentation_fonctionnelle_2_les_trois_sources_de_vérité",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L28",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15566,7 +15694,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L50",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15576,7 +15704,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L73",
+      "source_location": "L83",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15586,7 +15714,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L89",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15596,7 +15724,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L105",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15606,7 +15734,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L109",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15616,7 +15744,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L113",
+      "source_location": "L123",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15626,7 +15754,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L117",
+      "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15636,7 +15764,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L121",
+      "source_location": "L131",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15646,7 +15774,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L151",
+      "source_location": "L161",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15656,7 +15784,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L170",
+      "source_location": "L180",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15666,7 +15794,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L178",
+      "source_location": "L188",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15676,7 +15804,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L201",
+      "source_location": "L211",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15686,7 +15814,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L205",
+      "source_location": "L215",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15696,7 +15824,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L212",
+      "source_location": "L222",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15706,7 +15834,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L250",
+      "source_location": "L260",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15716,7 +15844,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L287",
+      "source_location": "L297",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15726,7 +15854,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L311",
+      "source_location": "L323",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15736,7 +15864,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L313",
+      "source_location": "L325",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15746,7 +15874,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L317",
+      "source_location": "L329",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15756,7 +15884,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_FONCTIONNELLE.md",
-      "source_location": "L321",
+      "source_location": "L333",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15772,7 +15900,7 @@
     },
     {
       "source": "documentation_documentation_technique_documentation_technique",
-      "target": "documentation_documentation_technique_1_vue_d_ensemble_des_couches",
+      "target": "documentation_documentation_technique_légende_des_responsabilités",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
@@ -15782,11 +15910,21 @@
     },
     {
       "source": "documentation_documentation_technique_documentation_technique",
+      "target": "documentation_documentation_technique_1_vue_d_ensemble_des_couches",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_documentation_technique_documentation_technique",
       "target": "documentation_documentation_technique_2_résolution_des_chemins",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L37",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15796,7 +15934,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L50",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15806,7 +15944,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L69",
+      "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15816,7 +15954,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L80",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15826,7 +15964,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L98",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15836,7 +15974,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L116",
+      "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15846,7 +15984,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L126",
+      "source_location": "L136",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15856,7 +15994,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L128",
+      "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15866,7 +16004,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L140",
+      "source_location": "L150",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15876,7 +16014,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L148",
+      "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15886,7 +16024,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L163",
+      "source_location": "L173",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15896,7 +16034,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L179",
+      "source_location": "L189",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15906,7 +16044,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L187",
+      "source_location": "L197",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15916,7 +16054,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L195",
+      "source_location": "L205",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15926,7 +16064,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L209",
+      "source_location": "L219",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15936,7 +16074,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L224",
+      "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15946,7 +16084,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L236",
+      "source_location": "L246",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15956,7 +16094,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L264",
+      "source_location": "L274",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15966,7 +16104,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L274",
+      "source_location": "L284",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15976,7 +16114,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L286",
+      "source_location": "L296",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15986,7 +16124,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L294",
+      "source_location": "L304",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15996,7 +16134,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L302",
+      "source_location": "L312",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16006,7 +16144,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L310",
+      "source_location": "L320",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16016,7 +16154,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L318",
+      "source_location": "L328",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16026,7 +16164,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L326",
+      "source_location": "L336",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16036,7 +16174,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L334",
+      "source_location": "L344",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16046,7 +16184,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L344",
+      "source_location": "L376",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16056,7 +16194,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L352",
+      "source_location": "L384",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16066,7 +16204,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L361",
+      "source_location": "L393",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16076,7 +16214,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L384",
+      "source_location": "L416",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16086,7 +16224,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/DOCUMENTATION_TECHNIQUE.md",
-      "source_location": "L403",
+      "source_location": "L435",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16102,7 +16240,7 @@
     },
     {
       "source": "documentation_installation_orchestrateurs_installation_avec_claude_code_bmad_codex_ou_github_copilot",
-      "target": "documentation_installation_orchestrateurs_1_prérequis",
+      "target": "documentation_installation_orchestrateurs_légende_des_responsabilités",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
@@ -16112,11 +16250,21 @@
     },
     {
       "source": "documentation_installation_orchestrateurs_installation_avec_claude_code_bmad_codex_ou_github_copilot",
+      "target": "documentation_installation_orchestrateurs_1_prérequis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_installation_avec_claude_code_bmad_codex_ou_github_copilot",
       "target": "documentation_installation_orchestrateurs_2_installer_architecture_harness",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L27",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16126,7 +16274,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L55",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_installation_avec_claude_code_bmad_codex_ou_github_copilot",
+      "target": "documentation_installation_orchestrateurs_3_1_comprendre_le_résultat_d_un_installateur",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16136,7 +16294,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L113",
+      "source_location": "L152",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16146,7 +16304,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L115",
+      "source_location": "L154",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16156,7 +16314,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L130",
+      "source_location": "L169",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16166,7 +16324,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L137",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_4_installer_avec_codex",
+      "target": "documentation_installation_orchestrateurs_étape_4_preuve_de_fonctionnement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L204",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16176,27 +16344,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L157",
+      "source_location": "L217",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "documentation_installation_orchestrateurs_5_installer_avec_claude_code",
-      "target": "documentation_installation_orchestrateurs_étape_1_installer_l_adaptateur_159",
+      "target": "documentation_installation_orchestrateurs_étape_1_installer_l_adaptateur_219",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L159",
+      "source_location": "L219",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "documentation_installation_orchestrateurs_5_installer_avec_claude_code",
-      "target": "documentation_installation_orchestrateurs_étape_2_vérifier_les_fichiers_174",
+      "target": "documentation_installation_orchestrateurs_étape_2_vérifier_les_fichiers_234",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L174",
+      "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16206,7 +16374,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L181",
+      "source_location": "L250",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_5_installer_avec_claude_code",
+      "target": "documentation_installation_orchestrateurs_étape_4_preuve_de_fonctionnement_261",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L261",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16216,7 +16394,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L192",
+      "source_location": "L273",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16226,7 +16404,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L196",
+      "source_location": "L277",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16236,7 +16414,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L206",
+      "source_location": "L287",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16246,7 +16424,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L222",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16256,7 +16434,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L230",
+      "source_location": "L318",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_6_installer_avec_bmad",
+      "target": "documentation_installation_orchestrateurs_étape_5_preuve_de_fonctionnement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L343",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16266,7 +16454,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L255",
+      "source_location": "L355",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16276,7 +16464,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L259",
+      "source_location": "L359",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16286,7 +16474,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L286",
+      "source_location": "L386",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16296,7 +16484,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L296",
+      "source_location": "L396",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_7_installer_avec_github_copilot",
+      "target": "documentation_installation_orchestrateurs_étape_4_vérifier_l_installation_manuelle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L415",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "documentation_installation_orchestrateurs_installation_avec_claude_code_bmad_codex_ou_github_copilot",
+      "target": "documentation_installation_orchestrateurs_7_1_tableau_de_diagnostic_des_intégrations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
+      "source_location": "L428",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16306,7 +16514,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L315",
+      "source_location": "L439",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16316,7 +16524,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L342",
+      "source_location": "L466",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16326,7 +16534,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L359",
+      "source_location": "L483",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16336,7 +16544,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L361",
+      "source_location": "L485",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16346,7 +16554,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L369",
+      "source_location": "L493",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16356,7 +16564,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L377",
+      "source_location": "L501",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16366,7 +16574,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L385",
+      "source_location": "L509",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16376,7 +16584,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L392",
+      "source_location": "L516",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16386,7 +16594,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L400",
+      "source_location": "L524",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16396,7 +16604,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "documentation/INSTALLATION_ORCHESTRATEURS.md",
-      "source_location": "L404",
+      "source_location": "L528",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -18707,6 +18915,26 @@
       "confidence": "EXTRACTED",
       "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
       "source_location": "L404",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_validation_automatisée_v1_1_2026_08_31t13_44_26_0200",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L432",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "logs_v1_1_implementation_log_v1_1_implementation_log",
+      "target": "logs_v1_1_implementation_log_validation_automatisée_v1_1_2026_08_31t14_05_26_0200",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/V1_1_IMPLEMENTATION_LOG.md",
+      "source_location": "L460",
       "weight": 1.0,
       "_origin": "ast"
     },
