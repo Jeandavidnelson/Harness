@@ -206,9 +206,9 @@ Les installateurs `integrations install codex` et `integrations install claude` 
 
 Documentation détaillée :
 
-- installation et test dans un autre projet : `documentation/INSTALLATION_ET_TEST_MANUEL.md` ;
-- workflow et fonctionnement technique : `documentation/WORKFLOW_ET_ARCHITECTURE_TECHNIQUE.md` ;
-- commandes, statuts et retours : `documentation/COMMANDES_ET_RETOURS.md`.
+- concepts, répertoires, règles et Rule Author Skill : [`documentation/DOCUMENTATION_FONCTIONNELLE.md`](documentation/DOCUMENTATION_FONCTIONNELLE.md) ;
+- couches internes, interactions et référence complète des commandes : [`documentation/DOCUMENTATION_TECHNIQUE.md`](documentation/DOCUMENTATION_TECHNIQUE.md) ;
+- installation pas à pas avec Claude Code, BMAD, Codex et GitHub Copilot : [`documentation/INSTALLATION_ORCHESTRATEURS.md`](documentation/INSTALLATION_ORCHESTRATEURS.md).
 
 ## Validation
 
